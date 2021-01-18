@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-## Theme Monos
+### Juan Ignacio Vázquez Broquá
 > Simple and lightweight theme for Jekyll
 
 ### Features
