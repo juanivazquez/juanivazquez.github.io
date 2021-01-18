@@ -7,6 +7,8 @@ permalink: /about/
 ### Juan Ignacio Vázquez Broquá
 > Simple and lightweight theme for Jekyll
 
+[linkedin](https://www.linkedin.com/in/jivb/)
+
 ### Features
 - Responsive.
 - Syntax Highlight
