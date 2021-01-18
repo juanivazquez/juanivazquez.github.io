@@ -1,32 +1,33 @@
-Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
-=========================
-
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
-
-## How to use
- - Place a image in `/img/portfolio/`
- - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
- - Create posts to display your projects. Use the follow as an example:
-```txt
 ---
-layout: default
-modal-id: 1
-date: 2020-01-18
-img: cabin.png
-alt: image-alt
-project-date: January 2020
-client: The Client
-category: Web Development
-description: The description of the project
-
+layout: page
+title: About
+permalink: /about/
 ---
+
+## Theme Monos
+> Simple and lightweight theme for Jekyll
+
+### Features
+- Responsive.
+- Syntax Highlight
+- Most optimized theme for tech blog.
+- Lightweight with minimum stylesheet.
+- Easy to customize.
+- Offers category menu.
+
+### _config.yml
+> Code block will look like this.
+```yml
+highlighter-theme: monokai //you can change your syntax color scheme.
+date_format: "%Y-%M-%D" //and date format.
 ```
 
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
-
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
-
----------
-For more details, read the [documentation](http://jekyllrb.com/)
+### Screenshots
+#### Page
+![alt text](/public/img/screenshot-1.png)
+#### Articles
+![alt text](/public/img/screenshot-2.png)
+#### Page - Mobile
+![alt text](/public/img/screenshot-m1.png)
+#### Page - Articles
+![alt text](/public/img/screenshot-m2.png)
