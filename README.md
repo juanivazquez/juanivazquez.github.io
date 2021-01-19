@@ -4,13 +4,14 @@ title: About
 permalink: /about/
 ---
 
-### Juan Ignacio Vázquez Broquá
+
+#### Juan Ignacio Vázquez Broquá
 > Simple and lightweight theme for Jekyll
 
 [linkedin](https://www.linkedin.com/in/jivb/)
 
-### Features
-- Responsive.
+#### Education
+- Bsc in Economics (UCA)
 - Syntax Highlight
 - Most optimized theme for tech blog.
 - Lightweight with minimum stylesheet.
@@ -26,8 +27,6 @@ date_format: "%Y-%M-%D" //and date format.
 
 ### Screenshots
 
-#### Redes en el Cerebro
-![pdf](\public\files\2020 12 23 - Redes cerebrales en sueno y vigilia.pdf)
 #### Page
 ![alt text](/public/img/screenshot-1.png)
 #### Articles
