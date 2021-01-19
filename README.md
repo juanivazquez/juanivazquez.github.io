@@ -25,6 +25,9 @@ date_format: "%Y-%M-%D" //and date format.
 ```
 
 ### Screenshots
+
+#### Redes en el Cerebro
+![pdf](\public\files\2020 12 23 - Redes cerebrales en sueno y vigilia.pdf)
 #### Page
 ![alt text](/public/img/screenshot-1.png)
 #### Articles
