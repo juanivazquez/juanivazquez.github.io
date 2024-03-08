@@ -8,3 +8,7 @@ permalink: /about/
 > [linkedin](https://www.linkedin.com/in/jivb/) | [goodreads](https://www.goodreads.com/user/show/6853463-juan)
 
 <!--- [github](https://github.com/juanivazquez) | [blog](https://crumbpickers.blogspot.com/?zx=be4921e2634a6e0d) --->
+
+
+
+![alt text](/public/img/JIVB.png)
