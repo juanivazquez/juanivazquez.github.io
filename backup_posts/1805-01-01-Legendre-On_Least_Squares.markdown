@@ -1,8 +1,8 @@
 ---
 layout: post
 title: GEC0390
-date: 1805-01-01 00:00:01 +0900
-category: time series, OLS
+date: 2024-01-01 00:00:01 +0900
+category:
 ---
 
 
@@ -176,11 +176,10 @@ Module  Miscellanea
 - [T8 - - - 2020 - Peters - Leverage efficiency](/public/papers/T8_-_2020_-_Peters_-_Leverage_efficiency.pdf)
 - [T8 - - - Bitcoin, Currencies, and Fragility](/public/papers/T8_-_Bitcoin,_Currencies,_and_Fragility.pdf)
 - [T8 - - - Mark Spitznagel - Safe Haven  Investing for Financial Storms-Wiley (2021)](/public/papers/T8_-_Mark_Spitznagel_-_Safe_Haven__Investing_for_Financial_Storms-Wiley_(2021).pdf) -->
-Volatility
+**Volatility**
 - [1990 - Bollerslev - Modelling the coherence in short-run nominal exchange rates: a multivariate generalized ARCH model](/public/papers/T9_-_MODELOS_GARCH_-_PAPER_INICIAL.pdf)
 
 **Specific but without propper module**
-- [The ontology of the Economic in Aristotle](/public/papers/T0_-_x_-The_ontology_of_the_Economic_in_Aristotle.pdf)
 
 - [1956 - J.L.Kelly. - A New Interpretation of Information Rate](/public/papers/T0_-_1956_-_J.L.Kelly._-_A_New_Interpretation_of_Information_Rate.pdf)
 
@@ -191,7 +190,7 @@ Volatility
 
 - [2022 - why do trees still outperform deep learning models for tabular data](/public/papers/T7_-_2022_-_why_do_trees_still_outperform_deep_learning_models_for_tabular_data.pdf)
 - [2023 -Forecasting Large Realized Covariance Matrices](/public/papers/T7_-_2023_-Forecasting_Large_Realized_Covariance_Matrices.pdf)
-
+- [The ontology of the Economic in Aristotle](/public/papers/T0_-_x_-The_ontology_of_the_Economic_in_Aristotle.pdf)
 
 
 ---
@@ -199,7 +198,7 @@ Volatility
 ---
 
 
-**Class Slides**
+**Slides**
 
 - Bullet point 3
 - Bullet point 3
@@ -214,6 +213,21 @@ Volatility
 **Data Repository**
 
 **Code**
+
+##### <center> Reviews </center>
+
+**2023**
+>*"Recomiendo la materia de Series de tiempo porque pienso que se dice o la opoinion en general es que es una materia muy dificil y que por eso nadie la cursa ni se anota, pero mi experiencia este cuatrimestre fue muy buena. Me gusto econometría y por eso decidi anotarme, los conceptos que aprendí son muy utiles pas que nada para desarrollar un perfil mas analitico y tambien pienso que a la hora de hacer la tesis, agregan mucho valor."*
+
+>*"Creo q es una materia con un contenido muy útil y muy bueno. Temas q son muy novedosos y utilizados en todos los ámbitos. Es una materia desafiante y a la vez flexible y dinámica. La modalidad es hibrida, muy cómoda para el alumno y con poca carga horaria. Es una optativa q la recomendaría 100 porciento"*
+
+>*"La recomiendo mucho si te gusto econometria es una continuación de esa materia y también sirve mucho si tenes que manejar datos para la tesis ya que te permite dar un análisis mejor a la hora de escribirla"*
+
+>*"Es casi una materia fundamental hoy en dia si en el dia a dia te dedicas a usar series temporales y no de corte trasversal o si queres dedicarte a la academia"*
+
+>*"Si no les gusta econometría no se anoten. No es una materia imposible pero te tiene que gustar"*
+
+>*"La recomiendo si les gusto la materia econometría y les interesa programar"*
 
 
 
