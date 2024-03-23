@@ -68,6 +68,7 @@ Module II : **Maracanaço**
 - [1972 - Naylor - Box-Jenkins methods  An alternative to Econometric Models](/public/papers/T3_-_1972_-_Naylor_-_Box-Jenkins_methods__An_alternative_to_Econometric_Models.pdf)
 - [1972 - Nelson - The prediction performance of the FRB-MIT-Penn model of the US](/public/papers/T3_-_1972_-_Nelson_-_The_prediction_performance_of_the_FRB-MIT-Penn_model_of_the_US.pdf)
 - [1976 - Lucas - Econometric policy evaluation A critique.](/public/papers/T2.5_-1976_-_Lucas_-_Econometric_policy_evaluation_A_critique..pdf)
+
 ---
 Module III : **Sine Pater**
 ---
@@ -81,6 +82,7 @@ Module III : **Sine Pater**
 - [1989 - Perron - The great crash, the oil price shok and the unit root hypothesis](/public/papers/T4_-1989_-_perron_-_the_great_crash,_the_oil_price_shok_and_the_unit_root_hypothesis.pdf)
 - [1992 - Zivot Andrews - Further evidence on the Great Crash, the oil-price shock, and the unit-root hypothesis](/public/papers/T4_-1992_-zivot&andrews_-_Further_evidence_on_the_Great_Crash,_the_oil-price_shock,_and_the_unit-root_hypothesis.pdf)
 - [1992 - Kwiatkowski- Testing the null hypothesis of stationarity against the alternativ of a unit root](/public/papers/T4_-_1992_-_Kwiatkowski-_Testing_the_null_hypothesis_of_stationarity_against_the_alternativ_of_a_unit_root.pdf)
+
 ---
 Module IV: **There is no Spoon**
 ---
@@ -127,6 +129,7 @@ Module VI The man they didn't listen
 - [ - Statistical Consequences of Fat Tails](/public/papers/T7_-_Statistical_Consequences_of_Fat_Tails.pdf)
 - [2009- Lecturing birds on flying - Can mathematical theories destroy the financial markets](/public/papers/T8_-_2009-_Lecturing_birds_on_flying_-_Can_mathematical_theories_destroy_the_financial_markets.pdf)
 - [2015 - Black Swans and the Domains of Statistics](/public/papers/T8_-_2015_-_Black_Swans_and_the_Domains_of_Statistics.pdf)
+
 ---
 Module  Risk and Uncertainty
 ---
