@@ -19,12 +19,12 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 
 ---
 ##### <center> Selection of Papers </center>
-
+---
 
 <!-- - [1931 - Gilbert Walker - On periodicity of series of related terms](/public/papers/T2_-_1931_-_Gilbert_Walker_-_On_periodicity_of_series_of_related_terms.pdf) -->
 
 
----
+
 Module I : Eons Ago
 ---
 
@@ -54,7 +54,7 @@ Module I : Eons Ago
 - [1996 - Maeshiro - Teaching Regressions with a Lagged Dependent Variable and Autocorrelated Disturbances](/public/papers/T1_-_LDV_-_1996_-_maeshiro_-_Teaching_Regressions_with_a_Lagged_Dependent_Variable_and_Autocorrelated_Disturbances.pdf)
 - [2006  - Keele-kelly -The Ins and Outs of Lagged Depenent Variables](/public/papers/T1_-_LDV_-_2006__-_Keele-kelly_-The_Ins_and_Outs_of_Lagged_Depenent_Variables.pdf) -->
 
----
+
 Module II : **Maracanaço**
 ---
 
@@ -69,7 +69,7 @@ Module II : **Maracanaço**
 - [1972 - Nelson - The prediction performance of the FRB-MIT-Penn model of the US](/public/papers/T3_-_1972_-_Nelson_-_The_prediction_performance_of_the_FRB-MIT-Penn_model_of_the_US.pdf)
 - [1976 - Lucas - Econometric policy evaluation A critique.](/public/papers/T2.5_-1976_-_Lucas_-_Econometric_policy_evaluation_A_critique..pdf)
 
----
+
 Module III : **Sine Pater**
 ---
 
@@ -83,7 +83,7 @@ Module III : **Sine Pater**
 - [1992 - Zivot Andrews - Further evidence on the Great Crash, the oil-price shock, and the unit-root hypothesis](/public/papers/T4_-1992_-zivot&andrews_-_Further_evidence_on_the_Great_Crash,_the_oil-price_shock,_and_the_unit-root_hypothesis.pdf)
 - [1992 - Kwiatkowski- Testing the null hypothesis of stationarity against the alternativ of a unit root](/public/papers/T4_-_1992_-_Kwiatkowski-_Testing_the_null_hypothesis_of_stationarity_against_the_alternativ_of_a_unit_root.pdf)
 
----
+
 Module IV: **There is no Spoon**
 ---
 *The start of VAR*
@@ -96,7 +96,7 @@ Module IV: **There is no Spoon**
 - [2013 - Qin- The contribution of SIMS to econometrics](/public/papers/T6_-_VAR_-_2013_-_The_contribution_of_SIMS_to_econometrics.pdf)
 - [Stocks Watsok - Vector Autoregressions](/public/papers/T6_-_VAR_-_stocks&watsok_-_Vector_Autoregressions.pdf)
 
----
+
 Module V Causality in Time Series
 ---
 *Mostly Granger on Causality and Co-Integration*
@@ -110,7 +110,7 @@ Module V Causality in Time Series
 
 - [2023 - Causal Discovery for Temporal Data](/public/papers/T7_-_2023_-_Causal_Discovery_for_Temporal_Data.pdf)
 
----
+
 Module VI The man they didn't listen
 ---
 *Mandelbrot's observations on Stock Markets*
@@ -130,7 +130,7 @@ Module VI The man they didn't listen
 - [2009- Lecturing birds on flying - Can mathematical theories destroy the financial markets](/public/papers/T8_-_2009-_Lecturing_birds_on_flying_-_Can_mathematical_theories_destroy_the_financial_markets.pdf)
 - [2015 - Black Swans and the Domains of Statistics](/public/papers/T8_-_2015_-_Black_Swans_and_the_Domains_of_Statistics.pdf)
 
----
+
 Module  Risk and Uncertainty
 ---
 *Papers on general topics*
@@ -143,7 +143,7 @@ Module  Risk and Uncertainty
 
 - [T7 - - - 2023 - MorganStanley - Methods to Assess Confidence Under Uncertainty](/public/papers/T7_-_2023_-_MorganStanley_-_Methods_to_Assess_Confidence_Under_Uncertainty.pdf)
 
----
+
 Module  Miscellanea
 ---
 *Miscellanea*
