@@ -11,4 +11,7 @@ permalink: /about/
 
 
 
-![alt text](/public/img/JIVB.png)
+<!-- ![alt text](/public/img/JIVB_3.png) -->
+<div style="text-align:center;">
+    <img src="/public/img/JIVB_3.png" alt="alt text" width="250" height="250">
+</div>
