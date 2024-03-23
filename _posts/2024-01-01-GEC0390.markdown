@@ -118,7 +118,7 @@ Module V Causality in Time Series
 - [2023 - Causal Discovery for Temporal Data](/public/papers/T7_-_2023_-_Causal_Discovery_for_Temporal_Data.pdf)
 
 
-Module VI The man they didn't listen
+Module VI The man they didn't listen to
 ---
 *Mandelbrot's observations on Stock Markets*
 - [1997 - On the Meaning and Use of Kurtosis](/public/papers/T7_-_1997_-_On_the_Meaning_and_Use_of_Kurtosis.pdf)
@@ -207,8 +207,6 @@ Module  Miscellanea
 ##### <center> Class Slides </center>
 ---
 
-
-**Slides**
 
 - [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link)
 - [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link)
