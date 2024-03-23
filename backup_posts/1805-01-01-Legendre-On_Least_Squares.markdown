@@ -190,7 +190,7 @@ Volatility
 - [2008 - Univariate Distribution Relationships](/public/papers/T0_-_2008_-_Univariate_Distribution_Relationships.pdf)
 
 - [2022 - why do trees still outperform deep learning models for tabular data](/public/papers/T7_-_2022_-_why_do_trees_still_outperform_deep_learning_models_for_tabular_data.pdf)
-- [T7 - - - 2023 -Forecasting Large Realized Covariance Matrices](/public/papers/T7_-_2023_-Forecasting_Large_Realized_Covariance_Matrices.pdf)
+- [2023 -Forecasting Large Realized Covariance Matrices](/public/papers/T7_-_2023_-Forecasting_Large_Realized_Covariance_Matrices.pdf)
 
 
 
