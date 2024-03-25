@@ -32,7 +32,7 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 
 
 **Slides**
-- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) 
+- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link)
 - [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link)
 - [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
 - [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
@@ -42,14 +42,33 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 
 
 **Data**
-- [Datos Argentina](https://datos.gob.ar/)
-- [Levendis Data](/public/data/levendis_stata_data.rar)
-- [Hyndman Data](/public/data/hyndman_data.rar)
+- [Argentina](https://datos.gob.ar/) | [INDEC](https://www.indec.gob.ar/) | [BCRA](https://www.bcra.gob.ar/default.asp) | [MECON](https://www.argentina.gob.ar/economia)
+- [Levendis](/public/data/levendis_stata_data.rar)
+- [Hyndman](/public/data/hyndman_data.rar)
 
 **Code**
--
--
--
+
+1. Intro to Python
+- [Intro](/public/code/1_Introduction_to_Python.ipynb)
+- [Data Manipulation](/public/code/2_Data_Manipulation.ipynb)
+
+2. Hyndman
+- [FPP3 in python](/public/code/fpp3.rar)
+
+3.  Experiments
+- [Central Limit Theorem](/public/code/exp_0_central_limit_theorem.ipynb)
+- [Pearson Correlation](/public/code/exp_0_pearson_correlation.ipynb)
+- [Linear Regression](/public/code/exp_1_linear_regression_assumptions.ipynb)
+ <!-- - [ARMA](/public/code/exp_2_ARMA_macrodemos.ipynb)' -->
+
+  <!-- - [Jaki_Charrua_gatodelespacio.jpg](/public/code/Jaki_Charrua_gatodelespacio.jpg), -->
+
+4. Replications
+ - [1973 - Granger & Newbold](/public/code/rep_1973_granger_&_newbold.ipynb)
+ - [1979 - Dickey & Fuller](/public/code/rep_1979-Dickey_Fuller_Distribution.ipynb)
+ - [1982 - Nelson & Plosser](/public/code/rep_1982-nelson_&_plosser.ipynb)
+ - [1989 - Pierre Perron](/public/code/rep_1989_perron.ipynb)
+ - [1992 - Zivot & Andrews](/public/code/rep_1992_zivot_&_andrews.ipynb)
 
 
 ---
@@ -65,24 +84,24 @@ Module I : Eons Ago
 
 *From the discovery of OLS to the first Nobel Prize Award*
 
-- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf) :point_left: **OLS**
+- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS**
 - [1809 - Gauss Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
-- [1870 - Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf) :star2:
-- [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf) :star2:
+- [1870 - Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
+- [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf)
 - [1905 - Einstein - Brownian Movement](/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf)
 - [1905 - Karl Pearson - The Problem of The Random Walk](/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf)
 - [1921 - Yule - On the time correlation problem](/public/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf)
-- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf) :point_left: **MA**
-- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) :point_left: **AR**
+- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)  **MA**
+- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) **AR**
 - [1931 - Walker - On Periodicity in Series of Related Terms](/public/papers/T2_-_1931_-_Walker.pdf)
 - [1939 - Wold - A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf)
-- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf) :point_left: **theorem**
+- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  **theorem**
 - [1939 - Tinbergen statistical testing of business cycle theories](/public/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf)
 - [1940 - Tinbergen Econometric Business Cycle Research](/public/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf)
 - [1942 - Schumann- On yules method ](/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf)
 
-- [2001 - Qin - The Error Term in the History of Time Series Econometrics](/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf) :star2:
-- [2012 - Soyer Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf) :star2:
+- [2001 - Qin - The Error Term in the History of Time Series Econometrics](/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf)
+- [2012 - Soyer Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf)
 - [2019 - Fooled by Correlation Common Misinterpretations in Social Sciences](/public/papers/T8_-2019_-_Fooled_by_Correlation_Common_Misinterpretations_in_Social_Sciences.pdf)
 <!-- - [2001 - Stanton - Galton Pearson and the Peas A Brief History of Linear Regression for Statistics Instructors](/public/papers/T1_-_2001_-_Stanton_-_Galton_Pearson_and_the_Peas_A_Brief_History_of_Linear_Regression_for_Statistics_Instructors.pdf)
 - [2021  -Krashniak - Francis Galton’s regression towards mediocrity and the stability of types](/public/papers/T1_-_2021__-Krashniak_-_Francis_Galton’s_regression_towards_mediocrity_and_the_stability_of_types.pdf)
@@ -132,7 +151,7 @@ Module IV: **There is no Spoon**
 - [Stocks Watsok - Vector Autoregressions](/public/papers/T6_-_VAR_-_stocks&watsok_-_Vector_Autoregressions.pdf)
 
 
-Module V Causality in Time Series
+Module V Causality
 ---
 *Mostly Granger on Causality and Co-Integration*
 
@@ -178,11 +197,11 @@ Module V Causality in Time Series
 - [T7 - - - 2023 - MorganStanley - Methods to Assess Confidence Under Uncertainty](/public/papers/T7_-_2023_-_MorganStanley_-_Methods_to_Assess_Confidence_Under_Uncertainty.pdf) -->
 
 
-Module  Miscellanea
+Module VI Miscellanea
 ---
 *Miscellanea*
 
-**Summaries**
+<!-- **Summaries** -->
 - [1998 - Diebold - The past present and future of macroeconomic forecasting](/public/papers/T0_-_1998_-_Diebold_-_The_past_present_and_future_of_macroeconomic_forecasting.pdf)
 <!-- - [2015 - Time series forecasting for nonlinear and non-stationary processes: a review and comparative study](/public/papers/T0_-_Timeseriesforecastingfornonlinearandnonstationaryprocessesareviewandcomparativestudy.pdf)
 - [2017 - hansen - Time Series Econometrics in Macroeconomics and Finance](/public/papers/T0_-_2017_-_hansen_-_Time_Series_Econometrics_in_Macroeconomics_and_Finance.pdf)
@@ -230,9 +249,7 @@ Module  Miscellanea
 - [The ontology of the Economic in Aristotle](/public/papers/T0_-_x_-The_ontology_of_the_Economic_in_Aristotle.pdf) -->
 
 
----
-##### <center> GEC039 Course Material </center>
----
+
 
 
 
