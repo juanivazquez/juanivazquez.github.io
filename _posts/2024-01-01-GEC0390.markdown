@@ -5,24 +5,51 @@ date: 2024-01-01 00:00:01 +0900
 category:
 ---
 
+TIME SERIES
 ---
-##### <center> TIME SERIES [GEC0390] </center>
----
+
+
 
 <!-- Greetings, time series enthusiasts!
 I'm thrilled to welcome you to this exciting voyage through the realm of time series analysis. As your guide, I extend a warm invitation to embark on this enlightening journey with me. This platform is your personal portal to a wealth of knowledge, constantly refreshed to enhance your learning experience. Here, you'll discover a curated collection of resources tailored to complement our studies, including thought-provoking papers, diverse datasets, and invaluable code snippets. My goal is to equip you with the tools and insights needed to excel in the fascinating world of time series analysis. So let's dive in together, explore the possibilities, and embark on this enriching adventure! -->
 
 
 ---
-##### <center> Bibliography </center>
+##### <center> GEC039 Course Resources </center>
 ---
-- [Levendis - Time Series Econometrics](https://www.amazon.com/-/es/Levendis/dp/3319982818)
-- [Hamilton - Time Series Analysis](https://www.amazon.com/-/es/James-D-Hamilton-ebook/dp/B08DL8TCSB?ref_=ast_author_mpb)
-- [Enders - Applied Econometric Time Series](https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics-ebook/dp/B00P6SS6RA)
-- [Hyndman - Forecasting: Principles and Practice ](https://otexts.com/fpp3/)
+
+**Bibliography**
+- John D. Levendis - [Time Series Econometrics](https://www.amazon.com/-/es/Levendis/dp/3319982818)
+- James D. Hamilton - [Time Series Analysis](https://www.amazon.com/-/es/James-D-Hamilton-ebook/dp/B08DL8TCSB?ref_=ast_author_mpb)
+- Walter Enders - [Applied Econometric Time Series](https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics-ebook/dp/B00P6SS6RA)
+- Rob J. Hyndman - [Forecasting: Principles and Practice ](https://otexts.com/fpp3/)
 
 
+**Python**
+- Kevin Sheppard  - [Python Introduction](https://www.kevinsheppard.com/teaching/python/course/)
+- Leah Collis - [Scientific Python ](https://web.stanford.edu/class/cme193/syllabus.html)
+- Srini Devadas - [Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/pages/syllabus/)   
 
+
+**Slides**
+- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link)
+- [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link)
+- [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
+- [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
+- [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link)
+- [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link)
+- [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link)
+
+
+**Data**
+- [Datos Argentina](https://datos.gob.ar/)
+- [Levendis Data](/public/data/levendis_stata_data.rar)
+- [Hyndman Data](/public/data/hyndman_data.rar)
+
+**Code**
+-
+-
+-
 
 
 ---
@@ -38,24 +65,24 @@ Module I : Eons Ago
 
 *From the discovery of OLS to the first Nobel Prize Award*
 
-- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)
+- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf) :point_left: **OLS**
 - [1809 - Gauss Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
-- [1870 - Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
-- [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf)
+- [1870 - Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf) :star2:
+- [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf) :star2:
 - [1905 - Einstein - Brownian Movement](/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf)
 - [1905 - Karl Pearson - The Problem of The Random Walk](/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf)
 - [1921 - Yule - On the time correlation problem](/public/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf)
-- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)
-- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf)
+- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf) :point_left: **MA**
+- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) :point_left: **AR**
 - [1931 - Walker - On Periodicity in Series of Related Terms](/public/papers/T2_-_1931_-_Walker.pdf)
 - [1939 - Wold - A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf)
-- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)
+- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf) :point_left: **theorem**
 - [1939 - Tinbergen statistical testing of business cycle theories](/public/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf)
 - [1940 - Tinbergen Econometric Business Cycle Research](/public/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf)
 - [1942 - Schumann- On yules method ](/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf)
 
-- [2001 - Qin - The Error Term in the History of Time Series Econometrics](/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf)
-- [2012 - Soyer Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf)
+- [2001 - Qin - The Error Term in the History of Time Series Econometrics](/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf) :star2:
+- [2012 - Soyer Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf) :star2:
 - [2019 - Fooled by Correlation Common Misinterpretations in Social Sciences](/public/papers/T8_-2019_-_Fooled_by_Correlation_Common_Misinterpretations_in_Social_Sciences.pdf)
 <!-- - [2001 - Stanton - Galton Pearson and the Peas A Brief History of Linear Regression for Statistics Instructors](/public/papers/T1_-_2001_-_Stanton_-_Galton_Pearson_and_the_Peas_A_Brief_History_of_Linear_Regression_for_Statistics_Instructors.pdf)
 - [2021  -Krashniak - Francis Galton’s regression towards mediocrity and the stability of types](/public/papers/T1_-_2021__-Krashniak_-_Francis_Galton’s_regression_towards_mediocrity_and_the_stability_of_types.pdf)
@@ -75,7 +102,7 @@ Module II : **Maracanaço**
 - [1972 - Cooper - The Predictive Performance of Quarterly Econometric Models of the United States](/public/papers/T3_-1972_-cooper_-_The_Predictive_Performance_of_Quarterly_Econometric_Models_of_the_United_States.pdf)
 - [1972 - Naylor - Box-Jenkins methods  An alternative to Econometric Models](/public/papers/T3_-_1972_-_Naylor_-_Box-Jenkins_methods__An_alternative_to_Econometric_Models.pdf)
 - [1972 - Nelson - The prediction performance of the FRB-MIT-Penn model of the US](/public/papers/T3_-_1972_-_Nelson_-_The_prediction_performance_of_the_FRB-MIT-Penn_model_of_the_US.pdf)
-- [1976 - Lucas - Econometric policy evaluation A critique.](/public/papers/T2.5_-1976_-_Lucas_-_Econometric_policy_evaluation_A_critique..pdf)
+- [1976 - Lucas - Econometric policy evaluation A critique.](/public/papers/T2.5_-1976_-_Lucas_-_Econometric_policy_evaluation_A_critique..pdf) :star2:
 
 
 Module III : **Sine Pater**
@@ -84,7 +111,7 @@ Module III : **Sine Pater**
 *Stationarity Tests, Unit Root Tests and Structural Breaks*
 
 
-- [1973 - Granger Newbold  Spurious regressions in econometrics](/public/papers/T4_-_1973_Granger_Newbold__Spurious_regressions_in_econometrics.pdf)
+- [1973 - Granger Newbold  Spurious regressions in econometrics](/public/papers/T4_-_1973_Granger_Newbold__Spurious_regressions_in_econometrics.pdf) :star2:
 - [1979 - Dickey Fuller Distribution of the estimators for autoregressive time series](/public/papers/T4_-_1979_-_Dickey_Fuller_Distribution_of_the_estimators_for_autoregressive_time_series.pdf)
 - [1982 - Nelson Plosser - Trends and random walks in macroeconomic time series](/public/papers/T4_-1982_-_nelson_y_plosser_-_Trends_and_random_walks_in_macroeconomic_time_series.pdf)
 - [1989 - Perron - The great crash, the oil price shok and the unit root hypothesis](/public/papers/T4_-1989_-_perron_-_the_great_crash,_the_oil_price_shok_and_the_unit_root_hypothesis.pdf)
@@ -207,27 +234,8 @@ Module  Miscellanea
 ##### <center> GEC039 Course Material </center>
 ---
 
-**Python**
-- [Python Introduction](https://www.kevinsheppard.com/teaching/python/course/) - Kevin Sheppard - University of Oxford
-- [Scientific Python ](https://web.stanford.edu/class/cme193/syllabus.html) - Leah Collis  - Stanford University
-- [Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/pages/syllabus/) - Srini Devadas - Massachusetts Institute of Technology
 
 
-**Slides**
-- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link)
-- [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link)
-- [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
-- [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
-- [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link)
-- [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link)
-- [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link)
-
-
-**Data**
-- [Datos Argentina](https://datos.gob.ar/)
-
-
-**Code**
 
 
 
