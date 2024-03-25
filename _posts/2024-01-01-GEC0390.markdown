@@ -5,11 +5,12 @@ date: 2024-01-01 00:00:01 +0900
 category:
 ---
 
+---
+##### <center> TIME SERIES [GEC0390] </center>
+---
 
-##### <center> GEC039 Time Series </center>
-> Greetings, time series enthusiasts!
-I'm thrilled to welcome you to this exciting voyage through the realm of time series analysis. As your guide, I extend a warm invitation to embark on this enlightening journey with me. This platform is your personal portal to a wealth of knowledge, constantly refreshed to enhance your learning experience. Here, you'll discover a curated collection of resources tailored to complement our studies, including thought-provoking papers, diverse datasets, and invaluable code snippets. My goal is to equip you with the tools and insights needed to excel in the fascinating world of time series analysis. So let's dive in together, explore the possibilities, and embark on this enriching adventure!
-
+<!-- Greetings, time series enthusiasts!
+I'm thrilled to welcome you to this exciting voyage through the realm of time series analysis. As your guide, I extend a warm invitation to embark on this enlightening journey with me. This platform is your personal portal to a wealth of knowledge, constantly refreshed to enhance your learning experience. Here, you'll discover a curated collection of resources tailored to complement our studies, including thought-provoking papers, diverse datasets, and invaluable code snippets. My goal is to equip you with the tools and insights needed to excel in the fascinating world of time series analysis. So let's dive in together, explore the possibilities, and embark on this enriching adventure! -->
 
 
 ---
@@ -25,7 +26,7 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 
 
 ---
-##### <center> Selection of Papers </center>
+##### <center> Selected Papers </center>
 ---
 
 <!-- - [1931 - Gilbert Walker - On periodicity of series of related terms](/public/papers/T2_-_1931_-_Gilbert_Walker_-_On_periodicity_of_series_of_related_terms.pdf) -->
@@ -115,30 +116,29 @@ Module V Causality in Time Series
 - [1996 - Stock and Watson - A simple estimator of cointegrating vectors in higher order integrated systems](/public/papers/T5_-_1996_-_Stock_and_Watson_-_A_simple_estimator_of_cointegrating_vectors_in_higher_order_integrated_systems.pdf)
 - [2010 - Mackinnon Critical values for cointegration tests](/public/papers/T5_-_2010_-_Mackinnon_Critical_values_for_cointegration_tests.pdf)
 
-- [2023 - Causal Discovery for Temporal Data](/public/papers/T7_-_2023_-_Causal_Discovery_for_Temporal_Data.pdf)
+<!-- - [2023 - Causal Discovery for Temporal Data](/public/papers/T7_-_2023_-_Causal_Discovery_for_Temporal_Data.pdf) -->
 
 
-Module VI The man they didn't listen to
+<!-- Module VI The man they didn't listen to
 ---
 *Mandelbrot's observations on Stock Markets*
 - [1997 - On the Meaning and Use of Kurtosis](/public/papers/T7_-_1997_-_On_the_Meaning_and_Use_of_Kurtosis.pdf)
-
-- [T8 - - - Where Do Thin Tails Come From](/public/papers/T8_-_Where_Do_Thin_Tails_Come_From.pdf)
 
 - [1963 - Mandelbrot - New Methods in Statistical Economics](/public/papers/T7_-1963_-Mandelbrot_-_New_Methods_in_Statistical_Economics.pdf)
 - [1963 - Mandelbrot - Variation of Certain Speculative Prices](/public/papers/T7_-1963_-Mandelbrot_-_Variation_of_Certain_Speculative_Prices.pdf)
 - [1985 - Mandelbrot - Self-affine fractals and fractal dimension](/public/papers/T7_-Mandelbrot_-1985-__Self-affine_fractals_and_fractal_dimension.pdf)
 - [2010 - Mandelbrot- Fractals in Financial Markets](/public/papers/T7_-Mandelbrot_-2010_-__Fractals_in_Financial_Markets.pdf)
+- [2013 - Where Do Thin Tails Come From](/public/papers/T8_-_Where_Do_Thin_Tails_Come_From.pdf)
 - [2023 - On single point forecasts for fat-tailed variables](/public/papers/T7_-_2023_-_On_single_point_forecasts_for_fat-tailed_variables.pdf)
 
 - [ - Fundamentals of Heavy Tails](/public/papers/T8_-The_Fundamentals_of_Heavy_Tails.pdf)
 - [2023 - The fundamentals of heavy tails  Properties, emergence, and estimation](/public/papers/T7_-_2023_-_The_fundamentals_of_heavy_tails__Properties,_emergence,_and_estimation.pdf)
 - [ - Statistical Consequences of Fat Tails](/public/papers/T7_-_Statistical_Consequences_of_Fat_Tails.pdf)
 - [2009- Lecturing birds on flying - Can mathematical theories destroy the financial markets](/public/papers/T8_-_2009-_Lecturing_birds_on_flying_-_Can_mathematical_theories_destroy_the_financial_markets.pdf)
-- [2015 - Black Swans and the Domains of Statistics](/public/papers/T8_-_2015_-_Black_Swans_and_the_Domains_of_Statistics.pdf)
+- [2015 - Black Swans and the Domains of Statistics](/public/papers/T8_-_2015_-_Black_Swans_and_the_Domains_of_Statistics.pdf) -->
 
 
-Module  Risk and Uncertainty
+<!-- Module  Risk and Uncertainty
 ---
 *Papers on general topics*
 - [2009 - The six mistakes executives make in risk management](/public/papers/T8_-_2009_-_The_six_mistakes_executives_make_in_risk_management.pdf)
@@ -148,7 +148,7 @@ Module  Risk and Uncertainty
 
 - [2015 - Decision making and planning under low levels of predictability](/public/papers/T8_-_2015_-_Decision_making_and_planning_under_low_levels_of_predictability.pdf)
 
-- [T7 - - - 2023 - MorganStanley - Methods to Assess Confidence Under Uncertainty](/public/papers/T7_-_2023_-_MorganStanley_-_Methods_to_Assess_Confidence_Under_Uncertainty.pdf)
+- [T7 - - - 2023 - MorganStanley - Methods to Assess Confidence Under Uncertainty](/public/papers/T7_-_2023_-_MorganStanley_-_Methods_to_Assess_Confidence_Under_Uncertainty.pdf) -->
 
 
 Module  Miscellanea
@@ -157,26 +157,26 @@ Module  Miscellanea
 
 **Summaries**
 - [1998 - Diebold - The past present and future of macroeconomic forecasting](/public/papers/T0_-_1998_-_Diebold_-_The_past_present_and_future_of_macroeconomic_forecasting.pdf)
-- [2015 - Time series forecasting for nonlinear and non-stationary processes: a review and comparative study](/public/papers/T0_-_Timeseriesforecastingfornonlinearandnonstationaryprocessesareviewandcomparativestudy.pdf)
+<!-- - [2015 - Time series forecasting for nonlinear and non-stationary processes: a review and comparative study](/public/papers/T0_-_Timeseriesforecastingfornonlinearandnonstationaryprocessesareviewandcomparativestudy.pdf)
 - [2017 - hansen - Time Series Econometrics in Macroeconomics and Finance](/public/papers/T0_-_2017_-_hansen_-_Time_Series_Econometrics_in_Macroeconomics_and_Finance.pdf)
 - [2021 - Time Series Analysis and Modeling to Forecast - a Survey ](/public/papers/T0_-_2021_-_Time_Series_Analysis_and_Modeling_to_Forecast_-_a_Survey_.pdf)
 - [2022 Forecast combinations](/public/papers/T0_-_2022_Forecast_combinations.pdf)
-- [- Time Series Analysis and Modeling to Forecast- a Survey](/public/papers/T0_-_Time_Series_Analysis_and_Modeling_to_Forecast-_a_Survey.pdf)
+- [- Time Series Analysis and Modeling to Forecast- a Survey](/public/papers/T0_-_Time_Series_Analysis_and_Modeling_to_Forecast-_a_Survey.pdf) -->
 
 
 
-**Ergodicity**
+<!-- **Ergodicity** -->
 
 <!-- - [2010 - Peters - Optimal leverage from non-ergodicity](/public/papers/T8_-_2010_-_Peters_-_Optimal_leverage_from_non-ergodicity.pdf)
 - [2011 - Option traders use (very) sophisticated heuristics, never the Black-Scholles model](/public/papers/T8_-_2011_-_Option_traders_use_(very)_sophisticated_heuristics,_never_the_Black-Scholles_model.pdf) -->
-- [2011 - Peters - Menger 1934 revisited](/public/papers/T8_-_2011_-_Peters_-_Menger_1934_revisited.pdf)
+<!-- - [2011 - Peters - Menger 1934 revisited](/public/papers/T8_-_2011_-_Peters_-_Menger_1934_revisited.pdf)
 - [2011 - Peters - The time resolution of the St. Petersburg Paradox](/public/papers/T8_-_2011_-_Peters_-_The_time_resolution_of_the_St._Petersburg_Paradox.pdf)
 - [2015 - Peters - Evaluating gambles using dynamics](/public/papers/T8_-_2015_-_Peters_-_Evaluating_gambles_using_dynamics.pdf)
 - [2017 -Gini estimation under infinite variance](/public/papers/T7_-_2017_-Gini_estimation_under_infinite_variance.pdf)
 - [2023 - Growing inequality in systems showing Zipf’s law](/public/papers/T7_-_2023_-_Growing_inequality_in_systems_showing_Zipf’s_law.pdf)
 
 - [2012 - Mathematical Definition, Mapping, and Detection of Fragility](/public/papers/T8_-_2012_-_Mathematical_Definition,_Mapping,_and_Detection_of_Fragility.pdf)
-- [2013 - Peters - Ergodicity breaking in geometric Brownian motion](/public/papers/T8_-_2013_-_Peters_-_Ergodicity_breaking_in_geometric_Brownian_motion.pdf)
+- [2013 - Peters - Ergodicity breaking in geometric Brownian motion](/public/papers/T8_-_2013_-_Peters_-_Ergodicity_breaking_in_geometric_Brownian_motion.pdf) -->
 <!-- - [T8 - - - 2011 - The Black Swan of Cairo](/public/papers/T8_-_2011_-_The_Black_Swan_of_Cairo.pdf) -->
 
 <!-- - [T8 - - - 2015 - Peters - An evolutionary advantage of cooperation](/public/papers/T8_-_2015_-_Peters_-_An_evolutionary_advantage_of_cooperation.pdf)
@@ -186,7 +186,7 @@ Module  Miscellanea
 - [T8 - - - 2020 - Peters - Leverage efficiency](/public/papers/T8_-_2020_-_Peters_-_Leverage_efficiency.pdf)
 - [T8 - - - Bitcoin, Currencies, and Fragility](/public/papers/T8_-_Bitcoin,_Currencies,_and_Fragility.pdf)
 - [T8 - - - Mark Spitznagel - Safe Haven  Investing for Financial Storms-Wiley (2021)](/public/papers/T8_-_Mark_Spitznagel_-_Safe_Haven__Investing_for_Financial_Storms-Wiley_(2021).pdf) -->
-**Volatility**
+<!-- **Volatility**
 - [1990 - Bollerslev - Modelling the coherence in short-run nominal exchange rates: a multivariate generalized ARCH model](/public/papers/T9_-_MODELOS_GARCH_-_PAPER_INICIAL.pdf)
 
 **Specific but without propper module**
@@ -200,14 +200,20 @@ Module  Miscellanea
 
 - [2022 - why do trees still outperform deep learning models for tabular data](/public/papers/T7_-_2022_-_why_do_trees_still_outperform_deep_learning_models_for_tabular_data.pdf)
 - [2023 -Forecasting Large Realized Covariance Matrices](/public/papers/T7_-_2023_-Forecasting_Large_Realized_Covariance_Matrices.pdf)
-- [The ontology of the Economic in Aristotle](/public/papers/T0_-_x_-The_ontology_of_the_Economic_in_Aristotle.pdf)
+- [The ontology of the Economic in Aristotle](/public/papers/T0_-_x_-The_ontology_of_the_Economic_in_Aristotle.pdf) -->
 
 
 ---
-##### <center> Class Slides </center>
+##### <center> GEC039 Course Material </center>
 ---
 
+**Python**
+- [Python Introduction](https://www.kevinsheppard.com/teaching/python/course/) - Kevin Sheppard - University of Oxford
+- [Scientific Python ](https://web.stanford.edu/class/cme193/syllabus.html) - Leah Collis  - Stanford University
+- [Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/pages/syllabus/) - Srini Devadas - Massachusetts Institute of Technology
 
+
+**Slides**
 - [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link)
 - [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link)
 - [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
@@ -216,15 +222,20 @@ Module  Miscellanea
 - [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link)
 - [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link)
 
----
-##### <center> Some Code & Data </center>
 
+**Data**
+- [Datos Argentina](https://datos.gob.ar/)
 
-**Data Repository**
 
 **Code**
 
+
+
+
+
+<!-- ---
 ##### <center> Reviews </center>
+---
 
 **2023**
 >*"Recomiendo la materia de Series de tiempo porque pienso que se dice o la opoinion en general es que es una materia muy dificil y que por eso nadie la cursa ni se anota, pero mi experiencia este cuatrimestre fue muy buena. Me gusto econometría y por eso decidi anotarme, los conceptos que aprendí son muy utiles pas que nada para desarrollar un perfil mas analitico y tambien pienso que a la hora de hacer la tesis, agregan mucho valor."*
@@ -237,7 +248,7 @@ Module  Miscellanea
 
 >*"Si no les gusta econometría no se anoten. No es una materia imposible pero te tiene que gustar"*
 
->*"La recomiendo si les gusto la materia econometría y les interesa programar"*
+>*"La recomiendo si les gusto la materia econometría y les interesa programar"* -->
 
 
 
