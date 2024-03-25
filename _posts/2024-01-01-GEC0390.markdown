@@ -5,17 +5,23 @@ date: 2024-01-01 00:00:01 +0900
 category:
 ---
 
-TIME SERIES
----
+
+# <center> Time Series </center>
+
+
 
 
 
 <!-- Greetings, time series enthusiasts!
 I'm thrilled to welcome you to this exciting voyage through the realm of time series analysis. As your guide, I extend a warm invitation to embark on this enlightening journey with me. This platform is your personal portal to a wealth of knowledge, constantly refreshed to enhance your learning experience. Here, you'll discover a curated collection of resources tailored to complement our studies, including thought-provoking papers, diverse datasets, and invaluable code snippets. My goal is to equip you with the tools and insights needed to excel in the fascinating world of time series analysis. So let's dive in together, explore the possibilities, and embark on this enriching adventure! -->
 
+<!-- ![alt text](/public/img/JIVB_3.png) -->
+<div style="text-align:center;">
+    <img src="/public/code/Jaki_Charrua_gatodelespacio.jpg" alt="alt text" width="250" height="250">
+</div>
 
 ---
-##### <center> GEC039 Course Resources </center>
+##### <center> GEC039  </center>
 ---
 
 **Bibliography**
@@ -85,18 +91,18 @@ Module I : Eons Ago
 
 *From the discovery of OLS to the first Nobel Prize Award*
 
-- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS**
+- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS** 🐱‍🚀
 - [1809 - Gauss Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
 - [1870 - Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
 - [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf)
 - [1905 - Einstein - Brownian Movement](/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf)
 - [1905 - Karl Pearson - The Problem of The Random Walk](/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf)
 - [1921 - Yule - On the time correlation problem](/public/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf)
-- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)  **MA**
-- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) **AR**
+- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)  **MA** 🐱‍🚀
+- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) **AR** 🐱‍🚀
 - [1931 - Walker - On Periodicity in Series of Related Terms](/public/papers/T2_-_1931_-_Walker.pdf)
 - [1939 - Wold - A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf)
-- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  **theorem**
+- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  **theorem** 🐱‍🚀
 - [1939 - Tinbergen statistical testing of business cycle theories](/public/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf)
 - [1940 - Tinbergen Econometric Business Cycle Research](/public/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf)
 - [1942 - Schumann- On yules method ](/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf)
@@ -118,11 +124,11 @@ Module II : **Maracanaço**
 
 - [1950 - Durbin Watson  - Testing for Serial Correlation in Least Square Regression](/public/papers/T1_-_1950_-_Durbin_Watson__-_Testing_for_Serial_Correlation_in_Least_Square_Regression.pdf)
 - [1951 - Durbin Watson - Exact Test of Serial Correlation](/public/papers/T1_-_1951_-_Durbin_Watson_-_Exact_Test_of_Serial_Correlation.pdf)
-- [1968 - Box Jenkins - Some advances in Forecasting and Control](/public/papers/T3_-_1968_-_Box_Y_Jenkins_-_Some_advances_in_Forecasting_and_Control.pdf)
+- [1968 - Box Jenkins - Some advances in Forecasting and Control](/public/papers/T3_-_1968_-_Box_Y_Jenkins_-_Some_advances_in_Forecasting_and_Control.pdf) **ARIMA** 🐱‍🚀
 - [1972 - Cooper - The Predictive Performance of Quarterly Econometric Models of the United States](/public/papers/T3_-1972_-cooper_-_The_Predictive_Performance_of_Quarterly_Econometric_Models_of_the_United_States.pdf)
 - [1972 - Naylor - Box-Jenkins methods  An alternative to Econometric Models](/public/papers/T3_-_1972_-_Naylor_-_Box-Jenkins_methods__An_alternative_to_Econometric_Models.pdf)
 - [1972 - Nelson - The prediction performance of the FRB-MIT-Penn model of the US](/public/papers/T3_-_1972_-_Nelson_-_The_prediction_performance_of_the_FRB-MIT-Penn_model_of_the_US.pdf)
-- [1976 - Lucas - Econometric policy evaluation A critique.](/public/papers/T2.5_-1976_-_Lucas_-_Econometric_policy_evaluation_A_critique..pdf) :star2:
+- [1976 - Lucas - Econometric policy evaluation A critique.](/public/papers/T2.5_-1976_-_Lucas_-_Econometric_policy_evaluation_A_critique..pdf) 🐱‍🚀
 
 
 Module III : **Sine Pater**
@@ -131,7 +137,7 @@ Module III : **Sine Pater**
 *Stationarity Tests, Unit Root Tests and Structural Breaks*
 
 
-- [1973 - Granger Newbold  Spurious regressions in econometrics](/public/papers/T4_-_1973_Granger_Newbold__Spurious_regressions_in_econometrics.pdf) :star2:
+- [1973 - Granger Newbold  Spurious regressions in econometrics](/public/papers/T4_-_1973_Granger_Newbold__Spurious_regressions_in_econometrics.pdf) 🐱‍🚀
 - [1979 - Dickey Fuller Distribution of the estimators for autoregressive time series](/public/papers/T4_-_1979_-_Dickey_Fuller_Distribution_of_the_estimators_for_autoregressive_time_series.pdf)
 - [1982 - Nelson Plosser - Trends and random walks in macroeconomic time series](/public/papers/T4_-1982_-_nelson_y_plosser_-_Trends_and_random_walks_in_macroeconomic_time_series.pdf)
 - [1989 - Perron - The great crash, the oil price shok and the unit root hypothesis](/public/papers/T4_-1989_-_perron_-_the_great_crash,_the_oil_price_shok_and_the_unit_root_hypothesis.pdf)
@@ -144,11 +150,11 @@ Module IV: **There is no Spoon**
 *The start of VAR*
 
 
-- [1977 - Sims Sargent- Business cycle modeling without pretending to have too much a priori economic theory](/public/papers/T6_-_VAR_-1977_-_Sims_Sargent-_Business_cycle_modeling_without_pretending_to_have_too_much_a_priori_economic_theory.pdf)
+- [1977 - Sims Sargent- Business cycle modeling without pretending to have too much a priori economic theory](/public/papers/T6_-_VAR_-1977_-_Sims_Sargent-_Business_cycle_modeling_without_pretending_to_have_too_much_a_priori_economic_theory.pdf) 🐱‍🚀
 - [1973 - Sims - Money, income, and causality](/public/papers/T6_-_VAR_-_1973_-_Sims_-_Money,_income,_and_causality.pdf)
-- [1980- Sims -Macroeconomics and Reality](/public/papers/T6_-_VAR_-_1980-_Sims_-Macroeconomics_and_Reality.pdf)
+- [1980- Sims -Macroeconomics and Reality](/public/papers/T6_-_VAR_-_1980-_Sims_-Macroeconomics_and_Reality.pdf) 🐱‍🚀
 - [1980- Sims - COMPARISON OF INTERWAR AND POSTWAR CYCLES](/public/papers/T6_-_VAR_-_1980-_Sims_-_COMPARISON_OF_INTERWAR_AND_POSTWAR_CYCLES.pdf)
-- [2013 - Qin- The contribution of SIMS to econometrics](/public/papers/T6_-_VAR_-_2013_-_The_contribution_of_SIMS_to_econometrics.pdf)
+- [2013 - Qin- The contribution of SIMS to econometrics](/public/papers/T6_-_VAR_-_2013_-_The_contribution_of_SIMS_to_econometrics.pdf)🐱‍🚀
 - [Stocks Watsok - Vector Autoregressions](/public/papers/T6_-_VAR_-_stocks&watsok_-_Vector_Autoregressions.pdf)
 
 
