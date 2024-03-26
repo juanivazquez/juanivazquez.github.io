@@ -20,5 +20,5 @@ Reach out to me on [linkedin](https://www.linkedin.com/in/jivb/)
 
 <!-- ![alt text](/public/img/JIVB_3.png) -->
 <div style="text-align:center;">
-    <img src="/public/img/JIVB_3.png" alt="alt text" width="100" height="100">
+    <img src="/public/img/JIVB_3.png" alt="alt text" width="100" height="100" style="border-radius: 20%;">
 </div>
