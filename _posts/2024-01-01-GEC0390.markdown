@@ -205,13 +205,21 @@ Module VI Miscellanea
 *Miscellanea*
 
 <!-- **Summaries** -->
-- [1998 - Diebold - The past present and future of macroeconomic forecasting](/public/papers/T0_-_1998_-_Diebold_-_The_past_present_and_future_of_macroeconomic_forecasting.pdf)
-<!-- - [2015 - Time series forecasting for nonlinear and non-stationary processes: a review and comparative study](/public/papers/T0_-_Timeseriesforecastingfornonlinearandnonstationaryprocessesareviewandcomparativestudy.pdf)
-- [2017 - hansen - Time Series Econometrics in Macroeconomics and Finance](/public/papers/T0_-_2017_-_hansen_-_Time_Series_Econometrics_in_Macroeconomics_and_Finance.pdf)
-- [2021 - Time Series Analysis and Modeling to Forecast - a Survey ](/public/papers/T0_-_2021_-_Time_Series_Analysis_and_Modeling_to_Forecast_-_a_Survey_.pdf)
-- [2022 Forecast combinations](/public/papers/T0_-_2022_Forecast_combinations.pdf)
-- [- Time Series Analysis and Modeling to Forecast- a Survey](/public/papers/T0_-_Time_Series_Analysis_and_Modeling_to_Forecast-_a_Survey.pdf) -->
 
+- [1998 - Diebold - The past present and future of macroeconomic forecasting](/public/papers/T0_-_1998_-_Diebold_-_The_past_present_and_future_of_macroeconomic_forecasting.pdf)
+
+
+<!-- silenciamos desde aca
+- [2015 - Time series forecasting for nonlinear and non-stationary processes: a review and comparative study](/public/papers/T0_-_Timeseriesforecastingfornonlinearandnonstationaryprocessesareviewandcomparativestudy.pdf)
+
+- [2017 - hansen - Time Series Econometrics in Macroeconomics and Finance](/public/papers/T0_-_2017_-_hansen_-_Time_Series_Econometrics_in_Macroeconomics_and_Finance.pdf)
+
+- [2021 - Time Series Analysis and Modeling to Forecast - a Survey ](/public/papers/T0_-_2021_-_Time_Series_Analysis_and_Modeling_to_Forecast_-_a_Survey_.pdf)
+
+- [2022 Forecast combinations](/public/papers/T0_-_2022_Forecast_combinations.pdf)
+
+- [- Time Series Analysis and Modeling to Forecast- a Survey](/public/papers/T0_-_Time_Series_Analysis_and_Modeling_to_Forecast-_a_Survey.pdf)
+silenciamos hasta aca -->
 
 
 <!-- **Ergodicity** -->
