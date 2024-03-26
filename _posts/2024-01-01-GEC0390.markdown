@@ -19,7 +19,8 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 
 <!-- ![alt text](/public/img/JIVB_3.png) -->
 <div style="text-align:center;">
-    <img src="/public/code/Jaki_Charrua_gatodelespacio.jpg" alt="alt text" width="250" height="250" style="border-radius: 50%;"">
+    <img src="/public/code/Jaki_Charrua_gatodelespacio.jpg" alt="alt text" width="250" height="250" style="border-radius: 30%;"">
+
 </div>
 
 ---
