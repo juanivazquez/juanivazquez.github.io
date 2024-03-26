@@ -17,10 +17,10 @@ category:
 <!-- Greetings, time series enthusiasts!
 I'm thrilled to welcome you to this exciting voyage through the realm of time series analysis. As your guide, I extend a warm invitation to embark on this enlightening journey with me. This platform is your personal portal to a wealth of knowledge, constantly refreshed to enhance your learning experience. Here, you'll discover a curated collection of resources tailored to complement our studies, including thought-provoking papers, diverse datasets, and invaluable code snippets. My goal is to equip you with the tools and insights needed to excel in the fascinating world of time series analysis. So let's dive in together, explore the possibilities, and embark on this enriching adventure! -->
 
+
 <!-- ![alt text](/public/img/JIVB_3.png) -->
 <div style="text-align:center;">
-    <img src="/public/code/Jaki_Charrua_gatodelespacio.jpg" alt="alt text" width="250" height="250" style="border-radius: 30%;"">
-
+    <img src="/public/code/Jaki_Charrua_gatodelespacio.jpg" alt="alt text" width="250" height="250" style="border-radius: 50%;">
 </div>
 
 ---
