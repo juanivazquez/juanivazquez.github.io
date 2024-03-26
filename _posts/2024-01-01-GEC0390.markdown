@@ -6,7 +6,9 @@ category:
 ---
 
 
-# <center> Time Series </center>
+<!-- # <center> Time Series </center> -->
+
+
 
 
 
@@ -38,17 +40,11 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 
 
 **Slides**
-- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link)
-- [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link)
-- [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
-- [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link)
-- [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link)
-- [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link)
-- [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link)
+[SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) || [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link) || [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link) || [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link) || [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link) ||
 
 
 **Data**
-- [Argentina](https://datos.gob.ar/) | [INDEC](https://www.indec.gob.ar/) | [BCRA](https://www.bcra.gob.ar/default.asp) | [MECON](https://www.argentina.gob.ar/economia)
+- [Argentina](https://datos.gob.ar/) || [INDEC](https://www.indec.gob.ar/) || [BCRA](https://www.bcra.gob.ar/default.asp) || [MECON](https://www.argentina.gob.ar/economia)
 - [Levendis](/public/data/levendis_stata_data.rar)
 - [Hyndman](/public/data/hyndman_data.rar)
 - [Enders](/public/data/db_enders.rar)
@@ -109,11 +105,8 @@ Module I : Eons Ago
 
 - [2001 - Qin - The Error Term in the History of Time Series Econometrics](/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf)
 - [2012 - Soyer Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf)
-- [2019 - Fooled by Correlation Common Misinterpretations in Social Sciences](/public/papers/T8_-2019_-_Fooled_by_Correlation_Common_Misinterpretations_in_Social_Sciences.pdf)
-<!-- - [2001 - Stanton - Galton Pearson and the Peas A Brief History of Linear Regression for Statistics Instructors](/public/papers/T1_-_2001_-_Stanton_-_Galton_Pearson_and_the_Peas_A_Brief_History_of_Linear_Regression_for_Statistics_Instructors.pdf)
-- [2021  -Krashniak - Francis Galton’s regression towards mediocrity and the stability of types](/public/papers/T1_-_2021__-Krashniak_-_Francis_Galton’s_regression_towards_mediocrity_and_the_stability_of_types.pdf)
-- [1996 - Maeshiro - Teaching Regressions with a Lagged Dependent Variable and Autocorrelated Disturbances](/public/papers/T1_-_LDV_-_1996_-_maeshiro_-_Teaching_Regressions_with_a_Lagged_Dependent_Variable_and_Autocorrelated_Disturbances.pdf)
-- [2006  - Keele-kelly -The Ins and Outs of Lagged Depenent Variables](/public/papers/T1_-_LDV_-_2006__-_Keele-kelly_-The_Ins_and_Outs_of_Lagged_Depenent_Variables.pdf) -->
+
+
 
 
 Module II : **Maracanaço**
@@ -256,7 +249,11 @@ Module VI Miscellanea
 - [The ontology of the Economic in Aristotle](/public/papers/T0_-_x_-The_ontology_of_the_Economic_in_Aristotle.pdf) -->
 
 
-
+<!-- - [2019 - Fooled by Correlation Common Misinterpretations in Social Sciences](/public/papers/T8_-2019_-_Fooled_by_Correlation_Common_Misinterpretations_in_Social_Sciences.pdf)
+- [2001 - Stanton - Galton Pearson and the Peas A Brief History of Linear Regression for Statistics Instructors](/public/papers/T1_-_2001_-_Stanton_-_Galton_Pearson_and_the_Peas_A_Brief_History_of_Linear_Regression_for_Statistics_Instructors.pdf)
+- [2021  -Krashniak - Francis Galton’s regression towards mediocrity and the stability of types](/public/papers/T1_-_2021__-Krashniak_-_Francis_Galton’s_regression_towards_mediocrity_and_the_stability_of_types.pdf)
+- [1996 - Maeshiro - Teaching Regressions with a Lagged Dependent Variable and Autocorrelated Disturbances](/public/papers/T1_-_LDV_-_1996_-_maeshiro_-_Teaching_Regressions_with_a_Lagged_Dependent_Variable_and_Autocorrelated_Disturbances.pdf)
+- [2006  - Keele-kelly -The Ins and Outs of Lagged Depenent Variables](/public/papers/T1_-_LDV_-_2006__-_Keele-kelly_-The_Ins_and_Outs_of_Lagged_Depenent_Variables.pdf) -->
 
 
 
