@@ -15,11 +15,12 @@ description:
 </div>
 
 ---
-##### <center> Philosophical Interventions </center>
+##### <center> Philosophical Activity </center>
 ---
 
 
-**Biblioteca Kierkegaard** [<<<](https://www.sorenkierkegaard.com.ar/es)
+[**Biblioteca Kierkegaard**](https://www.sorenkierkegaard.com.ar/es)
+---
 
 - [2010 - La Moneda Ética](/public/philo/2010_11_11_La_moneda_ética.pdf)  
 - [2022 - Para Distinguir un pie de un pie](/public/philo/2022_11_11_para_distinguir_un_pie_de_un_pie.pdf)  

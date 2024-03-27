@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GEC0390
-date: 2024-01-01 00:00:01 +0900
+date: 2024-01-01
 category:
 ---
 
@@ -49,8 +49,8 @@ Module I : Eons Ago
 - [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)  **MA** 🐱‍🚀
 - [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) **AR** 🐱‍🚀
 - [1931 - Walker - On Periodicity in Series of Related Terms](/public/papers/T2_-_1931_-_Walker.pdf)
-- [1939 - Wold - A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf)
-- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  **theorem** 🐱‍🚀
+- [1939 - Wold - A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf) **theorem**🐱‍🚀
+- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  
 - [1939 - Tinbergen statistical testing of business cycle theories](/public/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf)
 - [1940 - Tinbergen Econometric Business Cycle Research](/public/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf)
 - [1942 - Schumann- On yules method ](/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf)
@@ -328,4 +328,5 @@ Additional Resources
 
  *Econometrics*
  - PennState University  - [510 - Applied Time Series Analysis](https://online.stat.psu.edu/stat510/)
+
  - Ko Chiu Yu - [Technical Analysis with R](https://bookdown.org/kochiuyu/Technical-Analysis-with-R/)
