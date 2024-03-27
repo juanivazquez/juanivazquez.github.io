@@ -328,5 +328,5 @@ Additional Resources
 
  *Econometrics*
  - PennState University  - [510 - Applied Time Series Analysis](https://online.stat.psu.edu/stat510/)
-
+ - Heiss & Brunner - [Using R, Python and Julia for Introductory Econometrics](http://www.upfie.net/)
  - Ko Chiu Yu - [Technical Analysis with R](https://bookdown.org/kochiuyu/Technical-Analysis-with-R/)
