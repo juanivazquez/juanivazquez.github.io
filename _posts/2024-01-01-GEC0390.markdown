@@ -35,22 +35,30 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 Module I : Eons Ago
 ---
 
+*“All things originate from one another and vanish into one another
+According to necessity
+They give each other justice and recompense for injustice
+In conformity with the order of time.”
+-Anaximander
+
 *From the discovery of OLS to the first Nobel Prize Award*
 
-- [1805 - A.M. Legendre - A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS** 🐱‍🚀
-- [1809 - C.F. Gauss - Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
-- [1839 - W.R. Hamilton - Algebra as the Science of Pure Time](https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/PureTime/PureTime.pdf)
-- [1848 - W.R. Hamilton - Researches Respecting Quaternions](https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/ResQuat/ResQuat.pdf)
-- [1870 - F. Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
-- [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf)
-- [1905 - Einstein - Brownian Movement](/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf)
-- [1905 - Karl Pearson - The Problem of The Random Walk](/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf)
-- [1921 - Yule - On the time correlation problem](/public/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf)
-- [1927 - Slutzky - The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)  **MA** 🐱‍🚀
-- [1927 - Yule - On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) **AR** 🐱‍🚀
-- [1931 - Walker - On Periodicity in Series of Related Terms](/public/papers/T2_-_1931_-_Walker.pdf)
-- [1939 - Wold - A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf) **theorem**🐱‍🚀
-- [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  
+- 2003 - Leo A. Harrington - [Anaximander's Sayings](/public/papers/anaximander.pdf)
+
+- 1805 - A.M. Legendre - [A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS** 🐱‍🚀
+- 1809 - C.F. Gauss - [Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
+- 1839 - W.R. Hamilton - [Algebra as the Science of Pure Time](https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/PureTime/PureTime.pdf)
+- 1848 - W.R. Hamilton - [Researches Respecting Quaternions](https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/ResQuat/ResQuat.pdf)
+- 1870 - F. Galton - [Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
+- 1897 - Yule - [On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf)
+- 1905 - Einstein - [Brownian Movement](/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf)
+- 1905 - Karl Pearson - [The Problem of The Random Walk](/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf)
+- 1921 - Yule - [On the time correlation problem](/public/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf)
+- 1927 - Slutzky - [The Summation of Random Causes as the Source of Cyclic Processes](/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf)  **MA** 🐱‍🚀
+- 1927 - Yule - [On a Method of Investigating Periodicities](/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf) **AR** 🐱‍🚀
+- 1931 - Walker - [On Periodicity in Series of Related Terms](/public/papers/T2_-_1931_-_Walker.pdf)
+- 1939 - Wold - [A study in Analysis of Time Series](/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf) **theorem**🐱‍🚀
+- 2011 - Terence C. Mills - [Wold and the Russians](/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf)  
 - [1939 - Tinbergen statistical testing of business cycle theories](/public/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf)
 - [1940 - Tinbergen Econometric Business Cycle Research](/public/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf)
 - [1942 - Schumann- On yules method ](/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf)
@@ -280,8 +288,8 @@ Bibliography
 
 *Historical Datasets*
 - [Tycho Brahe's Mars](/public/data/mars.xls) | [Source](https://www.pafko.com/tycho/home.html) | [Original](http://www5.kb.dk/manus/vmanus/2011/dec/ha/object77724/da/#kbOSD-0=page:1)
-- [Piazzi's Ceres Obs of 1801](Ceres-Beobachtung_von_Piazzi.png)
-- [Galton's Height Obs](galton.zip)
+- 1801 - [Piazzi's Ceres Obs](/public/data/Ceres-Beobachtung_von_Piazzi.png)
+- [Galton's Height Obs](/public/data/galton.zip)
 - [Sun Spots](https://www.swpc.noaa.gov/products/solar-cycle-progression)
 
 
@@ -311,10 +319,10 @@ Code
  - [1989 - Pierre Perron](/public/code/rep_1989_perron.ipynb)
  - [1992 - Zivot & Andrews](/public/code/rep_1992_zivot_&_andrews.ipynb)
 
- Slides
+ <!-- Slides -->
  ---
 
- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) || [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link) || [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link) || [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link) || [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link) ||
+ <!-- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) || [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link) || [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link) || [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link) || [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link) || -->
 
 
 Additional Resources
