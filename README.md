@@ -10,7 +10,7 @@ permalink: /about/
     </div>
 </div>
 <!-- > You can download my resume [here](https://drive.google.com/file/d/1N5Ea73FBVAQFeGxi89mAZsCENvnxT8Ol/view?usp=sharing) <br> -->
-Reach out to me on [linkedin](https://www.linkedin.com/in/jivb/)
+Contact me [linkedin](https://www.linkedin.com/in/jivb/)
 
 <!-- My reading taste on [goodreads](https://www.goodreads.com/user/show/6853463-juan) -->
 

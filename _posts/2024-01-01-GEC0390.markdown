@@ -23,60 +23,6 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
     <img src="/public/code/Jaki_Charrua_gatodelespacio.jpg" alt="alt text" width="250" height="250" style="border-radius: 50%;">
 </div>
 
----
-##### <center> GEC039  </center>
----
-
-**Bibliography**
-- John D. Levendis - [Time Series Econometrics](https://www.amazon.com/-/es/Levendis/dp/3319982818)
-- James D. Hamilton - [Time Series Analysis](https://www.amazon.com/-/es/James-D-Hamilton-ebook/dp/B08DL8TCSB?ref_=ast_author_mpb)
-- Walter Enders - [Applied Econometric Time Series](https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics-ebook/dp/B00P6SS6RA)
-- Rob J. Hyndman - [Forecasting: Principles and Practice ](https://otexts.com/fpp3/)
-
-
-**Python**
-
-- Kevin Sheppard  - [Python Introduction](https://www.kevinsheppard.com/teaching/python/course/)
-- Leah Collis - [Scientific Python ](https://web.stanford.edu/class/cme193/syllabus.html)
-- Srini Devadas - [Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/pages/syllabus/)   
-
-
-**Slides**
-
-[SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) || [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link) || [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link) || [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link) || [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link) ||
-
-
-**Data**
-
-- [Argentina](https://datos.gob.ar/) || [INDEC](https://www.indec.gob.ar/) || [BCRA](https://www.bcra.gob.ar/default.asp) || [MECON](https://www.argentina.gob.ar/economia)
-- [Levendis](/public/data/levendis_stata_data.rar)
-- [Hyndman](/public/data/hyndman_data.rar)
-- [Enders](/public/data/db_enders.rar)
-
-**Code**
-
-1. Intro to Python
-- [Intro](/public/code/1_Introduction_to_Python.ipynb)
-- [Data Manipulation](/public/code/2_Data_Manipulation.ipynb)
-
-2. Hyndman
-- [FPP3 in python](/public/code/fpp3.rar)
-
-3.  Experiments
-- [Central Limit Theorem](/public/code/exp_0_central_limit_theorem.ipynb)
-- [Pearson Correlation](/public/code/exp_0_pearson_correlation.ipynb)
-- [Linear Regression](/public/code/exp_1_linear_regression_assumptions.ipynb)
- <!-- - [ARMA](/public/code/exp_2_ARMA_macrodemos.ipynb)' -->
-
-  <!-- - [Jaki_Charrua_gatodelespacio.jpg](/public/code/Jaki_Charrua_gatodelespacio.jpg), -->
-
-4. Replications
- - [1973 - Granger & Newbold](/public/code/rep_1973_granger_&_newbold.ipynb)
- - [1979 - Dickey & Fuller](/public/code/rep_1979-Dickey_Fuller_Distribution.ipynb)
- - [1982 - Nelson & Plosser](/public/code/rep_1982-nelson_&_plosser.ipynb)
- - [1989 - Pierre Perron](/public/code/rep_1989_perron.ipynb)
- - [1992 - Zivot & Andrews](/public/code/rep_1992_zivot_&_andrews.ipynb)
-
 
 ---
 ##### <center> Selected Papers </center>
@@ -91,9 +37,11 @@ Module I : Eons Ago
 
 *From the discovery of OLS to the first Nobel Prize Award*
 
-- [1805 - Legendre A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS** 🐱‍🚀
-- [1809 - Gauss Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
-- [1870 - Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
+- [1805 - A.M. Legendre - A new method](/public/papers/1.1_1805_Legendre_A_new_method.pdf)  **OLS** 🐱‍🚀
+- [1809 - C.F. Gauss - Theory of the motion of the heavenly bodies moving about the sun in conic sections](/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf)
+- [1839 - W.R. Hamilton - Algebra as the Science of Pure Time](https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/PureTime/PureTime.pdf)
+- [1848 - W.R. Hamilton - Researches Respecting Quaternions](https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/ResQuat/ResQuat.pdf)
+- [1870 - F. Galton - Regression Towards Mediocrity in Hereditary Stature](/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf)
 - [1897 - Yule - On the theory of correlation](/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf)
 - [1905 - Einstein - Brownian Movement](/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf)
 - [1905 - Karl Pearson - The Problem of The Random Walk](/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf)
@@ -108,7 +56,7 @@ Module I : Eons Ago
 - [1942 - Schumann- On yules method ](/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf)
 
 - [2001 - Qin - The Error Term in the History of Time Series Econometrics](/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf)
-- [2012 - Soyer Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf)
+- [2012 - S. Hogarth - The Ilussion of Predictability](/public/papers/ilussion.pdf)
 
 
 
@@ -121,7 +69,7 @@ Module II : **Maracanaço**
 
 - [1950 - Durbin Watson  - Testing for Serial Correlation in Least Square Regression](/public/papers/T1_-_1950_-_Durbin_Watson__-_Testing_for_Serial_Correlation_in_Least_Square_Regression.pdf)
 - [1951 - Durbin Watson - Exact Test of Serial Correlation](/public/papers/T1_-_1951_-_Durbin_Watson_-_Exact_Test_of_Serial_Correlation.pdf)
-- [1968 - Box Jenkins - Some advances in Forecasting and Control](/public/papers/T3_-_1968_-_Box_Y_Jenkins_-_Some_advances_in_Forecasting_and_Control.pdf) **ARIMA** 🐱‍🚀
+- [1968 - Box Jenkins - Some advances in Forecasting and Control](/public/papers/T3_-_1968_-_Box_Y_Jenkins_-_Some_advances_in_Forecasting_and_Control.pdf) **B&J Method** 🐱‍🚀
 - [1972 - Cooper - The Predictive Performance of Quarterly Econometric Models of the United States](/public/papers/T3_-1972_-cooper_-_The_Predictive_Performance_of_Quarterly_Econometric_Models_of_the_United_States.pdf)
 - [1972 - Naylor - Box-Jenkins methods  An alternative to Econometric Models](/public/papers/T3_-_1972_-_Naylor_-_Box-Jenkins_methods__An_alternative_to_Econometric_Models.pdf)
 - [1972 - Nelson - The prediction performance of the FRB-MIT-Penn model of the US](/public/papers/T3_-_1972_-_Nelson_-_The_prediction_performance_of_the_FRB-MIT-Penn_model_of_the_US.pdf)
@@ -147,10 +95,11 @@ Module IV: **There is no Spoon**
 *The start of VAR*
 
 
-- [1977 - Sims Sargent- Business cycle modeling without pretending to have too much a priori economic theory](/public/papers/T6_-_VAR_-1977_-_Sims_Sargent-_Business_cycle_modeling_without_pretending_to_have_too_much_a_priori_economic_theory.pdf) 🐱‍🚀
+
 - [1973 - Sims - Money, income, and causality](/public/papers/T6_-_VAR_-_1973_-_Sims_-_Money,_income,_and_causality.pdf)
+- [1977 - Sims Sargent- Business cycle modeling without pretending to have too much a priori economic theory](/public/papers/T6_-_VAR_-1977_-_Sims_Sargent-_Business_cycle_modeling_without_pretending_to_have_too_much_a_priori_economic_theory.pdf) 🐱‍🚀
 - [1980- Sims -Macroeconomics and Reality](/public/papers/T6_-_VAR_-_1980-_Sims_-Macroeconomics_and_Reality.pdf) 🐱‍🚀
-- [1980- Sims - COMPARISON OF INTERWAR AND POSTWAR CYCLES](/public/papers/T6_-_VAR_-_1980-_Sims_-_COMPARISON_OF_INTERWAR_AND_POSTWAR_CYCLES.pdf)
+- [1980- Sims - Comparison of Inter-War and Post-War Cycles](/public/papers/T6_-_VAR_-_1980-_Sims_-_COMPARISON_OF_INTERWAR_AND_POSTWAR_CYCLES.pdf)
 - [2013 - Qin- The contribution of SIMS to econometrics](/public/papers/T6_-_VAR_-_2013_-_The_contribution_of_SIMS_to_econometrics.pdf)🐱‍🚀
 - [Stocks Watsok - Vector Autoregressions](/public/papers/T6_-_VAR_-_stocks&watsok_-_Vector_Autoregressions.pdf)
 
@@ -294,4 +243,89 @@ silenciamos hasta aca -->
 
 
 
-<!-- ![alt text](/public/img/Legendre2.jpg) -->
+
+---
+##### <center> GEC039  </center>
+---
+
+Bibliography
+---
+
+- John D. Levendis - [Time Series Econometrics](https://www.amazon.com/-/es/Levendis/dp/3319982818)
+- James D. Hamilton - [Time Series Analysis](https://www.amazon.com/-/es/James-D-Hamilton-ebook/dp/B08DL8TCSB?ref_=ast_author_mpb)
+- Walter Enders - [Applied Econometric Time Series](https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics-ebook/dp/B00P6SS6RA)
+- Rob J. Hyndman - [Forecasting: Principles and Practice ](https://otexts.com/fpp3/)
+
+
+
+
+
+
+
+**Data**
+
+*Argentina*
+
+- [Argentina](https://datos.gob.ar/)
+- [INDEC](https://www.indec.gob.ar/)
+- [BCRA](https://www.bcra.gob.ar/default.asp)
+- [MECON](https://www.argentina.gob.ar/economia)
+
+
+*Bibliography*
+
+- [Levendis](/public/data/levendis_stata_data.rar)
+- [Hyndman](/public/data/hyndman_data.rar)
+- [Enders](/public/data/db_enders.rar)
+
+*Historical Datasets*
+- [Tycho Brahe's Mars](/public/data/mars.xls) | [Source](https://www.pafko.com/tycho/home.html) | [Original](http://www5.kb.dk/manus/vmanus/2011/dec/ha/object77724/da/#kbOSD-0=page:1)
+- [Piazzi's Ceres Obs of 1801](Ceres-Beobachtung_von_Piazzi.png)
+- [Galton's Height Obs](galton.zip)
+- [Sun Spots](https://www.swpc.noaa.gov/products/solar-cycle-progression)
+
+
+
+Code
+---
+
+1. Intro to Python
+- [Intro](/public/code/1_Introduction_to_Python.ipynb)
+- [Data Manipulation](/public/code/2_Data_Manipulation.ipynb)
+
+2. Hyndman
+- [FPP3 in python](/public/code/fpp3.rar)
+
+3.  Experiments
+- [Central Limit Theorem](/public/code/exp_0_central_limit_theorem.ipynb)
+- [Pearson Correlation](/public/code/exp_0_pearson_correlation.ipynb)
+- [Linear Regression](/public/code/exp_1_linear_regression_assumptions.ipynb)
+ <!-- - [ARMA](/public/code/exp_2_ARMA_macrodemos.ipynb)' -->
+
+  <!-- - [Jaki_Charrua_gatodelespacio.jpg](/public/code/Jaki_Charrua_gatodelespacio.jpg), -->
+
+4. Replications
+ - [1973 - Granger & Newbold](/public/code/rep_1973_granger_&_newbold.ipynb)
+ - [1979 - Dickey & Fuller](/public/code/rep_1979-Dickey_Fuller_Distribution.ipynb)
+ - [1982 - Nelson & Plosser](/public/code/rep_1982-nelson_&_plosser.ipynb)
+ - [1989 - Pierre Perron](/public/code/rep_1989_perron.ipynb)
+ - [1992 - Zivot & Andrews](/public/code/rep_1992_zivot_&_andrews.ipynb)
+
+ Slides
+ ---
+
+ [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) || [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link) || [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link) || [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link) || [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link) ||
+
+
+Additional Resources
+---
+
+
+*Python*
+ - Kevin Sheppard  - [Python Introduction](https://www.kevinsheppard.com/teaching/python/course/)
+ - Leah Collis - [Scientific Python ](https://web.stanford.edu/class/cme193/syllabus.html)
+ - Srini Devadas - [Programming for the puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/pages/syllabus/)   
+
+ *Econometrics*
+ - PennState University  - [510 - Applied Time Series Analysis](https://online.stat.psu.edu/stat510/)
+ - Ko Chiu Yu - [Technical Analysis with R](https://bookdown.org/kochiuyu/Technical-Analysis-with-R/)
