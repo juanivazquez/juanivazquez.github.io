@@ -319,7 +319,7 @@ Code
  - [1989 - Pierre Perron](/public/code/rep_1989_perron.ipynb)
  - [1992 - Zivot & Andrews](/public/code/rep_1992_zivot_&_andrews.ipynb)
 
- <!-- Slides -->
+ Slides
  ---
 
  <!-- [SdT0](https://docs.google.com/presentation/d/1moOVMYArMowjpXF3f02Ru1Ff4PGHC5t4eHvKKmb3c7k/edit?usp=drive_link) || [SdT1](https://docs.google.com/presentation/d/1lK4kqlX1ITiQ1a7aB3KOsc3lokvNItYXqJvrj4ktkn8/edit?usp=drive_link) || [SdT2](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT3](https://docs.google.com/presentation/d/1793AF1BEcRceKLCAgUzQDjer9ONECumPdJ5XcVveqCs/edit?usp=drive_link) || [SdT4](https://docs.google.com/presentation/d/1XY3443gzUELNhQvbSsSIxIR424BRq7nVcpYFCP6kYsU/edit?usp=drive_link) || [SdT5](https://docs.google.com/presentation/d/1O6nuQGuac0bTLAzqOpPSpSKj4q4S8cxqpT71SOFjM9Y/edit?usp=drive_link) || [SdT6](https://docs.google.com/presentation/d/1ZZeuN91BcNR542KzCorF4uvXAbBAcHK2TyMDSuuBBHc/edit?usp=drive_link) || -->
