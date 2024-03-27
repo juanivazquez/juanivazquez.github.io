@@ -35,11 +35,11 @@ I'm thrilled to welcome you to this exciting voyage through the realm of time se
 Module I : Eons Ago
 ---
 
-*“All things originate from one another and vanish into one another
+<!-- *“All things originate from one another and vanish into one another
 According to necessity
 They give each other justice and recompense for injustice
 In conformity with the order of time.”
--Anaximander
+-Anaximander -->
 
 *From the discovery of OLS to the first Nobel Prize Award*
 
