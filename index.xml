@@ -28,9 +28,9 @@
     
     <item>
       <title>Experiments</title>
-      <link>http://localhost:4321/docs/time-series/module-1/coding/experiments/</link>
+      <link>http://localhost:4321/docs/time-series/not_so_long_ago/coding/experiments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/module-1/coding/experiments/</guid>
+      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/coding/experiments/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -46,12 +46,12 @@
 &lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;02&lt;/td&gt;
 &lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;03&lt;/td&gt;
 &lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -211,9 +211,9 @@ Once the course is passed, students must take a final exam. The final exam grade
     
     <item>
       <title>Reading</title>
-      <link>http://localhost:4321/docs/time-series/module-1/reading/</link>
+      <link>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/module-1/reading/</guid>
+      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</guid>
       <description>&lt;p&gt;It is a challenging task to select an appropriate number of papers on such a sophisticated subject since many ideas on time series are scattered across various authors from different backgrounds and most papers can only be understood after a systematic review. However, after some hesitation I&amp;rsquo;ve reached the conclusion that the best of my efforts should be in service to become a dedicated and good-will assistant at your service instead of trying to be a judge of relevance. In this spirit I&amp;rsquo;ve shortlisted the following texts. I hope you find value in them.&lt;/p&gt;
 &lt;h3 id=&#34;selected-papers&#34;&gt;Selected Papers&lt;/h3&gt;
 &lt;h4 id=&#34;historical&#34;&gt;Historical&lt;/h4&gt;
@@ -468,17 +468,33 @@ Esta  operación, análoga a la anterior, también es dolorosa. Pero si de la pr
     
     <item>
       <title>Replications</title>
-      <link>http://localhost:4321/docs/time-series/module-1/coding/replications/</link>
+      <link>http://localhost:4321/docs/time-series/not_so_long_ago/coding/replications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/module-1/coding/replications/</guid>
-      <description></description>
+      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/coding/replications/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:4321/docs/time-series/module-1/assignment/</link>
+      <link>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/module-1/assignment/</guid>
+      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</guid>
       <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;em&gt;Unknown Unknowns&lt;/em&gt;. So lets get started.&lt;/p&gt;
 &lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
 &lt;div class=&#34;hb-steps&#34;&gt;
@@ -584,10 +600,31 @@ ii. Re-record it until you come up with a version that makes you proud and compl
     
     <item>
       <title>Implementations</title>
-      <link>http://localhost:4321/docs/time-series/module-1/coding/implementations/</link>
+      <link>http://localhost:4321/docs/time-series/not_so_long_ago/coding/implementations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/module-1/coding/implementations/</guid>
-      <description></description>
+      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/coding/implementations/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Introduction To Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Data Manipulation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
     </item>
     
     <item>
@@ -709,98 +746,6 @@ Fidias podía esculpir un león con sólo ver su garra&lt;/p&gt;
 Demos Testimonio frente a Nuestro Prójimo
 de que Necesitar del Dios del Amor es
 El Manantial del que brota la Verdad y la Vida, Vida en Abundancia!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Nvidia</title>
-      <link>http://localhost:4321/showcase/nvidia/</link>
-      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/showcase/nvidia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v2.0.0 Released!</title>
-      <link>http://localhost:4321/blog/v2.0.0/</link>
-      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blog/v2.0.0/</guid>
-      <description>&lt;p&gt;Hugo v2.0.0 is now available! This release includes new experimental features to try out, improvements to accessibility, the ability for plugins to customize image optimization in Markdown, and many more improvements and bug fixes.&lt;/p&gt;
-&lt;p&gt;Highlights include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;New config options&lt;/li&gt;
-&lt;li&gt;Improved accessibility&lt;/li&gt;
-&lt;li&gt;Customizable image optimization in Markdown&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thank you to everyone who contributed to this release!&lt;/p&gt;
-&lt;h2 id=&#34;new-features&#34;&gt;New Features&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
-&lt;h2 id=&#34;bug-fixes&#34;&gt;Bug Fixes&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-upgrade&#34;&gt;How to Upgrade&lt;/h2&gt;
-&lt;p&gt;Simply run the following command in your terminal:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo mod get -u github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind@main
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>v1.0.0 Released!</title>
-      <link>http://localhost:4321/blog/v1.0.0/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blog/v1.0.0/</guid>
-      <description>&lt;p&gt;Hugo v1.0.0 is now available! This release includes new experimental features to try out, improvements to accessibility, the ability for plugins to customize image optimization in Markdown, and many more improvements and bug fixes.&lt;/p&gt;
-&lt;p&gt;Highlights include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;New config options&lt;/li&gt;
-&lt;li&gt;Improved accessibility&lt;/li&gt;
-&lt;li&gt;Customizable image optimization in Markdown&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thank you to everyone who contributed to this release!&lt;/p&gt;
-&lt;h2 id=&#34;new-features&#34;&gt;New Features&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
-&lt;h2 id=&#34;bug-fixes&#34;&gt;Bug Fixes&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-upgrade&#34;&gt;How to Upgrade&lt;/h2&gt;
-&lt;p&gt;Simply run the following command in your terminal:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo mod get -u github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind@main
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Community</title>
-      <link>http://localhost:4321/community/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/community/</guid>
-      <description>&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
-&lt;p&gt;Get support fast. Hugo Blox has the largest Hugo community on Discord, consisting of thousands of creators, developers, and startups.&lt;/p&gt;
-&lt;h2 id=&#34;docs&#34;&gt;Docs&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;View the &lt;a href=&#34;https://docs.hugoblox.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;chat&#34;&gt;Live Chat&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Join the &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Online Chat&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;#using-hugo-blox&lt;/em&gt; for user help&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;#contributors&lt;/em&gt; for contributing help&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;feature-requests&#34;&gt;Feature requests&lt;/h2&gt;
-&lt;p&gt;For new feature requests, create a post on our &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Issues&lt;/a&gt;. You can also upvote existing feature requests with a 👍&lt;/p&gt;
-&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
-&lt;p&gt;Follow us so you are the first to know when new features and templates are launched:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Subscribe to the &lt;em&gt;#announcement&lt;/em&gt; channel on Discord&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/GetResearchDev&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Follow us on Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://hugoblox.com/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Subscribe to the Hugo Blox blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;further-resources&#34;&gt;Further Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Forums&lt;/a&gt; for help installing Hugo and resolving Hugo error messages&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
