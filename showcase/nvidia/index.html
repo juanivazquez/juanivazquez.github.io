@@ -1,0 +1,976 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 4, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="light">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="nvidia.com" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://juanivb.github.io/showcase/nvidia/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/blue.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://juanivb.github.io/showcase/nvidia/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="Juani Vázquez Broquá" />
+  <meta property="og:url" content="https://juanivb.github.io/showcase/nvidia/" />
+  <meta property="og:title" content="Nvidia | Juani Vázquez Broquá" />
+  <meta property="og:description" content="nvidia.com" /><meta property="og:image" content="https://juanivb.github.io/showcase/nvidia/featured.webp" />
+    <meta property="twitter:image" content="https://juanivb.github.io/showcase/nvidia/featured.webp" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2024-02-17T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2024-02-17T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  <title>Nvidia | Juani Vázquez Broquá</title>
+
+  
+  
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format("woff2");
+    }
+  </style>
+
+  
+
+  
+
+  
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Juani Vázquez Broquá">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 98.9 115" x="0px" y="0px"><defs><style>.cls-1{fill:#000000;}</style></defs><path class="cls-1" d="M40.1,64.1c6.9-.8,8.7-5.7,13.2-11,1.9-2.2,3.2-4.9,6-8.3a6.5,6.5,0,0,1,5.8-2.6c3.3,0,4.4-.3,6.2,1.6,5.1,5.7,8.2,12.1,6.7,19.9a20.2,20.2,0,0,1-2.8,7c-1.3,2.1-2.9,4.2-3.4,6.7a2.3,2.3,0,0,1-2.6,2c-5-1.1-6.7-1.4-13.2-.2-1.1.2-1.2-2.6.7-3.7s3.1-1.2,3.1-1.4-3.3-1.5-4.7-5.9a11.1,11.1,0,0,1,.5-8A7.7,7.7,0,0,1,59.9,56a7.1,7.1,0,0,1,6.2.3c1.8.9,3.4,2,5.5,3.3-4.4-5.5-10.9-6.5-14.9-2.4S52.4,69.3,58,73.7c-1.7.8-2.7,1.5-3.2,2.4s-1.2,2.3,0,3.7l-2.5,1c-2.9,1-8.5,2.1-7.9,6.1-2.6,3.1-6.3,4.5-9.6,6.9-1.2.9-2.4,1.6-3.8,2.5-.9-1.8,0-3,1.1-4.3A54.4,54.4,0,0,0,36,86.5a1.6,1.6,0,0,0,.1-1.6c-3.1-4.5-2.3-9-.1-13.4M74.3,59.4l.5-.2c-.3-.6-.5-1.3-.9-1.5a21.1,21.1,0,0,0-3.3-1.8l-3-1.2v.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M25.7,16.4a22.4,22.4,0,0,0-11,6.5,2.9,2.9,0,0,1-2.1.3l-3.9-.8a15.7,15.7,0,0,0,.5,3.7,18.2,18.2,0,0,1,.7,9A13.9,13.9,0,0,0,20.2,50.4l2.3.8C13.2,51.7,4,45.1,1.3,36.3S.3,19.5,6.4,12.8,21,2.8,30.6,5,46.2,15.7,46.7,24.6a7.5,7.5,0,0,1-.3,1.7c-3.2-4.7-7.4-7.6-12.1-10.1-2.2-1.3-3.9-3.6-5.9-5.4a20.3,20.3,0,0,0-2.6-1.1,15.5,15.5,0,0,0-.4,2.9C25.4,13.8,25.6,15.1,25.7,16.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.1,34a5.2,5.2,0,0,1,1-1.1c2.1-1.9,4.5-3.3,7.5-3.1s7.1,1,8.4,3.9.5,6.9-1.7,9.6a8,8,0,0,1-2.9,2.3,9.8,9.8,0,0,1-6.1.7h-.7a7.6,7.6,0,0,1-3.5-1.5c-2.8-2.2-5.7-5.4-2.9-9.6Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.9,59.9c-1.2,1.3-3.1,2.9-5,2.1s-1.5-3.9-1-5.5C41.2,52.5,48.9,56.4,45.9,59.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M42.8,46.2A52.3,52.3,0,0,0,38.9,57c-1.1,4,2.4,6.1-.7,6.3s-6.5-3.4-10.7-6.8a20.5,20.5,0,0,0,6.7-2.8c1.4-1.1,2.6-2.4,3.9-3.6l-.3-.3a49.1,49.1,0,0,1-5.5,3.8,19.9,19.9,0,0,1-4.4,1.7h-.3l-1,.4s-2.5-1.5-1.2-1.7a26.9,26.9,0,0,0,5.3-2c9.4-4.6,14.1-10,17.5-20.2,1.2-.4,1.3.9,1,1.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M20.8,24.1a5.6,5.6,0,0,1,7.3-3.2c3.2,1.1,5.4,4.6,4.6,7.4a6.6,6.6,0,0,1-7.5,4.3,4,4,0,0,0,1.4-5.3C25.5,24.9,23.6,23.6,20.8,24.1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M93.5,50.7c.6-.3,7.1-6.3.7,1-2.2,2.6-3.5,4.1-6.6,5.2s-5.2-1.7-7.4-3.8a.7.7,0,0,1,0-.9l2.7-2.9a1.6,1.6,0,0,1,1.5-.1l3.2,1.3C90.2,51.7,91.1,51.8,93.5,50.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M24.2,52.2c11.8-5,20.3-12.9,23.4-25.9l.6.2a8.7,8.7,0,0,1-.1,2.3A32.5,32.5,0,0,1,33,49.3a53.8,53.8,0,0,1-6.7,3.6c-.6.2-1.5.5-2.1.1S23.9,52.3,24.2,52.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M54.5,47.9c.6-2.1-5.4-4.2-8.6-5.4,1.3-4.1,2.2-4.5,6.2-2.7a12.3,12.3,0,0,1,3.1,1.9C57.8,43.6,56.5,45.5,54.5,47.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.7,53.9a.5.5,0,0,1,.5,0l3.5,3a5.9,5.9,0,0,0,2.6,1c.4.1.7.2.6.5a22.4,22.4,0,0,1-5.6,6.8c-.3.3-.6.3-.8,0a1.4,1.4,0,0,1-.2-.6c.4-3.5,1.5-6.8-.8-10a.4.4,0,0,1,.2-.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M13.5,31.8c-.5,2.9-.3,5.5,3.1,6.5C15.3,40,14,39.8,13.1,38A6.6,6.6,0,0,1,13.5,31.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M57.1,43c.6-2-5.4-4.2-8.6-5.4,1.3-4,2.2-4.5,6.2-2.7a20.7,20.7,0,0,1,3.2,1.9C60.4,38.7,59.1,40.6,57.1,43Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M49.5,27.9c-1.2.5.7,4.7,1.2,4.7a7.8,7.8,0,0,1,3.5.5,11.8,11.8,0,0,1,3.9,2.3,7.9,7.9,0,0,1,3.2,5.9c0,.5,2.1-.8,7.3-.1,0,0-2.9-3.9-5.7-7a27,27,0,0,0-6.8-5.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M26.6,68.5a18.2,18.2,0,0,0-3.1-.4c-.4,0-.8.3-.7.7a6.4,6.4,0,0,0,.3,2c.6,2.4,2.5,2.9,4.5,1.4.1,0,.1,0,.1-.1a4.7,4.7,0,0,0,1-1.1.7.7,0,0,0-.1-1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.6,66.7a10.4,10.4,0,0,1,2.5,2l.5-.8c.9-2,2.1-3.9,2.7-5.3l-6.3-5c-1.1-.9-2-.6-2.3.8s-1.2,5.1-1.6,7.7A25.9,25.9,0,0,1,27.6,66.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.2,67.4a21.1,21.1,0,0,0-4.1-.6c-.1,0-.1.1-.2.2v.3h0c0,.1,0,.2.1.2a18.9,18.9,0,0,1,4.1.6,8.1,8.1,0,0,1,2.3,1.8c.1,0,.2,0,.2-.1l.2-.3v-.2A9.4,9.4,0,0,0,27.2,67.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M53.2,46.5a11.9,11.9,0,0,0-2.4-1.2s1.3.5-1.3,4.9l-2.9,4.2a8.2,8.2,0,0,1,1.6,2.5c1.4-2.1,5.6-8.5,5.8-8.6A2.1,2.1,0,0,0,53.2,46.5Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M50.2,45c-.3-.3-4.5-1.9-4.5-1.9s-1.2,1.9-2.3,4.1a25.2,25.2,0,0,0-1.9,5.7,6.4,6.4,0,0,1,3.9.7l.6.4a46.7,46.7,0,0,0,2.9-4.2C49.8,48.1,51.4,46.6,50.2,45Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M47.4,56.8h0c0-.2-.1-.3-.2-.5h0a.8.8,0,0,1-.2-.4h0l-.3-.4h0a.1.1,0,0,1-.1-.1h-.2c0-.1-.1-.1-.1-.2h-.1a.1.1,0,0,0-.1-.1h0c0-.1-.1-.1-.1-.2h-.4a.1.1,0,0,0-.1-.1h-.7a.1.1,0,0,0-.1-.1h-.2c0-.1,0-.1-.1-.1H41.2v.4c-.1.1,0,.2.2.2a4.8,4.8,0,0,1,3.4.7,4.2,4.2,0,0,1,2.3,3,.2.2,0,0,0,.3,0l.4-.5A2.5,2.5,0,0,0,47.4,56.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.6,27.2a14.4,14.4,0,0,0-4.8-5.8l-5.6,4.9a7.9,7.9,0,0,0-2,2.5c-1.3,2.8-4.7,5-7.6,4.6a7.6,7.6,0,0,1-6-6.2c-.3-2.1-.6-4.2-.9-6.6-5.5,3.3-8.9,10.7-8,17.1.6,4.4,2.3,8.2,6.2,10.3s5.5,1.6,8.3,2.4A34.7,34.7,0,0,0,45.5,29,2.8,2.8,0,0,0,45.6,27.2ZM16.4,40.1a3.6,3.6,0,0,1-2.8.4c-3.7-2.8-2-8.5-.4-9.9a2.2,2.2,0,0,1,3.2,0C19,32.7,19.1,38,16.4,40.1Zm11.2-1.7h-.7l-.7.2-.7.2h0a.1.1,0,0,0-.1.1h-.1l-.3.2-.3.2h-.1a.1.1,0,0,1-.1.1l-.3.3h-.1c-.1.1-.2.2-.2.3s-.1.1-.1.2h-.1c-.1.3-.1.5-.2.8a.4.4,0,0,1-.1.3h0V42c0,.2-.1.5-.1.8a.4.4,0,0,1-.4.4c-.2,0-.5-.2-.5-.4a12,12,0,0,1,.3-2,3.5,3.5,0,0,1,.8-1.6,5.2,5.2,0,0,1,1.1-1,6.6,6.6,0,0,1,3-.7.5.5,0,0,1,.5.4A.5.5,0,0,1,27.6,38.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M99,40.7a18.8,18.8,0,0,0-1.9-5.8.4.4,0,0,0-.7.2c.1,4.4-.7,7.3-2.7,9.3s-4.7,3.4-9.2,3.2c-.3,0-.6.5-.3.6,5.8,2.3,7.4,3.7,11,.3,1-.9,3-2,3.5-3.4l.3-1.4Z" transform="translate(-0.1 -4.3)"/><text x="0" y="107" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Raylighx</text><text x="0" y="112" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ml-auto mr-6">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Home</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/docs/"
+        >Writing</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      
+<div class="mx-auto flex max-w-screen-xl">
+  
+<div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/80 hidden"></div>
+
+<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] lg:hidden xl:block">
+  
+  <div class="px-4 pt-4 lg:hidden">
+    
+    
+  </div>
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+    <ul class="flex flex-col gap-1 lg:hidden">
+      
+      
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/"
+    
+  >Documentation
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/"
+    
+  >Not So Long Ago
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/reading/"
+    
+  >Reading
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/assignment/"
+    
+  >Assignment
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/module-1/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/showcase/"
+    
+  >Showcase
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/showcase/nvidia/"
+    
+  >Nvidia
+    </a>
+  
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/blog/"
+    
+  >Blog
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/blog/v2.0.0/"
+    
+  >v2.0.0 Released!
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/blog/v1.0.0/"
+    
+  >v1.0.0 Released!
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/community/"
+    
+  >Community
+    </a></li>
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="https://juanivazquez.github.io/"
+    target="_blank" rel="noreferer"
+  >This is Me ↗</a></li>
+    
+    </ul>
+
+    <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
+
+</aside>
+  
+
+
+<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+
+  <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+
+      
+
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Nvidia</h1>
+
+      <div class="mt-4 mb-16 text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Feb 17, 2024</span>
+        
+
+        
+        <span class="mx-1">·</span>
+        <span class="mx-1">
+          0 min read
+        </span>
+        
+      </div>
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 464px;">
+        <div style="position: relative">
+          <img src="/showcase/nvidia/featured_hu8504a8dc8c9c9c7a8af1bb0c7a9547a7_69890_2694d720e4d497b302a0fb1ee2fb82ce.webp" width="720" height="464" alt="" class="featured-image">
+          
+        </div>
+      </div>
+      
+
+      <div class="prose prose-slate lg:prose-xl dark:prose-invert">
+        
+      </div>
+
+      
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-02-17T00:00:00.000Z">
+    <span>Last updated on</span>
+    Feb 17, 2024</time>
+
+      <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
+        
+        <div class="max-w-prose print:hidden">
+  
+  
+
+  
+
+
+  
+<section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjuanivb.github.io%2Fshowcase%2Fnvidia%2F&amp;text=Nvidia"
+    title="X"
+    aria-label="X"
+    id="share-link-x"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjuanivb.github.io%2Fshowcase%2Fnvidia%2F&amp;t=Nvidia"
+    title="Facebook"
+    aria-label="Facebook"
+    id="share-link-facebook"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+    
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="mailto:?subject=Nvidia&amp;body=https%3A%2F%2Fjuanivb.github.io%2Fshowcase%2Fnvidia%2F"
+    title="Email"
+    aria-label="Email"
+    id="share-link-email"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fjuanivb.github.io%2Fshowcase%2Fnvidia%2F&amp;title=Nvidia"
+    title="LinkedIn"
+    aria-label="LinkedIn"
+    id="share-link-linkedin"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="whatsapp://send?text=Nvidia%20https%3A%2F%2Fjuanivb.github.io%2Fshowcase%2Fnvidia%2F"
+    title="WhatsApp"
+    aria-label="WhatsApp"
+    id="share-link-whatsapp"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="m187.58 144.84-32-16a8 8 0 0 0-8 .5l-14.69 9.8a40.55 40.55 0 0 1-16-16l9.8-14.69a8 8 0 0 0 .5-8l-16-32A8 8 0 0 0 104 64a40 40 0 0 0-40 40 88.1 88.1 0 0 0 88 88 40 40 0 0 0 40-40 8 8 0 0 0-4.42-7.16ZM152 176a72.08 72.08 0 0 1-72-72 24 24 0 0 1 19.29-23.54l11.48 23L101 118a8 8 0 0 0-.73 7.51 56.47 56.47 0 0 0 30.15 30.15A8 8 0 0 0 138 155l14.61-9.74 23 11.48A24 24 0 0 1 152 176ZM128 24a104 104 0 0 0-91.82 152.88l-11.35 34.05a16 16 0 0 0 20.24 20.24l34.05-11.35A104 104 0 1 0 128 24Zm0 192a87.87 87.87 0 0 1-44.06-11.81 8 8 0 0 0-6.54-.67L40 216l12.47-37.4a8 8 0 0 0-.66-6.54A88 88 0 1 1 128 216Z"/></svg>
+  </a>
+  
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+
+<div class="flex pt-12 pb-4">
+  
+  
+  <img
+    class="mr-4 h-24 w-24 rounded-full"
+    width="96"
+    height="96"
+    alt=""
+  src="/author/avatar_hu3c64bd0f98018e2d901b7c60447ac42e_1387900_192x192_fill_q85_lanczos_center.jpg"
+  loading="lazy"
+  />
+  
+  <div class="place-self-center">
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Authors
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      
+      
+      
+    </div>
+
+    
+
+
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-300">My research interests include distributed robotics, mobile computing and programmable matter.</div>
+    
+
+    <div class="text-2xl sm:text-lg pt-1">
+
+      
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+  
+
+
+  
+
+
+
+</div>
+
+      </div>
+
+    </main>
+  </article>
+</div>
+
+    </div>
+    <div class="page-footer">
+      
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

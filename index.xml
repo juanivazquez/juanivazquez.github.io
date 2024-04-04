@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home | Juani Vázquez Broquá</title>
+    <link>https://juanivb.github.io/</link>
+      <atom:link href="https://juanivb.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Home</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://juanivb.github.io/media/logo.svg</url>
+      <title>Home</title>
+      <link>https://juanivb.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://juanivb.github.io/docs/getting-started/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/getting-started/</guid>
+      <description>&lt;p&gt;👋 Welcome to my personal website, where I curate all my writing activities under one roof. Whether you&amp;rsquo;re interested in exploring time series analysis, delving into coding tutorials, pondering philosophical musings, or simply enjoying some thoughtful blogging, you&amp;rsquo;ve come to the right place.&lt;/p&gt;
+&lt;p&gt;Currently, I&amp;rsquo;m diligently crafting an online Time Series Course to share my expertise with learners worldwide. Stay tuned for updates on its release!&lt;/p&gt;
+&lt;p&gt;Your feedback and suggestions are invaluable to me as I strive to create valuable content tailored to your interests. Feel free to reach out with any ideas or suggestions you may have.&lt;/p&gt;
+&lt;p&gt;Thank you for visiting, and I hope you find something inspiring during your time here.&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;p&gt;JIVB&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>La Moneda Ética</title>
+      <link>https://juanivb.github.io/docs/guide/la_moneda_etica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/guide/la_moneda_etica/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;¿Es posible una aproximación económica a la obra de Kierekgaard?&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;introducción&#34;&gt;Introducción&lt;/h3&gt;
+&lt;p&gt;¿Cuál es el sentido de una aproximación sistemática a un pensador que rechaza lo sistemático? La respuesta a esta pregunta va a depender de la capacidad del sistema de incorporar al pensador, o bien de la capacidad del pensador de rechazar al sistema que trata de absorberlo. En esta exposición se intenta acompañar esta última alternativa –es decir, que lo económico es incapaz de capturar a Kierkegaard- donde el valor de lo expuesto a continuación proviene de mostrar los efectos económicos que este rechazo implica.
+La Economía es una ciencia especial el al menos un sentido: su incapacidad para alcanzar conclusiones contrastables a través de métodos experimentales impide que las diversas teorías económicas sean algo evidente, lo que hace que la seriedad de una teoría económica sea evaluada en función de la consistencia lógica de las relaciones que propone y la adecuación a “la realidad” de los enunciados antropológicos a partir de los cuales se las construye. Dicho de otra forma, una teoría económica es una teoría sin evidencia concluyente. Esto hizo que muchos economistas incorporaran conocimientos provenientes de otras ciencias (como las matemáticas, la física y la biología) a sus teorías, en un intento por conseguir la aprobación del mundo científico. En este sentido la Economía buscó compensar su falta autoridad –esa autoridad sólo da la evidencia-, haciendo uso de elementos de otras ciencias. Así fue como la Economía consiguió que los países más poderosos y las instituciones académicas más respetadas crearan ministerios y premios en su honor; todo esto –¡y esta es la hazaña!- sin que se supiera a ciencia cierta lo que la Economía es. Lo que sigue es un estudio de la ética que propone Kierkegaard a la luz de la Teoría de la decisión, y una posible interpretación de sus efectos sobre el mundo económico.&lt;/p&gt;
+&lt;h4 id=&#34;los-supuestos&#34;&gt;Los Supuestos&lt;/h4&gt;
+&lt;p&gt;Repasemos los tres principales supuestos de un proceso de decisión. En primer lugar están las alternativas, que se diferencian según los beneficios que se pueden esperar de cada una de ellas. En segundo lugar está el criterio de decisión en virtud del cual el elector elige, lo que la mayoría de las veces suele identificarse con el llamado principio de maximización: “cuanto más, mejor”. En último lugar está la información que el elector conoce al respecto de las alternativas, es decir lo que sabe de las probabilidades y beneficios de cada una de ellas. A modo de ilustración podríamos imaginar el caso de una persona que busca trabajo y debe elegir a una de dos entrevistas agendas a la misma hora. Si suponemos que los dos trabajos son idénticos, esta persona va a decidirse teniendo en cuenta qué trabajo le pagaría una mejor remuneración y cuáles son las probabilidades de ser contratado en cada caso. El criterio de decisión sería el principio de maximización, según el cual, “cuanto mayor sea el salario, mejor”. Como se puede ver en el ejemplo mencionado, lo decisivo para que el elector pueda elegir es que las alternativas sean conmensurables, que exista una medida que nos permita encontrar un norte.&lt;/p&gt;
+&lt;h4 id=&#34;la-fe-en-la-apuesta&#34;&gt;La Fe en la Apuesta&lt;/h4&gt;
+&lt;p&gt;La relación entre la Fe y la Teoría de la decisión se remonta hasta los orígenes de ésta última. El antecedente es la conocida Apuesta de Pascal, según la cual lo óptimo para una persona sería vivir bajo el supuesto de que Dios existe –es decir, elegir creer- al comparar los costos y los beneficios que cada alternativa (creer o no creer) trae aparejados. Es fácil ver que el énfasis de la apuesta está puesto en los beneficios de creer que Dios existe, independientemente de la veracidad del supuesto. Es decir que el valor de la apuesta es señalar la elección más conveniente, lo que es distinto de decir cuál es la verdadera. Sin embargo, la facilidad con que puede modificarse la apuesta para alcanzar la conclusión contraria (por ejemplo, modificando los beneficios o las probabilidades) hizo que la apuesta fuera objeto de controversias por siglos.&lt;/p&gt;
+&lt;p&gt;A primera vista podría pensarse que la apuesta de Pascal es una invitación a creer, aunque sería más preciso decir que lo que la apuesta en realidad hace, es invitarnos a elegir vivir como si Dios existiera. Como la elección debe realizarse en virtud de los beneficios la persona va a elegir siempre una pantomima: vivir como si Dios existiera o como si no lo hiciera. Imaginemos el caso de un enfermo que sabe que va a morir dentro de dos días. Él podría cosechar fácilmente los frutos de la vida eterna (los pagos esperados) en unas pocas horas; lo único que debe hacer es creer en Dios durante dos días: hoy, mañana y después la eternidad. ¡Pero no! Esto sería imposible para el que quisiera creer en virtud de los beneficios esperados; nadie va a saber mejor que el enfermo cuáles son los costos y los beneficios de cada alternativa, pero de eso no se puede desprender que el elector crea. Así como no se puede llegar de la indeterminación a la determinación partiendo de la determinación, la apuesta no nos va a permitir saber qué camino recorrer para llegar a la Fe.&lt;/p&gt;
+&lt;h4 id=&#34;el-problema&#34;&gt;El Problema&lt;/h4&gt;
+&lt;p&gt;La apuesta pascaliana asume a la Fe como un supuesto al dividir las alternativas entre creer y no creer. Pero sería imposible realizar la elección de la Fe en virtud de los beneficios esperados, porque de esta forma la Fe dejaría de ser el fin para pasar a ser un medio, y en ese instante dejaría de ser Fe. Por lo tanto, podemos concluir que el principal problema de la apuesta pascaliana no son los beneficios ni las probabilidades que asigna a las alternativas, sino que nos invite a elegir la Fe en virtud de otro criterio de decisión, cuando en realidad la Fe es un criterio de decisión último y no puede ser elegida en virtud de un criterio de decisión alternativo. Dicho de otra forma, la apuesta de Pascal se equivoca al no reconocer que la Fe es un criterio de decisión y que el problema de elegir el criterio de decisión último no puede resuelto sin cuidado. Señalemos dos errores comunes:&lt;/p&gt;
+&lt;h5 id=&#34;error-1-elegir-el-criterio-de-decisión-último-en-base-a-los-beneficios-de-las-alternativas&#34;&gt;Error 1: Elegir el criterio de decisión último en base a los beneficios de las alternativas&lt;/h5&gt;
+&lt;p&gt;Elegir el criterio en base a los beneficios es reconocer que las alternativas tienen un valor intrínseco, y que su valor no surge del criterio de decisión sino de sí mismas. Esta manera de pensar tiene sentido únicamente si reconocemos una diferencia cualitativa entre las alternativas, pero si admitimos esta diferencia cualitativa estaríamos comparando lo incomparable; lo decisivo en este caso es la diferencia cualitativa. En cambio, si reconocemos que los bienes comparten la misma cualidad, lo decisivo pasa a ser el criterio de decisión.&lt;/p&gt;
+&lt;h5 id=&#34;error-2-elegir-el-criterio-de-decisión-último-en-base-a-un-criterio-de-decisión-alternativo&#34;&gt;Error 2: Elegir el criterio de decisión último en base a un criterio de decisión alternativo&lt;/h5&gt;
+&lt;p&gt;La racionalidad económica consiste en que el elector elija consistentemente en virtud de un criterio de decisión. Pero cuando la elección se centra en la elección de un criterio de decisión, suponer racionalidad es lo mismo que ignorar el problema. Esto no quiere decir que un criterio de decisión intermedio no pueda ser sujeto a otro criterio de decisión, pero si nos preguntamos por la elección de un criterio de decisión último, entonces estamos obligados a suspender cualquier intento de “racionalidad económica”. Por lo tanto, existe una diferencia cualitativa entre una la elección de un criterio de decisión último y uno intermedio.&lt;/p&gt;
+&lt;h3 id=&#34;la-fe-en-kierkegaard&#34;&gt;La Fe en Kierkegaard&lt;/h3&gt;
+&lt;p&gt;Para responder a la pregunta por la elección del criterio de decisión, Kierkegaard combina  sabiduría socrática, telos aristotélicos y amor cristiano. Como vimos recién, la racionalidad económica alcanza su frontera al preguntarse por la elección del criterio de decisión último, este límite pone un freno a la razón y deja al elector a solas con su singularidad. Esta ignorancia es a su vez una sabiduría socrática: saber lo que no se sabe. Esta es toda la información de que dispone el elector, pero hasta el momento no sabemos nada más, y todavía hace falta una medida que nos ayude a elegir*. Pero justo cuando el problema parece imposible de resolver es cuando aparece la posibilidad de la Fe. Kierkegaard señala que lo decisivo en este punto es el interés infinito del individuo por responder la pregunta, porque “[…] el interés infinito del sujeto es la medida” (Post.,p.32). “Lo ético es la única certeza” (Post.,p.153). Esto es lo decisivo: la pregunta por el sentido de la vida no se resuelve comparando el valor de las alternativas porque no hay ningún conocimiento objetivo. Cuando la razón llega a su límite la medida es el anhelo de la persona por responderla. Desde un punto de vista económico, el problema de la fe pasa de la oferta a la demanda. “El verdadero entusiasmo ético consiste en desear con todas las fuerzas, pero al mismo tiempo, elevándose en divina alegría, no pensar nunca si es que de ello se obtiene o no algún beneficio. Tan pronto como la voluntad comienza a fijar su codiciosa mirada en los resultados [la evidencia], el individuo comienza a volverse inmoral” (Post.,p.32). Por lo tanto, la única evidencia de lo ético es su interés infinito. Por lo tanto,&lt;/p&gt;
+&lt;p&gt;“El deber consiste en practicar la relación absoluta con el telos absoluto y [la relación relativa] […] con el telos relativo.” (Post.,p.410).
+Kierkegaard empieza reconociendo que toda elección requiere de un criterio de decisión, pero que el criterio de decisión último -es decir, el criterio que condiciona todas las decisiones y criterios intermedios que se elijan- no puede elegirse en función de ninguna evidencia. Este es entonces, el elemento de la ética: lo invisible. Pensemos cómo sería un mercado para la ética o “bien supremo”.&lt;/p&gt;
+&lt;h4 id=&#34;el-mercado-del-bien-supremo&#34;&gt;El Mercado del Bien Supremo&lt;/h4&gt;
+&lt;p&gt;A fines del siglo diecinueve tuvo lugar el descubrimiento de lo que se conocería más tarde como “la revolución marginalista”. Según sus representantes, los bienes no tendrían un valor intrínseco sino que su valor sería algo definido a partir del encuentro entre una oferta y una demanda. Así, el precio de equilibrio de un mercado estaría definido por el punto en que se igualaran el costo marginal de producir una unidad adicional de un bien, y la utilidad marginal que se obtendría de su consumo. A pesar de que ésta es una noción más que intuitiva, estos pensadores marginalistas llegaron más lejos de lo que pudieron llegar Marx, Adam Smith y Aristóteles (entre otros), por lo que algunos de ellos rápidamente formalizaron matemáticamente sus descubrimientos para darles seriedad. Intentemos aproximarnos a la ética con este enfoque.
+En el mercado de un bien supremo -si es que un bien de este tipo existe- su oferta ya habría inundado al mercado. Pero sería ingenuo pensar que un exceso de oferta de este bien-¡el bien supremo!- haría disminuir su precio haciendo valer al bien supremo menos que nada. Esto sería intentar estafar al vendedor aparentando no estar interesados en comprar lo que tiene para ofrecernos, algo difícil de aparentar en el caso del bien supremo. Sería más conveniente entonces recordar lo que ocurre con la demanda: como la utilidad marginal del bien supremo es siempre infinita, el precio a pagar va a ser siempre el más caro. “¿Y por qué no habría de saber la Deidad cómo sostener su precio?” (Post., p. 67). “En lo que se refiere a la felicidad eterna, el pathos esencial de la existencia se compra tan caramente que, desde un punto de vista finito, se debe considerar esta compra como una locura sin más […] [y es por este motivo que] la felicidad eterna es una seguridad cuyo valor ya no cotiza en el especulativo siglo diecinueve.” (Post., p.388). El bien supremo es el criterio de decisión último o “criterio del silencio” (Post., p. 549) y sólo puede adquirirse a cambio de la vida del elector.
+“Si [una generación] olvida que la moneda de lo ético debe estar en la interioridad del individuo o no estar en absoluto, entonces tal generación será una generación éticamente empobrecida y, esencialmente, en bancarrota.” (Post., p. 548)
+Pero si recordamos que todo proceso de decisión requiere de un criterio de decisión que lo determine, entonces toda elección que realice una persona va a implicar la elección del criterio de decisión último. Es decir que cada elección económica implica una elección ética. En cada instante el individuo singular deberá relacionarse absolutamente con el telos absoluto, y relativamente con el telos relativo. Debemos cuidarnos entonces de relacionarnos absolutamente con lo relativo o relativamente con lo absoluto. Hasta que no realicemos esta distinción con claridad, o bien la ética va a absorber a la economía, o bien la economía va a absorber a la ética. Veamos algunos ejemplos históricos.&lt;/p&gt;
+&lt;h4 id=&#34;análisis-económico&#34;&gt;Análisis Económico&lt;/h4&gt;
+&lt;p&gt;En 1759 Adam Smith publicó su “Teoría de los sentimientos morales”, según la cual la simpatía era la clave para entender el origen de los sentimientos morales. Pero deberíamos recordar que según la teoría de Smith las personas simpatizan con los sentimientos de las demás personas ¡pero nunca con las personas mismas! Y es que este intento de relacionar la ética con el egoísmo es lo más propio del liberalismo puro: el optimismo liberal busca compatibilizar el principio de maximización con la moral haciendo del egoísmo el origen de lo ético, porque la evidencia y el motor del liberalismo es la eficiencia económica. El liberalismo parte de la economía pero nunca llega a la ética, porque hace de un telos relativo su telos absoluto. Es probable que Kierkegaard hubiera aceptado el principio de maximización como la tonalidad más conveniente para estudiar la relación del hombre con lo finito, o la relación entre los hombres en tanto que seres finitos; pero como toda su obra señala, él hubiera dejado en claro la distinción entre la relación de lo finito con lo finito (la economía) y la relación del amor de prójimo, que es la relación entre hombres en tanto que seres infinitos (la ética cristiana).&lt;/p&gt;
+&lt;p&gt;Sin embargo, unos meses después de la aparición de Las Obras del Amor, llegaría el Manifiesto del Partido Comunista para asignar un valor intrínseco al trabajo humano y reclamar por la reivindicación del trabajador explotado. El pesimismo marxista está cansado de la inmoralidad capitalista y busca una forma de ordenar la economía asignando un valor absoluto al trabajo del hombre, moralizando todo al separar entre explotadores y explotados. Como según el marxismo el mercado conduce a la explotación, toda riqueza es riqueza mal habida y moralmente reprobable. El marxismo reconoce el valor absoluto del trabajo humano, pero en su afán de ordenar la economía a partir del trabajo humano hace del hombre un ser conmensurable con lo finito y acaba poniéndole un precio a la vida humana (lo que explica el odio del marxista hacia el mercado, que es donde se traba su amor). Es decir que al intentar hacer una economía moral, el marxismo hace del telos absoluto un telos relativo. La evidencia y el motor del marxismo es la injusticia histórica, pero hay que tener cuidado de dejarnos guiar por la evidencia porque “Desde un punto de vista histórico-universal, veo el efecto; [pero] desde un enfoque ético, veo la intención” (Post., p. 156), y sería ciertamente injusto juzgar por los resultados y no por la intención.&lt;/p&gt;
+&lt;p&gt;En Economía se dice que lo que causó el fracaso del marxismo fue lo que se llamó “El problema de la transformación” que consistió en el error de pensar que se podían fijar valores absolutos en la economía. Al revés de lo que ocurre en la ética, cuando en la economía se asigna un valor absoluto a un bien, se congelan todas las relaciones de precios, algo imposible de sostener en el tiempo. El socialismo del siglo XXI es un caso especial que vale la pena mencionar. El siglo XX nos dejó la evidencia “histórico-universal” de que los países que abandonaron totalmente sus economías de mercado acabaron siendo más injustos e inmorales que las naciones capitalistas. Sin embargo, la incorporación del siglo XX a la teoría marxista no pudo conseguir que el marxismo se reconciliara con el mercado, sino que se odiara a sí mismo. De la misma manera que un chico se ofusca porque no tiene habilidades para un deporte en el que pierde cada vez que juega, el marxismo se enfada por su propia incompetencia económica y su incapacidad de alcanzar la grandeza ética que se propone. De cualquier manera, el “marxismo de mercado” -¡lo que sea que eso signifique!- representa un avance en el camino por reconciliar la economía con la ética, no ya una dentro de la otra, sino como dos aspectos de la vida en permanente tensión.&lt;/p&gt;
+&lt;p&gt;Por lo tanto, entender que existe un mercado ético inconmensurable con el mercado económico, donde ambos mercados se equilibran de manera simultánea e independiente, nos permite entender mejor cómo se relaciona la economía con la ética. Es decir, la economía no es una ciencia amoral y la prueba de esto es su incapacidad de alcanzar evidencias concluyentes a partir de sus teorías. La falta de evidencia es la marca de la libertad, y la marca de la libertad es la presencia de la ética. Pero tampoco debemos confundir a la economía con la ética, porque esto sería elevarla por encima de sus posibilidades y exigirle una misión imposible.&lt;/p&gt;
+&lt;h3 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h3&gt;
+&lt;p&gt;El enunciado antropológico “individuo singular” que propone Kierkegaard es de un gran valor por su capacidad de relacionar la ética con la economía sin confundirlas. Si entendemos por ética lo que ofrece Kierkegaard, la Economía podría entenderse como la ciencia de las decisiones intermedias en las que el individuo se relaciona relativamente con el telos relativo. Lo valioso de la ética que propone Kierkegaard es que deja al descubierto la simultaneidad de las decisiones éticas y económicas a la vez que marca una diferencia inconmensurable entre ambas. Si se tiene esto en cuenta, la falta de evidencia científica de la Economía debería entenderse como la huella de la libertad humana en todas las decisiones de la vida, algo que debería llenar de orgullo a los economistas.&lt;/p&gt;
+&lt;p&gt;*Esto es análogo a la idea según la cual l’existence précède l&amp;rsquo;essence. Aunque para la filosofía de Kierkegaard no es tan importante la indeterminación original como el carácter evidencial de la elección del criterio de decisión. Antes que una filosofía existencial, es una filosofía evidencial.&lt;/p&gt;
+&lt;h3 id=&#34;anexo-matemático&#34;&gt;Anexo Matemático&lt;/h3&gt;
+&lt;p&gt;Los economistas acostumbran demostrar sus conclusiones a partir de estructuras, relaciones y axiomas matemáticos que en muchas ocasiones no pueden aplicarse a la realidad humana, pero que brindan un manto de seriedad a sus exposiciones. Por lo tanto, lo que se expone a continuación es de dudosa relevancia y muy probablemente no tenga otro valor que el papel en el que está escrito, pero quizá valga la pena decirlo en virtud de la belleza del lenguaje en que está redactado.&lt;/p&gt;
+&lt;h4 id=&#34;el-valor-de-la-vida-humana&#34;&gt;El valor de la vida humana&lt;/h4&gt;
+&lt;p&gt;Anticlímacus, uno de los seudónimos de Kierkegaard, señala que el hombre es una síntesis de finito e infinito, lo que -matemáticamente hablando- podríamos expresar de la forma: “a · ¥” donde a es un número finito. Sin embargo, para que el hombre se mantenga como una síntesis sin resolver, es decir para que el hombre no sea “sólo” infinito, es necesario que el número a sea remplazado por un infinitesimal (que tienda a cero). De manera tal que el hombre sería una síntesis de la forma
+lím a→0 = a · ∞,
+lo que curiosamente se conoce como “indeterminación matemática”. Esta indeterminación matemática es, entonces, el hombre; y la respuesta a la pregunta por el valor del cada hombre está, pues, por verse.&lt;/p&gt;
+&lt;h4 id=&#34;el-valor-de-la-elección&#34;&gt;El valor de la elección&lt;/h4&gt;
+&lt;p&gt;Pascal señala en su apuesta que “si vous gagnez, vous gagnez tout; si vous perdez, vous ne perdez rien” (“si usted gana, usted gana todo; si usted pierde, usted no pierde nada”), de ahí que el nombre de los papeles en los que se encontró la apuesta sea “Infini-rien&amp;quot;(Infinito-nada). Kierkegaard, en cambio, nota que existe una diferencia inconmensurable (+∞/-∞) entre los criterios de decisión que elige un individuo para vivir su vida. Cada posibilidad, creer (+∞) y no creer (-∞), tiene un valor infinito porque la elección por cada una de ellas –en virtud de ser criterio de decisión- determinan infinitamente las elecciones del individuo. Esta inconmensurabilidad es lo que explica la imposibilidad de elegir a partir de la comparación, lo que Kierkegaard llama “la parada de la razón”.&lt;/p&gt;
+&lt;h4 id=&#34;la-identidad&#34;&gt;La Identidad&lt;/h4&gt;
+&lt;p&gt;Kierkegaard afirma que el valor de la vida de un hombre se determina a partir de las elecciones que éste realice –en especial, a partir de aquella elección que determina a las subsiguientes-.
+Dijimos que el valor de la vida humana era una síntesis sin resolver de finito e infinito y que el valor de cada alternativa era inconmensurable (+∞/-∞). Como a · ∞ = 1/(1/a) · ∞, es fácil notar que
+“lím a→0 = 1/(1/a)  · ∞”,
+lo que es igual a la inconmensurabilidad de la elección (+∞/-∞). Es decir que, aún matemáticamente hablando, podemos demostrar que el valor de la vida humana va a ser igual al valor de la elección, y que ambos se encuentran indeterminados.&lt;/p&gt;
+&lt;h4 id=&#34;la-inconmensurabilidad-del-numerario&#34;&gt;La Inconmensurabilidad del Numerario&lt;/h4&gt;
+&lt;p&gt;La teoría cristiana de la decisión de Kierkegaard tiene como punto de apoyo el reconocimiento de una desigualdad, la desigualdad infinita entre el valor del hombre (h) y el valor de Dios (D). Este desequilibrio es el que pone en movimiento al cristiano y en virtud de la cual se acepta por obediencia al Desigual el criterio de decisión según el cual&lt;/p&gt;
+&lt;p&gt;h1=h2=…=hi=∞,&lt;/p&gt;
+&lt;p&gt;en base a la cual se cotizan los pagos esperados de todas las decisiones subsiguientes. Esta es la mayor paradoja de la economía: que el Bien –El Numerario- por el cual se cotizan todos los bienes sea -¡sí!-inconmensurable. El seudónimo Johannes Clímacus afirma que “es la firmeza en lo absoluto y en las distinciones absolutas lo que convierte a uno en un buen dialéctico” (MF: 111).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Program</title>
+      <link>https://juanivb.github.io/docs/time-series/program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/program/</guid>
+      <description>&lt;h2 id=&#34;time-series&#34;&gt;Time Series&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Bachelor&amp;rsquo;s Degree in Economics - Pontificia Universidad Católica Argentina&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;course-style&#34;&gt;Course Style&lt;/h4&gt;
+&lt;p&gt;I wholeheartedly believe the best way to guide the learning experience of this subject is a four steps process:&lt;/p&gt;
+&lt;div class=&#34;hb-steps&#34;&gt;
+&lt;h3 id=&#34;getting-the-motivation&#34;&gt;Getting the Motivation&lt;/h3&gt;
+&lt;p&gt;Grasping the &lt;strong&gt;historical context&lt;/strong&gt; in which the idea was born and the state of the art at said point in time, to fully understand the driving forces behind them and why they where received the way they where.&lt;/p&gt;
+&lt;h3 id=&#34;replicating&#34;&gt;Replicating&lt;/h3&gt;
+&lt;p&gt;Live statistical programming &lt;strong&gt;replications&lt;/strong&gt; of papers from mainstream literature, to empirically validate their relevance regardless of their recognition in mainstream circles.&lt;/p&gt;
+&lt;h3 id=&#34;repeated-experience&#34;&gt;Repeated Experience&lt;/h3&gt;
+&lt;p&gt;Applying the idea / algorithm to many different cases (&lt;strong&gt;datasets&lt;/strong&gt;) to understand their real life value today.&lt;/p&gt;
+&lt;h3 id=&#34;knowledge-sharing&#34;&gt;Knowledge Sharing&lt;/h3&gt;
+&lt;p&gt;Finally, &lt;strong&gt;teaching&lt;/strong&gt; the subject to others in order to consolidate the learning experience and finding elusive blindspots.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;1-objectives&#34;&gt;1. Objectives&lt;/h4&gt;
+&lt;h5 id=&#34;11-general&#34;&gt;&lt;strong&gt;1.1 General&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Provide students with an introduction to econometric analysis of time series, reinforcing technical knowledge acquired through understanding the historical context in which they took place, and dimensioning their value through replication and simulation exercises in Python.&lt;/p&gt;
+&lt;h5 id=&#34;12-specific&#34;&gt;&lt;strong&gt;1.2 Specific&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Enable students to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Analyze time series, detecting their relevant characteristics;&lt;/li&gt;
+&lt;li&gt;Fit univariate and multivariate models using datasets with time series realizations in tabular format;&lt;/li&gt;
+&lt;li&gt;Properly interpret statistical tests and best practices for each case;&lt;/li&gt;
+&lt;li&gt;Present technical content adequately in oral and written form to both technical and non-technical audiences.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;2-contents&#34;&gt;2. Contents&lt;/h4&gt;
+&lt;h5 id=&#34;21-module-i&#34;&gt;2.1 &lt;strong&gt;Module I&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Historical approach to linear regression. Review of OLS fundamentals. Introduction to Time Series. Motivation. Basic notions. Stationary and non-stationary series. Strong and weak stationarity. Theoretical and sample functions of autocovariance, autocorrelation, and partial autocorrelation in stationary series. Autocovariance and autocorrelation functions. Typical transformations. Historical context. Box-Jenkins methodology. Model selection based on information criteria. Particular case ARIMA (0,1,1) in connection with simple ETS models. Autoregressive integrated moving average model of order p, d, and q (ARIMA(p,d,q)).&lt;/p&gt;
+&lt;h5 id=&#34;22-module-ii&#34;&gt;2.2 &lt;strong&gt;Module II&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Unit Root Tests. Structural Breaks. Lucas Critique. Vector Autoregressive Models (VAR). Historical context. Cointegration and Granger Causality.&lt;/p&gt;
+&lt;h4 id=&#34;3-evaluation-system&#34;&gt;3. Evaluation System&lt;/h4&gt;
+&lt;p&gt;To pass the course, students must pass a midterm exam and a final integrative project, along with the completion of weekly assigned activities.
+The exam will be graded on a scale of 0 to 10 points. An exam will be considered passed when the grade is 4 (four) points or more. To access the final exam, students must pass the midterm and practical work and presentations delivered on time, with only one recovery instance available after taking the two midterm exams.
+The course grade will be a weighted average of the midterm exam grade (25%), the integrative project (50%), and class participation and completion of activities (25%).
+Once the course is passed, students must take a final exam. The final exam grade will consist of 80% of the course grade and 20% of the result of the exam taken on the final date. The final exam will only be passed if the exam taken on the day is passed, regardless of the average.&lt;/p&gt;
+&lt;h4 id=&#34;4-schedule&#34;&gt;4. Schedule&lt;/h4&gt;
+&lt;h5 id=&#34;classes&#34;&gt;&lt;strong&gt;Classes&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Twesdays:  Puerto Madero from 18.20 to 19.50 pm&lt;/li&gt;
+&lt;li&gt;Fridays:  Online Lessons from 18.20 to 19.50 pm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;exams&#34;&gt;&lt;strong&gt;Exams&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Midterm: Apr 30&lt;/li&gt;
+&lt;li&gt;Project : TBD&lt;/li&gt;
+&lt;li&gt;Final Exam: TBD First call, TBD Second call&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;5-bibliography&#34;&gt;5. Bibliography&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;J. D. Levendis&lt;/td&gt;
+&lt;td&gt;Time Series Econometrics: Learning Through Replication&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/-/es/Levendis/dp/3319982818&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1994&lt;/td&gt;
+&lt;td&gt;J. D. Hamilton&lt;/td&gt;
+&lt;td&gt;Time Series Analysis&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/-/es/James-D-Hamilton-ebook/dp/B08DL8TCSB?ref_=ast_author_mpb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;W. Enders&lt;/td&gt;
+&lt;td&gt;Applied Econometric Time Series&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics-ebook/dp/B00P6SS6RA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;Rob. Hyndman&lt;/td&gt;
+&lt;td&gt;Forecasting: Principles and Practice&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://otexts.com/fpp3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reading</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/reading/</guid>
+      <description>&lt;p&gt;It is a challenging task to select an appropriate number of papers on such a sophisticated subject since many ideas on time series are scattered across various authors from different backgrounds and most papers can only be understood after a systematic review. However, after some hesitation I&amp;rsquo;ve reached the conclusion that the best of my efforts should be in service to become a dedicated and good-will assistant at your service instead of trying to be a judge of relevance. In this spirit I&amp;rsquo;ve shortlisted the following texts. I hope you find value in them.&lt;/p&gt;
+&lt;h3 id=&#34;selected-papers&#34;&gt;Selected Papers&lt;/h3&gt;
+&lt;h4 id=&#34;historical&#34;&gt;Historical&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1805&lt;/td&gt;
+&lt;td&gt;A.M. Legendre&lt;/td&gt;
+&lt;td&gt;A New Method&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1809&lt;/td&gt;
+&lt;td&gt;C.F. Gauss&lt;/td&gt;
+&lt;td&gt;Theory of the motion of the heavenly bodies&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1839&lt;/td&gt;
+&lt;td&gt;W.R. Hamilton&lt;/td&gt;
+&lt;td&gt;Algebra as the Science of Pure Time&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/PureTime/PureTime.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1848&lt;/td&gt;
+&lt;td&gt;W.R. Hamilton&lt;/td&gt;
+&lt;td&gt;Researches Respecting Quaternions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/ResQuat/ResQuat.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1870&lt;/td&gt;
+&lt;td&gt;F. Galton&lt;/td&gt;
+&lt;td&gt;Regression Towards Mediocrity in Hereditary Stature&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1897&lt;/td&gt;
+&lt;td&gt;G.U. Yules&lt;/td&gt;
+&lt;td&gt;On the theory of correlation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1905&lt;/td&gt;
+&lt;td&gt;A. Einstein&lt;/td&gt;
+&lt;td&gt;Brownian Movement&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1905&lt;/td&gt;
+&lt;td&gt;K. Pearson&lt;/td&gt;
+&lt;td&gt;The Problem of The Random Walk&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1921&lt;/td&gt;
+&lt;td&gt;G.U. Yules&lt;/td&gt;
+&lt;td&gt;On the time correlation problem&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1927&lt;/td&gt;
+&lt;td&gt;E. Slutzky&lt;/td&gt;
+&lt;td&gt;The Summation of Random Causes as the Source of&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1927&lt;/td&gt;
+&lt;td&gt;G.U. Yules&lt;/td&gt;
+&lt;td&gt;On a Method of Investigating Periodicities&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1931&lt;/td&gt;
+&lt;td&gt;G.T. Walker&lt;/td&gt;
+&lt;td&gt;On Periodicity in Series of Related Terms&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1939&lt;/td&gt;
+&lt;td&gt;H. Wold&lt;/td&gt;
+&lt;td&gt;A study in Analysis of Time Series&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1939&lt;/td&gt;
+&lt;td&gt;J. Tinbergen&lt;/td&gt;
+&lt;td&gt;Statistical testing of business cycle theories&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1940&lt;/td&gt;
+&lt;td&gt;J. Tinbergen&lt;/td&gt;
+&lt;td&gt;Econometric Business Cycle Research&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1942&lt;/td&gt;
+&lt;td&gt;T.E.W. Schumann&lt;/td&gt;
+&lt;td&gt;On Yule&amp;rsquo;s method of investigating periodicities&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;contextual&#34;&gt;Contextual&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;Leo A. Harrington&lt;/td&gt;
+&lt;td&gt;Anaximander&amp;rsquo;s Sayings&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2011&lt;/td&gt;
+&lt;td&gt;T.C. Mills&lt;/td&gt;
+&lt;td&gt;Wold and the Russians&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2001&lt;/td&gt;
+&lt;td&gt;D. Qin&lt;/td&gt;
+&lt;td&gt;The Error Term in the History of Time Series&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;R. M. Hogarth&lt;/td&gt;
+&lt;td&gt;The illusion of predictability&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Para Distinguir los Pies</title>
+      <link>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
+      <description>&lt;h2 id=&#34;instrucciones-para-subir-una-escalera&#34;&gt;Instrucciones para subir una escalera&lt;/h2&gt;
+&lt;p&gt;(Julio Cortázar, Historias de Cronopios y de Famas, 1962)&lt;/p&gt;
+&lt;p&gt;Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se situó un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.&lt;/p&gt;
+&lt;p&gt;Las escaleras se suben de frente, pues hacia atrás o de costado resultan particularmente incómodas. La actitud natural consiste en mantenerse de pie, los brazos colgando sin esfuerzo, la cabeza erguida aunque no tanto que los ojos dejen de ver los peldaños inmediatamente superiores al que se pisa, y respirando lenta y regularmente. Para subir una escalera se comienza por levantar esa parte del cuerpo situada a la derecha abajo, envuelta casi siempre en cuero o gamuza, y que salvo excepciones cabe exactamente en el escalón. Puesta en el primer peldaño dicha parte, que para abreviar llamaremos pie, se recoge la parte equivalente de la izquierda (también llamada pie, pero que no ha de confundirse con el pie antes citado), y llevándola a la altura del pie, se le hace seguir hasta colocarla en el segundo peldaño, con lo cual en éste descansará el pie, y en el primero descansará el pie. (Los primeros peldaños son siempre los más difíciles, hasta adquirir la coordinación necesaria. &lt;em&gt;La coincidencia de nombre entre el pie y el pie hace difícil la explicación. Cuídese especialmente de no levantar al mismo tiempo el pie y el pie)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Llegando en esta forma al segundo peldaño, basta repetir alternadamente los movimientos hasta encontrarse con el final de la escalera. Se sale de ella fácilmente, con un ligero golpe de talón que la fija en su sitio, del que no se moverá hasta el momento del descenso.&lt;/p&gt;
+&lt;h2 id=&#34;para-distinguir-un-pie-de-un-pie&#34;&gt;Para Distinguir un Pie de un Pie&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(Addenda a las Instrucciones para Subir una Escalera)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Catulus Ludensis&lt;/p&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+&#34;Para el sabio no existe la riqueza.&lt;br&gt;
+Para el virtuoso no existe el poder.&lt;br&gt;
+Y para el poderoso no existen &lt;br&gt;
+ni el sabio ni el virtuoso.&#34;&lt;br&gt;
+—Ernesto Esteban Etchenique
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;h3 id=&#34;stemning&#34;&gt;Stemning&lt;/h3&gt;
+&lt;p&gt;Diógenes Laercio nos cuenta que cuando Metrocles pertenecía a la escuela peripatética dejó escapar involuntariamente una flatulencia en medio de un ejercicio de lectura. Tal fue la vergüenza y el desánimo que sintió por este incidente, que dispuesto a dejarse morir de hambre decidió encerrarse en su casa. Al enterarse de este suceso Crates el cínico decidió ir a consolarlo, no sin antes comer una abundante ración de lentejas. Crates trató de persuadirlo a través de razonamientos de que no había hecho nada malo y que, por el contrario, más feo hubiese sido retener su flatulencia sin dejarla fluir según su cauce natural. Al no poder persuadirlo con sus palabras, Crates soltó unas cuentas flatulencias. De ese modo convenció a Metrocles a través de sus acciones corporales que nada hay de vergonzoso en este acto de la naturaleza (Cfr. DL, VI, 94).&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;i---poder-no-poder&#34;&gt;I - Poder No Poder&lt;/h3&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+V:“Qué puede decir Borges de la intertextualidad que late en su obra?&lt;br&gt;
+B:- Ante todo, mi asombro ante ese neologismo pero en fin, eso no importa. Pero, cómo es? La inter que? Porque yo me perdí, no llegué al fin, yo no sé contar tanto.&lt;br&gt;
+V:- Qué puede decir Borges de la in-ter-tex-tua-li-dad que late en su obra?&lt;br&gt;
+B:- Yo creo que no he podido evitarla, que me ha sucedido (…) sin ninguna intención, sin mala intención desde luego.”&lt;br&gt;
+Diálogo en conferencia entre Vázquez y Borges
+&lt;/div&gt;
+&lt;h4 id=&#34;una-palabra-de-entendimiento-con-el-lector&#34;&gt;Una palabra de entendimiento con el lector&lt;/h4&gt;
+&lt;p&gt;Con chicos chicos en la casa es difícil tener la excusa para sentarme a leer tranquilo.  De a poquito se fueron acortando los momentos de lectura hasta que encontrar un momento para leer empezó a ser una actividad de lujo, casi prohibida. Y así pasé de una adolescencia de novelas rusas y tratados de filosofía, a regodearme releyendo tres veces un ticket en el peaje, a repasar como si fuera Betular los ingredientes en la caja del bizcochuelo. Hasta que un día toqué fondo cuando me encontré escondido en el baño estudiando el manual de la calculadora científica como si fuera un ingeniero japonés, una calculadora que no uso. Ese día me dije: &amp;ldquo;algo tiene que cambiar&amp;rdquo; y decidí pasar a la ofensiva: quizás siendo un escritor podría tener la excusa perfecta para seguir leyendo.  Sólo me faltaba un tema. Y ahí me acordé de algo que había escuchado en una linda jornada de la Biblioteca Kierkegaard hace muchos años: alguien dijo que a cien años del nacimiento de Kierkegaard un reconocido filósofo había afirmado con notable soltura: &lt;em&gt;&amp;ldquo;No sabemos quién fue ni qué ha querido decir&amp;rdquo;&lt;/em&gt;. En esa afirmación encontré la oportunidad perfecta para llevar mi posición un paso adelante y hacer una contribución real a las jornadas. Puedo decir:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;No sólo no sé quién fue ni qué ha querido decir, puedo añadir: tampoco lo he leído.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;De aquellos polvos, estos lodos.  A mi querido lector, con vergüenza.&lt;/p&gt;
+&lt;h4 id=&#34;poder-no-poder&#34;&gt;Poder No Poder&lt;/h4&gt;
+&lt;p&gt;Sócrates supo no saber, y eso lo convirtió en el mejor de los hombres de su época y de muchas otras. Pero hizo falta más que el mejor de los hombres para que los hombres nos atreviéramos a poder no poder. El amor de preferencia precisa pivotear en un ideal inmediato para construir su identidad. Poder existir sin satisfacer la propia idealidad, poder existir sin satisfacer la idealidad ajena. ¿Cuántos filósofos se debatieron si un dios puede crear una piedra más pesada que la que puede levantar pero se niegan a reconocer el origen divino de un Dios que nos mostró cómo poder no poder?&lt;/p&gt;
+&lt;h4 id=&#34;la-sprezzatura-de-la-modernidad-tardía&#34;&gt;La sprezzatura de la modernidad tardía&lt;/h4&gt;
+&lt;p&gt;La vulnerabilidad es el remedio para la vergüenza, mostrarnos vulnerables opera como un bálsamo también sobre la vergüenza ajena. ¿Cómo se viste la vergüenza? la vergüenza ostenta títulos y distinciones, la vergüenza anota sus títulos y escrituras en una hoja de parra. Viste su pasado con distinción, su presente con distinción, su futuro con distinción. Todo acontece al servicio de la separación; y precisamente porque lo hace con ese objetivo in mente, puede fácilmente vestirse de su contrario. De esta manera, la vergüenza que &lt;sin Dios&gt; se viste de superación de la vergüenza, una estudiada vulnerabilidad, eso es la sprezzatura de la modernidad tardía.&lt;/p&gt;
+&lt;h4 id=&#34;la-belleza-del-cristianismo&#34;&gt;La belleza del cristianismo&lt;/h4&gt;
+&lt;p&gt;Si la libertad es la belleza de la vida como decía Kant. ¿Cuál es la belleza del cristianismo? ¿Cuál es el locus de la libertad?
+La belleza del cristianismo está en que el mensaje nos llega sin derogar la ley ni a los profetas. Así podemos encontrar consuelo incluso en el Libro de Esdras (9:8):&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot; Y ahora por un breve momento ha habido misericordia de parte de Jehová nuestro Dios, para hacer que nos quedase un remanente libre, y para darnos un lugar seguro en su santuario, a fin de alumbrar nuestro Dios nuestros ojos y darnos un poco de vida en nuestra servidumbre.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;El locus de la libertad es ese lugar seguro: ser un clavo en la cruz, ahí está la libertad del amor cristiano que no entiende el mundo.
+De revoluciones francesas o Ad se ipsum
+En un mismo capítulo Pedro corta la oreja de Malco y niega a Jesús 3 veces. Esto suele contarse separado, pero va junto. El parentirso como antesala a la traición.  A lo que algunos llaman fervor, digámosle también: capítulo 18. ¡Cuántas veces fuimos como Pedro frente a Malco! No nos olvidemos de lo único necesario: poder no poder.&lt;/p&gt;
+&lt;h3 id=&#34;ii---no-demostrarás-la-existencia-de-tu-prójimo&#34;&gt;II - No demostrarás la existencia de tu prójimo&lt;/h3&gt;
+&lt;h4 id=&#34;el-análisis-de-lo-obvio-sólo-para-mentes-muy-poco-corrientes&#34;&gt;El análisis de lo obvio (sólo para mentes muy poco corrientes)&lt;/h4&gt;
+&lt;p&gt;¿Cómo podremos creer en la existencia de aquello que no vemos si no creemos en la existencia de aquello que sí vemos?&lt;/p&gt;
+&lt;p&gt;Hoy es un lugar común abandonar el camino de las demostraciones de la existencia de Dios, como si ese camino hubiera sido un capítulo un tanto innecesario de la historia de la teología y no una meditación edificante para quien se aplica a ellas con un corazón humilde. Pero si la fe es un triunfo que sale a la batalla, así como no puede salir a demostrar la existencia de Dios, tampoco debe demostrarse la existencia del prójimo. La carga de la prueba tiene que invertirse: que aquellos que quieran demostrar que alguien no es nuestro prójimo se acerquen a demostrarlo. Que el rol cómico lo ocupen las demostraciones de la inexistencia del otro. No pisemos el palito y repitamos como si fuese un mandamiento algo que sólo puede tener vis cómica: NO DEMOSTRARÁS LA EXISTENCIA DE TU PRÓJIMO.&lt;/p&gt;
+&lt;p&gt;Y sin embargo, ¿Cuántas veces dudamos del prójimo y nos enredamos con demostraciones que no persuaden a nadie y sólo consiguen enfriar nuestro corazón? Escuchemos paciente y amorosamente a quienes no crean en el prójimo, y llegado el momento digamos algo así como: &amp;lsquo;Mi cabeza es demasiado pesada para dar el salto que me exige tu demostración&amp;quot;.&lt;/p&gt;
+&lt;h4 id=&#34;quién-es-mi-prójimo&#34;&gt;¿Quién es mi prójimo?&lt;/h4&gt;
+&lt;p&gt;A la pregunta ¿Quién es mi prójimo?  no se la responde directamente porque una respuesta directa diría que el prójimo se define en el distrito de la palabra como una categoría de la razón;  cuando en realidad el órgano que define quién es el prójimo es la fe.
+Por eso, también, a la repregunta por la parábola ¿Quién de los tres se hizo su prójimo? (Lc10:36)&amp;quot; , cuando el intérprete le responde &amp;ldquo;el que se compadeció&amp;rdquo;, no se le dice: &amp;ldquo;Tenés razón&amp;rdquo;, porque eso sería volver a la arena dialéctica, la respuesta del que tiene autoridad fue : &amp;quot; Ve y haz lo mismo&amp;quot; porque la parábola da un camino para la voluntad (el camino de la fe),  no una idea para entretener a la razón.&lt;/p&gt;
+&lt;h4 id=&#34;dont-be-a-karen-martha-o-alguien-quiere-pensar-en-los-niños&#34;&gt;Don&amp;rsquo;t be a Karen, Martha o ¿Alguien quiere pensar en los niños?&lt;/h4&gt;
+&lt;p&gt;El capítulo 10 no termina con la parábola y punto. Después viene la historia de Marta y María&amp;hellip;. Marta que era activa como un feacio no necesitaba que nada ni nadie la manden a actuar porque ella vivía &amp;ldquo;afanada y turbada&amp;rdquo;. Tan ocupada estaba siendo buena samaritana que cuando tuvo por visitante al compositor de la parábola, no tenía tiempo libre para escucharlo.  Esto no es un tema menor, sensu eminenti diría alguno, la parábola termina con Marta. ¡Cuántas veces fuimos Marta! No nos olvidemos de la mejor parte: poder no poder.
+Menos que Zizek&lt;/p&gt;
+&lt;p&gt;Hay un viejo chiste judío que le encantaba a Derrida, en el que un grupo de judíos que está en una sinagoga admite públicamente su nulidad a los ojos de Dios. Primero, un rabino se pone en pie y dice: “Dios mío, sé que no valgo nada. ¡No soy nada!”. Cuando ha terminado, un rico hombre de negocios se pone en pie y dice, dándose golpes en el pecho: “¡Dios mío, yo tampoco valgo nada, siempre obsesionado con la riqueza material! ¡No soy nada!”. Tras este espectáculo, un judío pobre, común y corriente, se pone en pie y proclama: “Dios mío, no soy nada”. El rico hombre de negocios le da una patadita al rabino y le susurra al oído con desdén: “¡Mirá qué insolencia! ¿Quién es este tipo que se atreve a afirmar que él tampoco es nada?”.&lt;/p&gt;
+&lt;p&gt;A la pregunta &amp;laquo;¿Y éste quién se cree que es para decir que no es nadie?&amp;raquo;  -que bien podría habérsela hecho el hermano mayor de la parábola a Polifemo- a esa pregunta Don Inodoro Pereyra la responde magistralmente:  &amp;laquo;- Yo, que tengo la humildad de los grandes.&amp;raquo;.&lt;/p&gt;
+&lt;h3 id=&#34;iii--cómo-poder-no-poder&#34;&gt;III- ¿Cómo Poder No Poder?&lt;/h3&gt;
+&lt;h4 id=&#34;de-pseudónimos-o-cómo-estar-presente-pudiendo-no-poder-frente-al-prójimo&#34;&gt;De pseudónimos o Cómo estar presente pudiendo no poder frente al prójimo&lt;/h4&gt;
+&lt;p&gt;El mito dice que cuando Groucho Marx quiso entrar al exclusivo Friars Club de Beverly Hills, su solicitud no fue muy bien recibida en un primer momento por ser judío. Después de una inusual demora en la respuesta, al recibir su carta de aceptación, la historia dice que Groucho la rechazó alegando  &lt;No quisiera pertenecer a un Club que acepte como miembro a personas como yo.&gt;
+Si el prójimo es el primer yo, y si es deber del amor cristiano no demostrar su existencia, entonces también forma parte de nuestro deber cristiano NO DEMOSTRAR NUESTRA PROPIA EXISTENCIA FRENTE A NUESTRO PROJIMO. Y sin embargo, ¿Cuántas veces dudamos de nosotros mismos y nos enredamos con demostraciones que nos ocultan como prójimo y sólo persuaden a corazones fríos de los que deberíamos cuidarnos desde un comienzo? Que ningún vínculo precipitado opere en el encuentro. Sólo así será posible garantizar que el encuentro auténtico ocurra cuando se acerque el Tercero en el momento propicio.  Recusar la preferencia que se nos busca adjudicar es también nuestro deber de amor al prójimo para con nosotros mismos, cuidándonos de malas compañías; y para con los demás, recordándoles que el prójimo existe.&lt;/p&gt;
+&lt;h4 id=&#34;life-of-brian-ii-cancelled&#34;&gt;Life of Brian II: Cancelled&lt;/h4&gt;
+&lt;p&gt;Alguien dijo que el Nuevo Testamento es la historia cómica de un pueblo que estuvo miles de años esperando a su mesías, y todo esto para no reconocerlo al momento de su venida. La Vida de Brian nos muestra satíricamente un giro en esta misma historia cómica, con un pueblo que está dispuesto a encontrar al mesías y a confundirlo todo en cualquier gesto o signo con tal de encontrarlo.
+Si alguien quisiera continuar esta satírica subversión de los hechos podría proponernos la idea de un traidor que en su afán de traicionar al mesías termina poniendo de manifiesto ante los ojos de todos la verdadera grandeza y magnitud del hombre que traiciona, haciendo cambiar el corazón de millones y conduciéndolos finalmente por el camino que Dios quiere para ellos. Esto sería muy gracioso -como ficción-, pero sólo como ocurrencia, porque la obra gira en torno a las desventuras y peripecias del frustrado traidor.
+La realidad, en cambio, es muy distinta. Y si las obras del mesías no cambian el corazón de los que lo rechazan, menos lo va a hacer su condición de mesías. ¿Cuántas veces corrió Jesús después de obrar? ¿Cuántas veces se presentó como mesías antes de obrar? Riámonos del chiste del traidor frustrado y dejemos la historia para los escritores de Monthy Python, pero nunca busquemos rescatar a la humanidad con un Life of Brian II. Ni el pueblo judío veía al mesías en todos lados como nos muestra Life of Brian I, ni el mundo verá la grandeza de sus obras y signos como en Life of Brian II.&lt;/p&gt;
+&lt;h4 id=&#34;la-verdad-como-un-cachetazo-al-agradecimiento&#34;&gt;La verdad como un cachetazo al Agradecimiento&lt;/h4&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+“The purpose of abstraction is not to be vague,&lt;br&gt;
+but to create a new semantic level&lt;br&gt;
+in which one can be absolutely precise.”&lt;br&gt;
+ —Edsger Dijkstra
+&lt;/div&gt;
+&lt;p&gt;Considerada dinámicamente, la toma de conciencia del pecado consiste en una transición entre dos estados. Si cada estado es comprendido inmanentemente, entonces puede describirse como una configuración arquetípica, un arquetipo psicológico. En este sentido, la toma de conciencia de pecado es una transición arquetípica desde un estado &amp;lsquo;heroico/trágico&amp;rsquo; hacia un estado de falta de pureza con energía psíquica invertida y configuración traspuesta. El nombre de este arquetipo podríamos llamarlo impureza. La toma de conciencia es la transición hacia la impureza y no el estado de impureza en sí. Esta distinción es importante. Y también es importante saber que esta transición es axial respecto de la percepción de sí, es decir Coram Deo.&lt;/p&gt;
+&lt;p&gt;Existe un movimiento análogo que debe ocurrir para describir la transición del dolor de la simpatía que también es una transición arquetípica (un movimiento), pero en la cual el individuo no pivotea en torno a su percepción de sí (es decir, a su relación con Dios), sino que justamente la operación consiste en vaciar cualquier pizca de identificación precipitada con el otro (desidealizar al otro, para reconocerlo como realmente es).  Pero así como la toma de conciencia del pecado consiste en un devenir impuros a nuestros propios ojos, en el dolor de la simpatía devenimos desidealizados a los ojos del prójimo. Más precisamente, el vaciamiento del otro no ocurre en el otro, sino en mí. La expresión esencial es el vaciamiento de la idealización de mi persona a los ojos del otro. Desenamorar a los ojos que nos ven. Esta es una actividad de sobriedad: devenir sobrios. Curiosamente en castellano coloquial a la sobriedad se la puede describir fácilmente como un estado pero no como una actividad. Existe desembriagar, pero en ella se parte de la embriaguez y una vez pasada la misma, acabamos de desembriagarnos. No existe un desembriagarse en la sobriedad, a esto se lo llama impropiamente abstinencia (no-beber). Ésta creo que es una limitación del bello idioma castellano porque le quita poder a la transición al transformar una actividad en un reposo (sobriedad) o en una negación (abstinencia). Así y todo el movimiento existe: devengamos sobrios.
+Esta  operación, análoga a la anterior, también es dolorosa. Pero si de la primera no se puede hablar directamente porque hace al diálogo interior, de esta segunda transición no se puede hablar porque hace al mismísimo acto de amor al prójimo. La toma de conciencia que consiste en &amp;ldquo;hacerse culpable&amp;rdquo; no puede enunciarse directamente porque eso sería no hacerse cargo coram Deo. En cambio, el elemento propio del dolor de la simpatía es el pudor, que es lo que ocurre cuando nos vaciamos a los ojos del otro. Sin embargo, mientras  el pudor mundano huye en este punto, el pudor de prójimo elige quedarse para amar al prójimo amándose a sí mismo, es decir: al permanecer a su lado amándose a sí mismo y de este modo al prójimo. Si la conciencia del pecado es expresada en el temor de Dios, el dolor de la simpatía es el pudor de vernos vacíos de adornos a los ojos del prójimo. Es un quitarnos la parra ante el prójimo, y  esto lo hacemos también por voluntad propia y en contra nuestra inclinación inmediata. Pero no es un pudor que viene retroactivamente como el recuerdo de una expectativa que se reveló desproporcionada sino que se trata de un pudor que nace proactivamente del subtexto que acompaña nuestra conducta: nos amamos, Dios nos ama.  Y este pudor proactivo nunca resulta avergonzado. Porque no podemos permitirnos existir a la vista de los ojos desidealizantes si primero no nos amamos a nosotros mismos, y no podemos amarnos a nosotros mismos si antes no amamos a Dios con todas nuestras fuerzas y todo nuestro corazón. No hay pudor de prójimo sin temor de Dios.&lt;/p&gt;
+&lt;p&gt;Y así como la sabiduría socrática se parece a lo que el mundo llama ignorancia provinciana y no a lo que hoy se describe como conocimiento experto; y así como el temor de Abraham se parece a la resuelta actividad del más valiente de los caballeros y no a las pusilánimes negociaciones diarias del mercado;  así como devenir sobrios exalta nuestra sensibilidad con el mejor de los vinos ; de igual manera, el pudor de prójimo se parece al bálsamo sanador que acompaña a la desfachatez del cínico Crates y no a la perturbada inquietud que incita la vergüenza mortal que sintió Metrocles.&lt;/p&gt;
+&lt;p&gt;Se dice que lo propio esquizofrénico consiste en no ver el vacío primordial en el otro. Lo esencial cristiano comienza cuando ese vacío primordial se acepta en el otro y en uno mismo, pero esto sólo puede ocurrir por la gracia de Dios. De otra manera caemos en alguna forma de amor de preferencia. El deber consiste en amar a los hombres que vemos. Porque si no es así ¿Qué mérito hay en eso?&lt;/p&gt;
+&lt;h3 id=&#34;iv--precaución-camine-con-cuidado&#34;&gt;IV- Precaución: Camine con Cuidado&lt;/h3&gt;
+&lt;h4 id=&#34;el-puente-se-cruza-de-a-uno&#34;&gt;El puente se cruza de a uno&lt;/h4&gt;
+&lt;p&gt;Hace unas semanas inauguraron un puente en la República Democrática del Congo. Fueron tantos a inaugurarlo que el puente colapsó el día de su inauguración. Esto es poesía in actu. Pero que lo cómico de esta tragedia no nos haga olvidar lo decisivo: esto pasa todos los días, a toda hora, todos los minutos, y en todos los rincones del mundo. Esto es el mundo.&lt;/p&gt;
+&lt;h4 id=&#34;una-escalera-para-el-pie-y-el-pie-o-vivimos-en-un-verdadero-maremagnum-fásico&#34;&gt;Una escalera para el pie y el pie o Vivimos en un verdadero maremagnum fásico&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;“The student of Plato will do well to turn the page when he meets the name Pythagoras in a commentator.”&lt;/em&gt; - Paul Shorey&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;“The safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to Plato. I do not mean the systematic scheme of thought which scholars have doubtfully extracted from his writings. I allude to the wealth of general ideas scattered through them”&lt;/em&gt; - Alfred North Whitehead&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;“By and large, language is a tool for concealing the truth”&lt;/em&gt; - George Carlin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;&amp;hellip;&amp;quot;&lt;/em&gt; - Crates&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/replications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/assignment/</guid>
+      <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;strong&gt;Unknown Unknowns&lt;/strong&gt;. So lets get started.&lt;/p&gt;
+&lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
+&lt;div class=&#34;hb-steps&#34;&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a paper from the Reading module you have read by now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Re-read it &lt;em&gt;carefuly&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Look up for papers commenting on it. Read them as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Write a short essay &lt;strong&gt;(max. 2 pages)&lt;/strong&gt; highlighting the key ideas this paper brings to the table and any relevant observation you found out when you revisited the literature on this subject.&lt;/p&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;Answer the following questions&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-0&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;Q&amp;amp;A&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Why do you think this paper got the attention it got at the time it was published?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What/Whom would you say the author/s had in mind when they wrote it? Would you say this paper is a response to a previous idea or paper from some other author? Why?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is this paper dated in some way by now? Have some ideas discussed in the text grown old by know? Has the main theme of this paper stood the test of time? Is there any new idea making this debate irrelevant today? In any case: Why?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Find the original dataset.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replicate the experiment or algorithm used by the author.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can you think of an alternative approach to this issue? How would you have approached the problem from scratch by yourself? Dig deep, be honest.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement your approach, as silly as it seems. If it makes you proud, better so.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compare the results between both approaches. Why would you say the results differ? Be detailed on the explanation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-5&#34;&gt;Step 5&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make a short presentation out of the previous 3 Steps &lt;strong&gt;(max. 20 slides)&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Practice this presentation twice to different classmates and gather feedback on the following:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;**Peer Review** &lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;i. Is it easy to follow?&lt;/p&gt;
+&lt;p&gt;ii. Is it compelling?&lt;/p&gt;
+&lt;p&gt;iii. Should it be more detailed in any way? Should I skip any part?&lt;/p&gt;
+&lt;p&gt;iv. Do you disagree in any way? Focus on both the technical observations and the communicational aspects of the presentation. Sometimes the order in which ideas are presented make a difference (no pun intended).&lt;/p&gt;
+&lt;p&gt;v. What else should I do to improve this presentation?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;This feedback should give you an idea on how to improve. Make the changes you believe are necessary and make a video out of it. Keep in mind best practices (check your mic, the illumination of the room, the setting, avoid a loud place).
+i. Record yourself making the final presentation. How long did it take? Are you proud of it?
+ii. Re-record it until you come up with a version that makes you proud and complies with the 5 minutes limit rule I just invented.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally record yourself describing the experience you had making this video.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-6&#34;&gt;Step 6&lt;/h3&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;**Delivery**&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;The output of this learning process should be a folder including the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Original paper with annotations on it. &lt;strong&gt;(step 1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Relevant related papers you read during this exercise.&lt;strong&gt;(step 1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The short essay you wrote about it. &lt;strong&gt;(step 2)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A document with the Q&amp;amp;A. &lt;strong&gt;(step 3)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The dataset and the code you wrote clearly explained.&lt;/li&gt;
+&lt;li&gt;The feedback you gathered from your colleagues.&lt;strong&gt;(step 5)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The first and definitive video recording you made.&lt;/li&gt;
+&lt;li&gt;Live presentation to the whole class.&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementations</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/implementations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/implementations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meditaciones Inapropincuas</title>
+      <link>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</guid>
+      <description>&lt;div style=&#34;text-align: center;&#34;&gt;
+Cuando estés ahí, date por privilegiado &lt;br&gt;
+Catulus Ludensis
+&lt;/div&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+&lt;p&gt;&amp;ldquo;Aunque mi filosofía tampoco descubra nada,&lt;br&gt;
+al menos tiene suficiente corazón para considerar inexistentes&lt;br&gt;
+los pensamientos establecidos.&amp;quot;&lt;br&gt;
+– &lt;del&gt; Georg Christoph Lichtenberg&lt;/del&gt; &lt;br&gt;
+– &lt;del&gt; Pablo Picasso &lt;/del&gt;&lt;br&gt;
+– Don Giovanni Cassini&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Busco espíritus sensibles,&lt;br&gt;
+intermediarios abstenerse.&amp;quot;&lt;br&gt;
+– Ernesto Esteban Etchenique&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;h3 id=&#34;stemning&#34;&gt;Stemning&lt;/h3&gt;
+&lt;p&gt;Hace unos años Página 12 publicó un artículo sobre un caso judicial que se llamó “El hombre que veía chocar los autos”. El artículo es sobre Oscar Borda, un hombre con un extraño talento: dondequiera que va, los automóviles chocan. Haciendo uso de este extraño don del destino, Borda fue ofrecido como testigo en 61 accidentes de tránsito, dos de los cuales tenían al mismo acusado y estaban relacionados con el mismo bufete de abogados. Sin embargo, un juez civil -sin ninguna sensibilidad para la mitología griega- detectó la repetición de su nombre como testigo en los reclamos de accidentes y comenzó una investigación que actualmente lo tiene a Oscar con cargos por fraude y falso testimonio.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;i---disculpen-que-no-me-levante-hablemos-en-serio&#34;&gt;I - Disculpen que no me levante, hablemos en serio&lt;/h3&gt;
+&lt;h4 id=&#34;una-costumbre-muy-humana-morir&#34;&gt;Una costumbre muy humana, morir&lt;/h4&gt;
+&lt;p&gt;Cuando el cínico Menipo murió, tuvo que cruzar el río Leteo como todo buen griego, y para ello debió acudir al solícito Caronte. La cuestión se puso espinosa cuando Caronte descubrió que Menipo no contaba con el óbolo que debía pagarle por sus servicios náuticos, a lo que Caronte se preguntó exasperado: -¿Acaso existe un hombre que no tenga un óbolo? Menipo, sin dejar pasar la oportunidad desenfundó su lengua y lo ajustició con estas palabras: - “No sé si existe un hombre que no tenga un óbolo, sólo sé que yo no lo tengo. Si no quieres llevarme, puedes devolverme con los vivos.” Si yo hubiera sido Caronte, después de escuchar esa respuesta, lo hubiera llevado a upa al Hades, al Olimpo o a donde él quisiera ir. Pero volvamos al asunto. Lo cómico del encuentro radica en el sinsentido de una transacción para marcar una situación supuestamente irreversible. Veamos esto con un ejemplo menos solemne: Una persona está por ver cómo ejecutan un crédito hipotecario al no poder cumplir con sus obligaciones. El abogado del banco descubre que si el deudor no pone su firma en una hoja del documento de la hipoteca, la misma no se puede ejecutar y entonces el banco no podrá expropiar la vivienda al deudor. Si el abogado le dijera: -”Firma aquí que si no no podremos ejecutar tu casa y dejarte en la calle.” Y el deudor accediera sin chistar: ¿no sería esto cómico en un mismo sentido? ¿No estaríamos encontrándonos con una extraña pasividad allí donde deberíamos encontrar una conducta activa por parte del deudor? ¿No deberían acaso rehusarse todos los muertos a pagar ese óbolo en la expectativa de recuperar sus vidas?&lt;/p&gt;
+&lt;h4 id=&#34;la-muerte-no-es-lo-serio&#34;&gt;La muerte no es lo serio&lt;/h4&gt;
+&lt;p&gt;¿Qué es entonces lo que marca el pago del óbolo a Caronte? Sería necio pensar que estamos en presencia de lo que un contador llamaría una transacción económica o de lo que un abogado llamaría un contrato conmutativo. Y si no lo es -y claramente no lo es- entonces podemos hablar del pago del óbolo como de un rito. ¿Cuál es el sentido de este ritual? ¿Qué es aquello que marca el pago del óbolo? ¿Qué otra cosa sino la Seriedad? ¿Y qué es la Seriedad? ¿Qué otra cosa sino que la transacción sea irreversible? Esto es decisivo: la muerte no es lo serio, lo serio es que sea irreversible. La muerte, como marca eminente de la irreversibilidad a la que nos enfrentamos todos como individuos, es el arquetipo de la irreversibilidad, y por lo tanto, su representación es la marca de la seriedad.&lt;/p&gt;
+&lt;h3 id=&#34;ii---disección-de-una-flor-de-loto&#34;&gt;II - Disección de una flor de loto&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;A true opium of the people is a belief in nothingness after death - the huge solace of thinking that for our betrayals, greed, cowardice, murders we are not going to be judged.&amp;rdquo;
+– Czesław Miłosz&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Todo discurso vago tiene la forma de consuelo pero no su fuerza.&amp;rdquo;
+– Sören Aybee Kierkegaard&lt;/p&gt;
+&lt;h4 id=&#34;sueño-vigilia-muerte-e-irreversibilidad&#34;&gt;Sueño, Vigilia, Muerte e Irreversibilidad&lt;/h4&gt;
+&lt;p&gt;Heráclito nos dice que la mayoría de los hombres &amp;ldquo;ignoran lo que hacen cuando están despiertos, así como olvidan lo que hacen cuando están dormidos&amp;rdquo;; este letargo procede de no ver lo irreversible, que en lenguaje pagano es la muerte, así escuchamos: &amp;ldquo;Muerte es todo lo que vemos, cuando estamos despiertos; mas lo que vemos estando dormidos es sueño.&amp;rdquo;
+Donald Kalsched en The Inner World of Trauma nos comparte una teoría sobre el sentido de las pesadillas y los sueños traumáticos: simular escenarios irreversibles en la actividad onírica para evitar que ocurran en la realidad.
+Nuestro Heráclito contemporáneo, Nassim Taleb, nos explica que justamente los sueños no son reales porque carecen de barrera de absorción: no hay irreversibilidad y lo que ocurre en un sueño no es permanente. Es decir, la sustancia de los sueños es su reversibilidad.&lt;/p&gt;
+&lt;h4 id=&#34;boludeces-no&#34;&gt;Boludeces no&lt;/h4&gt;
+&lt;p&gt;La seriedad es lo irreversible. El opio de las masas consiste en el consuelo de la  irrelevancia. Esto es la negación del sentido por vaciamiento. La disolución del orden por igualación a la nada.  ¿Cómo opera el opioide? reconciliando lo irreconciliable al aniquilar cualquier arreglo. El consuelo es que si lo deseo o no lo deseo, si lo elijo o no lo elijo, si lo hago o no lo hago, todo da igual -all is but toy-, todo afluye al mismo río. ¿Por qué hallamos consuelo en esta perspectiva? porque nos brinda clausura. Parafraseando a un filósofo con peluca podríamos decir que “el deleite nace de la armonía que acompaña a la clausura”. El placebo está en su aparente buen entendimiento de la paradoja vía la aniquilación de los elementos que contiene. Lo subrepticio de este argumento es que la clausura aparece en virtud de una decisión interior y no de afuera, aunque la ilusión acústica nos confunda. No existe una verdadera reconciliación con las contradicciones de la realidad, se aniquila al todo para ordenar las partes.&lt;/p&gt;
+&lt;h4 id=&#34;la-herejía-ergódica&#34;&gt;La Herejía Ergódica&lt;/h4&gt;
+&lt;p&gt;Cuando Borges nos cuenta la historia de Cornelio Agrippa, nos encontramos con la célebre afirmación:
+“Nadie es alguien, un solo hombre inmortal es todos los hombres. Como Cornelio Agrippa, soy dios, soy héroe, soy filósofo, soy demonio y soy mundo, lo cual es una fatigosa manera de decir que no soy.”&lt;/p&gt;
+&lt;p&gt;Esta idea de que al eliminar lo irreversible todo lo posible eventualmente converge es sencillamente falsa y sólo se cumple en algunos tipos de procesos y bajo algunas condiciones. Esta idea no es otra cosa que el anverso de la mismísima flor de loto. La vida es la mayoría de las veces no ergódica, y es una ingeniosidad querer meterlo todo en una misma bolsa, cuando la mayoría de las veces toda la dificultad radica en devolver la ergodicidad a la vida. La realidad es que Borges mismo vivió en carne propia la no ergodicidad y abrazó su destino de eterno candidato al Nobel, describiendo a su nominación como una costumbre nórdica. Aunque su imaginación no fue lo suficientemente soberbia como para prever que su reputación trascendería con el tiempo al mismísimo premio de literatura, y que fue en virtud de su no ergodicidad que se constituyó en inmortal como escritor. Por otro lado, no hace falta cruzarse con Cornelio Agrippa para ver individualidades que han sido todos los hombres, basta ver la trayectoria de algunos políticos para que la vida de Cornelio Agrippa parezca una existencia monótona que no merece ser contada.&lt;/p&gt;
+&lt;h4 id=&#34;coram-rembrandt&#34;&gt;Coram Rembrandt&lt;/h4&gt;
+&lt;p&gt;Cuenta la leyenda que un pícaro pintor holandés en apuros económicos tuvo la genial idea de simular su propia muerte para subir el precio de sus cuadros. Así, una vez vendidos los cuadros por su triste viuda, saltó sobre la tranquera y volvió al reino de los vivos libre de deudas. Como la marca de la seriedad es la muerte, cuando uno busca la marca eminente de cualquier cosa, basta con ponerlo en relación con la muerte y así se consigue la fórmula deseada. Así, si alguien busca la marca de la decadencia, bastaría poner en contacto el simulacro con la muerte y la fórmula estaría completa. ¿Hay algo más bajo que eso? Sí, lo hay. ¿Y qué es? Veamos. Como la muerte no es lo serio, sino el óbolo de la irreversibilidad.  Si alguien quisiera escribir una apología del óbolo, y para subirle su precio llenara dicha apología de referencias a cuadros sofisticados, a contraluces pintorescas, si alguien así llegara a insinuar que el pintor sabía más de la irreversibilidad que el mismísimo óbolo… si se pusiera a la biblia junto a un calefón: al óbolo junto al simulacro ¿no sería esto entonces más bajo aún?&lt;/p&gt;
+&lt;h3 id=&#34;iii---el-pudor-de-prójimo&#34;&gt;III - El Pudor de Prójimo&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;My philosophy is for anybody who can see beyond their own nose&amp;rdquo;
+– Maquiavelo&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Sois atrevidos con Dios pero tímidos con los hombres.&amp;rdquo;&lt;br&gt;
+– Louis de Montalte&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Eres todavía joven, Sócrates -dijo Parménides-, y aún no estás poseído por la filosofía tal como te poseerá algún día, según creo, cuando no menosprecies ninguna de estas cosas. Ahora, por tu edad, tienes demasiado respeto por las opiniones recibidas. &amp;quot;
+– Parménides&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Aproximación.&amp;rdquo;
+– Heráclito&lt;/p&gt;
+&lt;h4 id=&#34;_nevar_-hate-your-enemies&#34;&gt;&lt;em&gt;Nevar&lt;/em&gt; hate your enemies&lt;/h4&gt;
+&lt;p&gt;“Un día helado, un espartano se cruzó con Diógenes abrazado a una fría estatua de bronce. Cuando le preguntó a Diógenes si tenía frío y este le dijo que no, volvió a preguntar: -¿Entonces qué valor tiene lo que estás haciendo?”&lt;/p&gt;
+&lt;p&gt;Nos cuentan que el primer cesar -Julio Cesar- en medio de su propio asesinato no pudo hacer otra cosa que cubrirse el rostro con su capa cuando vio a Bruto entre los conspiradores que lo acribillaban.&lt;/p&gt;
+&lt;p&gt;Y que ni siquiera Marco Aurelio con toda su introspección y ejemplaridad pudo ver con claridad en manos de quién dejaría su Imperio.&lt;/p&gt;
+&lt;p&gt;Vemos algo muy distinto en el Evangelio del Discípulo Amado, allí sí vemos una interesante ubicación para el mandamiento del Amor: inmediatamente después de que Jesús anunciara la traición de Judas e inmediatamente antes de que anunciara la negación de Pedro. El mandamiento del amor no es un mandamiento ingenuo, no es una sonrisa catatónica, ni un escapismo fantasioso. El que nos Amó sabía lo que hacía porque sabía a quiénes amaba. ¿Sino, qué mérito hay en ello?&lt;/p&gt;
+&lt;h4 id=&#34;traigan-algo-para-comer-que-esto-va-para-largo&#34;&gt;Traigan algo para comer que esto va para largo&lt;/h4&gt;
+&lt;p&gt;&amp;ldquo;In Luke&amp;rsquo;s gospel, Jesus is always at a party, going to dinner or coming from a meal&amp;rdquo;
+-Robert J. Karris&lt;/p&gt;
+&lt;p&gt;Con Pudor de Prójimo el hijo mayor debió haber tenido la desfachatez de tomar un cordero para hacer un asado con los amigos, porque todo lo que era de su padre era también suyo, pero él no se atrevió a creer que su padre lo amara como a un hijo y creyó estar congraciándose con él al distanciarse de sus bienes en nombre de una relación de sumisión, creyendo así que sería tenido por el primero de los lacayos pero que formalmente debería mantener el decoro de un súbdito. Creyó así el hermano mayor, creyendo que sería desfachatado avanzar sobre los bienes de su padre.&lt;/p&gt;
+&lt;h4 id=&#34;final-de-fiesta&#34;&gt;Final de Fiesta&lt;/h4&gt;
+&lt;p&gt;Mientras estemos vivos vamos a estar en presencia de nuestros molestos hermanos, no hay atajos. Así, mientras estemos vivos, el final de La Parábola va a ser exactamente nuestro último punto de contacto con la realidad y el decisivo de nuestra existencia, a cada instante. ¿Acaso se pueden pronunciar palabras de un modo más edificante?¿A alguien le cabe un mejor cierre para una historia que señalar amorosamente la tarea que descansa frente a nuestras narices?&lt;/p&gt;
+&lt;h3 id=&#34;iv---hablemos-bien-del-mal&#34;&gt;IV - Hablemos bien del mal&lt;/h3&gt;
+&lt;p&gt;“For, like many even in our day. heretics in particular. Marcion had an unhealthy interest in the problem of evil &amp;ndash;the origin of it– and his perceptions were numbed by the very excess of his curiosity.“&lt;/p&gt;
+&lt;p&gt;– Tertullian Adversus Marcionem 1 -2 -2&lt;/p&gt;
+&lt;h4 id=&#34;el-mal-como-interés-en-el-mal&#34;&gt;El mal como interés en el mal&lt;/h4&gt;
+&lt;p&gt;Cuando se habla en un acceso de ira de Judas como el traidor por antonomasia se suele confundir el énfasis. Es decir, no hubo nada grandioso en Judas en tanto que traidor, en todo caso fue traidor en virtud de su humanidad. Y poner excesivo foco en Judas fue precisamente lo que llevó a Judas a convertirse en Judas. Porque en definitiva, la única angustia legítima que genera pensar en la irreversible condena de Judas no radica en el destino de Judas, que ignoramos, sino en comprender qué es aquello de nuestra libertad humana que tiene siquiera la posibilidad de traicionar a Dios. Porque da vértigos pensar en que un Dios que nos creó sin nosotros, no nos va a salvar sin nosotros.&lt;/p&gt;
+&lt;p&gt;Pero esta falla que ocurre no es ingenua y no ocurre por error sino por diseño, porque como dice nuestro Diógenes porteño Diego Capusotto “el verdadero mal se hace el boludo”. Y la fijación con el rol de Judas pasa por alto lo decisivo: la traición al Padre por miembros del Pueblo Elegido ya fue denunciada por Jesús, la traición al Hijo ya es un hecho consumado y parte del Testimonio que nos dejó. Nosotros, como individuos en relación con Dios tenemos que guardarnos de una sóla traición en nuestro tiempo: la traición al Espíritu Santo. Esta traición, que es el único pecado imperdonable, goza de una sospechosa inatención.&lt;/p&gt;
+&lt;h4 id=&#34;el-mal-como-misericordia-aparente&#34;&gt;El mal como misericordia aparente&lt;/h4&gt;
+&lt;p&gt;La debilidad del cristianismo es que no puede ser menos que misericordia plena. Y la misericordia sólo es misericorde si es verdadera, así como la verdad sólo es verdadera si es justa, así como la justicia sólo es justa si es misericorde. Porque todo aquel que siembre auténtica misericordia, cosechará misericordia, verdad y justicia.&lt;/p&gt;
+&lt;p&gt;Pero la fortaleza del mal radica precisamente en su incompletitud. Su obra es incompleta por diseño, y su fuerza es mayor cuanto mayor sea la apariencia de aquello que no es.&lt;/p&gt;
+&lt;p&gt;Cuando Ulises va a su encuentro con Circe, recibe de Hermes una flor de molly. Al comer la flor evita ser convertido por Circe en un animal más. Pero cuando se rechaza el regalo de los dioses, sólo es posible la afirmación de lo diverso en virtud de la autopercepción; pero esta autopercepción contiene de forma reduplicada la autoafirmación que nace de rechazar el discernimiento (la flor de molly). Por este motivo la misericordia aparente nunca puede ir más allá de sí por más que lo intente, es un árbol que no da frutos. Y así el mal sólo puede aparentar sembrar misericordia.&lt;/p&gt;
+&lt;p&gt;El mal como misericordia aparente se expresa como la negación de la irreversibilidad. El mal como misericordia aparente busca alzarse como el triunfo del perdón sin Dios, pero es un gigante con pies de barro, una higuera que no dará frutos.  Cada vez que quiere consolar se incluye en el consuelo y hace que todo gire en torno a sí, porque el mal es interés en el mal.&lt;/p&gt;
+&lt;h4 id=&#34;el-mal-como-escándalo-ante-el-testimonio&#34;&gt;El mal como escándalo ante el testimonio&lt;/h4&gt;
+&lt;p&gt;Si la flor de molly retiene el discernimiento, la flor de loto del mal arrebata para sí la reversibilidad al aniquilar la verdad o la justicia. Y todo será misericordia entre los dos mientras no haya testigos. Pero si alguien diera testimonio y objetara al mal diciendo: “Muy bien, veo tu misericordia, pero quiero que me muestres la verdad y la justicia”, ese testigo deberá estar bien preparado para dar testimonio, porque será sentado al banquillo del tribunal del mundo y acusado de falta de conmiseración. Porque no hay ni pizcas de apariencia de misericordia en quien pregunta por la verdad y la justicia cuando se le presenta la misericordia aparente.&lt;/p&gt;
+&lt;h3 id=&#34;v---quid-spectas-stulte-vade-illuc&#34;&gt;V - Quid spectas, stulte? Vade illuc&lt;/h3&gt;
+&lt;p&gt;Pascal escribió en su diario personal (para no olvidarlo) que Sócrates bailaba.
+Kierkegaard escribió en su diario personal (para no olvidarlo) que Pascal usaba cilicios.
+Un hombre que visitaba Esparta se quedó parado en un pie por un largo tiempo, para luego decirle a un espartano: “No creo que usted, señor, pueda sostenerse en un pie tanto tiempo como yo”; a lo que el espartano le respondió: “Puede ser, pero no hay un sólo ganso que no pueda hacerlo”.&lt;/p&gt;
+&lt;p&gt;Oscar Borda no pudo ocultarse de la justicia argentina, justicia humana que tiene espacio para mejorar. ¿Qué tanto podremos engañar a la justicia Divina?&lt;/p&gt;
+&lt;p&gt;Grandes pensamientos que nos llevan a grandes errores, no son grandes pensamientos en absoluto pero sí revelan lo decisivo del pensador que se exprese de este modo.&lt;/p&gt;
+&lt;p&gt;Oscar no está condenado a ser libre, está invitado a la libertad y él elige, como todos nosotros.
+No hay que imaginar a Oscar feliz, hay que imaginar su vergüenza al ser alcanzado por la Justicia.
+El Infierno no son los otros, el infierno es la vergüenza de haber reconocido al Prójimo demasiado tarde.&lt;/p&gt;
+&lt;p&gt;En definitiva, el cristianismo es demasiado serio para la filosofía existencialista del siglo veinte, que es un simulacro, porque quizás se haya interesado mucho por la verdad pero no en amarla. Porque la filosofía del siglo veinte se las ingenió para ignorar lo que el cristianismo supo desde sus comienzos: no hay apropiación sin testimonio.&lt;/p&gt;
+&lt;p&gt;Entre los primeros cristianos se hablaba de la Eucaristía como viaticum, es decir, como del óbolo que se debía pagar a Caronte. Pero ¡cuánta seriedad nos trae el cristianismo! Lo que para los paganos era un pago que se hacía al morir, para los primeros cristianos el óbolo de la irreversibilidad era una dádiva que se debía rogar constantemente en esta vida. Lo que para los griegos era la marca pasiva del reconocimiento humano a la irreversibilidad de la muerte, para los cristianos es una actividad cotidiana: pedir a la divinidad en el tiempo que Aquel que es la Irreversibilidad que vence a la muerte se haga presente en la Transustanciación, y así hacernos uno con Él en la conmemoración del Testimonio. Sin testimonio, no hay irreversibilidad, y sin ella no hay seriedad.&lt;/p&gt;
+&lt;h3 id=&#34;vi---traduttore-traditore&#34;&gt;VI - Traduttore, traditore&lt;/h3&gt;
+&lt;h4 id=&#34;a-lo-panenka&#34;&gt;A lo Panenka&lt;/h4&gt;
+&lt;p&gt;Aristóteles describe al ser humano como animal político [zoo politikon], donde la discriminación con el resto de los animales radica en ser un animal gregario, un ser de la polis. Y ya que estamos atrevidos, podríamos corregir a Aristóteles y decir, el hombre no es un animal político sino un animal que da testimonio  -zoo martureo [zoo μαρτυρέω]- porque ésta es la marca eminente que nos distingue del resto de los animales. Los animales somos, sólo por existir, para la gloria de Dios. El hombre, en cambio, no sólo es para la gloria de Dios de suyo en su existencia, sino que se hace Imago Dei en su testimonio. Por lo que sensu eminenti, la distinción humana dentro de lo general animal es lo específico de su condición testimoniante. Pero Aristóteles no dijo esto porque sintió vergüenza.
+Y ya que sacamos la birome roja, podríamos decir que el viejo y peludo Dasein -Ser Ahí- no es Sein zum Tode -Ser para la Muerte- sino Zur Ehre Gottes -para la Gloria de Dios-.&lt;/p&gt;
+&lt;p&gt;Lo que acabo de decir sería un atrevimiento del que me gustaría hacerme cargo si no fuera necesario reconocer que lo han señalado Vigilius Haufniensis y muchos otros antes que yo. De lo único que me puedo vanagloriar es de indicarle al ocupado mundo filosófico porteño que su preciado Heidegger -parafraseando a alguien que tenía segundo año comercial- “Heidegger nosabeler”.
+Pero los profesores usan camisa&lt;/p&gt;
+&lt;p&gt;Los cínicos decían que la vestimenta del mejor de los hombres es la de su máxima desfachatez. Los cínicos buscaban parecerse a los dioses reduciendo sus necesidades. Llevados al extremo, su apariencia era lo más parecido que vamos a encontrar en la antigua grecia a un profeta judío. Con todo, hay algo que marca la clara distinción entre un cínico y un profeta: el temor de Dios. Mientras los profetas nacieron en el Pueblo del Temor de Dios, los cínicos fueron absorbidos por su autocomplaciente vis cómica y perdieron la seriedad al olvidarse de que Necesitar de Dios es la Suprema Perfección del ser humano. Por eso la praxis cínica se fue tornando más y más grotesca cuanto más se alejó del testimonio que Sócrates supo dar con auxilio de su daimon, que hacía las veces de temor divino.&lt;/p&gt;
+&lt;h4 id=&#34;flor-de-elipsis-de-reduplicación&#34;&gt;Flor de elipsis de reduplicación&lt;/h4&gt;
+&lt;p&gt;No hay que dejar de recordar que cuando William James propone su cordial filosofía pragmática, nos acerca la verdad como verdadera si es buena o buena si es verdadera. Los italianos decían algo parecido de las mujeres: no es linda si es linda, es linda si te gusta. Pero esta cariñosa y querible filosofía comerciante se queda en el VERUM y el BONUM pero se olvida del matrimoniante UNUM. Ese UNUM es precisamente el unum del testimonio. Y lo siento si no soy lo suficientemente pragmático como para compartir una exposición filosófica que apele al sentido común, pero me basta con repetir una impopular exégesis bíblica para marcar el énfasis de lo que quiero decir. Porque el cristianismo no es un pragmatismo, porque no tiene la prisa de un comerciante, y porque las exposiciones pragmáticas sólo satisfacen a los malagradecidos.&lt;/p&gt;
+&lt;p&gt;Leemos en el Evangelio del Discípulo Amado que el Dueño del Sábado primero cura a un paralítico un día sábado, después repone la vista a un ciego en un sábado, después devuelve a esta vida a Lázaro en un sábado, y por último es resucitado (un sábado).¿Entonces por qué hablamos de Domingo de Resurrección? Porque se trata del Domingo del Testimonio de la Resurrección. Lo que ocurre el Domingo es el Testimonio, y no la Resurrección.&lt;/p&gt;
+&lt;h4 id=&#34;cortala-con-tanta-dulzura&#34;&gt;Cortala con tanta dulzura&lt;/h4&gt;
+&lt;p&gt;Algunas palabras están tan manoseadas y sirvieron propósitos tan diversos que su uso es más una excentricidad al servicio de los intereses de quienes las usan que una necesidad propia de la comunicación. ¿Hasta dónde llega el barrio de Palermo? Estoy convencido de que antes de que nos demos cuenta vamos a ser todos palermitanos, es inevitable. Con la palabra felicidad pasa algo parecido, su uso está extendido, pero la comunicación está trabada. Esto los anglosajones lo administran muy bien cuando se interpelan mutuamente diciendo “Are you enjoying yourself?”. Pero los porteños no tenemos una barrera de contención así, así que pienso que algún día todos los porteños terminaremos siendo palermitanos y felices, es inevitable.&lt;/p&gt;
+&lt;p&gt;Filolaus decía “Algunos logoi son demasiado fuertes para nosotros”. En ese sentido, hablar de felicidad es un acto de desconsideración con la mayoría de las personas. Porque el común de la gente sencillamente no quiere que le hablen de felicidad, y con todo derecho. Felicidad es una palabra muy difícil de digerir. Hablar de felicidad es como contar plata delante de los pobres.
+La palabra makarios se usaba para referirse a los muertos, porque ya no tenían que seguir sufriendo lo que se sufre en vida. Estos muertos eran privilegiados por no sufrir como sufren los vivos. También se empleaba makarios para referirse a los chicos de las familias nobles, porque no iban a tener que hacer el recorrido sufrido que hace el común de las personas e iban a transitar su vida entre algodones, contactos y fondos suficientes. Todos ellos (los muertos y los chicos nobles) eran en definitiva, privilegiados y no felices. Y esto es algo en lo que podemos meditar sin atragantarnos, más allá de lo que la Providencia disponga para nuestras vidas.&lt;/p&gt;
+&lt;h3 id=&#34;vii---date-por-privilegiado&#34;&gt;VII - Date por privilegiado&lt;/h3&gt;
+&lt;p&gt;Nos cuenta Plutarco que durante la segunda guerra médica y en la vigilia de la batalla de Termópilas, el rey Jerjes al comando de un ejército de más de 250.000 hombres envió un emisario con una carta a Leónidas, al frente de 300 espartanos, con la expectativa de dispensar del combate.  El mensaje era breve: “Entreguen sus armas”.  Pero los espartanos saben que el que habla negocia e invita a negociar, por lo que esto podría haber ilusionado al rey a pensar en la supervivencia de su ejército en una batalla de 600 a 1. Pero Leónidas no era ateniense y él sabía como buen espartano que la muerte no es la seriedad, él sabía que la seriedad es la irreversibilidad, por lo que respondió en un dórico que nunca conoceremos algo que se sigue traduciendo desde aquel entonces.
+Algunos apelan al intelecto apurando el griego original como si todos debiéramos procesarlo y repiten “molon labe”, como si el coraje estuviera escondido en una lengua muerta.&lt;/p&gt;
+&lt;p&gt;Otros buscan descifrar una expresión que replique el laconismo del pueblo y arrojan un brevísimo “ven y toma”. Otros buscan precisión en la declinación y se atreven a una expresión más desarrollada con un “Una vez que hayas venido, tómalas tú mismo”. Alguien, posiblemente no un estudioso de las lenguas, podría proponer algo más chabacano como un “Vení y agarralas”, apelando al tono provocador de las respuesta. Cualquiera sea la traducción que se elija, el mensaje es el mismo: la muerte no es la seriedad, la seriedad es la irreversibilidad. Y si hay algo provocador en la expresión de Leónidas es la desfachatez de responderle en las vísperas de la batalla al rey de un ejército que lo supera en número 600 a 1 y que lo invita a negociar, que si quiere las armas se las tiene que ganar: comunicar la irreversibilidad de la posición.&lt;/p&gt;
+&lt;p&gt;Si el tiempo es el más sabio de los consejeros, escuchemos su consejo y entendamos que estas dos palabras  “Molon labe”, pesan hoy más que la suma de todos los discursos de la edad de oro de Atenas.
+Fidias podía esculpir un león con sólo ver su garra&lt;/p&gt;
+&lt;p&gt;Basta con cerrar los ojos para imaginar la desfachatez de Leónidas siendo celebrada por esos espartanos con golpes de escudo, abrazando la muerte sin titubear; encontrando el coraje en golpear el escudo con todas sus fuerzas, recibiendo como consuelo el fragor proveniente de todo un ejército decidido a morir. Estoy seguro de que hasta el más cobarde de nosotros habría sido transformado por esa experiencia colectiva en el espartano 301.&lt;/p&gt;
+&lt;p&gt;Pero aún esta escena límite parece sencilla cuando la comparo con la voz de ese judío exclamando “¡Dense por Privilegiados!” a orillas del lago. “¡¡Dense por Privilegiados!!” Una y otra vez, “¡¡Dense por Privilegiados!!” con la voz de mando que sólo puede proyectar un rey que se sabe rey, “¡¡Dense por Privilegiados!!” y del otro lado una multitud silenciosa. No se escuchaba el estrépito de los escudos, no había cientos de seguidores formados en fila y listos para la batalla. No había una primera fila de políticos aplaudidores. No había qué golpear para calmar la ansiedad, no había una multitud eufórica para reconfortarnos. ¿Quién podría tener oídos para oír esas palabras? Dudo que el más valiente de nosotros podría escuchar esto sin empezar a sobarse los brazos para calmar la ansiedad. ¿A quién no se le hubiera cortado la respiración al descubrir que este hombre hablaba en serio?&lt;/p&gt;
+&lt;h4 id=&#34;porque-no-me-avergüenzo-de-las-buenas-noticias&#34;&gt;Porque no me avergüenzo de las buenas noticias&lt;/h4&gt;
+&lt;p&gt;Tener necesidades es la mayoría de las veces percibido como una imperfección, mostrar nuestras necesidades es motivo de pudor porque revela nuestra incompletitud. Muéstrenme al que no se haya sentido un juguete roto del destino y yo les mostraré a un ladrón. Pero necesitar de Dios es nuestra perfección porque es la marca de nuestra conexión con lo Supremo. Por eso necesitar de Dios es la máxima perfección a la que podemos aspirar como individuos. Pero eso no es todo, porque este texto termina pero tenemos una vida que vivir y un testimonio que dar. Y ese testimonio debe expresar nuestra más íntima verdad: que necesitar del Dios del Amor es lo mejor de nosotros.&lt;/p&gt;
+&lt;p&gt;Demos entonces ese testimonio y sólo si es justo y necesario usemos palabras. Pero sobre todo -y a esto es a lo que vine- no nos olvidemos de la seriedad: para que haya testimonio -sursum corda- démonos por privilegiados. Acerquémonos con humildad para recibir al óbolo de la Irreversibilidad en nuestras vidas, ese óbolo que hace sagrado al Pudor de Prójimo. No escondamos la boca detrás de una mano, no bajemos la mirada como si le faltara decoro a nuestra conducta, no finjamos humildad para acomodarnos a las convenciones sociales ni seamos desfachatados para ganar la aprobación del público; en definitiva, no tengamos miedo a la vergüenza de no ser de este mundo. Sigamos su testimonio para que nuestra adoración sea perfecta y levantemos el corazón:&lt;/p&gt;
+&lt;p&gt;¡Démonos por Privilegiados cuando
+Demos Testimonio frente a Nuestro Prójimo
+de que Necesitar del Dios del Amor es
+El Manantial del que brota la Verdad y la Vida, Vida en Abundancia!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nvidia</title>
+      <link>https://juanivb.github.io/showcase/nvidia/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/showcase/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v2.0.0 Released!</title>
+      <link>https://juanivb.github.io/blog/v2.0.0/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/blog/v2.0.0/</guid>
+      <description>&lt;p&gt;Hugo v2.0.0 is now available! This release includes new experimental features to try out, improvements to accessibility, the ability for plugins to customize image optimization in Markdown, and many more improvements and bug fixes.&lt;/p&gt;
+&lt;p&gt;Highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New config options&lt;/li&gt;
+&lt;li&gt;Improved accessibility&lt;/li&gt;
+&lt;li&gt;Customizable image optimization in Markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you to everyone who contributed to this release!&lt;/p&gt;
+&lt;h2 id=&#34;new-features&#34;&gt;New Features&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
+&lt;h2 id=&#34;bug-fixes&#34;&gt;Bug Fixes&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-upgrade&#34;&gt;How to Upgrade&lt;/h2&gt;
+&lt;p&gt;Simply run the following command in your terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo mod get -u github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind@main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>v1.0.0 Released!</title>
+      <link>https://juanivb.github.io/blog/v1.0.0/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/blog/v1.0.0/</guid>
+      <description>&lt;p&gt;Hugo v1.0.0 is now available! This release includes new experimental features to try out, improvements to accessibility, the ability for plugins to customize image optimization in Markdown, and many more improvements and bug fixes.&lt;/p&gt;
+&lt;p&gt;Highlights include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New config options&lt;/li&gt;
+&lt;li&gt;Improved accessibility&lt;/li&gt;
+&lt;li&gt;Customizable image optimization in Markdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you to everyone who contributed to this release!&lt;/p&gt;
+&lt;h2 id=&#34;new-features&#34;&gt;New Features&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
+&lt;h2 id=&#34;bug-fixes&#34;&gt;Bug Fixes&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-upgrade&#34;&gt;How to Upgrade&lt;/h2&gt;
+&lt;p&gt;Simply run the following command in your terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo mod get -u github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind@main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae fringilla sem. Integer mattis dictum augue non auctor. Proin quis porttitor enim. Praesent vulputate arcu egestas scelerisque condimentum. Vivamus elit risus, suscipit et enim et, viverra molestie elit. Nulla ullamcorper nisl vel nisi pellentesque, id feugiat risus interdum. Duis consequat ipsum elit. Aenean hendrerit diam ipsum, a convallis magna congue et. Sed ex erat, pretium et ante id, malesuada luctus nibh. Nunc nec consectetur elit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>https://juanivb.github.io/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/community/</guid>
+      <description>&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;p&gt;Get support fast. Hugo Blox has the largest Hugo community on Discord, consisting of thousands of creators, developers, and startups.&lt;/p&gt;
+&lt;h2 id=&#34;docs&#34;&gt;Docs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;View the &lt;a href=&#34;https://docs.hugoblox.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;chat&#34;&gt;Live Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Join the &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Online Chat&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;#using-hugo-blox&lt;/em&gt; for user help&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;#contributors&lt;/em&gt; for contributing help&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;feature-requests&#34;&gt;Feature requests&lt;/h2&gt;
+&lt;p&gt;For new feature requests, create a post on our &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Issues&lt;/a&gt;. You can also upvote existing feature requests with a 👍&lt;/p&gt;
+&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+&lt;p&gt;Follow us so you are the first to know when new features and templates are launched:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Subscribe to the &lt;em&gt;#announcement&lt;/em&gt; channel on Discord&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/GetResearchDev&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Follow us on Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hugoblox.com/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Subscribe to the Hugo Blox blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-resources&#34;&gt;Further Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Forums&lt;/a&gt; for help installing Hugo and resolving Hugo error messages&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

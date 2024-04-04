@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GEC0319 | Juani Vázquez Broquá</title>
+    <link>https://juanivb.github.io/docs/gec0319/</link>
+      <atom:link href="https://juanivb.github.io/docs/gec0319/index.xml" rel="self" type="application/rss+xml" />
+    <description>GEC0319</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://juanivb.github.io/media/logo.svg</url>
+      <title>GEC0319</title>
+      <link>https://juanivb.github.io/docs/gec0319/</link>
+    </image>
+    
+    <item>
+      <title>Program</title>
+      <link>https://juanivb.github.io/docs/gec0319/program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/gec0319/program/</guid>
+      <description>&lt;h2 id=&#34;gec0319-time-series-econometrics&#34;&gt;GEC0319: Time Series Econometrics&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Bachelor&amp;rsquo;s Degree in Economics&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Pontificia Universidad Católica Argentina&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-objectives&#34;&gt;1. Objectives&lt;/h4&gt;
+&lt;h5 id=&#34;11-general&#34;&gt;&lt;strong&gt;1.1 General&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Provide students with an introduction to econometric analysis of time series, reinforcing technical knowledge acquired through understanding the historical context in which they took place, and dimensioning their value through replication and simulation exercises in Python.&lt;/p&gt;
+&lt;h5 id=&#34;12-specific&#34;&gt;&lt;strong&gt;1.2 Specific&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Enable students to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Analyze time series, detecting their relevant characteristics;&lt;/li&gt;
+&lt;li&gt;Fit univariate and multivariate models using datasets with time series realizations in tabular format;&lt;/li&gt;
+&lt;li&gt;Properly interpret statistical tests and best practices for each case;&lt;/li&gt;
+&lt;li&gt;Present technical content adequately in oral and written form to both technical and non-technical audiences.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;2-contents&#34;&gt;2. Contents&lt;/h4&gt;
+&lt;h5 id=&#34;21-module-i&#34;&gt;2.1 &lt;strong&gt;Module I&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Historical approach to linear regression. Review of OLS fundamentals. Introduction to Time Series. Motivation. Basic notions. Stationary and non-stationary series. Strong and weak stationarity. Theoretical and sample functions of autocovariance, autocorrelation, and partial autocorrelation in stationary series. Autocovariance and autocorrelation functions. Typical transformations. Historical context. Box-Jenkins methodology. Model selection based on information criteria. Particular case ARIMA (0,1,1) in connection with simple ETS models. Autoregressive integrated moving average model of order p, d, and q (ARIMA(p,d,q)).&lt;/p&gt;
+&lt;h5 id=&#34;22-module-ii&#34;&gt;2.2 &lt;strong&gt;Module II&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;Unit Root Tests. Structural Breaks. Lucas Critique. Vector Autoregressive Models (VAR). Historical context. Cointegration and Granger Causality.&lt;/p&gt;
+&lt;h4 id=&#34;3-evaluation-system&#34;&gt;3. Evaluation System&lt;/h4&gt;
+&lt;p&gt;To pass the course, students must pass a midterm exam and a final integrative project, along with the completion of weekly assigned activities.
+The exam will be graded on a scale of 0 to 10 points. An exam will be considered passed when the grade is 4 (four) points or more. To access the final exam, students must pass the midterm and practical work and presentations delivered on time, with only one recovery instance available after taking the two midterm exams.
+The course grade will be a weighted average of the midterm exam grade (25%), the integrative project (50%), and class participation and completion of activities (25%).
+Once the course is passed, students must take a final exam. The final exam grade will consist of 80% of the course grade and 20% of the result of the exam taken on the final date. The final exam will only be passed if the exam taken on the day is passed, regardless of the average.&lt;/p&gt;
+&lt;h4 id=&#34;4-schedule&#34;&gt;4. Schedule&lt;/h4&gt;
+&lt;h5 id=&#34;classes&#34;&gt;&lt;strong&gt;Classes&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Twesdays:  Puerto Madero from 18.20 to 19.50 pm&lt;/li&gt;
+&lt;li&gt;Fridays:  Online Lessons from 18.20 to 19.50 pm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;exams&#34;&gt;&lt;strong&gt;Exams&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Midterm: Apr 30&lt;/li&gt;
+&lt;li&gt;Project : TBD&lt;/li&gt;
+&lt;li&gt;Final Exam: TBD First call, TBD Second call&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;5-bibliography&#34;&gt;5. Bibliography&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2018&lt;/td&gt;
+&lt;td&gt;J. D. Levendis&lt;/td&gt;
+&lt;td&gt;Time Series Econometrics: Learning Through Replication&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/-/es/Levendis/dp/3319982818&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1994&lt;/td&gt;
+&lt;td&gt;J. D. Hamilton&lt;/td&gt;
+&lt;td&gt;Time Series Analysis&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/-/es/James-D-Hamilton-ebook/dp/B08DL8TCSB?ref_=ast_author_mpb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;W. Enders&lt;/td&gt;
+&lt;td&gt;Applied Econometric Time Series&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.amazon.com/Applied-Econometric-Wiley-Probability-Statistics-ebook/dp/B00P6SS6RA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2013&lt;/td&gt;
+&lt;td&gt;Rob. Hyndman&lt;/td&gt;
+&lt;td&gt;Forecasting: Principles and Practice&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://otexts.com/fpp3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

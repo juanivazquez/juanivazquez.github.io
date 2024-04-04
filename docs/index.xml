@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction | Juani Vázquez Broquá</title>
+    <link>https://juanivb.github.io/docs/</link>
+      <atom:link href="https://juanivb.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <description>Introduction</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://juanivb.github.io/media/logo.svg</url>
+      <title>Introduction</title>
+      <link>https://juanivb.github.io/docs/</link>
+    </image>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://juanivb.github.io/docs/getting-started/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/getting-started/</guid>
+      <description>&lt;p&gt;👋 Welcome to my personal website, where I curate all my writing activities under one roof. Whether you&amp;rsquo;re interested in exploring time series analysis, delving into coding tutorials, pondering philosophical musings, or simply enjoying some thoughtful blogging, you&amp;rsquo;ve come to the right place.&lt;/p&gt;
+&lt;p&gt;Currently, I&amp;rsquo;m diligently crafting an online Time Series Course to share my expertise with learners worldwide. Stay tuned for updates on its release!&lt;/p&gt;
+&lt;p&gt;Your feedback and suggestions are invaluable to me as I strive to create valuable content tailored to your interests. Feel free to reach out with any ideas or suggestions you may have.&lt;/p&gt;
+&lt;p&gt;Thank you for visiting, and I hope you find something inspiring during your time here.&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+&lt;p&gt;JIVB&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

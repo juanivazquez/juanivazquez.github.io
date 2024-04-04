@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding | Juani Vázquez Broquá</title>
+    <link>https://juanivb.github.io/docs/time-series/module-1/coding/</link>
+      <atom:link href="https://juanivb.github.io/docs/time-series/module-1/coding/index.xml" rel="self" type="application/rss+xml" />
+    <description>Coding</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://juanivb.github.io/media/logo.svg</url>
+      <title>Coding</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/</link>
+    </image>
+    
+    <item>
+      <title>Experiments</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/replications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementations</title>
+      <link>https://juanivb.github.io/docs/time-series/module-1/coding/implementations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/implementations/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

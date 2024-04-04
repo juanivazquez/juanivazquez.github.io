@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Not So Long Ago | Juani Vázquez Broquá</title>
+    <link>https://juanivb.github.io/docs/gec0319/module-1/</link>
+      <atom:link href="https://juanivb.github.io/docs/gec0319/module-1/index.xml" rel="self" type="application/rss+xml" />
+    <description>Not So Long Ago</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://juanivb.github.io/media/logo.svg</url>
+      <title>Not So Long Ago</title>
+      <link>https://juanivb.github.io/docs/gec0319/module-1/</link>
+    </image>
+    
+    <item>
+      <title>Reading</title>
+      <link>https://juanivb.github.io/docs/gec0319/module-1/reading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/gec0319/module-1/reading/</guid>
+      <description>&lt;p&gt;It is a challenging task to select an appropriate number of papers on such a sophisticated subject since many ideas on time series are scattered across various authors from different backgrounds and most papers can only be understood after a systematic review. However, after some hesitation I&amp;rsquo;ve reached the conclusion that the best of my efforts should be in service to become a dedicated and good-will assistant at your service instead of trying to be a judge of relevance. In this spirit I&amp;rsquo;ve shortlisted the following texts. I hope you find value in them.&lt;/p&gt;
+&lt;h3 id=&#34;selected-papers&#34;&gt;Selected Papers&lt;/h3&gt;
+&lt;h4 id=&#34;historical&#34;&gt;Historical&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1805&lt;/td&gt;
+&lt;td&gt;A.M. Legendre&lt;/td&gt;
+&lt;td&gt;A New Method&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1809&lt;/td&gt;
+&lt;td&gt;C.F. Gauss&lt;/td&gt;
+&lt;td&gt;Theory of the motion of the heavenly bodies&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1839&lt;/td&gt;
+&lt;td&gt;W.R. Hamilton&lt;/td&gt;
+&lt;td&gt;Algebra as the Science of Pure Time&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/PureTime/PureTime.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1848&lt;/td&gt;
+&lt;td&gt;W.R. Hamilton&lt;/td&gt;
+&lt;td&gt;Researches Respecting Quaternions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/ResQuat/ResQuat.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1870&lt;/td&gt;
+&lt;td&gt;F. Galton&lt;/td&gt;
+&lt;td&gt;Regression Towards Mediocrity in Hereditary Stature&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1897&lt;/td&gt;
+&lt;td&gt;G.U. Yules&lt;/td&gt;
+&lt;td&gt;On the theory of correlation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1905&lt;/td&gt;
+&lt;td&gt;A. Einstein&lt;/td&gt;
+&lt;td&gt;Brownian Movement&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1905&lt;/td&gt;
+&lt;td&gt;K. Pearson&lt;/td&gt;
+&lt;td&gt;The Problem of The Random Walk&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1921&lt;/td&gt;
+&lt;td&gt;G.U. Yules&lt;/td&gt;
+&lt;td&gt;On the time correlation problem&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1927&lt;/td&gt;
+&lt;td&gt;E. Slutzky&lt;/td&gt;
+&lt;td&gt;The Summation of Random Causes as the Source of&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1927&lt;/td&gt;
+&lt;td&gt;G.U. Yules&lt;/td&gt;
+&lt;td&gt;On a Method of Investigating Periodicities&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1931&lt;/td&gt;
+&lt;td&gt;G.T. Walker&lt;/td&gt;
+&lt;td&gt;On Periodicity in Series of Related Terms&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1939&lt;/td&gt;
+&lt;td&gt;H. Wold&lt;/td&gt;
+&lt;td&gt;A study in Analysis of Time Series&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1939&lt;/td&gt;
+&lt;td&gt;J. Tinbergen&lt;/td&gt;
+&lt;td&gt;Statistical testing of business cycle theories&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1940&lt;/td&gt;
+&lt;td&gt;J. Tinbergen&lt;/td&gt;
+&lt;td&gt;Econometric Business Cycle Research&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1942&lt;/td&gt;
+&lt;td&gt;T.E.W. Schumann&lt;/td&gt;
+&lt;td&gt;On Yule&amp;rsquo;s method of investigating periodicities&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;contextual&#34;&gt;Contextual&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2003&lt;/td&gt;
+&lt;td&gt;Leo A. Harrington&lt;/td&gt;
+&lt;td&gt;Anaximander&amp;rsquo;s Sayings&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2011&lt;/td&gt;
+&lt;td&gt;T.C. Mills&lt;/td&gt;
+&lt;td&gt;Wold and the Russians&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2001&lt;/td&gt;
+&lt;td&gt;D. Qin&lt;/td&gt;
+&lt;td&gt;The Error Term in the History of Time Series&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2012&lt;/td&gt;
+&lt;td&gt;R. M. Hogarth&lt;/td&gt;
+&lt;td&gt;The illusion of predictability&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/public/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://juanivb.github.io/docs/gec0319/module-1/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/gec0319/module-1/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://juanivb.github.io/docs/gec0319/module-1/assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://juanivb.github.io/docs/gec0319/module-1/assignment/</guid>
+      <description>&lt;p&gt;Ok, so now you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t. I&amp;rsquo; don&amp;rsquo;t either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;strong&gt;Unknown Unknowns&lt;/strong&gt;. Lets get started.&lt;/p&gt;
+&lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
+&lt;div class=&#34;hb-steps&#34;&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a paper from the Reading module you have read by now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Re-read it &lt;em&gt;carefuly&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Look up for papers commenting on it. Read them as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Write a short essay &lt;strong&gt;(max. 2 pages)&lt;/strong&gt; highlighting the key ideas this paper brings to the table and any relevant observation you found out when you revisited the literature on this subject.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Answer the following questions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-0&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;Q&amp;amp;A&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;5.1 Why do you think this paper got the attention it got at the time it was published?&lt;/p&gt;
+&lt;p&gt;5.2 What or Who would you say the author/s of this paper had in mind at the time of this publication?&lt;/p&gt;
+&lt;p&gt;5.3 Would you say this paper is a response to a previous idea / paper from some other author?&lt;/p&gt;
+&lt;p&gt;5.4 Would you say this paper is dated in some way by now? Have some ideas discussed in the text grown old by know? Is there any new idea making this debate irrelevant today? if so, why?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Find the original dataset.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replicate the experiment or algorithm used by the author.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can you think of an alternative approach to this issue? How would you have approached the problem from scratch by yourself? Dig deep, be honest.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement your approach, as silly as it seems. If it makes you proud, better so.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compare the results between both approaches. Why would you say the results differ? Be detailed on the explanation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-5&#34;&gt;Step 5&lt;/h3&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Make a short presentation out of the previous 3 Steps &lt;strong&gt;(max. 20 slides)&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Practice this presentation twice to different classmates and gather feedback on the following:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;**Peer Review** &lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;i. Is it easy to follow?&lt;/p&gt;
+&lt;p&gt;ii. Is it compelling?&lt;/p&gt;
+&lt;p&gt;iii. Should it be more detailed in any way? Should I skip any part?&lt;/p&gt;
+&lt;p&gt;iv. Do you disagree in any way? Focus on both the technical observations and the communicational aspects of the presentation. Sometimes the order in which ideas are presented make a difference (no pun intended).&lt;/p&gt;
+&lt;p&gt;v. What else should I do to improve this presentation?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;This feedback should give you an idea on how to improve. Make the changes you believe are necessary and make a video out of it. Keep in mind best practices (check your mic, the illumination of the room, the setting, avoid a loud place).
+i. Record yourself making the final presentation. How long did it take? Are you proud of it?
+ii. Re-record it until you come up with a version that makes you proud and complies with the 5 minutes limit rule I just invented.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally record yourself describing the experience you had making this video.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-6&#34;&gt;Step 6&lt;/h3&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;**Delivery**&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;The output of this learning process should be a folder including the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Original paper with annotations on it. &lt;strong&gt;(step 1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Relevant related papers you read during this exercise.&lt;strong&gt;(step 1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The short essay you wrote about it. &lt;strong&gt;(step 2)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A document with the Q&amp;amp;A. &lt;strong&gt;(step 3)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The dataset and the code you wrote clearly explained.&lt;/li&gt;
+&lt;li&gt;The feedback you gathered from your colleagues.&lt;strong&gt;(step 5)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The first and definitive video recording you made.&lt;/li&gt;
+&lt;li&gt;Live presentation to the whole class.&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
