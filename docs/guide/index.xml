@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy | Juani Vázquez Broquá</title>
-    <link>https://juanivb.github.io/docs/guide/</link>
-      <atom:link href="https://juanivb.github.io/docs/guide/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/docs/guide/</link>
+      <atom:link href="http://localhost:4321/docs/guide/index.xml" rel="self" type="application/rss+xml" />
     <description>Philosophy</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>https://juanivb.github.io/media/logo.svg</url>
+      <url>http://localhost:4321/media/logo.svg</url>
       <title>Philosophy</title>
-      <link>https://juanivb.github.io/docs/guide/</link>
+      <link>http://localhost:4321/docs/guide/</link>
     </image>
     
     <item>
       <title>La Moneda Ética</title>
-      <link>https://juanivb.github.io/docs/guide/la_moneda_etica/</link>
+      <link>http://localhost:4321/docs/guide/la_moneda_etica/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/guide/la_moneda_etica/</guid>
+      <guid>http://localhost:4321/docs/guide/la_moneda_etica/</guid>
       <description>&lt;p&gt;&lt;strong&gt;¿Es posible una aproximación económica a la obra de Kierekgaard?&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;introducción&#34;&gt;Introducción&lt;/h3&gt;
 &lt;p&gt;¿Cuál es el sentido de una aproximación sistemática a un pensador que rechaza lo sistemático? La respuesta a esta pregunta va a depender de la capacidad del sistema de incorporar al pensador, o bien de la capacidad del pensador de rechazar al sistema que trata de absorberlo. En esta exposición se intenta acompañar esta última alternativa –es decir, que lo económico es incapaz de capturar a Kierkegaard- donde el valor de lo expuesto a continuación proviene de mostrar los efectos económicos que este rechazo implica.
@@ -71,9 +71,9 @@ lo que es igual a la inconmensurabilidad de la elección (+∞/-∞). Es decir q
     
     <item>
       <title>Para Distinguir los Pies</title>
-      <link>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
+      <link>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
+      <guid>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
       <description>&lt;h2 id=&#34;instrucciones-para-subir-una-escalera&#34;&gt;Instrucciones para subir una escalera&lt;/h2&gt;
 &lt;p&gt;(Julio Cortázar, Historias de Cronopios y de Famas, 1962)&lt;/p&gt;
 &lt;p&gt;Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se situó un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.&lt;/p&gt;
@@ -172,9 +172,9 @@ Esta  operación, análoga a la anterior, también es dolorosa. Pero si de la pr
     
     <item>
       <title>Meditaciones Inapropincuas</title>
-      <link>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</link>
+      <link>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</guid>
+      <guid>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</guid>
       <description>&lt;div style=&#34;text-align: center;&#34;&gt;
 Cuando estés ahí, date por privilegiado &lt;br&gt;
 Catulus Ludensis

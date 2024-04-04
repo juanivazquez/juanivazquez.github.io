@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Time Series | Juani Vázquez Broquá</title>
-    <link>https://juanivb.github.io/docs/time-series/</link>
-      <atom:link href="https://juanivb.github.io/docs/time-series/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/docs/time-series/</link>
+      <atom:link href="http://localhost:4321/docs/time-series/index.xml" rel="self" type="application/rss+xml" />
     <description>Time Series</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>https://juanivb.github.io/media/logo.svg</url>
+      <url>http://localhost:4321/media/logo.svg</url>
       <title>Time Series</title>
-      <link>https://juanivb.github.io/docs/time-series/</link>
+      <link>http://localhost:4321/docs/time-series/</link>
     </image>
     
     <item>
       <title>Program</title>
-      <link>https://juanivb.github.io/docs/time-series/program/</link>
+      <link>http://localhost:4321/docs/time-series/program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/program/</guid>
+      <guid>http://localhost:4321/docs/time-series/program/</guid>
       <description>&lt;h2 id=&#34;time-series&#34;&gt;Time Series&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Bachelor&amp;rsquo;s Degree in Economics - Pontificia Universidad Católica Argentina&lt;/em&gt;&lt;/p&gt;
 &lt;h4 id=&#34;course-style&#34;&gt;Course Style&lt;/h4&gt;

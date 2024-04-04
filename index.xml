@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home | Juani Vázquez Broquá</title>
-    <link>https://juanivb.github.io/</link>
-      <atom:link href="https://juanivb.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/</link>
+      <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://juanivb.github.io/media/logo.svg</url>
+      <url>http://localhost:4321/media/logo.svg</url>
       <title>Home</title>
-      <link>https://juanivb.github.io/</link>
+      <link>http://localhost:4321/</link>
     </image>
     
     <item>
       <title>Welcome</title>
-      <link>https://juanivb.github.io/docs/getting-started/</link>
+      <link>http://localhost:4321/docs/getting-started/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/getting-started/</guid>
+      <guid>http://localhost:4321/docs/getting-started/</guid>
       <description>&lt;p&gt;👋 Welcome to my personal website, where I curate all my writing activities under one roof. Whether you&amp;rsquo;re interested in exploring time series analysis, delving into coding tutorials, pondering philosophical musings, or simply enjoying some thoughtful blogging, you&amp;rsquo;ve come to the right place.&lt;/p&gt;
 &lt;p&gt;Currently, I&amp;rsquo;m diligently crafting an online Time Series Course to share my expertise with learners worldwide. Stay tuned for updates on its release!&lt;/p&gt;
 &lt;p&gt;Your feedback and suggestions are invaluable to me as I strive to create valuable content tailored to your interests. Feel free to reach out with any ideas or suggestions you may have.&lt;/p&gt;
@@ -28,9 +28,9 @@
     
     <item>
       <title>Experiments</title>
-      <link>https://juanivb.github.io/docs/time-series/module-1/coding/experiments/</link>
+      <link>http://localhost:4321/docs/time-series/module-1/coding/experiments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/experiments/</guid>
+      <guid>http://localhost:4321/docs/time-series/module-1/coding/experiments/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -43,17 +43,17 @@
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
 &lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
 &lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
 &lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -62,9 +62,9 @@
     
     <item>
       <title>La Moneda Ética</title>
-      <link>https://juanivb.github.io/docs/guide/la_moneda_etica/</link>
+      <link>http://localhost:4321/docs/guide/la_moneda_etica/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/guide/la_moneda_etica/</guid>
+      <guid>http://localhost:4321/docs/guide/la_moneda_etica/</guid>
       <description>&lt;p&gt;&lt;strong&gt;¿Es posible una aproximación económica a la obra de Kierekgaard?&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;introducción&#34;&gt;Introducción&lt;/h3&gt;
 &lt;p&gt;¿Cuál es el sentido de una aproximación sistemática a un pensador que rechaza lo sistemático? La respuesta a esta pregunta va a depender de la capacidad del sistema de incorporar al pensador, o bien de la capacidad del pensador de rechazar al sistema que trata de absorberlo. En esta exposición se intenta acompañar esta última alternativa –es decir, que lo económico es incapaz de capturar a Kierkegaard- donde el valor de lo expuesto a continuación proviene de mostrar los efectos económicos que este rechazo implica.
@@ -119,9 +119,9 @@ lo que es igual a la inconmensurabilidad de la elección (+∞/-∞). Es decir q
     
     <item>
       <title>Program</title>
-      <link>https://juanivb.github.io/docs/time-series/program/</link>
+      <link>http://localhost:4321/docs/time-series/program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/program/</guid>
+      <guid>http://localhost:4321/docs/time-series/program/</guid>
       <description>&lt;h2 id=&#34;time-series&#34;&gt;Time Series&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Bachelor&amp;rsquo;s Degree in Economics - Pontificia Universidad Católica Argentina&lt;/em&gt;&lt;/p&gt;
 &lt;h4 id=&#34;course-style&#34;&gt;Course Style&lt;/h4&gt;
@@ -211,9 +211,9 @@ Once the course is passed, students must take a final exam. The final exam grade
     
     <item>
       <title>Reading</title>
-      <link>https://juanivb.github.io/docs/time-series/module-1/reading/</link>
+      <link>http://localhost:4321/docs/time-series/module-1/reading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/module-1/reading/</guid>
+      <guid>http://localhost:4321/docs/time-series/module-1/reading/</guid>
       <description>&lt;p&gt;It is a challenging task to select an appropriate number of papers on such a sophisticated subject since many ideas on time series are scattered across various authors from different backgrounds and most papers can only be understood after a systematic review. However, after some hesitation I&amp;rsquo;ve reached the conclusion that the best of my efforts should be in service to become a dedicated and good-will assistant at your service instead of trying to be a judge of relevance. In this spirit I&amp;rsquo;ve shortlisted the following texts. I hope you find value in them.&lt;/p&gt;
 &lt;h3 id=&#34;selected-papers&#34;&gt;Selected Papers&lt;/h3&gt;
 &lt;h4 id=&#34;historical&#34;&gt;Historical&lt;/h4&gt;
@@ -231,13 +231,13 @@ Once the course is passed, students must take a final exam. The final exam grade
 &lt;td&gt;1805&lt;/td&gt;
 &lt;td&gt;A.M. Legendre&lt;/td&gt;
 &lt;td&gt;A New Method&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1809&lt;/td&gt;
 &lt;td&gt;C.F. Gauss&lt;/td&gt;
 &lt;td&gt;Theory of the motion of the heavenly bodies&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1839&lt;/td&gt;
@@ -255,73 +255,73 @@ Once the course is passed, students must take a final exam. The final exam grade
 &lt;td&gt;1870&lt;/td&gt;
 &lt;td&gt;F. Galton&lt;/td&gt;
 &lt;td&gt;Regression Towards Mediocrity in Hereditary Stature&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1897&lt;/td&gt;
 &lt;td&gt;G.U. Yules&lt;/td&gt;
 &lt;td&gt;On the theory of correlation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1905&lt;/td&gt;
 &lt;td&gt;A. Einstein&lt;/td&gt;
 &lt;td&gt;Brownian Movement&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1905&lt;/td&gt;
 &lt;td&gt;K. Pearson&lt;/td&gt;
 &lt;td&gt;The Problem of The Random Walk&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1921&lt;/td&gt;
 &lt;td&gt;G.U. Yules&lt;/td&gt;
 &lt;td&gt;On the time correlation problem&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1927&lt;/td&gt;
 &lt;td&gt;E. Slutzky&lt;/td&gt;
 &lt;td&gt;The Summation of Random Causes as the Source of&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1927&lt;/td&gt;
 &lt;td&gt;G.U. Yules&lt;/td&gt;
 &lt;td&gt;On a Method of Investigating Periodicities&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1931&lt;/td&gt;
 &lt;td&gt;G.T. Walker&lt;/td&gt;
 &lt;td&gt;On Periodicity in Series of Related Terms&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1939&lt;/td&gt;
 &lt;td&gt;H. Wold&lt;/td&gt;
 &lt;td&gt;A study in Analysis of Time Series&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1939&lt;/td&gt;
 &lt;td&gt;J. Tinbergen&lt;/td&gt;
 &lt;td&gt;Statistical testing of business cycle theories&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1940&lt;/td&gt;
 &lt;td&gt;J. Tinbergen&lt;/td&gt;
 &lt;td&gt;Econometric Business Cycle Research&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1942&lt;/td&gt;
 &lt;td&gt;T.E.W. Schumann&lt;/td&gt;
 &lt;td&gt;On Yule&amp;rsquo;s method of investigating periodicities&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -340,25 +340,25 @@ Once the course is passed, students must take a final exam. The final exam grade
 &lt;td&gt;2003&lt;/td&gt;
 &lt;td&gt;Leo A. Harrington&lt;/td&gt;
 &lt;td&gt;Anaximander&amp;rsquo;s Sayings&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2011&lt;/td&gt;
 &lt;td&gt;T.C. Mills&lt;/td&gt;
 &lt;td&gt;Wold and the Russians&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2001&lt;/td&gt;
 &lt;td&gt;D. Qin&lt;/td&gt;
 &lt;td&gt;The Error Term in the History of Time Series&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2012&lt;/td&gt;
 &lt;td&gt;R. M. Hogarth&lt;/td&gt;
 &lt;td&gt;The illusion of predictability&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -367,9 +367,9 @@ Once the course is passed, students must take a final exam. The final exam grade
     
     <item>
       <title>Para Distinguir los Pies</title>
-      <link>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
+      <link>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
+      <guid>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
       <description>&lt;h2 id=&#34;instrucciones-para-subir-una-escalera&#34;&gt;Instrucciones para subir una escalera&lt;/h2&gt;
 &lt;p&gt;(Julio Cortázar, Historias de Cronopios y de Famas, 1962)&lt;/p&gt;
 &lt;p&gt;Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se situó un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.&lt;/p&gt;
@@ -468,17 +468,17 @@ Esta  operación, análoga a la anterior, también es dolorosa. Pero si de la pr
     
     <item>
       <title>Replications</title>
-      <link>https://juanivb.github.io/docs/time-series/module-1/coding/replications/</link>
+      <link>http://localhost:4321/docs/time-series/module-1/coding/replications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/replications/</guid>
+      <guid>http://localhost:4321/docs/time-series/module-1/coding/replications/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://juanivb.github.io/docs/time-series/module-1/assignment/</link>
+      <link>http://localhost:4321/docs/time-series/module-1/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/module-1/assignment/</guid>
+      <guid>http://localhost:4321/docs/time-series/module-1/assignment/</guid>
       <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;em&gt;Unknown Unknowns&lt;/em&gt;. So lets get started.&lt;/p&gt;
 &lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
 &lt;div class=&#34;hb-steps&#34;&gt;
@@ -584,17 +584,17 @@ ii. Re-record it until you come up with a version that makes you proud and compl
     
     <item>
       <title>Implementations</title>
-      <link>https://juanivb.github.io/docs/time-series/module-1/coding/implementations/</link>
+      <link>http://localhost:4321/docs/time-series/module-1/coding/implementations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/time-series/module-1/coding/implementations/</guid>
+      <guid>http://localhost:4321/docs/time-series/module-1/coding/implementations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Meditaciones Inapropincuas</title>
-      <link>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</link>
+      <link>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</guid>
+      <guid>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</guid>
       <description>&lt;div style=&#34;text-align: center;&#34;&gt;
 Cuando estés ahí, date por privilegiado &lt;br&gt;
 Catulus Ludensis
@@ -714,17 +714,17 @@ El Manantial del que brota la Verdad y la Vida, Vida en Abundancia!&lt;/p&gt;
     
     <item>
       <title>Nvidia</title>
-      <link>https://juanivb.github.io/showcase/nvidia/</link>
+      <link>http://localhost:4321/showcase/nvidia/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/showcase/nvidia/</guid>
+      <guid>http://localhost:4321/showcase/nvidia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>v2.0.0 Released!</title>
-      <link>https://juanivb.github.io/blog/v2.0.0/</link>
+      <link>http://localhost:4321/blog/v2.0.0/</link>
       <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/blog/v2.0.0/</guid>
+      <guid>http://localhost:4321/blog/v2.0.0/</guid>
       <description>&lt;p&gt;Hugo v2.0.0 is now available! This release includes new experimental features to try out, improvements to accessibility, the ability for plugins to customize image optimization in Markdown, and many more improvements and bug fixes.&lt;/p&gt;
 &lt;p&gt;Highlights include:&lt;/p&gt;
 &lt;ul&gt;
@@ -746,9 +746,9 @@ El Manantial del que brota la Verdad y la Vida, Vida en Abundancia!&lt;/p&gt;
     
     <item>
       <title>v1.0.0 Released!</title>
-      <link>https://juanivb.github.io/blog/v1.0.0/</link>
+      <link>http://localhost:4321/blog/v1.0.0/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/blog/v1.0.0/</guid>
+      <guid>http://localhost:4321/blog/v1.0.0/</guid>
       <description>&lt;p&gt;Hugo v1.0.0 is now available! This release includes new experimental features to try out, improvements to accessibility, the ability for plugins to customize image optimization in Markdown, and many more improvements and bug fixes.&lt;/p&gt;
 &lt;p&gt;Highlights include:&lt;/p&gt;
 &lt;ul&gt;
@@ -770,9 +770,9 @@ El Manantial del que brota la Verdad y la Vida, Vida en Abundancia!&lt;/p&gt;
     
     <item>
       <title>Community</title>
-      <link>https://juanivb.github.io/community/</link>
+      <link>http://localhost:4321/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/community/</guid>
+      <guid>http://localhost:4321/community/</guid>
       <description>&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
 &lt;p&gt;Get support fast. Hugo Blox has the largest Hugo community on Discord, consisting of thousands of creators, developers, and startups.&lt;/p&gt;
 &lt;h2 id=&#34;docs&#34;&gt;Docs&lt;/h2&gt;

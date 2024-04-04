@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Showcase | Juani Vázquez Broquá</title>
-    <link>https://juanivb.github.io/showcase/</link>
-      <atom:link href="https://juanivb.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4321/showcase/</link>
+      <atom:link href="http://localhost:4321/showcase/index.xml" rel="self" type="application/rss+xml" />
     <description>Showcase</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://juanivb.github.io/media/logo.svg</url>
+      <url>http://localhost:4321/media/logo.svg</url>
       <title>Showcase</title>
-      <link>https://juanivb.github.io/showcase/</link>
+      <link>http://localhost:4321/showcase/</link>
     </image>
     
     <item>
       <title>Nvidia</title>
-      <link>https://juanivb.github.io/showcase/nvidia/</link>
+      <link>http://localhost:4321/showcase/nvidia/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://juanivb.github.io/showcase/nvidia/</guid>
+      <guid>http://localhost:4321/showcase/nvidia/</guid>
       <description></description>
     </item>
     
