@@ -6,22 +6,49 @@
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/coding/experiments/</loc>
+    <loc>http://localhost:4321/docs/time-series/1/coding/implementations/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/2/coding/implementations/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/3/coding/implementations/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/4/coding/implementations/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/5/coding/implementations/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/docs/guide/la_moneda_etica/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/program/</loc>
+    <loc>http://localhost:4321/docs/time-series/1/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</loc>
+    <loc>http://localhost:4321/docs/time-series/program/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/docs/time-series/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/</loc>
+    <loc>http://localhost:4321/docs/time-series/1/coding/experiments/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/2/coding/experiments/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/3/coding/experiments/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/4/coding/experiments/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/5/coding/experiments/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/2/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</loc>
@@ -30,16 +57,34 @@
     <loc>http://localhost:4321/docs/guide/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/coding/replications/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/coding/implementations/</loc>
+    <loc>http://localhost:4321/docs/time-series/assignment/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/1/coding/replications/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/2/coding/replications/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/3/coding/replications/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/4/coding/replications/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/5/coding/replications/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/3/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/4/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/5/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/docs/</loc>
@@ -53,7 +98,19 @@
     <loc>http://localhost:4321/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/not_so_long_ago/coding/</loc>
+    <loc>http://localhost:4321/docs/time-series/1/coding/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/2/coding/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/3/coding/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/4/coding/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/docs/time-series/5/coding/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/tags/</loc>

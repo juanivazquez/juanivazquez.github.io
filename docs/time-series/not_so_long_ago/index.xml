@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Not So Long Ago | Juani Vázquez Broquá</title>
-    <link>http://localhost:4321/docs/time-series/not_so_long_ago/</link>
-      <atom:link href="http://localhost:4321/docs/time-series/not_so_long_ago/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://juanivb.github.io/docs/time-series/not_so_long_ago/</link>
+      <atom:link href="https://juanivb.github.io/docs/time-series/not_so_long_ago/index.xml" rel="self" type="application/rss+xml" />
     <description>Not So Long Ago</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>http://localhost:4321/media/logo.svg</url>
+      <url>https://juanivb.github.io/media/logo.svg</url>
       <title>Not So Long Ago</title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/</link>
+      <link>https://juanivb.github.io/docs/time-series/not_so_long_ago/</link>
     </image>
     
     <item>
       <title>Reading</title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</link>
+      <link>https://juanivb.github.io/docs/time-series/not_so_long_ago/reading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/not_so_long_ago/reading/</guid>
       <description>&lt;p&gt;It is a challenging task to select an appropriate number of papers on such a sophisticated subject since many ideas on time series are scattered across various authors from different backgrounds and most papers can only be understood after a systematic review. However, after some hesitation I&amp;rsquo;ve reached the conclusion that the best of my efforts should be in service to become a dedicated and good-will assistant at your service instead of trying to be a judge of relevance. In this spirit I&amp;rsquo;ve shortlisted the following texts. I hope you find value in them.&lt;/p&gt;
 &lt;h3 id=&#34;selected-papers&#34;&gt;Selected Papers&lt;/h3&gt;
 &lt;h4 id=&#34;historical&#34;&gt;Historical&lt;/h4&gt;
@@ -34,13 +34,13 @@
 &lt;td&gt;1805&lt;/td&gt;
 &lt;td&gt;A.M. Legendre&lt;/td&gt;
 &lt;td&gt;A New Method&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1809&lt;/td&gt;
 &lt;td&gt;C.F. Gauss&lt;/td&gt;
 &lt;td&gt;Theory of the motion of the heavenly bodies&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1839&lt;/td&gt;
@@ -58,73 +58,73 @@
 &lt;td&gt;1870&lt;/td&gt;
 &lt;td&gt;F. Galton&lt;/td&gt;
 &lt;td&gt;Regression Towards Mediocrity in Hereditary Stature&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1897&lt;/td&gt;
 &lt;td&gt;G.U. Yules&lt;/td&gt;
 &lt;td&gt;On the theory of correlation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1905&lt;/td&gt;
 &lt;td&gt;A. Einstein&lt;/td&gt;
 &lt;td&gt;Brownian Movement&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1905&lt;/td&gt;
 &lt;td&gt;K. Pearson&lt;/td&gt;
 &lt;td&gt;The Problem of The Random Walk&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1921&lt;/td&gt;
 &lt;td&gt;G.U. Yules&lt;/td&gt;
 &lt;td&gt;On the time correlation problem&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1927&lt;/td&gt;
 &lt;td&gt;E. Slutzky&lt;/td&gt;
 &lt;td&gt;The Summation of Random Causes as the Source of&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1927&lt;/td&gt;
 &lt;td&gt;G.U. Yules&lt;/td&gt;
 &lt;td&gt;On a Method of Investigating Periodicities&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1931&lt;/td&gt;
 &lt;td&gt;G.T. Walker&lt;/td&gt;
 &lt;td&gt;On Periodicity in Series of Related Terms&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1939&lt;/td&gt;
 &lt;td&gt;H. Wold&lt;/td&gt;
 &lt;td&gt;A study in Analysis of Time Series&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1939&lt;/td&gt;
 &lt;td&gt;J. Tinbergen&lt;/td&gt;
 &lt;td&gt;Statistical testing of business cycle theories&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1940&lt;/td&gt;
 &lt;td&gt;J. Tinbergen&lt;/td&gt;
 &lt;td&gt;Econometric Business Cycle Research&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;1942&lt;/td&gt;
 &lt;td&gt;T.E.W. Schumann&lt;/td&gt;
 &lt;td&gt;On Yule&amp;rsquo;s method of investigating periodicities&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -143,25 +143,25 @@
 &lt;td&gt;2003&lt;/td&gt;
 &lt;td&gt;Leo A. Harrington&lt;/td&gt;
 &lt;td&gt;Anaximander&amp;rsquo;s Sayings&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2011&lt;/td&gt;
 &lt;td&gt;T.C. Mills&lt;/td&gt;
 &lt;td&gt;Wold and the Russians&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2001&lt;/td&gt;
 &lt;td&gt;D. Qin&lt;/td&gt;
 &lt;td&gt;The Error Term in the History of Time Series&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;2012&lt;/td&gt;
 &lt;td&gt;R. M. Hogarth&lt;/td&gt;
 &lt;td&gt;The illusion of predictability&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -170,9 +170,9 @@
     
     <item>
       <title></title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</link>
+      <link>https://juanivb.github.io/docs/time-series/not_so_long_ago/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/not_so_long_ago/assignment/</guid>
       <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;em&gt;Unknown Unknowns&lt;/em&gt;. So lets get started.&lt;/p&gt;
 &lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
 &lt;div class=&#34;hb-steps&#34;&gt;

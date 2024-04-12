@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VAR (There Is No Spoon) | Juani Vázquez Broquá</title>
+    <link>http://localhost:4321/docs/time-series/4/</link>
+      <atom:link href="http://localhost:4321/docs/time-series/4/index.xml" rel="self" type="application/rss+xml" />
+    <description>VAR (There Is No Spoon)</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>http://localhost:4321/media/logo.svg</url>
+      <title>VAR (There Is No Spoon)</title>
+      <link>http://localhost:4321/docs/time-series/4/</link>
+    </image>
+    
+  </channel>
+</rss>

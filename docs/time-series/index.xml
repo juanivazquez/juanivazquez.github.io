@@ -104,5 +104,113 @@ Once the course is passed, students must take a final exam. The final exam grade
 </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://localhost:4321/docs/time-series/assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/assignment/</guid>
+      <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;em&gt;Unknown Unknowns&lt;/em&gt;. So lets get started.&lt;/p&gt;
+&lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
+&lt;div class=&#34;hb-steps&#34;&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a paper from the Reading module you have read by now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Re-read it &lt;em&gt;carefuly&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Look up for papers commenting on it. Read them as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Write a short essay &lt;strong&gt;(max. 2 pages)&lt;/strong&gt; highlighting the key ideas this paper brings to the table and any relevant observation you found out when you revisited the literature on this subject.&lt;/p&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;Answer the following questions&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-0&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;Q&amp;amp;A&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Why do you think this paper got the attention it got at the time it was published?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What/Whom would you say the author/s had in mind when they wrote it? Would you say this paper is a response to a previous idea or paper from some other author? Why?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is this paper dated in some way by now? Have some ideas discussed in the text grown old by know? Has the main theme of this paper stood the test of time? Is there any new idea making this debate irrelevant today? In any case: Why?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Find the original dataset.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Replicate the experiment or algorithm used by the author.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can you think of an alternative approach to this issue? How would you have approached the problem from scratch by yourself? Dig deep, be honest.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement your approach, as silly as it seems. If it makes you proud, better so.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compare the results between both approaches. Why would you say the results differ? Be detailed on the explanation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-5&#34;&gt;Step 5&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make a short presentation out of the previous 3 Steps &lt;strong&gt;(max. 20 slides)&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Practice this presentation twice to different classmates and gather feedback on the following:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;**Peer Review** &lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;i. Is it easy to follow?&lt;/p&gt;
+&lt;p&gt;ii. Is it compelling?&lt;/p&gt;
+&lt;p&gt;iii. Should it be more detailed in any way? Should I skip any part?&lt;/p&gt;
+&lt;p&gt;iv. Do you disagree in any way? Focus on both the technical observations and the communicational aspects of the presentation. Sometimes the order in which ideas are presented make a difference (no pun intended).&lt;/p&gt;
+&lt;p&gt;v. What else should I do to improve this presentation?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;This feedback should give you an idea on how to improve. Make the changes you believe are necessary and make a video out of it. Keep in mind best practices (check your mic, the illumination of the room, the setting, avoid a loud place).
+i. Record yourself making the final presentation. How long did it take? Are you proud of it?
+ii. Re-record it until you come up with a version that makes you proud and complies with the 5 minutes limit rule I just invented.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally record yourself describing the experience you had making this video.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-6&#34;&gt;Step 6&lt;/h3&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary class=&#34;cursor-pointer&#34;&gt;**Delivery**&lt;/summary&gt;
+  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
+    &lt;p&gt;The output of this learning process should be a folder including the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Original paper with annotations on it. &lt;strong&gt;(step 1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Relevant related papers you read during this exercise.&lt;strong&gt;(step 1)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The short essay you wrote about it. &lt;strong&gt;(step 2)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A document with the Q&amp;amp;A. &lt;strong&gt;(step 3)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The dataset and the code you wrote clearly explained.&lt;/li&gt;
+&lt;li&gt;The feedback you gathered from your colleagues.&lt;strong&gt;(step 5)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The first and definitive video recording you made.&lt;/li&gt;
+&lt;li&gt;Live presentation to the whole class.&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

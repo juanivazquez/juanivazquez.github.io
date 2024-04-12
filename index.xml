@@ -27,10 +27,10 @@
     </item>
     
     <item>
-      <title>Experiments</title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/coding/experiments/</link>
+      <title>Implementations</title>
+      <link>http://localhost:4321/docs/time-series/1/coding/implementations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/coding/experiments/</guid>
+      <guid>http://localhost:4321/docs/time-series/1/coding/implementations/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -42,18 +42,129 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
-&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Introduction To Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;02&lt;/td&gt;
-&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Data Manipulation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementations</title>
+      <link>http://localhost:4321/docs/time-series/2/coding/implementations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/2/coding/implementations/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Introduction To Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;03&lt;/td&gt;
-&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Data Manipulation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementations</title>
+      <link>http://localhost:4321/docs/time-series/3/coding/implementations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/3/coding/implementations/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Introduction To Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Data Manipulation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementations</title>
+      <link>http://localhost:4321/docs/time-series/4/coding/implementations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/4/coding/implementations/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Introduction To Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Data Manipulation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementations</title>
+      <link>http://localhost:4321/docs/time-series/5/coding/implementations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/5/coding/implementations/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Introduction To Python&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Data Manipulation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -65,7 +176,9 @@
       <link>http://localhost:4321/docs/guide/la_moneda_etica/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/docs/guide/la_moneda_etica/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;¿Es posible una aproximación económica a la obra de Kierekgaard?&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;div style=&#34;text-align: center;&#34;&gt;
+¿Es posible una aproximación económica a la libertad? &lt;br&gt;
+&lt;/div&gt;
 &lt;h3 id=&#34;introducción&#34;&gt;Introducción&lt;/h3&gt;
 &lt;p&gt;¿Cuál es el sentido de una aproximación sistemática a un pensador que rechaza lo sistemático? La respuesta a esta pregunta va a depender de la capacidad del sistema de incorporar al pensador, o bien de la capacidad del pensador de rechazar al sistema que trata de absorberlo. En esta exposición se intenta acompañar esta última alternativa –es decir, que lo económico es incapaz de capturar a Kierkegaard- donde el valor de lo expuesto a continuación proviene de mostrar los efectos económicos que este rechazo implica.
 La Economía es una ciencia especial el al menos un sentido: su incapacidad para alcanzar conclusiones contrastables a través de métodos experimentales impide que las diversas teorías económicas sean algo evidente, lo que hace que la seriedad de una teoría económica sea evaluada en función de la consistencia lógica de las relaciones que propone y la adecuación a “la realidad” de los enunciados antropológicos a partir de los cuales se las construye. Dicho de otra forma, una teoría económica es una teoría sin evidencia concluyente. Esto hizo que muchos economistas incorporaran conocimientos provenientes de otras ciencias (como las matemáticas, la física y la biología) a sus teorías, en un intento por conseguir la aprobación del mundo científico. En este sentido la Economía buscó compensar su falta autoridad –esa autoridad sólo da la evidencia-, haciendo uso de elementos de otras ciencias. Así fue como la Economía consiguió que los países más poderosos y las instituciones académicas más respetadas crearan ministerios y premios en su honor; todo esto –¡y esta es la hazaña!- sin que se supiera a ciencia cierta lo que la Economía es. Lo que sigue es un estudio de la ética que propone Kierkegaard a la luz de la Teoría de la decisión, y una posible interpretación de sus efectos sobre el mundo económico.&lt;/p&gt;
@@ -114,6 +227,281 @@ lo que es igual a la inconmensurabilidad de la elección (+∞/-∞). Es decir q
 &lt;p&gt;La teoría cristiana de la decisión de Kierkegaard tiene como punto de apoyo el reconocimiento de una desigualdad, la desigualdad infinita entre el valor del hombre (h) y el valor de Dios (D). Este desequilibrio es el que pone en movimiento al cristiano y en virtud de la cual se acepta por obediencia al Desigual el criterio de decisión según el cual&lt;/p&gt;
 &lt;p&gt;h1=h2=…=hi=∞,&lt;/p&gt;
 &lt;p&gt;en base a la cual se cotizan los pagos esperados de todas las decisiones subsiguientes. Esta es la mayor paradoja de la economía: que el Bien –El Numerario- por el cual se cotizan todos los bienes sea -¡sí!-inconmensurable. El seudónimo Johannes Clímacus afirma que “es la firmeza en lo absoluto y en las distinciones absolutas lo que convierte a uno en un buen dialéctico” (MF: 111).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>http://localhost:4321/docs/time-series/1/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/1/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>http://localhost:4321/docs/time-series/2/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/2/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>http://localhost:4321/docs/time-series/3/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/3/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>http://localhost:4321/docs/time-series/4/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/4/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experiments</title>
+      <link>http://localhost:4321/docs/time-series/5/coding/experiments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/5/coding/experiments/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02&lt;/td&gt;
+&lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03&lt;/td&gt;
+&lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Para Distinguir los Pies</title>
+      <link>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
+      <description>&lt;h2 id=&#34;instrucciones-para-subir-una-escalera&#34;&gt;Instrucciones para subir una escalera&lt;/h2&gt;
+&lt;p&gt;(Julio Cortázar, Historias de Cronopios y de Famas, 1962)&lt;/p&gt;
+&lt;p&gt;Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se situó un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.&lt;/p&gt;
+&lt;p&gt;Las escaleras se suben de frente, pues hacia atrás o de costado resultan particularmente incómodas. La actitud natural consiste en mantenerse de pie, los brazos colgando sin esfuerzo, la cabeza erguida aunque no tanto que los ojos dejen de ver los peldaños inmediatamente superiores al que se pisa, y respirando lenta y regularmente. Para subir una escalera se comienza por levantar esa parte del cuerpo situada a la derecha abajo, envuelta casi siempre en cuero o gamuza, y que salvo excepciones cabe exactamente en el escalón. Puesta en el primer peldaño dicha parte, que para abreviar llamaremos pie, se recoge la parte equivalente de la izquierda (también llamada pie, pero que no ha de confundirse con el pie antes citado), y llevándola a la altura del pie, se le hace seguir hasta colocarla en el segundo peldaño, con lo cual en éste descansará el pie, y en el primero descansará el pie. (Los primeros peldaños son siempre los más difíciles, hasta adquirir la coordinación necesaria. &lt;em&gt;La coincidencia de nombre entre el pie y el pie hace difícil la explicación. Cuídese especialmente de no levantar al mismo tiempo el pie y el pie)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Llegando en esta forma al segundo peldaño, basta repetir alternadamente los movimientos hasta encontrarse con el final de la escalera. Se sale de ella fácilmente, con un ligero golpe de talón que la fija en su sitio, del que no se moverá hasta el momento del descenso.&lt;/p&gt;
+&lt;h2 id=&#34;para-distinguir-un-pie-de-un-pie&#34;&gt;Para Distinguir un Pie de un Pie&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(Addenda a las Instrucciones para Subir una Escalera)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Catulus Ludensis&lt;/p&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+&#34;Para el sabio no existe la riqueza.&lt;br&gt;
+Para el virtuoso no existe el poder.&lt;br&gt;
+Y para el poderoso no existen &lt;br&gt;
+ni el sabio ni el virtuoso.&#34;&lt;br&gt;
+—Ernesto Esteban Etchenique
+&lt;/div&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+&lt;h3 id=&#34;stemning&#34;&gt;Stemning&lt;/h3&gt;
+&lt;p&gt;Diógenes Laercio nos cuenta que cuando Metrocles pertenecía a la escuela peripatética dejó escapar involuntariamente una flatulencia en medio de un ejercicio de lectura. Tal fue la vergüenza y el desánimo que sintió por este incidente, que dispuesto a dejarse morir de hambre decidió encerrarse en su casa. Al enterarse de este suceso Crates el cínico decidió ir a consolarlo, no sin antes comer una abundante ración de lentejas. Crates trató de persuadirlo a través de razonamientos de que no había hecho nada malo y que, por el contrario, más feo hubiese sido retener su flatulencia sin dejarla fluir según su cauce natural. Al no poder persuadirlo con sus palabras, Crates soltó unas cuentas flatulencias. De ese modo convenció a Metrocles a través de sus acciones corporales que nada hay de vergonzoso en este acto de la naturaleza (Cfr. DL, VI, 94).&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;i---poder-no-poder&#34;&gt;I - Poder No Poder&lt;/h3&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+V:“Qué puede decir Borges de la intertextualidad que late en su obra?&lt;br&gt;
+B:- Ante todo, mi asombro ante ese neologismo pero en fin, eso no importa. Pero, cómo es? La inter que? Porque yo me perdí, no llegué al fin, yo no sé contar tanto.&lt;br&gt;
+V:- Qué puede decir Borges de la in-ter-tex-tua-li-dad que late en su obra?&lt;br&gt;
+B:- Yo creo que no he podido evitarla, que me ha sucedido (…) sin ninguna intención, sin mala intención desde luego.”&lt;br&gt;
+Diálogo en conferencia entre Vázquez y Borges
+&lt;/div&gt;
+&lt;h4 id=&#34;una-palabra-de-entendimiento-con-el-lector&#34;&gt;Una palabra de entendimiento con el lector&lt;/h4&gt;
+&lt;p&gt;Con chicos chicos en la casa es difícil tener la excusa para sentarme a leer tranquilo.  De a poquito se fueron acortando los momentos de lectura hasta que encontrar un momento para leer empezó a ser una actividad de lujo, casi prohibida. Y así pasé de una adolescencia de novelas rusas y tratados de filosofía, a regodearme releyendo tres veces un ticket en el peaje, a repasar como si fuera Betular los ingredientes en la caja del bizcochuelo. Hasta que un día toqué fondo cuando me encontré escondido en el baño estudiando el manual de la calculadora científica como si fuera un ingeniero japonés, una calculadora que no uso. Ese día me dije: &amp;ldquo;algo tiene que cambiar&amp;rdquo; y decidí pasar a la ofensiva: quizás siendo un escritor podría tener la excusa perfecta para seguir leyendo.  Sólo me faltaba un tema. Y ahí me acordé de algo que había escuchado en una linda jornada de la Biblioteca Kierkegaard hace muchos años: alguien dijo que a cien años del nacimiento de Kierkegaard un reconocido filósofo había afirmado con notable soltura: &lt;em&gt;&amp;ldquo;No sabemos quién fue ni qué ha querido decir&amp;rdquo;&lt;/em&gt;. En esa afirmación encontré la oportunidad perfecta para llevar mi posición un paso adelante y hacer una contribución real a las jornadas. Puedo decir:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;No sólo no sé quién fue ni qué ha querido decir, puedo añadir: tampoco lo he leído.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;De aquellos polvos, estos lodos.  A mi querido lector, con vergüenza.&lt;/p&gt;
+&lt;h4 id=&#34;poder-no-poder&#34;&gt;Poder No Poder&lt;/h4&gt;
+&lt;p&gt;Sócrates supo no saber, y eso lo convirtió en el mejor de los hombres de su época y de muchas otras. Pero hizo falta más que el mejor de los hombres para que los hombres nos atreviéramos a poder no poder. El amor de preferencia precisa pivotear en un ideal inmediato para construir su identidad. Poder existir sin satisfacer la propia idealidad, poder existir sin satisfacer la idealidad ajena. ¿Cuántos filósofos se debatieron si un dios puede crear una piedra más pesada que la que puede levantar pero se niegan a reconocer el origen divino de un Dios que nos mostró cómo poder no poder?&lt;/p&gt;
+&lt;h4 id=&#34;la-sprezzatura-de-la-modernidad-tardía&#34;&gt;La sprezzatura de la modernidad tardía&lt;/h4&gt;
+&lt;p&gt;La vulnerabilidad es el remedio para la vergüenza, mostrarnos vulnerables opera como un bálsamo también sobre la vergüenza ajena. ¿Cómo se viste la vergüenza? la vergüenza ostenta títulos y distinciones, la vergüenza anota sus títulos y escrituras en una hoja de parra. Viste su pasado con distinción, su presente con distinción, su futuro con distinción. Todo acontece al servicio de la separación; y precisamente porque lo hace con ese objetivo in mente, puede fácilmente vestirse de su contrario. De esta manera, la vergüenza que &lt;sin Dios&gt; se viste de superación de la vergüenza, una estudiada vulnerabilidad, eso es la sprezzatura de la modernidad tardía.&lt;/p&gt;
+&lt;h4 id=&#34;la-belleza-del-cristianismo&#34;&gt;La belleza del cristianismo&lt;/h4&gt;
+&lt;p&gt;Si la libertad es la belleza de la vida como decía Kant. ¿Cuál es la belleza del cristianismo? ¿Cuál es el locus de la libertad?
+La belleza del cristianismo está en que el mensaje nos llega sin derogar la ley ni a los profetas. Así podemos encontrar consuelo incluso en el Libro de Esdras (9:8):&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot; Y ahora por un breve momento ha habido misericordia de parte de Jehová nuestro Dios, para hacer que nos quedase un remanente libre, y para darnos un lugar seguro en su santuario, a fin de alumbrar nuestro Dios nuestros ojos y darnos un poco de vida en nuestra servidumbre.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;El locus de la libertad es ese lugar seguro: ser un clavo en la cruz, ahí está la libertad del amor cristiano que no entiende el mundo.&lt;/p&gt;
+&lt;h4 id=&#34;de-revoluciones-francesas-o-ad-se-ipsum&#34;&gt;De revoluciones francesas o Ad se ipsum&lt;/h4&gt;
+&lt;p&gt;En un mismo capítulo Pedro corta la oreja de Malco y niega a Jesús 3 veces. Esto suele contarse separado, pero va junto. El parentirso como antesala a la traición.  A lo que algunos llaman fervor, digámosle también: capítulo 18. ¡Cuántas veces fuimos como Pedro frente a Malco!&lt;/p&gt;
+&lt;p&gt;No nos olvidemos de lo único necesario: poder no poder.&lt;/p&gt;
+&lt;h3 id=&#34;ii---no-demostrarás-la-existencia-de-tu-prójimo&#34;&gt;II - No demostrarás la existencia de tu prójimo&lt;/h3&gt;
+&lt;h4 id=&#34;el-análisis-de-lo-obvio-sólo-para-mentes-muy-poco-corrientes&#34;&gt;El análisis de lo obvio (sólo para mentes muy poco corrientes)&lt;/h4&gt;
+&lt;p&gt;¿Cómo podremos creer en la existencia de aquello que no vemos si no creemos en la existencia de aquello que sí vemos?&lt;/p&gt;
+&lt;p&gt;Hoy es un lugar común abandonar el camino de las demostraciones de la existencia de Dios, como si ese camino hubiera sido un capítulo un tanto innecesario de la historia de la teología y no una meditación edificante para quien se aplica a ellas con un corazón humilde. Pero si la fe es un triunfo que sale a la batalla, así como no puede salir a demostrar la existencia de Dios, tampoco debe demostrarse la existencia del prójimo. La carga de la prueba tiene que invertirse: &lt;em&gt;que aquellos que quieran demostrar que alguien no es nuestro prójimo se acerquen a demostrarlo&lt;/em&gt;. Que el rol cómico lo ocupen las demostraciones de la inexistencia del otro. No pisemos el palito y repitamos como si fuese un mandamiento algo que sólo puede tener vis cómica: NO DEMOSTRARÁS LA EXISTENCIA DE TU PRÓJIMO.&lt;/p&gt;
+&lt;p&gt;Y sin embargo, ¿Cuántas veces dudamos del prójimo y nos enredamos con demostraciones que no persuaden a nadie y sólo consiguen enfriar nuestro corazón? Escuchemos paciente y amorosamente a quienes no crean en el prójimo, y llegado el momento digamos algo así como: &amp;lsquo;Mi cabeza es demasiado pesada para dar el salto que me exige tu demostración&amp;quot;.&lt;/p&gt;
+&lt;h4 id=&#34;quién-es-mi-prójimo&#34;&gt;¿Quién es mi prójimo?&lt;/h4&gt;
+&lt;p&gt;A la pregunta ¿Quién es mi prójimo?  no se la responde directamente porque una respuesta directa diría que el prójimo se define en el distrito de la palabra como una categoría de la razón;  cuando en realidad el órgano que define quién es el prójimo es la fe.
+Por eso, también, a la repregunta por la parábola ¿Quién de los tres se hizo su prójimo? (Lc10:36)&amp;quot; , cuando el intérprete le responde &amp;ldquo;el que se compadeció&amp;rdquo;, no se le dice: &amp;ldquo;Tenés razón&amp;rdquo;, porque eso sería volver a la arena dialéctica, la respuesta del que tiene autoridad fue : &amp;quot; Ve y haz lo mismo&amp;quot; porque la parábola da un camino para la voluntad (el camino de la fe),  no una idea para entretener a la razón.&lt;/p&gt;
+&lt;h4 id=&#34;dont-be-a-karen-martha-o-alguien-quiere-pensar-en-los-niños&#34;&gt;Don&amp;rsquo;t be a Karen, Martha o ¿Alguien quiere pensar en los niños?&lt;/h4&gt;
+&lt;p&gt;El capítulo 10 no termina con la parábola y punto. Después viene la historia de Marta y María&amp;hellip;. Marta que era activa como un feacio no necesitaba que nada ni nadie la manden a actuar porque ella vivía &amp;ldquo;afanada y turbada&amp;rdquo;. Tan ocupada estaba siendo buena samaritana que cuando tuvo por visitante al compositor de la parábola, no tenía tiempo libre para escucharlo.  Esto no es un tema menor, sensu eminenti diría alguno, la parábola termina con Marta. ¡Cuántas veces fuimos Marta! No nos olvidemos de la mejor parte: poder no poder.&lt;/p&gt;
+&lt;h4 id=&#34;menos-que-zizek&#34;&gt;Menos que Zizek&lt;/h4&gt;
+&lt;p&gt;Hay un viejo chiste judío que le encantaba a Derrida, en el que un grupo de judíos que está en una sinagoga admite públicamente su nulidad a los ojos de Dios. Primero, un rabino se pone en pie y dice: “Dios mío, sé que no valgo nada. ¡No soy nada!”. Cuando ha terminado, un rico hombre de negocios se pone en pie y dice, dándose golpes en el pecho: “¡Dios mío, yo tampoco valgo nada, siempre obsesionado con la riqueza material! ¡No soy nada!”. Tras este espectáculo, un judío pobre, común y corriente, se pone en pie y proclama: “Dios mío, no soy nada”. El rico hombre de negocios le da una patadita al rabino y le susurra al oído con desdén: “¡Mirá qué insolencia! ¿Quién es este tipo que se atreve a afirmar que él tampoco es nada?”.&lt;/p&gt;
+&lt;p&gt;A la pregunta &lt;em&gt;¿Y éste quién se cree que es para decir que no es nadie?&lt;/em&gt;  -que bien podría habérsela hecho el hermano mayor de la parábola a Polifemo- a esa pregunta Don Inodoro Pereyra la responde magistralmente:  &lt;em&gt;- Yo, que tengo la humildad de los grandes.&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;iii--cómo-poder-no-poder&#34;&gt;III- ¿Cómo Poder No Poder?&lt;/h3&gt;
+&lt;h4 id=&#34;de-pseudónimos-o-cómo-estar-presente-pudiendo-no-poder-frente-al-prójimo&#34;&gt;De pseudónimos o Cómo estar presente pudiendo no poder frente al prójimo&lt;/h4&gt;
+&lt;p&gt;El mito dice que cuando Groucho Marx quiso entrar al exclusivo Friars Club de Beverly Hills, su solicitud no fue muy bien recibida en un primer momento por ser judío. Después de una inusual demora en la respuesta, al recibir su carta de aceptación, la historia dice que Groucho la rechazó alegando  &lt;em&gt;No quisiera pertenecer a un Club que acepte como miembro a personas como yo.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Si el prójimo es el primer yo, y si es deber del amor cristiano no demostrar su existencia, entonces también forma parte de nuestro deber cristiano:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;NO DEMOSTRAR NUESTRA PROPIA EXISTENCIA FRENTE A NUESTRO PROJIMO&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Y sin embargo, ¿Cuántas veces dudamos de nosotros mismos y nos enredamos con demostraciones que nos ocultan como prójimo y sólo persuaden a corazones fríos de los que deberíamos cuidarnos desde un comienzo? Que ningún vínculo precipitado opere en el encuentro. Sólo así será posible garantizar que el encuentro auténtico ocurra cuando se acerque el Tercero en el momento propicio.  Recusar la preferencia que se nos busca adjudicar es también nuestro deber de amor al prójimo para con nosotros mismos, cuidándonos de malas compañías; y para con los demás, recordándoles que el prójimo existe.&lt;/p&gt;
+&lt;h4 id=&#34;life-of-brian-ii-cancelled&#34;&gt;Life of Brian II: Cancelled&lt;/h4&gt;
+&lt;p&gt;Alguien dijo que el Nuevo Testamento es la historia cómica de un pueblo que estuvo miles de años esperando a su mesías, y todo esto para no reconocerlo al momento de su venida. La Vida de Brian nos muestra satíricamente un giro en esta misma historia cómica, con un pueblo que está dispuesto a encontrar al mesías y a confundirlo todo en cualquier gesto o signo con tal de encontrarlo.&lt;/p&gt;
+&lt;p&gt;Si alguien quisiera continuar esta satírica subversión de los hechos podría proponernos la idea de un traidor que en su afán de traicionar al mesías termina poniendo de manifiesto ante los ojos de todos la verdadera grandeza y magnitud del hombre que traiciona, haciendo cambiar el corazón de millones y conduciéndolos finalmente por el camino que Dios quiere para ellos. Esto sería muy gracioso -como ficción-, pero sólo como ocurrencia, porque la obra gira en torno a las desventuras y peripecias del frustrado traidor.&lt;/p&gt;
+&lt;p&gt;La realidad, en cambio, es muy distinta. Y si las obras del mesías no cambian el corazón de los que lo rechazan, menos lo va a hacer su condición de mesías. ¿Cuántas veces corrió Jesús después de obrar? ¿Cuántas veces se presentó como mesías antes de obrar? Riámonos del chiste del traidor frustrado y dejemos la historia para los escritores de Monthy Python, pero nunca busquemos rescatar a la humanidad con un Life of Brian II. Ni el pueblo judío veía al mesías en todos lados como nos muestra Life of Brian I, ni el mundo verá la grandeza de sus obras y signos como en Life of Brian II.&lt;/p&gt;
+&lt;h4 id=&#34;la-verdad-como-un-cachetazo-al-agradecimiento&#34;&gt;La verdad como un cachetazo al Agradecimiento&lt;/h4&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+“The purpose of abstraction is not to be vague,&lt;br&gt;
+but to create a new semantic level&lt;br&gt;
+in which one can be absolutely precise.”&lt;br&gt;
+ —Edsger Dijkstra
+&lt;/div&gt;
+&lt;p&gt;Considerada dinámicamente, la toma de conciencia del pecado consiste en una transición entre dos estados. Si cada estado es comprendido inmanentemente, entonces puede describirse como una configuración arquetípica, un arquetipo psicológico. En este sentido, la toma de conciencia de pecado es una transición arquetípica desde un estado &amp;lsquo;heroico/trágico&amp;rsquo; hacia un estado de falta de pureza con energía psíquica invertida y configuración traspuesta. El nombre de este arquetipo podríamos llamarlo impureza. La toma de conciencia es la transición hacia la impureza y no el estado de impureza en sí. Esta distinción es importante. Y también es importante saber que esta transición es axial respecto de la percepción de sí, es decir Coram Deo.&lt;/p&gt;
+&lt;p&gt;Existe un movimiento análogo que debe ocurrir para describir la transición del dolor de la simpatía que también es una transición arquetípica (un movimiento), pero en la cual el individuo no pivotea en torno a su percepción de sí (es decir, a su relación con Dios), sino que justamente la operación consiste en vaciar cualquier pizca de identificación precipitada con el otro (desidealizar al otro, para reconocerlo como realmente es).  Pero así como la toma de conciencia del pecado consiste en un devenir impuros a nuestros propios ojos, en el dolor de la simpatía devenimos desidealizados a los ojos del prójimo. Más precisamente, el vaciamiento del otro no ocurre en el otro, sino en mí. &lt;em&gt;La expresión esencial es el vaciamiento de la idealización de mi persona a los ojos del otro&lt;/em&gt;. Desenamorar a los ojos que nos ven. Esta es una actividad de sobriedad: &lt;em&gt;devenir sobrios&lt;/em&gt;. Curiosamente en castellano coloquial a la sobriedad se la puede describir fácilmente como un estado pero no como una actividad. Existe desembriagar, pero en ella se parte de la embriaguez y una vez pasada la misma, acabamos de desembriagarnos. No existe un desembriagarse en la sobriedad, a esto se lo llama impropiamente abstinencia (no-beber). Ésta creo que es una limitación del bello idioma castellano porque le quita poder a la transición al transformar una actividad en un reposo (sobriedad) o en una negación (abstinencia). Así y todo el movimiento existe: devengamos sobrios.&lt;/p&gt;
+&lt;p&gt;Esta  operación, análoga a la anterior, también es dolorosa. Pero si de la primera no se puede hablar directamente porque hace al diálogo interior, de esta segunda transición no se puede hablar porque hace al mismísimo acto de amor al prójimo. La toma de conciencia que consiste en &amp;ldquo;hacerse culpable&amp;rdquo; no puede enunciarse directamente porque eso sería no hacerse cargo coram Deo. En cambio, el elemento propio del dolor de la simpatía es el pudor, que es lo que ocurre cuando nos vaciamos a los ojos del otro. Sin embargo, mientras  el pudor mundano huye en este punto, el pudor de prójimo elige quedarse para amar al prójimo amándose a sí mismo, es decir: al permanecer a su lado amándose a sí mismo y de este modo al prójimo.&lt;/p&gt;
+&lt;p&gt;Si la conciencia del pecado es expresada en el temor de Dios, el dolor de la simpatía es el pudor de vernos vacíos de adornos a los ojos del prójimo. Es un quitarnos la parra ante el prójimo, y  esto lo hacemos también por voluntad propia y en contra nuestra inclinación inmediata. Pero no es un pudor que viene retroactivamente como el recuerdo de una expectativa que se reveló desproporcionada sino que se trata de un pudor que nace proactivamente del subtexto que acompaña nuestra conducta: nos amamos, Dios nos ama.  Y este pudor proactivo nunca resulta avergonzado. Porque no podemos permitirnos existir a la vista de los ojos desidealizantes si primero no nos amamos a nosotros mismos, y no podemos amarnos a nosotros mismos si antes no amamos a Dios con todas nuestras fuerzas y todo nuestro corazón. No hay pudor de prójimo sin temor de Dios.&lt;/p&gt;
+&lt;p&gt;Y así como la sabiduría socrática se parece a lo que el mundo llama ignorancia provinciana y no a lo que hoy se describe como conocimiento experto; y así como el temor de Abraham se parece a la resuelta actividad del más valiente de los caballeros y no a las pusilánimes negociaciones diarias del mercado;  así como devenir sobrios exalta nuestra sensibilidad con el mejor de los vinos ; de igual manera, el pudor de prójimo se parece al bálsamo sanador que acompaña a la desfachatez del cínico Crates y no a la perturbada inquietud que incita la vergüenza mortal que sintió Metrocles.&lt;/p&gt;
+&lt;p&gt;Se dice que lo propio esquizofrénico consiste en no ver el vacío primordial en el otro. Lo esencial cristiano comienza cuando ese vacío primordial se acepta en el otro y en uno mismo, pero esto sólo puede ocurrir por la gracia de Dios. De otra manera caemos en alguna forma de amor de preferencia. El deber consiste en amar a los hombres que vemos. Porque si no es así ¿Qué mérito hay en eso?&lt;/p&gt;
+&lt;h3 id=&#34;iv--precaución-camine-con-cuidado&#34;&gt;IV- Precaución: Camine con Cuidado&lt;/h3&gt;
+&lt;h4 id=&#34;el-puente-se-cruza-de-a-uno&#34;&gt;El puente se cruza de a uno&lt;/h4&gt;
+&lt;p&gt;Hace unas semanas inauguraron un puente en la República Democrática del Congo. Fueron tantos a inaugurarlo que el puente colapsó el día de su inauguración. Esto es poesía in actu. Pero que lo cómico de esta tragedia no nos haga olvidar lo decisivo: esto pasa todos los días, a toda hora, todos los minutos, y en todos los rincones del mundo. Esto es el mundo.&lt;/p&gt;
+&lt;h4 id=&#34;una-escalera-para-el-pie-y-el-pie-o-vivimos-en-un-verdadero-maremagnum-fásico&#34;&gt;Una escalera para el pie y el pie o Vivimos en un verdadero maremagnum fásico&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;“The student of Plato will do well to turn the page when he meets the name Pythagoras in a commentator.”&lt;/em&gt; - Paul Shorey&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;“The safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to Plato. I do not mean the systematic scheme of thought which scholars have doubtfully extracted from his writings. I allude to the wealth of general ideas scattered through them”&lt;/em&gt; - Alfred North Whitehead&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;“By and large, language is a tool for concealing the truth”&lt;/em&gt; - George Carlin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;&amp;hellip;&amp;quot;&lt;/em&gt; - Crates&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -210,291 +598,10 @@ Once the course is passed, students must take a final exam. The final exam grade
     </item>
     
     <item>
-      <title>Reading</title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/reading/</guid>
-      <description>&lt;p&gt;It is a challenging task to select an appropriate number of papers on such a sophisticated subject since many ideas on time series are scattered across various authors from different backgrounds and most papers can only be understood after a systematic review. However, after some hesitation I&amp;rsquo;ve reached the conclusion that the best of my efforts should be in service to become a dedicated and good-will assistant at your service instead of trying to be a judge of relevance. In this spirit I&amp;rsquo;ve shortlisted the following texts. I hope you find value in them.&lt;/p&gt;
-&lt;h3 id=&#34;selected-papers&#34;&gt;Selected Papers&lt;/h3&gt;
-&lt;h4 id=&#34;historical&#34;&gt;Historical&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Year&lt;/th&gt;
-&lt;th&gt;Author&lt;/th&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1805&lt;/td&gt;
-&lt;td&gt;A.M. Legendre&lt;/td&gt;
-&lt;td&gt;A New Method&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.1_1805_Legendre_A_new_method.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1809&lt;/td&gt;
-&lt;td&gt;C.F. Gauss&lt;/td&gt;
-&lt;td&gt;Theory of the motion of the heavenly bodies&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.2_1809_Gauss_Theory_of_the_motion_of_the_heavenly_bodies_moving_about_the_sun_in_conic_sections.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1839&lt;/td&gt;
-&lt;td&gt;W.R. Hamilton&lt;/td&gt;
-&lt;td&gt;Algebra as the Science of Pure Time&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/PureTime/PureTime.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1848&lt;/td&gt;
-&lt;td&gt;W.R. Hamilton&lt;/td&gt;
-&lt;td&gt;Researches Respecting Quaternions&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/ResQuat/ResQuat.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1870&lt;/td&gt;
-&lt;td&gt;F. Galton&lt;/td&gt;
-&lt;td&gt;Regression Towards Mediocrity in Hereditary Stature&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/2_-_1870_-_Galton_-_Regression_Towards_Mediocrity_in_Hereditary_Stature.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1897&lt;/td&gt;
-&lt;td&gt;G.U. Yules&lt;/td&gt;
-&lt;td&gt;On the theory of correlation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T1_-1897_-_Yule_-_On_the_theory_of_correlation.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1905&lt;/td&gt;
-&lt;td&gt;A. Einstein&lt;/td&gt;
-&lt;td&gt;Brownian Movement&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T3.5_-_1905_-_Einstein_-_Brownian_Movement.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1905&lt;/td&gt;
-&lt;td&gt;K. Pearson&lt;/td&gt;
-&lt;td&gt;The Problem of The Random Walk&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T3.5_-_1905_-_Karl_Pearson_-_The_Problem_of_The_Random_Walk.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1921&lt;/td&gt;
-&lt;td&gt;G.U. Yules&lt;/td&gt;
-&lt;td&gt;On the time correlation problem&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-1921-_Yule_-_On_the_time_correlation_problem.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1927&lt;/td&gt;
-&lt;td&gt;E. Slutzky&lt;/td&gt;
-&lt;td&gt;The Summation of Random Causes as the Source of&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1927_-_Slutzky_-_The_Summation_of_Random_Causes_as_the_Source_of_Cyclic_Processes.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1927&lt;/td&gt;
-&lt;td&gt;G.U. Yules&lt;/td&gt;
-&lt;td&gt;On a Method of Investigating Periodicities&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1927_-_Yule_-_On_a_Method_of_Investigating_Periodicities.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1931&lt;/td&gt;
-&lt;td&gt;G.T. Walker&lt;/td&gt;
-&lt;td&gt;On Periodicity in Series of Related Terms&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1931_-_Walker.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1939&lt;/td&gt;
-&lt;td&gt;H. Wold&lt;/td&gt;
-&lt;td&gt;A study in Analysis of Time Series&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1939_-_Wold_-_A_study_in_Analysis_of_Time_Series.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1939&lt;/td&gt;
-&lt;td&gt;J. Tinbergen&lt;/td&gt;
-&lt;td&gt;Statistical testing of business cycle theories&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.3_1939_Tinbergen_statistical_testing_of_business_cycle_theories.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1940&lt;/td&gt;
-&lt;td&gt;J. Tinbergen&lt;/td&gt;
-&lt;td&gt;Econometric Business Cycle Research&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/1.4_1940_Tinbergen_Econometric_Business_Cycle_Research.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1942&lt;/td&gt;
-&lt;td&gt;T.E.W. Schumann&lt;/td&gt;
-&lt;td&gt;On Yule&amp;rsquo;s method of investigating periodicities&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2_-_1942_-_Schumann-_On_yules_method_.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id=&#34;contextual&#34;&gt;Contextual&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Year&lt;/th&gt;
-&lt;th&gt;Author&lt;/th&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2003&lt;/td&gt;
-&lt;td&gt;Leo A. Harrington&lt;/td&gt;
-&lt;td&gt;Anaximander&amp;rsquo;s Sayings&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/anaximander.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2011&lt;/td&gt;
-&lt;td&gt;T.C. Mills&lt;/td&gt;
-&lt;td&gt;Wold and the Russians&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T2-_a_falta_de_Wold-_mills2011_-_Wold_and_the_Russians.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2001&lt;/td&gt;
-&lt;td&gt;D. Qin&lt;/td&gt;
-&lt;td&gt;The Error Term in the History of Time Series&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/T6_-_VAR_-_2001_-_Qin_-_The_Error_Term_in_the_History_of_Time_Series_Econometrics.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2012&lt;/td&gt;
-&lt;td&gt;R. M. Hogarth&lt;/td&gt;
-&lt;td&gt;The illusion of predictability&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/papers/ilussion.pdf&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Para Distinguir los Pies</title>
-      <link>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
-      <description>&lt;h2 id=&#34;instrucciones-para-subir-una-escalera&#34;&gt;Instrucciones para subir una escalera&lt;/h2&gt;
-&lt;p&gt;(Julio Cortázar, Historias de Cronopios y de Famas, 1962)&lt;/p&gt;
-&lt;p&gt;Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se situó un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.&lt;/p&gt;
-&lt;p&gt;Las escaleras se suben de frente, pues hacia atrás o de costado resultan particularmente incómodas. La actitud natural consiste en mantenerse de pie, los brazos colgando sin esfuerzo, la cabeza erguida aunque no tanto que los ojos dejen de ver los peldaños inmediatamente superiores al que se pisa, y respirando lenta y regularmente. Para subir una escalera se comienza por levantar esa parte del cuerpo situada a la derecha abajo, envuelta casi siempre en cuero o gamuza, y que salvo excepciones cabe exactamente en el escalón. Puesta en el primer peldaño dicha parte, que para abreviar llamaremos pie, se recoge la parte equivalente de la izquierda (también llamada pie, pero que no ha de confundirse con el pie antes citado), y llevándola a la altura del pie, se le hace seguir hasta colocarla en el segundo peldaño, con lo cual en éste descansará el pie, y en el primero descansará el pie. (Los primeros peldaños son siempre los más difíciles, hasta adquirir la coordinación necesaria. &lt;em&gt;La coincidencia de nombre entre el pie y el pie hace difícil la explicación. Cuídese especialmente de no levantar al mismo tiempo el pie y el pie)&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Llegando en esta forma al segundo peldaño, basta repetir alternadamente los movimientos hasta encontrarse con el final de la escalera. Se sale de ella fácilmente, con un ligero golpe de talón que la fija en su sitio, del que no se moverá hasta el momento del descenso.&lt;/p&gt;
-&lt;h2 id=&#34;para-distinguir-un-pie-de-un-pie&#34;&gt;Para Distinguir un Pie de un Pie&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;(Addenda a las Instrucciones para Subir una Escalera)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Catulus Ludensis&lt;/p&gt;
-&lt;div style=&#34;text-align: right;&#34;&gt;
-&#34;Para el sabio no existe la riqueza.&lt;br&gt;
-Para el virtuoso no existe el poder.&lt;br&gt;
-Y para el poderoso no existen &lt;br&gt;
-ni el sabio ni el virtuoso.&#34;&lt;br&gt;
-—Ernesto Esteban Etchenique
-&lt;/div&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-&lt;h3 id=&#34;stemning&#34;&gt;Stemning&lt;/h3&gt;
-&lt;p&gt;Diógenes Laercio nos cuenta que cuando Metrocles pertenecía a la escuela peripatética dejó escapar involuntariamente una flatulencia en medio de un ejercicio de lectura. Tal fue la vergüenza y el desánimo que sintió por este incidente, que dispuesto a dejarse morir de hambre decidió encerrarse en su casa. Al enterarse de este suceso Crates el cínico decidió ir a consolarlo, no sin antes comer una abundante ración de lentejas. Crates trató de persuadirlo a través de razonamientos de que no había hecho nada malo y que, por el contrario, más feo hubiese sido retener su flatulencia sin dejarla fluir según su cauce natural. Al no poder persuadirlo con sus palabras, Crates soltó unas cuentas flatulencias. De ese modo convenció a Metrocles a través de sus acciones corporales que nada hay de vergonzoso en este acto de la naturaleza (Cfr. DL, VI, 94).&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;i---poder-no-poder&#34;&gt;I - Poder No Poder&lt;/h3&gt;
-&lt;div style=&#34;text-align: right;&#34;&gt;
-V:“Qué puede decir Borges de la intertextualidad que late en su obra?&lt;br&gt;
-B:- Ante todo, mi asombro ante ese neologismo pero en fin, eso no importa. Pero, cómo es? La inter que? Porque yo me perdí, no llegué al fin, yo no sé contar tanto.&lt;br&gt;
-V:- Qué puede decir Borges de la in-ter-tex-tua-li-dad que late en su obra?&lt;br&gt;
-B:- Yo creo que no he podido evitarla, que me ha sucedido (…) sin ninguna intención, sin mala intención desde luego.”&lt;br&gt;
-Diálogo en conferencia entre Vázquez y Borges
-&lt;/div&gt;
-&lt;h4 id=&#34;una-palabra-de-entendimiento-con-el-lector&#34;&gt;Una palabra de entendimiento con el lector&lt;/h4&gt;
-&lt;p&gt;Con chicos chicos en la casa es difícil tener la excusa para sentarme a leer tranquilo.  De a poquito se fueron acortando los momentos de lectura hasta que encontrar un momento para leer empezó a ser una actividad de lujo, casi prohibida. Y así pasé de una adolescencia de novelas rusas y tratados de filosofía, a regodearme releyendo tres veces un ticket en el peaje, a repasar como si fuera Betular los ingredientes en la caja del bizcochuelo. Hasta que un día toqué fondo cuando me encontré escondido en el baño estudiando el manual de la calculadora científica como si fuera un ingeniero japonés, una calculadora que no uso. Ese día me dije: &amp;ldquo;algo tiene que cambiar&amp;rdquo; y decidí pasar a la ofensiva: quizás siendo un escritor podría tener la excusa perfecta para seguir leyendo.  Sólo me faltaba un tema. Y ahí me acordé de algo que había escuchado en una linda jornada de la Biblioteca Kierkegaard hace muchos años: alguien dijo que a cien años del nacimiento de Kierkegaard un reconocido filósofo había afirmado con notable soltura: &lt;em&gt;&amp;ldquo;No sabemos quién fue ni qué ha querido decir&amp;rdquo;&lt;/em&gt;. En esa afirmación encontré la oportunidad perfecta para llevar mi posición un paso adelante y hacer una contribución real a las jornadas. Puedo decir:&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&amp;ldquo;No sólo no sé quién fue ni qué ha querido decir, puedo añadir: tampoco lo he leído.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;De aquellos polvos, estos lodos.  A mi querido lector, con vergüenza.&lt;/p&gt;
-&lt;h4 id=&#34;poder-no-poder&#34;&gt;Poder No Poder&lt;/h4&gt;
-&lt;p&gt;Sócrates supo no saber, y eso lo convirtió en el mejor de los hombres de su época y de muchas otras. Pero hizo falta más que el mejor de los hombres para que los hombres nos atreviéramos a poder no poder. El amor de preferencia precisa pivotear en un ideal inmediato para construir su identidad. Poder existir sin satisfacer la propia idealidad, poder existir sin satisfacer la idealidad ajena. ¿Cuántos filósofos se debatieron si un dios puede crear una piedra más pesada que la que puede levantar pero se niegan a reconocer el origen divino de un Dios que nos mostró cómo poder no poder?&lt;/p&gt;
-&lt;h4 id=&#34;la-sprezzatura-de-la-modernidad-tardía&#34;&gt;La sprezzatura de la modernidad tardía&lt;/h4&gt;
-&lt;p&gt;La vulnerabilidad es el remedio para la vergüenza, mostrarnos vulnerables opera como un bálsamo también sobre la vergüenza ajena. ¿Cómo se viste la vergüenza? la vergüenza ostenta títulos y distinciones, la vergüenza anota sus títulos y escrituras en una hoja de parra. Viste su pasado con distinción, su presente con distinción, su futuro con distinción. Todo acontece al servicio de la separación; y precisamente porque lo hace con ese objetivo in mente, puede fácilmente vestirse de su contrario. De esta manera, la vergüenza que &lt;sin Dios&gt; se viste de superación de la vergüenza, una estudiada vulnerabilidad, eso es la sprezzatura de la modernidad tardía.&lt;/p&gt;
-&lt;h4 id=&#34;la-belleza-del-cristianismo&#34;&gt;La belleza del cristianismo&lt;/h4&gt;
-&lt;p&gt;Si la libertad es la belleza de la vida como decía Kant. ¿Cuál es la belleza del cristianismo? ¿Cuál es el locus de la libertad?
-La belleza del cristianismo está en que el mensaje nos llega sin derogar la ley ni a los profetas. Así podemos encontrar consuelo incluso en el Libro de Esdras (9:8):&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot; Y ahora por un breve momento ha habido misericordia de parte de Jehová nuestro Dios, para hacer que nos quedase un remanente libre, y para darnos un lugar seguro en su santuario, a fin de alumbrar nuestro Dios nuestros ojos y darnos un poco de vida en nuestra servidumbre.&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;El locus de la libertad es ese lugar seguro: ser un clavo en la cruz, ahí está la libertad del amor cristiano que no entiende el mundo.
-De revoluciones francesas o Ad se ipsum
-En un mismo capítulo Pedro corta la oreja de Malco y niega a Jesús 3 veces. Esto suele contarse separado, pero va junto. El parentirso como antesala a la traición.  A lo que algunos llaman fervor, digámosle también: capítulo 18. ¡Cuántas veces fuimos como Pedro frente a Malco! No nos olvidemos de lo único necesario: poder no poder.&lt;/p&gt;
-&lt;h3 id=&#34;ii---no-demostrarás-la-existencia-de-tu-prójimo&#34;&gt;II - No demostrarás la existencia de tu prójimo&lt;/h3&gt;
-&lt;h4 id=&#34;el-análisis-de-lo-obvio-sólo-para-mentes-muy-poco-corrientes&#34;&gt;El análisis de lo obvio (sólo para mentes muy poco corrientes)&lt;/h4&gt;
-&lt;p&gt;¿Cómo podremos creer en la existencia de aquello que no vemos si no creemos en la existencia de aquello que sí vemos?&lt;/p&gt;
-&lt;p&gt;Hoy es un lugar común abandonar el camino de las demostraciones de la existencia de Dios, como si ese camino hubiera sido un capítulo un tanto innecesario de la historia de la teología y no una meditación edificante para quien se aplica a ellas con un corazón humilde. Pero si la fe es un triunfo que sale a la batalla, así como no puede salir a demostrar la existencia de Dios, tampoco debe demostrarse la existencia del prójimo. La carga de la prueba tiene que invertirse: que aquellos que quieran demostrar que alguien no es nuestro prójimo se acerquen a demostrarlo. Que el rol cómico lo ocupen las demostraciones de la inexistencia del otro. No pisemos el palito y repitamos como si fuese un mandamiento algo que sólo puede tener vis cómica: NO DEMOSTRARÁS LA EXISTENCIA DE TU PRÓJIMO.&lt;/p&gt;
-&lt;p&gt;Y sin embargo, ¿Cuántas veces dudamos del prójimo y nos enredamos con demostraciones que no persuaden a nadie y sólo consiguen enfriar nuestro corazón? Escuchemos paciente y amorosamente a quienes no crean en el prójimo, y llegado el momento digamos algo así como: &amp;lsquo;Mi cabeza es demasiado pesada para dar el salto que me exige tu demostración&amp;quot;.&lt;/p&gt;
-&lt;h4 id=&#34;quién-es-mi-prójimo&#34;&gt;¿Quién es mi prójimo?&lt;/h4&gt;
-&lt;p&gt;A la pregunta ¿Quién es mi prójimo?  no se la responde directamente porque una respuesta directa diría que el prójimo se define en el distrito de la palabra como una categoría de la razón;  cuando en realidad el órgano que define quién es el prójimo es la fe.
-Por eso, también, a la repregunta por la parábola ¿Quién de los tres se hizo su prójimo? (Lc10:36)&amp;quot; , cuando el intérprete le responde &amp;ldquo;el que se compadeció&amp;rdquo;, no se le dice: &amp;ldquo;Tenés razón&amp;rdquo;, porque eso sería volver a la arena dialéctica, la respuesta del que tiene autoridad fue : &amp;quot; Ve y haz lo mismo&amp;quot; porque la parábola da un camino para la voluntad (el camino de la fe),  no una idea para entretener a la razón.&lt;/p&gt;
-&lt;h4 id=&#34;dont-be-a-karen-martha-o-alguien-quiere-pensar-en-los-niños&#34;&gt;Don&amp;rsquo;t be a Karen, Martha o ¿Alguien quiere pensar en los niños?&lt;/h4&gt;
-&lt;p&gt;El capítulo 10 no termina con la parábola y punto. Después viene la historia de Marta y María&amp;hellip;. Marta que era activa como un feacio no necesitaba que nada ni nadie la manden a actuar porque ella vivía &amp;ldquo;afanada y turbada&amp;rdquo;. Tan ocupada estaba siendo buena samaritana que cuando tuvo por visitante al compositor de la parábola, no tenía tiempo libre para escucharlo.  Esto no es un tema menor, sensu eminenti diría alguno, la parábola termina con Marta. ¡Cuántas veces fuimos Marta! No nos olvidemos de la mejor parte: poder no poder.
-Menos que Zizek&lt;/p&gt;
-&lt;p&gt;Hay un viejo chiste judío que le encantaba a Derrida, en el que un grupo de judíos que está en una sinagoga admite públicamente su nulidad a los ojos de Dios. Primero, un rabino se pone en pie y dice: “Dios mío, sé que no valgo nada. ¡No soy nada!”. Cuando ha terminado, un rico hombre de negocios se pone en pie y dice, dándose golpes en el pecho: “¡Dios mío, yo tampoco valgo nada, siempre obsesionado con la riqueza material! ¡No soy nada!”. Tras este espectáculo, un judío pobre, común y corriente, se pone en pie y proclama: “Dios mío, no soy nada”. El rico hombre de negocios le da una patadita al rabino y le susurra al oído con desdén: “¡Mirá qué insolencia! ¿Quién es este tipo que se atreve a afirmar que él tampoco es nada?”.&lt;/p&gt;
-&lt;p&gt;A la pregunta &amp;laquo;¿Y éste quién se cree que es para decir que no es nadie?&amp;raquo;  -que bien podría habérsela hecho el hermano mayor de la parábola a Polifemo- a esa pregunta Don Inodoro Pereyra la responde magistralmente:  &amp;laquo;- Yo, que tengo la humildad de los grandes.&amp;raquo;.&lt;/p&gt;
-&lt;h3 id=&#34;iii--cómo-poder-no-poder&#34;&gt;III- ¿Cómo Poder No Poder?&lt;/h3&gt;
-&lt;h4 id=&#34;de-pseudónimos-o-cómo-estar-presente-pudiendo-no-poder-frente-al-prójimo&#34;&gt;De pseudónimos o Cómo estar presente pudiendo no poder frente al prójimo&lt;/h4&gt;
-&lt;p&gt;El mito dice que cuando Groucho Marx quiso entrar al exclusivo Friars Club de Beverly Hills, su solicitud no fue muy bien recibida en un primer momento por ser judío. Después de una inusual demora en la respuesta, al recibir su carta de aceptación, la historia dice que Groucho la rechazó alegando  &lt;No quisiera pertenecer a un Club que acepte como miembro a personas como yo.&gt;
-Si el prójimo es el primer yo, y si es deber del amor cristiano no demostrar su existencia, entonces también forma parte de nuestro deber cristiano NO DEMOSTRAR NUESTRA PROPIA EXISTENCIA FRENTE A NUESTRO PROJIMO. Y sin embargo, ¿Cuántas veces dudamos de nosotros mismos y nos enredamos con demostraciones que nos ocultan como prójimo y sólo persuaden a corazones fríos de los que deberíamos cuidarnos desde un comienzo? Que ningún vínculo precipitado opere en el encuentro. Sólo así será posible garantizar que el encuentro auténtico ocurra cuando se acerque el Tercero en el momento propicio.  Recusar la preferencia que se nos busca adjudicar es también nuestro deber de amor al prójimo para con nosotros mismos, cuidándonos de malas compañías; y para con los demás, recordándoles que el prójimo existe.&lt;/p&gt;
-&lt;h4 id=&#34;life-of-brian-ii-cancelled&#34;&gt;Life of Brian II: Cancelled&lt;/h4&gt;
-&lt;p&gt;Alguien dijo que el Nuevo Testamento es la historia cómica de un pueblo que estuvo miles de años esperando a su mesías, y todo esto para no reconocerlo al momento de su venida. La Vida de Brian nos muestra satíricamente un giro en esta misma historia cómica, con un pueblo que está dispuesto a encontrar al mesías y a confundirlo todo en cualquier gesto o signo con tal de encontrarlo.
-Si alguien quisiera continuar esta satírica subversión de los hechos podría proponernos la idea de un traidor que en su afán de traicionar al mesías termina poniendo de manifiesto ante los ojos de todos la verdadera grandeza y magnitud del hombre que traiciona, haciendo cambiar el corazón de millones y conduciéndolos finalmente por el camino que Dios quiere para ellos. Esto sería muy gracioso -como ficción-, pero sólo como ocurrencia, porque la obra gira en torno a las desventuras y peripecias del frustrado traidor.
-La realidad, en cambio, es muy distinta. Y si las obras del mesías no cambian el corazón de los que lo rechazan, menos lo va a hacer su condición de mesías. ¿Cuántas veces corrió Jesús después de obrar? ¿Cuántas veces se presentó como mesías antes de obrar? Riámonos del chiste del traidor frustrado y dejemos la historia para los escritores de Monthy Python, pero nunca busquemos rescatar a la humanidad con un Life of Brian II. Ni el pueblo judío veía al mesías en todos lados como nos muestra Life of Brian I, ni el mundo verá la grandeza de sus obras y signos como en Life of Brian II.&lt;/p&gt;
-&lt;h4 id=&#34;la-verdad-como-un-cachetazo-al-agradecimiento&#34;&gt;La verdad como un cachetazo al Agradecimiento&lt;/h4&gt;
-&lt;div style=&#34;text-align: right;&#34;&gt;
-“The purpose of abstraction is not to be vague,&lt;br&gt;
-but to create a new semantic level&lt;br&gt;
-in which one can be absolutely precise.”&lt;br&gt;
- —Edsger Dijkstra
-&lt;/div&gt;
-&lt;p&gt;Considerada dinámicamente, la toma de conciencia del pecado consiste en una transición entre dos estados. Si cada estado es comprendido inmanentemente, entonces puede describirse como una configuración arquetípica, un arquetipo psicológico. En este sentido, la toma de conciencia de pecado es una transición arquetípica desde un estado &amp;lsquo;heroico/trágico&amp;rsquo; hacia un estado de falta de pureza con energía psíquica invertida y configuración traspuesta. El nombre de este arquetipo podríamos llamarlo impureza. La toma de conciencia es la transición hacia la impureza y no el estado de impureza en sí. Esta distinción es importante. Y también es importante saber que esta transición es axial respecto de la percepción de sí, es decir Coram Deo.&lt;/p&gt;
-&lt;p&gt;Existe un movimiento análogo que debe ocurrir para describir la transición del dolor de la simpatía que también es una transición arquetípica (un movimiento), pero en la cual el individuo no pivotea en torno a su percepción de sí (es decir, a su relación con Dios), sino que justamente la operación consiste en vaciar cualquier pizca de identificación precipitada con el otro (desidealizar al otro, para reconocerlo como realmente es).  Pero así como la toma de conciencia del pecado consiste en un devenir impuros a nuestros propios ojos, en el dolor de la simpatía devenimos desidealizados a los ojos del prójimo. Más precisamente, el vaciamiento del otro no ocurre en el otro, sino en mí. La expresión esencial es el vaciamiento de la idealización de mi persona a los ojos del otro. Desenamorar a los ojos que nos ven. Esta es una actividad de sobriedad: devenir sobrios. Curiosamente en castellano coloquial a la sobriedad se la puede describir fácilmente como un estado pero no como una actividad. Existe desembriagar, pero en ella se parte de la embriaguez y una vez pasada la misma, acabamos de desembriagarnos. No existe un desembriagarse en la sobriedad, a esto se lo llama impropiamente abstinencia (no-beber). Ésta creo que es una limitación del bello idioma castellano porque le quita poder a la transición al transformar una actividad en un reposo (sobriedad) o en una negación (abstinencia). Así y todo el movimiento existe: devengamos sobrios.
-Esta  operación, análoga a la anterior, también es dolorosa. Pero si de la primera no se puede hablar directamente porque hace al diálogo interior, de esta segunda transición no se puede hablar porque hace al mismísimo acto de amor al prójimo. La toma de conciencia que consiste en &amp;ldquo;hacerse culpable&amp;rdquo; no puede enunciarse directamente porque eso sería no hacerse cargo coram Deo. En cambio, el elemento propio del dolor de la simpatía es el pudor, que es lo que ocurre cuando nos vaciamos a los ojos del otro. Sin embargo, mientras  el pudor mundano huye en este punto, el pudor de prójimo elige quedarse para amar al prójimo amándose a sí mismo, es decir: al permanecer a su lado amándose a sí mismo y de este modo al prójimo. Si la conciencia del pecado es expresada en el temor de Dios, el dolor de la simpatía es el pudor de vernos vacíos de adornos a los ojos del prójimo. Es un quitarnos la parra ante el prójimo, y  esto lo hacemos también por voluntad propia y en contra nuestra inclinación inmediata. Pero no es un pudor que viene retroactivamente como el recuerdo de una expectativa que se reveló desproporcionada sino que se trata de un pudor que nace proactivamente del subtexto que acompaña nuestra conducta: nos amamos, Dios nos ama.  Y este pudor proactivo nunca resulta avergonzado. Porque no podemos permitirnos existir a la vista de los ojos desidealizantes si primero no nos amamos a nosotros mismos, y no podemos amarnos a nosotros mismos si antes no amamos a Dios con todas nuestras fuerzas y todo nuestro corazón. No hay pudor de prójimo sin temor de Dios.&lt;/p&gt;
-&lt;p&gt;Y así como la sabiduría socrática se parece a lo que el mundo llama ignorancia provinciana y no a lo que hoy se describe como conocimiento experto; y así como el temor de Abraham se parece a la resuelta actividad del más valiente de los caballeros y no a las pusilánimes negociaciones diarias del mercado;  así como devenir sobrios exalta nuestra sensibilidad con el mejor de los vinos ; de igual manera, el pudor de prójimo se parece al bálsamo sanador que acompaña a la desfachatez del cínico Crates y no a la perturbada inquietud que incita la vergüenza mortal que sintió Metrocles.&lt;/p&gt;
-&lt;p&gt;Se dice que lo propio esquizofrénico consiste en no ver el vacío primordial en el otro. Lo esencial cristiano comienza cuando ese vacío primordial se acepta en el otro y en uno mismo, pero esto sólo puede ocurrir por la gracia de Dios. De otra manera caemos en alguna forma de amor de preferencia. El deber consiste en amar a los hombres que vemos. Porque si no es así ¿Qué mérito hay en eso?&lt;/p&gt;
-&lt;h3 id=&#34;iv--precaución-camine-con-cuidado&#34;&gt;IV- Precaución: Camine con Cuidado&lt;/h3&gt;
-&lt;h4 id=&#34;el-puente-se-cruza-de-a-uno&#34;&gt;El puente se cruza de a uno&lt;/h4&gt;
-&lt;p&gt;Hace unas semanas inauguraron un puente en la República Democrática del Congo. Fueron tantos a inaugurarlo que el puente colapsó el día de su inauguración. Esto es poesía in actu. Pero que lo cómico de esta tragedia no nos haga olvidar lo decisivo: esto pasa todos los días, a toda hora, todos los minutos, y en todos los rincones del mundo. Esto es el mundo.&lt;/p&gt;
-&lt;h4 id=&#34;una-escalera-para-el-pie-y-el-pie-o-vivimos-en-un-verdadero-maremagnum-fásico&#34;&gt;Una escalera para el pie y el pie o Vivimos en un verdadero maremagnum fásico&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;“The student of Plato will do well to turn the page when he meets the name Pythagoras in a commentator.”&lt;/em&gt; - Paul Shorey&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;“The safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to Plato. I do not mean the systematic scheme of thought which scholars have doubtfully extracted from his writings. I allude to the wealth of general ideas scattered through them”&lt;/em&gt; - Alfred North Whitehead&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;“By and large, language is a tool for concealing the truth”&lt;/em&gt; - George Carlin&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;&amp;hellip;&amp;quot;&lt;/em&gt; - Crates&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Replications</title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/coding/replications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/coding/replications/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;N°&lt;/th&gt;
-&lt;th&gt;Subject&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;01&lt;/td&gt;
-&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
       <title></title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</link>
+      <link>http://localhost:4321/docs/time-series/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/assignment/</guid>
+      <guid>http://localhost:4321/docs/time-series/assignment/</guid>
       <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;em&gt;Unknown Unknowns&lt;/em&gt;. So lets get started.&lt;/p&gt;
 &lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
 &lt;div class=&#34;hb-steps&#34;&gt;
@@ -599,35 +706,6 @@ ii. Re-record it until you come up with a version that makes you proud and compl
     </item>
     
     <item>
-      <title>Implementations</title>
-      <link>http://localhost:4321/docs/time-series/not_so_long_ago/coding/implementations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/not_so_long_ago/coding/implementations/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;N°&lt;/th&gt;
-&lt;th&gt;Subject&lt;/th&gt;
-&lt;th&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;01&lt;/td&gt;
-&lt;td&gt;Introduction To Python&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;02&lt;/td&gt;
-&lt;td&gt;Data Manipulation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Meditaciones Inapropincuas</title>
       <link>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -653,9 +731,11 @@ intermediarios abstenerse.&amp;quot;&lt;br&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;i---disculpen-que-no-me-levante-hablemos-en-serio&#34;&gt;I - Disculpen que no me levante, hablemos en serio&lt;/h3&gt;
 &lt;h4 id=&#34;una-costumbre-muy-humana-morir&#34;&gt;Una costumbre muy humana, morir&lt;/h4&gt;
-&lt;p&gt;Cuando el cínico Menipo murió, tuvo que cruzar el río Leteo como todo buen griego, y para ello debió acudir al solícito Caronte. La cuestión se puso espinosa cuando Caronte descubrió que Menipo no contaba con el óbolo que debía pagarle por sus servicios náuticos, a lo que Caronte se preguntó exasperado: -¿Acaso existe un hombre que no tenga un óbolo? Menipo, sin dejar pasar la oportunidad desenfundó su lengua y lo ajustició con estas palabras: - “No sé si existe un hombre que no tenga un óbolo, sólo sé que yo no lo tengo. Si no quieres llevarme, puedes devolverme con los vivos.” Si yo hubiera sido Caronte, después de escuchar esa respuesta, lo hubiera llevado a upa al Hades, al Olimpo o a donde él quisiera ir. Pero volvamos al asunto. Lo cómico del encuentro radica en el sinsentido de una transacción para marcar una situación supuestamente irreversible. Veamos esto con un ejemplo menos solemne: Una persona está por ver cómo ejecutan un crédito hipotecario al no poder cumplir con sus obligaciones. El abogado del banco descubre que si el deudor no pone su firma en una hoja del documento de la hipoteca, la misma no se puede ejecutar y entonces el banco no podrá expropiar la vivienda al deudor. Si el abogado le dijera: -”Firma aquí que si no no podremos ejecutar tu casa y dejarte en la calle.” Y el deudor accediera sin chistar: ¿no sería esto cómico en un mismo sentido? ¿No estaríamos encontrándonos con una extraña pasividad allí donde deberíamos encontrar una conducta activa por parte del deudor? ¿No deberían acaso rehusarse todos los muertos a pagar ese óbolo en la expectativa de recuperar sus vidas?&lt;/p&gt;
+&lt;p&gt;Cuando el cínico Menipo murió, tuvo que cruzar el río Leteo como todo buen griego, y para ello debió acudir al solícito Caronte. La cuestión se puso espinosa cuando Caronte descubrió que Menipo no contaba con el óbolo que debía pagarle por sus servicios náuticos, a lo que Caronte se preguntó exasperado: -¿Acaso existe un hombre que no tenga un óbolo? Menipo, sin dejar pasar la oportunidad desenfundó su lengua y lo ajustició con estas palabras: - “No sé si existe un hombre que no tenga un óbolo, sólo sé que yo no lo tengo. Si no quieres llevarme, puedes devolverme con los vivos.” Si yo hubiera sido Caronte, después de escuchar esa respuesta, lo hubiera llevado a upa al Hades, al Olimpo o a donde él quisiera ir. Pero volvamos al asunto. Lo cómico del encuentro radica en el sinsentido de una transacción para marcar una situación supuestamente irreversible.&lt;/p&gt;
+&lt;p&gt;Veamos esto con un ejemplo menos solemne: Una persona está por ver cómo ejecutan un crédito hipotecario al no poder cumplir con sus obligaciones. El abogado del banco descubre que si el deudor no pone su firma en una hoja del documento de la hipoteca, la misma no se puede ejecutar y entonces el banco no podrá expropiar la vivienda al deudor. Si el abogado le dijera: -”Firma aquí que si no no podremos ejecutar tu casa y dejarte en la calle.” Y el deudor accediera sin chistar: ¿no sería esto cómico en un mismo sentido? ¿No estaríamos encontrándonos con una extraña pasividad allí donde deberíamos encontrar una conducta activa por parte del deudor? ¿No deberían acaso rehusarse todos los muertos a pagar ese óbolo en la expectativa de recuperar sus vidas?&lt;/p&gt;
 &lt;h4 id=&#34;la-muerte-no-es-lo-serio&#34;&gt;La muerte no es lo serio&lt;/h4&gt;
-&lt;p&gt;¿Qué es entonces lo que marca el pago del óbolo a Caronte? Sería necio pensar que estamos en presencia de lo que un contador llamaría una transacción económica o de lo que un abogado llamaría un contrato conmutativo. Y si no lo es -y claramente no lo es- entonces podemos hablar del pago del óbolo como de un rito. ¿Cuál es el sentido de este ritual? ¿Qué es aquello que marca el pago del óbolo? ¿Qué otra cosa sino la Seriedad? ¿Y qué es la Seriedad? ¿Qué otra cosa sino que la transacción sea irreversible? Esto es decisivo: la muerte no es lo serio, lo serio es que sea irreversible. La muerte, como marca eminente de la irreversibilidad a la que nos enfrentamos todos como individuos, es el arquetipo de la irreversibilidad, y por lo tanto, su representación es la marca de la seriedad.&lt;/p&gt;
+&lt;p&gt;¿Qué es entonces lo que marca el pago del óbolo a Caronte? Sería necio pensar que estamos en presencia de lo que un contador llamaría una transacción económica o de lo que un abogado llamaría un contrato conmutativo. Y si no lo es -y claramente no lo es- entonces podemos hablar del pago del óbolo como de un rito. ¿Cuál es el sentido de este ritual? ¿Qué es aquello que marca el pago del óbolo? ¿Qué otra cosa sino la Seriedad?&lt;/p&gt;
+&lt;p&gt;¿Y qué es la Seriedad? ¿Qué otra cosa sino que la transacción sea irreversible? Esto es decisivo: &lt;em&gt;la muerte no es lo serio, lo serio es que sea irreversible&lt;/em&gt;. La muerte, como marca eminente de la irreversibilidad a la que nos enfrentamos todos como individuos, es el arquetipo de la irreversibilidad, y por lo tanto, su representación es la marca de la seriedad.&lt;/p&gt;
 &lt;h3 id=&#34;ii---disección-de-una-flor-de-loto&#34;&gt;II - Disección de una flor de loto&lt;/h3&gt;
 &lt;p&gt;&amp;ldquo;A true opium of the people is a belief in nothingness after death - the huge solace of thinking that for our betrayals, greed, cowardice, murders we are not going to be judged.&amp;rdquo;
 – Czesław Miłosz&lt;/p&gt;
@@ -746,6 +826,126 @@ Fidias podía esculpir un león con sólo ver su garra&lt;/p&gt;
 Demos Testimonio frente a Nuestro Prójimo
 de que Necesitar del Dios del Amor es
 El Manantial del que brota la Verdad y la Vida, Vida en Abundancia!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>http://localhost:4321/docs/time-series/1/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/1/coding/replications/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>http://localhost:4321/docs/time-series/2/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/2/coding/replications/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>http://localhost:4321/docs/time-series/3/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/3/coding/replications/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>http://localhost:4321/docs/time-series/4/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/4/coding/replications/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Replications</title>
+      <link>http://localhost:4321/docs/time-series/5/coding/replications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/docs/time-series/5/coding/replications/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;N°&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;01&lt;/td&gt;
+&lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     
