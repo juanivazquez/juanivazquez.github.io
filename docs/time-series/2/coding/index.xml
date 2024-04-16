@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding | Juani Vázquez Broquá</title>
-    <link>http://localhost:4321/docs/time-series/2/coding/</link>
-      <atom:link href="http://localhost:4321/docs/time-series/2/coding/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://juanivb.github.io/docs/time-series/2/coding/</link>
+      <atom:link href="https://juanivb.github.io/docs/time-series/2/coding/index.xml" rel="self" type="application/rss+xml" />
     <description>Coding</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>http://localhost:4321/media/logo.svg</url>
+      <url>https://juanivb.github.io/media/logo.svg</url>
       <title>Coding</title>
-      <link>http://localhost:4321/docs/time-series/2/coding/</link>
+      <link>https://juanivb.github.io/docs/time-series/2/coding/</link>
     </image>
     
     <item>
       <title>Implementations</title>
-      <link>http://localhost:4321/docs/time-series/2/coding/implementations/</link>
+      <link>https://juanivb.github.io/docs/time-series/2/coding/implementations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/2/coding/implementations/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/2/coding/implementations/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -29,12 +29,12 @@
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
 &lt;td&gt;Introduction To Python&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/1_Introduction_to_Python.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;02&lt;/td&gt;
 &lt;td&gt;Data Manipulation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/2_Data_Manipulation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -43,9 +43,9 @@
     
     <item>
       <title>Experiments</title>
-      <link>http://localhost:4321/docs/time-series/2/coding/experiments/</link>
+      <link>https://juanivb.github.io/docs/time-series/2/coding/experiments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/2/coding/experiments/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/2/coding/experiments/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -58,17 +58,17 @@
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
 &lt;td&gt;Central Limit Theorem Validation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_central_limit_theorem.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;02&lt;/td&gt;
 &lt;td&gt;Pearson Correlation Limitations&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_0_pearson_correlation.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;03&lt;/td&gt;
 &lt;td&gt;Linear Regression Assumptions&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/exp_1_linear_regression_assumptions.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -77,9 +77,9 @@
     
     <item>
       <title>Replications</title>
-      <link>http://localhost:4321/docs/time-series/2/coding/replications/</link>
+      <link>https://juanivb.github.io/docs/time-series/2/coding/replications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/2/coding/replications/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/2/coding/replications/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -92,7 +92,7 @@
 &lt;tr&gt;
 &lt;td&gt;01&lt;/td&gt;
 &lt;td&gt;Spurious regressions in econometrics&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;http://localhost:4321/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://juanivb.github.io/uploads/code/rep_1973_granger_&amp;amp;_newbold.ipynb&#34;&gt;get&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

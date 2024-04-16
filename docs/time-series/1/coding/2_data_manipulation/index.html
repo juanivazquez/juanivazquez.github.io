@@ -1,0 +1,3129 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 15, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="light">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The first step in any data project is to get the data ready for analysis. In a traditional curriculum, the dataset was usually taken for granted and ready for analysis from the start." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://juanivb.github.io/docs/time-series/1/coding/2_data_manipulation/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/blue.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://juanivb.github.io/docs/time-series/1/coding/2_data_manipulation/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="Juani Vázquez Broquá" />
+  <meta property="og:url" content="https://juanivb.github.io/docs/time-series/1/coding/2_data_manipulation/" />
+  <meta property="og:title" content="Data Manipulation with Pandas | Juani Vázquez Broquá" />
+  <meta property="og:description" content="The first step in any data project is to get the data ready for analysis. In a traditional curriculum, the dataset was usually taken for granted and ready for analysis from the start." /><meta property="og:image" content="https://juanivb.github.io/media/logo.svg" />
+    <meta property="twitter:image" content="https://juanivb.github.io/media/logo.svg" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+
+  <title>Data Manipulation with Pandas | Juani Vázquez Broquá</title>
+
+  
+  
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format("woff2");
+    }
+  </style>
+
+  
+
+  
+
+  
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Juani Vázquez Broquá">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 98.9 115" x="0px" y="0px"><defs><style>.cls-1{fill:#000000;}</style></defs><path class="cls-1" d="M40.1,64.1c6.9-.8,8.7-5.7,13.2-11,1.9-2.2,3.2-4.9,6-8.3a6.5,6.5,0,0,1,5.8-2.6c3.3,0,4.4-.3,6.2,1.6,5.1,5.7,8.2,12.1,6.7,19.9a20.2,20.2,0,0,1-2.8,7c-1.3,2.1-2.9,4.2-3.4,6.7a2.3,2.3,0,0,1-2.6,2c-5-1.1-6.7-1.4-13.2-.2-1.1.2-1.2-2.6.7-3.7s3.1-1.2,3.1-1.4-3.3-1.5-4.7-5.9a11.1,11.1,0,0,1,.5-8A7.7,7.7,0,0,1,59.9,56a7.1,7.1,0,0,1,6.2.3c1.8.9,3.4,2,5.5,3.3-4.4-5.5-10.9-6.5-14.9-2.4S52.4,69.3,58,73.7c-1.7.8-2.7,1.5-3.2,2.4s-1.2,2.3,0,3.7l-2.5,1c-2.9,1-8.5,2.1-7.9,6.1-2.6,3.1-6.3,4.5-9.6,6.9-1.2.9-2.4,1.6-3.8,2.5-.9-1.8,0-3,1.1-4.3A54.4,54.4,0,0,0,36,86.5a1.6,1.6,0,0,0,.1-1.6c-3.1-4.5-2.3-9-.1-13.4M74.3,59.4l.5-.2c-.3-.6-.5-1.3-.9-1.5a21.1,21.1,0,0,0-3.3-1.8l-3-1.2v.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M25.7,16.4a22.4,22.4,0,0,0-11,6.5,2.9,2.9,0,0,1-2.1.3l-3.9-.8a15.7,15.7,0,0,0,.5,3.7,18.2,18.2,0,0,1,.7,9A13.9,13.9,0,0,0,20.2,50.4l2.3.8C13.2,51.7,4,45.1,1.3,36.3S.3,19.5,6.4,12.8,21,2.8,30.6,5,46.2,15.7,46.7,24.6a7.5,7.5,0,0,1-.3,1.7c-3.2-4.7-7.4-7.6-12.1-10.1-2.2-1.3-3.9-3.6-5.9-5.4a20.3,20.3,0,0,0-2.6-1.1,15.5,15.5,0,0,0-.4,2.9C25.4,13.8,25.6,15.1,25.7,16.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.1,34a5.2,5.2,0,0,1,1-1.1c2.1-1.9,4.5-3.3,7.5-3.1s7.1,1,8.4,3.9.5,6.9-1.7,9.6a8,8,0,0,1-2.9,2.3,9.8,9.8,0,0,1-6.1.7h-.7a7.6,7.6,0,0,1-3.5-1.5c-2.8-2.2-5.7-5.4-2.9-9.6Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.9,59.9c-1.2,1.3-3.1,2.9-5,2.1s-1.5-3.9-1-5.5C41.2,52.5,48.9,56.4,45.9,59.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M42.8,46.2A52.3,52.3,0,0,0,38.9,57c-1.1,4,2.4,6.1-.7,6.3s-6.5-3.4-10.7-6.8a20.5,20.5,0,0,0,6.7-2.8c1.4-1.1,2.6-2.4,3.9-3.6l-.3-.3a49.1,49.1,0,0,1-5.5,3.8,19.9,19.9,0,0,1-4.4,1.7h-.3l-1,.4s-2.5-1.5-1.2-1.7a26.9,26.9,0,0,0,5.3-2c9.4-4.6,14.1-10,17.5-20.2,1.2-.4,1.3.9,1,1.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M20.8,24.1a5.6,5.6,0,0,1,7.3-3.2c3.2,1.1,5.4,4.6,4.6,7.4a6.6,6.6,0,0,1-7.5,4.3,4,4,0,0,0,1.4-5.3C25.5,24.9,23.6,23.6,20.8,24.1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M93.5,50.7c.6-.3,7.1-6.3.7,1-2.2,2.6-3.5,4.1-6.6,5.2s-5.2-1.7-7.4-3.8a.7.7,0,0,1,0-.9l2.7-2.9a1.6,1.6,0,0,1,1.5-.1l3.2,1.3C90.2,51.7,91.1,51.8,93.5,50.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M24.2,52.2c11.8-5,20.3-12.9,23.4-25.9l.6.2a8.7,8.7,0,0,1-.1,2.3A32.5,32.5,0,0,1,33,49.3a53.8,53.8,0,0,1-6.7,3.6c-.6.2-1.5.5-2.1.1S23.9,52.3,24.2,52.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M54.5,47.9c.6-2.1-5.4-4.2-8.6-5.4,1.3-4.1,2.2-4.5,6.2-2.7a12.3,12.3,0,0,1,3.1,1.9C57.8,43.6,56.5,45.5,54.5,47.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.7,53.9a.5.5,0,0,1,.5,0l3.5,3a5.9,5.9,0,0,0,2.6,1c.4.1.7.2.6.5a22.4,22.4,0,0,1-5.6,6.8c-.3.3-.6.3-.8,0a1.4,1.4,0,0,1-.2-.6c.4-3.5,1.5-6.8-.8-10a.4.4,0,0,1,.2-.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M13.5,31.8c-.5,2.9-.3,5.5,3.1,6.5C15.3,40,14,39.8,13.1,38A6.6,6.6,0,0,1,13.5,31.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M57.1,43c.6-2-5.4-4.2-8.6-5.4,1.3-4,2.2-4.5,6.2-2.7a20.7,20.7,0,0,1,3.2,1.9C60.4,38.7,59.1,40.6,57.1,43Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M49.5,27.9c-1.2.5.7,4.7,1.2,4.7a7.8,7.8,0,0,1,3.5.5,11.8,11.8,0,0,1,3.9,2.3,7.9,7.9,0,0,1,3.2,5.9c0,.5,2.1-.8,7.3-.1,0,0-2.9-3.9-5.7-7a27,27,0,0,0-6.8-5.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M26.6,68.5a18.2,18.2,0,0,0-3.1-.4c-.4,0-.8.3-.7.7a6.4,6.4,0,0,0,.3,2c.6,2.4,2.5,2.9,4.5,1.4.1,0,.1,0,.1-.1a4.7,4.7,0,0,0,1-1.1.7.7,0,0,0-.1-1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.6,66.7a10.4,10.4,0,0,1,2.5,2l.5-.8c.9-2,2.1-3.9,2.7-5.3l-6.3-5c-1.1-.9-2-.6-2.3.8s-1.2,5.1-1.6,7.7A25.9,25.9,0,0,1,27.6,66.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.2,67.4a21.1,21.1,0,0,0-4.1-.6c-.1,0-.1.1-.2.2v.3h0c0,.1,0,.2.1.2a18.9,18.9,0,0,1,4.1.6,8.1,8.1,0,0,1,2.3,1.8c.1,0,.2,0,.2-.1l.2-.3v-.2A9.4,9.4,0,0,0,27.2,67.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M53.2,46.5a11.9,11.9,0,0,0-2.4-1.2s1.3.5-1.3,4.9l-2.9,4.2a8.2,8.2,0,0,1,1.6,2.5c1.4-2.1,5.6-8.5,5.8-8.6A2.1,2.1,0,0,0,53.2,46.5Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M50.2,45c-.3-.3-4.5-1.9-4.5-1.9s-1.2,1.9-2.3,4.1a25.2,25.2,0,0,0-1.9,5.7,6.4,6.4,0,0,1,3.9.7l.6.4a46.7,46.7,0,0,0,2.9-4.2C49.8,48.1,51.4,46.6,50.2,45Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M47.4,56.8h0c0-.2-.1-.3-.2-.5h0a.8.8,0,0,1-.2-.4h0l-.3-.4h0a.1.1,0,0,1-.1-.1h-.2c0-.1-.1-.1-.1-.2h-.1a.1.1,0,0,0-.1-.1h0c0-.1-.1-.1-.1-.2h-.4a.1.1,0,0,0-.1-.1h-.7a.1.1,0,0,0-.1-.1h-.2c0-.1,0-.1-.1-.1H41.2v.4c-.1.1,0,.2.2.2a4.8,4.8,0,0,1,3.4.7,4.2,4.2,0,0,1,2.3,3,.2.2,0,0,0,.3,0l.4-.5A2.5,2.5,0,0,0,47.4,56.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.6,27.2a14.4,14.4,0,0,0-4.8-5.8l-5.6,4.9a7.9,7.9,0,0,0-2,2.5c-1.3,2.8-4.7,5-7.6,4.6a7.6,7.6,0,0,1-6-6.2c-.3-2.1-.6-4.2-.9-6.6-5.5,3.3-8.9,10.7-8,17.1.6,4.4,2.3,8.2,6.2,10.3s5.5,1.6,8.3,2.4A34.7,34.7,0,0,0,45.5,29,2.8,2.8,0,0,0,45.6,27.2ZM16.4,40.1a3.6,3.6,0,0,1-2.8.4c-3.7-2.8-2-8.5-.4-9.9a2.2,2.2,0,0,1,3.2,0C19,32.7,19.1,38,16.4,40.1Zm11.2-1.7h-.7l-.7.2-.7.2h0a.1.1,0,0,0-.1.1h-.1l-.3.2-.3.2h-.1a.1.1,0,0,1-.1.1l-.3.3h-.1c-.1.1-.2.2-.2.3s-.1.1-.1.2h-.1c-.1.3-.1.5-.2.8a.4.4,0,0,1-.1.3h0V42c0,.2-.1.5-.1.8a.4.4,0,0,1-.4.4c-.2,0-.5-.2-.5-.4a12,12,0,0,1,.3-2,3.5,3.5,0,0,1,.8-1.6,5.2,5.2,0,0,1,1.1-1,6.6,6.6,0,0,1,3-.7.5.5,0,0,1,.5.4A.5.5,0,0,1,27.6,38.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M99,40.7a18.8,18.8,0,0,0-1.9-5.8.4.4,0,0,0-.7.2c.1,4.4-.7,7.3-2.7,9.3s-4.7,3.4-9.2,3.2c-.3,0-.6.5-.3.6,5.8,2.3,7.4,3.7,11,.3,1-.9,3-2,3.5-3.4l.3-1.4Z" transform="translate(-0.1 -4.3)"/><text x="0" y="107" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Raylighx</text><text x="0" y="112" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ml-auto mr-6">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/docs/"
+        >Writing</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      <div class="mx-auto flex max-w-screen-xl">
+  
+<div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/80 hidden"></div>
+
+<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] lg:sticky">
+  
+  <div class="px-4 pt-4 lg:hidden">
+    
+    
+  </div>
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+    <ul class="flex flex-col gap-1 lg:hidden">
+      
+      
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/"
+    
+  >
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/"
+    
+  >1. Introduction
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/coding/1_introduction_to_python/"
+    
+  >Intro to Python
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/docs/time-series/1/coding/2_data_manipulation/"
+    
+  >Data Manipulation with Pandas
+    </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#"
+                class="hb-docs-link"
+              ></a>
+            </li>
+          </ul>
+  
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/"
+    
+  >2. Box &amp; Jenkins
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/"
+    
+  >3. Stationarity Tests
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/"
+    
+  >4. VAR
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/"
+    
+  >5. Causality
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/assignment/"
+    
+  >6. Assignment
+    </a>
+              
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/"
+    
+  >This is Me ↗</a></li>
+    
+    </ul>
+
+    <ul class="flex flex-col gap-1 max-lg:hidden">
+        
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a></li>
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/"
+    
+  >1. Introduction
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/coding/1_introduction_to_python/"
+    
+  >Intro to Python
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/docs/time-series/1/coding/2_data_manipulation/"
+    
+  >Data Manipulation with Pandas
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/"
+    
+  >2. Box &amp; Jenkins
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/"
+    
+  >3. Stationarity Tests
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/"
+    
+  >4. VAR
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/"
+    
+  >5. Causality
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/"
+    
+  >Coding
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/implementations/"
+    
+  >Implementations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/experiments/"
+    
+  >Experiments
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/coding/replications/"
+    
+  >Replications
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/assignment/"
+    
+  >6. Assignment
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div></li>
+        
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/"
+    
+  >This is Me ↗</a></li>
+    
+      </ul>
+    </div>
+
+</aside>
+  
+
+
+<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#1-dataset">1. Dataset</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#2-importing-data">2. Importing data</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#3-inspecting-the-data">3. Inspecting the data</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#4-data-selection">4. Data selection</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#5-conditional-data-selection">5. Conditional data selection</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#6-assigning-new-values">6. Assigning new values</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#7-descriptive-statistics">7. Descriptive statistics</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#8-exporting-data">8. Exporting data</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#9-credits">9. Credits</a>
+      </li></ul><div class="mt-8 border-t dark:border-neutral-700 pt-8 sticky bottom-0 flex flex-col items-start gap-2 pb-8">
+
+        
+        
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+
+  <article class="flex w-full min-w-0 min-h-[calc(100vh-var(--navbar-height))] justify-center break-words pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="prose prose-slate lg:prose-xl dark:prose-invert w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+      <div class="mb-1">
+        <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400">
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/"></a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/time-series/">Time Series</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/time-series/1/">1. Introduction</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/time-series/1/coding/">Coding</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Data Manipulation with Pandas</div>
+</div>
+
+      </div>
+
+      <div class="content text-base">
+        <h1>Data Manipulation with Pandas</h1>
+        <p>The first step in any data project is to get the data ready for analysis. In a traditional curriculum, the dataset was usually taken for granted and ready for analysis from the start. However, this no longer reflects the reality in industry: the trend towards <a href="http://www.forbes.com/sites/bernardmarr/2016/04/28/big-data-overload-most-companies-cant-deal-with-the-data-explosion/#52c807d83920" target="_blank" rel="noopener">big data</a> brought with it an increased demand for professionals that have the computational skills to work with possibly large, complex and unstructured data. It is <a href="https://www.r-bloggers.com/the-real-prerequisite-for-machine-learning-isnt-math-its-data-analysis/" target="_blank" rel="noopener">commonly stated</a> that up to 80% of a data scientist&rsquo;s job can be data preparation, exploratory data analysis (EDA), and visualisation.</p>
+<p>Common tasks include loading and inspecting the data, merging datasets, identifying and handling errors (data cleaning), handling missing values, etc.</p>
+<p>In this lesson we explore the basics of how to use the <a href="https://pandas.pydata.org/" target="_blank" rel="noopener">pandas</a> package to work  with data in Python. Pandas is an industry-standard library that provides a highly flexible data structure called a dataframe, which makes data manipulation fast and easy. As a complement to this tutorial, the <a href="http://pandas.pydata.org/pandas-docs/stable/10min.html" target="_blank">10 minutes to pandas</a> tutorial in the official pandas documentation is also a useful starting reference.</p>
+<p><a href="#1.-Dataset">Dataset</a> <br>
+<a href="#2.-Importing-data">Importing data</a> <br>
+<a href="#3.-Inspecting-the-Data">Inspecting the data</a> <br>
+<a href="#4.-Data-selection">Data selection</a> <br>
+<a href="#5.-Conditional-data-selection">Conditional data selection</a> <br>
+<a href="#6.-Assigning-new-values">Assigning new values</a> <br>
+<a href="#7.-Descriptive-statistics">Descriptive statistics</a> <br>
+<a href="#8.-Exporting-data">Exporting data</a> <br></p>
+<h3 id="1-dataset">1. Dataset</h3>
+<p>This tutorial is based on the <code>Credit</code> dataset from the  <a href="http://www-bcf.usc.edu/~gareth/ISL/index.html" target="_blank">Introduction to Statistical Learning</a> texbook by James, Witten, Hastie and Tibshirani. It records the average credit card balace at end of the month for customers of a financial services company, as well as other individual characteristics such age, education, gender, marital status, number of cards, and credit rating.</p>
+<p>We will be using <code>Credit</code> a few tutorials in this initial part of the course. Our objective will be to find a suitable model to predict the average credit card balance for different customers. The financial institution may be interested in this for multiple reasons: credit risk assessment, forecasting revenue, estimating the customer lifetime value (CLV), credit portfolio management, etc.</p>
+<p><strong>The dataset can be found 👉  <a href="https://github.com/UCLSPP/datasets/blob/master/data/Credit.csv" target="_blank" rel="noopener">here</a>
+or <a href="https://github.com/UCLSPP/datasets/blob/master/data/Credit.csv" target="_blank" rel="noopener">here</a></strong></p>
+<h3 id="2-importing-data">2. Importing data</h3>
+<p>We start by loading the pandas package.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span></code></pre></div><p>Since the dataset is in the <code>csv</code> format, we use the pandas <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html" target="_blank">read_csv</a> function to import the file. The package will automatically read the column names and infer the variable types.  We assign the data variable to a variable called <code>data</code>, which will store the dataset as an object called a <code>DataFrame</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># We will always assume that the data file is in a subdirectory called &#34;Data&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Data/Credit.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>pandas.core.frame.DataFrame
+</code></pre>
+<p>The data file needs to be in the correct place for this to work. You can run the <code>pwd</code> command to check which folder your notebook is running from. This folder needs to have a subfolder called <code>Data</code>, and the <code>Credit.csv</code> file needs to be there. If the data file was in the same folder as the notebook, the command would be  <code>pd.read_csv('Credit.csv')</code>.</p>
+<p><em>Note: To get help on any function or object, append a question mark to it and run the cell. For example, try running <code>pd.read_csv?</code></em>.</p>
+<p>Our present dataset is quite simple to work with, but others may require more complex calls to <code>read_csv</code>. Refer to the documentation to find the appropriate options for other situations that you may come across.</p>
+<p>Pandas also has specialised functions for reading other types of input files, such as Excel files. You can see a list of available functions <a href="http://pandas.pydata.org/pandas-docs/stable/io.html" target="_blank">here</a>. The pandas  <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_table.html#pandas.read_table" target="_blank">read table</a> function reads data stored as general delimited text files (for example, where the columns are separated by space rather than commas).  In practical business situations, you may often need to obtain data from a <a href="https://en.wikipedia.org/wiki/Relational_database" target="_blank" rel="noopener">relational database</a> rather than a flat file stored in your computer. You can read database tables and queries into a <code>DataFrame</code> by using the <code>read_sql_table</code>, <code>read_sql_query</code>, or <code>read_sql</code>  functions.</p>
+<h3 id="3-inspecting-the-data">3. Inspecting the data</h3>
+<p>A pandas <code>DataFrame</code> has some similarities to a spreadsheet. However, unlike a spreadsheet, you are not able to click through it or manually make modifications in the current setup. We do everything through coding. This may initially feel restrictive, but it is ultimately more efficient and scalable to work in this way. Some Python environments have GUIs (graphical user interfaces) that allow you to view and modify dataframes by clicking through an interface.</p>
+<p>The first thing that we&rsquo;ll want to do is to inspect the data. Two basic methods to do this are the <code>head</code> and <code>tail</code> methods. The head method displays the first rows of the data (by default five), while the tail displays the last rows. You can specify the number of rows within the parentheses.</p>
+<p>Running a cell with only the name of the <code>DataFrame</code> will provide a full view, but pandas limits number of rows and columns that can be shown by default. Check <a href="http://stackoverflow.com/questions/19124601/is-there-a-way-to-pretty-print-the-entire-pandas-series-dataframe" target="_blank" rel="noopener">here</a> if you want to change this setting.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Obs</th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>148.924</td>
+      <td>9504</td>
+      <td>681</td>
+      <td>3</td>
+      <td>36</td>
+      <td>11</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>55.882</td>
+      <td>4897</td>
+      <td>357</td>
+      <td>2</td>
+      <td>68</td>
+      <td>16</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>331</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Obs</th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>395</th>
+      <td>396</td>
+      <td>12.096</td>
+      <td>4100</td>
+      <td>307</td>
+      <td>3</td>
+      <td>32</td>
+      <td>13</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>560</td>
+    </tr>
+    <tr>
+      <th>396</th>
+      <td>397</td>
+      <td>13.364</td>
+      <td>3838</td>
+      <td>296</td>
+      <td>5</td>
+      <td>65</td>
+      <td>17</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>African American</td>
+      <td>480</td>
+    </tr>
+    <tr>
+      <th>397</th>
+      <td>398</td>
+      <td>57.872</td>
+      <td>4171</td>
+      <td>321</td>
+      <td>5</td>
+      <td>67</td>
+      <td>12</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <th>398</th>
+      <td>399</td>
+      <td>37.728</td>
+      <td>2525</td>
+      <td>192</td>
+      <td>1</td>
+      <td>44</td>
+      <td>13</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>399</th>
+      <td>400</td>
+      <td>18.701</td>
+      <td>5524</td>
+      <td>415</td>
+      <td>5</td>
+      <td>64</td>
+      <td>7</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>966</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Obs</th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>The rows of the <code>DataFrame</code> have a numerical index (in bold above), which is the default behaviour. As usual in Python, the index starts from zero. This does not need to be the case in the <code>DataFrame</code>, but pandas follows the Python convention by default.</p>
+<p>Alternatively, we can specify an index variable for the <code>DataFrame</code> (that is, a label for each row), which does not need to be a number. For example, if you have time series data, it can be the date.</p>
+<p>We can see that for the <code>Credit</code> dataset, the first column is an observation index. Thus, we can directly identify it as the index variable and assign it to the <code>DataFrame</code> index when reading the original data file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Data/Credit.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;Obs&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>148.924</td>
+      <td>9504</td>
+      <td>681</td>
+      <td>3</td>
+      <td>36</td>
+      <td>11</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>55.882</td>
+      <td>4897</td>
+      <td>357</td>
+      <td>2</td>
+      <td>68</td>
+      <td>16</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>331</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Another useful method to use at this stage is <code>info</code>, which allows you to check total number of rows and columns, the data types for each column (called <code>dtypes</code> in pandas), and verify whether there are missing values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Int64Index: 400 entries, 1 to 400
+Data columns (total 11 columns):
+Income       400 non-null float64
+Limit        400 non-null int64
+Rating       400 non-null int64
+Cards        400 non-null int64
+Age          400 non-null int64
+Education    400 non-null int64
+Gender       400 non-null object
+Student      400 non-null object
+Married      400 non-null object
+Ethnicity    400 non-null object
+Balance      400 non-null int64
+dtypes: float64(1), int64(6), object(4)
+memory usage: 37.5+ KB
+</code></pre>
+<p>The <code>object</code> dtype is the most general type: a column with this dtype will typically contain text data. If you expect a column to be numerical but it appears as <code>object</code>, that tells you that there is an issue that you need to investigate and clean up.</p>
+<p>There are no missing values in this dataset since <code>info</code> tells us that the dataframe has 400 entries and all columns have 400 non-null values. A direct way of counting missing values is as follows.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>Income       0
+Limit        0
+Rating       0
+Cards        0
+Age          0
+Education    0
+Gender       0
+Student      0
+Married      0
+Ethnicity    0
+Balance      0
+dtype: int64
+</code></pre>
+<h3 id="4-data-selection">4. Data selection</h3>
+<p>There are two ways to select data in pandas: by providing the column and index labels or passing a numerical index.</p>
+<p><strong>4.1 Selecting a column by label</strong></p>
+<p>The output will now look different because selecting only one column returns a <code>Series</code> (a specialised object for a single data series) rather than a <code>DataFrame</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>Obs
+1     14.891
+2    106.025
+3    104.593
+4    148.924
+5     55.882
+Name: Income, dtype: float64
+</code></pre>
+<p><strong>4.2 Selecting multiple columns by label</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Income&#39;</span><span class="p">,</span><span class="s1">&#39;Education&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>104.593</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>148.924</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>55.882</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Note that we passed desired column labels as a Python list. The example will make this clear.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Income&#39;</span><span class="p">,</span><span class="s1">&#39;Education&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>['Income', 'Education']
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="n">names</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>104.593</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>148.924</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>55.882</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>4.3 Selecting a column by numerical index</strong></p>
+<p>The <code>iloc</code> method allows us to select data by numerical indexing. We just have to be careful not be confused by zero indexing. If we want the first column, then the index is zero.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>Obs
+1     14.891
+2    106.025
+3    104.593
+4    148.924
+5     55.882
+Name: Income, dtype: float64
+</code></pre>
+<p>The <code>:</code> syntax indicates that we want to include all rows in the selection.</p>
+<p><strong>4.4 Selecting multiple columns by numerical indexes</strong></p>
+<p>Here, we pass a list of column numbers for indexing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Another method is slicing. Suppose that we want to select the data from the 1st to the 6th column.  When specifying a range of integer indexes, the last one is not included. For example, the cell below requests indexes 0, 1, 2, 3, 4, 5 (first to the sixth column).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>4.5 Selecting rows by labels</strong></p>
+<p>The <code>loc</code> method alows one to select rows by the designated index labels (<code>Obs</code>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">],:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>55.882</td>
+      <td>4897</td>
+      <td>357</td>
+      <td>2</td>
+      <td>68</td>
+      <td>16</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>331</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Unlike slicing with numerical indexing, slicing with label indexes includes the last item.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>This next example makes this part clearer by demonstrating how a <code>DataFrame</code> can have a non-numerical index (row labels).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> <span class="c1"># make a copy of the first five rows of the dataframe</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="c1"># replace the index with arbitrary labels</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>a</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>b</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>c</th>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+    <tr>
+      <th>d</th>
+      <td>148.924</td>
+      <td>9504</td>
+      <td>681</td>
+      <td>3</td>
+      <td>36</td>
+      <td>11</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <th>e</th>
+      <td>55.882</td>
+      <td>4897</td>
+      <td>357</td>
+      <td>2</td>
+      <td>68</td>
+      <td>16</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>331</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>a</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>c</th>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>a</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>b</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>c</th>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>4.6 Selecting rows by numerical index</strong></p>
+<p>This is useful when the index variable is a string or date. Here, we are back to zero indexing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>a</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>b</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>4.7 Jointly selecting rows and columns</strong></p>
+<p>We can combine the previous examples to simultaneously select specific rows and columns.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,[</span><span class="s1">&#39;Income&#39;</span><span class="p">,</span> <span class="s1">&#39;Education&#39;</span><span class="p">]]</span> <span class="c1"># label indexing</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">]]</span>  <span class="c1"># numerical indexing</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>4.8 Combining labels and numerical indexes</strong></p>
+<p>As a more advanced concept, a slice of a <code>DataFrame</code> is itself a pandas object. That means that we can chain the syntax to select data using a mix of label and numerical indexing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Income&#39;</span><span class="p">,</span> <span class="s1">&#39;Education&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,:]</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Education</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>4.9 Selecting columns by data type</strong></p>
+<p>We sometimes want select all columns of a particular <code>dtype</code> so that we can process them accordingly. You can do this as follows.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">text_variables</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">([</span><span class="s1">&#39;object&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">text_variables</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Female</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="5-conditional-data-selection">5. Conditional data selection</h3>
+<p>Suppose that we want to know the average credit card balance among female customers. Below, we select the rows of the balance column for female customers only.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Female&#39;</span><span class="p">,</span><span class="s1">&#39;Balance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>529.536231884058
+</code></pre>
+<p>This is called Boolean indexing in Python, because it involves the creation of binary variables indicating whether the condition is <code>True</code> of <code>False</code> for each row. The next cell will help you to understand this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">((</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Female&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</span></span></code></pre></div><pre><code>Obs
+1      Male
+2    Female
+3      Male
+4    Female
+5      Male
+Name: Gender, dtype: object
+
+Obs
+1    False
+2     True
+3    False
+4     True
+5    False
+Name: Gender, dtype: bool
+</code></pre>
+<p>You can also specify multiple conditions. The following cell selects females with age equal or lower than 30.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Female&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">&lt;=</span><span class="mi">30</span><span class="p">),</span><span class="s1">&#39;Balance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>499.59090909090907
+</code></pre>
+<p>See this <a href="http://www.tutorialspoint.com/python/python_basic_operators.htm" target="_blank">reference page</a> for a list of Python comparison operators.</p>
+<h3 id="6-assigning-new-values">6. Assigning new values</h3>
+<p>The <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.unique.html" target="_blank">unique</a> method from pandas allows us to view all the unique values in a column.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>array([' Male', 'Female'], dtype=object)
+</code></pre>
+<p>We note that the first character in &ldquo;Male&rdquo; above is a space, which is a minor error in the data.  This is a common type of error, and more problematically we can have a mix of correct and incorrect labels.</p>
+<p>We can use our new knowledge of data selection to fix this. Below, we joinly select the rows where the gender is &quot; Male&quot; and the Gender column.  We then replace the values in those locations with the correct label.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39; Male&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;Male&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Gender</th>
+      <th>Student</th>
+      <th>Married</th>
+      <th>Ethnicity</th>
+      <th>Balance</th>
+    </tr>
+    <tr>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>14.891</td>
+      <td>3606</td>
+      <td>283</td>
+      <td>2</td>
+      <td>34</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>106.025</td>
+      <td>6645</td>
+      <td>483</td>
+      <td>3</td>
+      <td>82</td>
+      <td>15</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Asian</td>
+      <td>903</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>104.593</td>
+      <td>7075</td>
+      <td>514</td>
+      <td>4</td>
+      <td>71</td>
+      <td>11</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>580</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>148.924</td>
+      <td>9504</td>
+      <td>681</td>
+      <td>3</td>
+      <td>36</td>
+      <td>11</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Asian</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>55.882</td>
+      <td>4897</td>
+      <td>357</td>
+      <td>2</td>
+      <td>68</td>
+      <td>16</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Caucasian</td>
+      <td>331</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Gender&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>array(['Male', 'Female'], dtype=object)
+</code></pre>
+<h3 id="7-descriptive-statistics">7. Descriptive statistics</h3>
+<p>After loading and preparing the data, we can start exploring it by looking at the basic descriptive statitistics. The <code>describe</code> method provides a table with basic summary statistics for the data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># I appended round to limit the number of decimal places in the output, try without it</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+      <th>Rating</th>
+      <th>Cards</th>
+      <th>Age</th>
+      <th>Education</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>400.0</td>
+      <td>400.0</td>
+      <td>400.0</td>
+      <td>400.0</td>
+      <td>400.0</td>
+      <td>400.0</td>
+      <td>400.0</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>45.2</td>
+      <td>4735.6</td>
+      <td>354.9</td>
+      <td>3.0</td>
+      <td>55.7</td>
+      <td>13.4</td>
+      <td>520.0</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>35.2</td>
+      <td>2308.2</td>
+      <td>154.7</td>
+      <td>1.4</td>
+      <td>17.2</td>
+      <td>3.1</td>
+      <td>459.8</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>10.4</td>
+      <td>855.0</td>
+      <td>93.0</td>
+      <td>1.0</td>
+      <td>23.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>21.0</td>
+      <td>3088.0</td>
+      <td>247.2</td>
+      <td>2.0</td>
+      <td>41.8</td>
+      <td>11.0</td>
+      <td>68.8</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>33.1</td>
+      <td>4622.5</td>
+      <td>344.0</td>
+      <td>3.0</td>
+      <td>56.0</td>
+      <td>14.0</td>
+      <td>459.5</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>57.5</td>
+      <td>5872.8</td>
+      <td>437.2</td>
+      <td>4.0</td>
+      <td>70.0</td>
+      <td>16.0</td>
+      <td>863.0</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>186.6</td>
+      <td>13913.0</td>
+      <td>982.0</td>
+      <td>9.0</td>
+      <td>98.0</td>
+      <td>20.0</td>
+      <td>1999.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>There are also individual functions for a range of summary statistics. Refer to the <a href="http://pandas.pydata.org/pandas-docs/stable/api.html#api-dataframe-stats" target="_blank" rel="noopener">pandas documentation</a> for a full list of available functions. As examples, we calculate below: (a) the mean for all variables in the dataset (b) the correlation between income and credit card limit.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Income         45.22
+Limit        4735.60
+Rating        354.94
+Cards           2.96
+Age            55.67
+Education      13.45
+Balance       520.02
+dtype: float64
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Income&#39;</span><span class="p">,</span><span class="s1">&#39;Limit&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Income</th>
+      <th>Limit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Income</th>
+      <td>1.00</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>Limit</th>
+      <td>0.79</td>
+      <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="8-exporting-data">8. Exporting data</h3>
+<p>Once you have made the necessary modications to the dataset, you may want to save it to continue working on it later. More generally, you may wish to save the results of your analysis or export tables so that they insert them in a report or webpage (after formatting). Pandas has methods to export data as <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html" target="_blank">csv</a> and <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_excel.html" target="_blank">Excel</a> files, <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_latex.html" target="_blank">LaTex</a> and <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_html.html" target="_blank">HTML</a> tables, among <a href='http://pandas.pydata.org/pandas-docs/stable/api.html#id12' target="_blank">other options</a>.</p>
+<p>In the following example I export our <TT>DataFrame</TT> as an Excel file. You can run the cell and try to open the file in Excel to check that it worked.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;new_data.xlsx&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="9-credits">9. Credits</h3>
+<p>Credits to <a href="https://www.linkedin.com/in/marcel-scharth-aa5bab112/?originalSubdomain=au" target="_blank" rel="noopener">Dr Marcel Scharth</a></p>
+
+      </div>
+
+      <div class="mt-16"></div>
+      
+      
+  
+    
+    
+    
+      
+      
+    
+<div class="pt-1 no-prose w-full">
+  <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+  <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
+    <div class="">
+      
+        <a class="group flex no-underline" href="/docs/time-series/1/coding/1_introduction_to_python/">
+          <span
+            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Intro to Python</span>
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+        </a>
+      
+    </div>
+    <div class="">
+      
+    </div>
+  </div>
+</div>
+
+
+
+      
+
+
+
+    </main>
+  </article>
+</div>
+
+    </div>
+    <div class="page-footer">
+      
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

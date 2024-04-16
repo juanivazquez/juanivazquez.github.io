@@ -1,0 +1,1863 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 16, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="light">
+  
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="&lt;!DOCTYPE html&gt;&lt;!DOCTYPE html&gt;Replication Lab GEC0319 | Time Series Gauss Markov Assumptions Experiment N° 1 Link: here Verifying the Assumptions of Linear Regression in Python and R Linear regression is one of the most basic machine learning algorithms and is often used as a benchmark for more advanced models." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://localhost:4321/docs/time-series/1/lab/exp_1_linear_regression_assumptions/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/blue.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="http://localhost:4321/docs/time-series/1/lab/exp_1_linear_regression_assumptions/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="Juani Vázquez Broquá" />
+  <meta property="og:url" content="http://localhost:4321/docs/time-series/1/lab/exp_1_linear_regression_assumptions/" />
+  <meta property="og:title" content="Juani Vázquez Broquá" />
+  <meta property="og:description" content="&lt;!DOCTYPE html&gt;&lt;!DOCTYPE html&gt;Replication Lab GEC0319 | Time Series Gauss Markov Assumptions Experiment N° 1 Link: here Verifying the Assumptions of Linear Regression in Python and R Linear regression is one of the most basic machine learning algorithms and is often used as a benchmark for more advanced models." /><meta property="og:image" content="http://localhost:4321/media/logo.svg" />
+    <meta property="twitter:image" content="http://localhost:4321/media/logo.svg" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+
+  <title>Juani Vázquez Broquá</title>
+
+  
+  
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format("woff2");
+    }
+  </style>
+
+  
+
+  
+
+  
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.js"
+    integrity=""
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Juani Vázquez Broquá">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 98.9 115" x="0px" y="0px"><defs><style>.cls-1{fill:#000000;}</style></defs><path class="cls-1" d="M40.1,64.1c6.9-.8,8.7-5.7,13.2-11,1.9-2.2,3.2-4.9,6-8.3a6.5,6.5,0,0,1,5.8-2.6c3.3,0,4.4-.3,6.2,1.6,5.1,5.7,8.2,12.1,6.7,19.9a20.2,20.2,0,0,1-2.8,7c-1.3,2.1-2.9,4.2-3.4,6.7a2.3,2.3,0,0,1-2.6,2c-5-1.1-6.7-1.4-13.2-.2-1.1.2-1.2-2.6.7-3.7s3.1-1.2,3.1-1.4-3.3-1.5-4.7-5.9a11.1,11.1,0,0,1,.5-8A7.7,7.7,0,0,1,59.9,56a7.1,7.1,0,0,1,6.2.3c1.8.9,3.4,2,5.5,3.3-4.4-5.5-10.9-6.5-14.9-2.4S52.4,69.3,58,73.7c-1.7.8-2.7,1.5-3.2,2.4s-1.2,2.3,0,3.7l-2.5,1c-2.9,1-8.5,2.1-7.9,6.1-2.6,3.1-6.3,4.5-9.6,6.9-1.2.9-2.4,1.6-3.8,2.5-.9-1.8,0-3,1.1-4.3A54.4,54.4,0,0,0,36,86.5a1.6,1.6,0,0,0,.1-1.6c-3.1-4.5-2.3-9-.1-13.4M74.3,59.4l.5-.2c-.3-.6-.5-1.3-.9-1.5a21.1,21.1,0,0,0-3.3-1.8l-3-1.2v.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M25.7,16.4a22.4,22.4,0,0,0-11,6.5,2.9,2.9,0,0,1-2.1.3l-3.9-.8a15.7,15.7,0,0,0,.5,3.7,18.2,18.2,0,0,1,.7,9A13.9,13.9,0,0,0,20.2,50.4l2.3.8C13.2,51.7,4,45.1,1.3,36.3S.3,19.5,6.4,12.8,21,2.8,30.6,5,46.2,15.7,46.7,24.6a7.5,7.5,0,0,1-.3,1.7c-3.2-4.7-7.4-7.6-12.1-10.1-2.2-1.3-3.9-3.6-5.9-5.4a20.3,20.3,0,0,0-2.6-1.1,15.5,15.5,0,0,0-.4,2.9C25.4,13.8,25.6,15.1,25.7,16.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.1,34a5.2,5.2,0,0,1,1-1.1c2.1-1.9,4.5-3.3,7.5-3.1s7.1,1,8.4,3.9.5,6.9-1.7,9.6a8,8,0,0,1-2.9,2.3,9.8,9.8,0,0,1-6.1.7h-.7a7.6,7.6,0,0,1-3.5-1.5c-2.8-2.2-5.7-5.4-2.9-9.6Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.9,59.9c-1.2,1.3-3.1,2.9-5,2.1s-1.5-3.9-1-5.5C41.2,52.5,48.9,56.4,45.9,59.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M42.8,46.2A52.3,52.3,0,0,0,38.9,57c-1.1,4,2.4,6.1-.7,6.3s-6.5-3.4-10.7-6.8a20.5,20.5,0,0,0,6.7-2.8c1.4-1.1,2.6-2.4,3.9-3.6l-.3-.3a49.1,49.1,0,0,1-5.5,3.8,19.9,19.9,0,0,1-4.4,1.7h-.3l-1,.4s-2.5-1.5-1.2-1.7a26.9,26.9,0,0,0,5.3-2c9.4-4.6,14.1-10,17.5-20.2,1.2-.4,1.3.9,1,1.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M20.8,24.1a5.6,5.6,0,0,1,7.3-3.2c3.2,1.1,5.4,4.6,4.6,7.4a6.6,6.6,0,0,1-7.5,4.3,4,4,0,0,0,1.4-5.3C25.5,24.9,23.6,23.6,20.8,24.1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M93.5,50.7c.6-.3,7.1-6.3.7,1-2.2,2.6-3.5,4.1-6.6,5.2s-5.2-1.7-7.4-3.8a.7.7,0,0,1,0-.9l2.7-2.9a1.6,1.6,0,0,1,1.5-.1l3.2,1.3C90.2,51.7,91.1,51.8,93.5,50.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M24.2,52.2c11.8-5,20.3-12.9,23.4-25.9l.6.2a8.7,8.7,0,0,1-.1,2.3A32.5,32.5,0,0,1,33,49.3a53.8,53.8,0,0,1-6.7,3.6c-.6.2-1.5.5-2.1.1S23.9,52.3,24.2,52.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M54.5,47.9c.6-2.1-5.4-4.2-8.6-5.4,1.3-4.1,2.2-4.5,6.2-2.7a12.3,12.3,0,0,1,3.1,1.9C57.8,43.6,56.5,45.5,54.5,47.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.7,53.9a.5.5,0,0,1,.5,0l3.5,3a5.9,5.9,0,0,0,2.6,1c.4.1.7.2.6.5a22.4,22.4,0,0,1-5.6,6.8c-.3.3-.6.3-.8,0a1.4,1.4,0,0,1-.2-.6c.4-3.5,1.5-6.8-.8-10a.4.4,0,0,1,.2-.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M13.5,31.8c-.5,2.9-.3,5.5,3.1,6.5C15.3,40,14,39.8,13.1,38A6.6,6.6,0,0,1,13.5,31.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M57.1,43c.6-2-5.4-4.2-8.6-5.4,1.3-4,2.2-4.5,6.2-2.7a20.7,20.7,0,0,1,3.2,1.9C60.4,38.7,59.1,40.6,57.1,43Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M49.5,27.9c-1.2.5.7,4.7,1.2,4.7a7.8,7.8,0,0,1,3.5.5,11.8,11.8,0,0,1,3.9,2.3,7.9,7.9,0,0,1,3.2,5.9c0,.5,2.1-.8,7.3-.1,0,0-2.9-3.9-5.7-7a27,27,0,0,0-6.8-5.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M26.6,68.5a18.2,18.2,0,0,0-3.1-.4c-.4,0-.8.3-.7.7a6.4,6.4,0,0,0,.3,2c.6,2.4,2.5,2.9,4.5,1.4.1,0,.1,0,.1-.1a4.7,4.7,0,0,0,1-1.1.7.7,0,0,0-.1-1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.6,66.7a10.4,10.4,0,0,1,2.5,2l.5-.8c.9-2,2.1-3.9,2.7-5.3l-6.3-5c-1.1-.9-2-.6-2.3.8s-1.2,5.1-1.6,7.7A25.9,25.9,0,0,1,27.6,66.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.2,67.4a21.1,21.1,0,0,0-4.1-.6c-.1,0-.1.1-.2.2v.3h0c0,.1,0,.2.1.2a18.9,18.9,0,0,1,4.1.6,8.1,8.1,0,0,1,2.3,1.8c.1,0,.2,0,.2-.1l.2-.3v-.2A9.4,9.4,0,0,0,27.2,67.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M53.2,46.5a11.9,11.9,0,0,0-2.4-1.2s1.3.5-1.3,4.9l-2.9,4.2a8.2,8.2,0,0,1,1.6,2.5c1.4-2.1,5.6-8.5,5.8-8.6A2.1,2.1,0,0,0,53.2,46.5Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M50.2,45c-.3-.3-4.5-1.9-4.5-1.9s-1.2,1.9-2.3,4.1a25.2,25.2,0,0,0-1.9,5.7,6.4,6.4,0,0,1,3.9.7l.6.4a46.7,46.7,0,0,0,2.9-4.2C49.8,48.1,51.4,46.6,50.2,45Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M47.4,56.8h0c0-.2-.1-.3-.2-.5h0a.8.8,0,0,1-.2-.4h0l-.3-.4h0a.1.1,0,0,1-.1-.1h-.2c0-.1-.1-.1-.1-.2h-.1a.1.1,0,0,0-.1-.1h0c0-.1-.1-.1-.1-.2h-.4a.1.1,0,0,0-.1-.1h-.7a.1.1,0,0,0-.1-.1h-.2c0-.1,0-.1-.1-.1H41.2v.4c-.1.1,0,.2.2.2a4.8,4.8,0,0,1,3.4.7,4.2,4.2,0,0,1,2.3,3,.2.2,0,0,0,.3,0l.4-.5A2.5,2.5,0,0,0,47.4,56.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.6,27.2a14.4,14.4,0,0,0-4.8-5.8l-5.6,4.9a7.9,7.9,0,0,0-2,2.5c-1.3,2.8-4.7,5-7.6,4.6a7.6,7.6,0,0,1-6-6.2c-.3-2.1-.6-4.2-.9-6.6-5.5,3.3-8.9,10.7-8,17.1.6,4.4,2.3,8.2,6.2,10.3s5.5,1.6,8.3,2.4A34.7,34.7,0,0,0,45.5,29,2.8,2.8,0,0,0,45.6,27.2ZM16.4,40.1a3.6,3.6,0,0,1-2.8.4c-3.7-2.8-2-8.5-.4-9.9a2.2,2.2,0,0,1,3.2,0C19,32.7,19.1,38,16.4,40.1Zm11.2-1.7h-.7l-.7.2-.7.2h0a.1.1,0,0,0-.1.1h-.1l-.3.2-.3.2h-.1a.1.1,0,0,1-.1.1l-.3.3h-.1c-.1.1-.2.2-.2.3s-.1.1-.1.2h-.1c-.1.3-.1.5-.2.8a.4.4,0,0,1-.1.3h0V42c0,.2-.1.5-.1.8a.4.4,0,0,1-.4.4c-.2,0-.5-.2-.5-.4a12,12,0,0,1,.3-2,3.5,3.5,0,0,1,.8-1.6,5.2,5.2,0,0,1,1.1-1,6.6,6.6,0,0,1,3-.7.5.5,0,0,1,.5.4A.5.5,0,0,1,27.6,38.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M99,40.7a18.8,18.8,0,0,0-1.9-5.8.4.4,0,0,0-.7.2c.1,4.4-.7,7.3-2.7,9.3s-4.7,3.4-9.2,3.2c-.3,0-.6.5-.3.6,5.8,2.3,7.4,3.7,11,.3,1-.9,3-2,3.5-3.4l.3-1.4Z" transform="translate(-0.1 -4.3)"/><text x="0" y="107" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Raylighx</text><text x="0" y="112" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ml-auto mr-6">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/docs/"
+        >Writing</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      <div class="mx-auto flex max-w-screen-xl">
+  
+<div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/80 hidden"></div>
+
+<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] lg:sticky">
+  
+  <div class="px-4 pt-4 lg:hidden">
+    
+    
+  </div>
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+    <ul class="flex flex-col gap-1 lg:hidden">
+      
+      
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/"
+    
+  >
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/"
+    
+  >1 Introduction
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/1_intro_to_python/"
+    
+  >1.1 Intro to Python
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/2_data_manipulation/"
+    
+  >1.2 Data handling
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/3_central_limit_theorem/"
+    
+  >3_central_limit_theorem
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/4_pearson_correlation/"
+    
+  >4_pearson_correlation
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/docs/time-series/1/lab/exp_1_linear_regression_assumptions/"
+    
+  >exp_1_linear_regression_assumptions
+    </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#gauss-markov-assumptions"
+                class="hb-docs-link"
+              >&lt;strong&gt;Gauss Markov Assumptions&lt;/strong&gt;</a>
+            </li>
+          <li>
+              <a
+                href="#data"
+                class="hb-docs-link"
+              >Data</a>
+            </li>
+          <li>
+              <a
+                href="#running-linear-regression"
+                class="hb-docs-link"
+              >Running Linear Regression</a>
+            </li>
+          <li>
+              <a
+                href="#gauss-markov-theorem"
+                class="hb-docs-link"
+              >Gauss-Markov Theorem</a>
+            </li>
+          <li>
+              <a
+                href="#other-assumptions"
+                class="hb-docs-link"
+              >Other assumptions</a>
+            </li>
+          <li>
+              <a
+                href="#bonus-outliers"
+                class="hb-docs-link"
+              >Bonus: Outliers</a>
+            </li>
+          <li>
+              <a
+                href="#references"
+                class="hb-docs-link"
+              >References</a>
+            </li>
+          </ul>
+  
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/"
+    
+  >2. Box &amp; Jenkins
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/"
+    
+  >3. Stationarity Tests
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/"
+    
+  >4. VAR
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/"
+    
+  >5. Causality
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/assignment/"
+    
+  >6. Assignment
+    </a>
+              
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="https://juanivb.github.io/"
+    target="_blank" rel="noreferer"
+  >This is Me ↗</a></li>
+    
+    </ul>
+
+    <ul class="flex flex-col gap-1 max-lg:hidden">
+        
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a></li>
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/"
+    
+  >1 Introduction
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/1_intro_to_python/"
+    
+  >1.1 Intro to Python
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/2_data_manipulation/"
+    
+  >1.2 Data handling
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/3_central_limit_theorem/"
+    
+  >3_central_limit_theorem
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/4_pearson_correlation/"
+    
+  >4_pearson_correlation
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/docs/time-series/1/lab/exp_1_linear_regression_assumptions/"
+    
+  >exp_1_linear_regression_assumptions
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/"
+    
+  >2. Box &amp; Jenkins
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/"
+    
+  >3. Stationarity Tests
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/"
+    
+  >4. VAR
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/"
+    
+  >5. Causality
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/assignment/"
+    
+  >6. Assignment
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div></li>
+        
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="https://juanivb.github.io/"
+    target="_blank" rel="noreferer"
+  >This is Me ↗</a></li>
+    
+      </ul>
+    </div>
+
+</aside>
+  
+
+
+<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#gauss-markov-assumptions">Gauss Markov Assumptions</a>
+      </li></ul><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#data">Data</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#running-linear-regression">Running Linear Regression</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#gauss-markov-theorem">Gauss-Markov Theorem</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#linearity-of-the-model">Linearity of the model</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#expectation-mean-of-residuals-is-zero">Expectation (mean) of residuals is zero</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#no-perfect-multicollinearity">No (perfect) multicollinearity</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#homoscedasticity-equal-variance-of-residuals">Homoscedasticity (equal variance) of residuals</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#no-autocorrelation-of-residuals">No autocorrelation of residuals</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#other-assumptions">Other assumptions</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#the-features-and-residuals-are-uncorrelated">The features and residuals are uncorrelated</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#the-number-of-observations-must-be-greater-than-number-of-features">The number of observations must be greater than number of features</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#there-must-be-some-variability-in-features">There must be some variability in features</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#normality-of-residuals">Normality of residuals</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#bonus-outliers">Bonus: Outliers</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#references">References</a>
+      </li></ul><div class="mt-8 border-t dark:border-neutral-700 pt-8 sticky bottom-0 flex flex-col items-start gap-2 pb-8">
+
+        
+        
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+
+  <article class="flex w-full min-w-0 min-h-[calc(100vh-var(--navbar-height))] justify-center break-words pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="prose prose-slate lg:prose-xl dark:prose-invert w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+      <div class="mb-1">
+        <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400">
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="http://localhost:4321/docs/"></a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="http://localhost:4321/docs/time-series/">Time Series</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="http://localhost:4321/docs/time-series/1/">1 Introduction</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="http://localhost:4321/docs/time-series/1/lab/">Lab</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100"></div>
+</div>
+
+      </div>
+
+      <div class="content text-base">
+        <h1></h1>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+<div style="background-color: #65BF6F; color: black; text-align: center; padding: 10px; font-family: 'Roboto', sans-serif; font-size: 24px">
+<div style="text-align:center;">
+    <img src="Jaki_Charrua_gatodelespacio.jpg" alt="Drawing" style="width:150px; border-radius:90%;"/>
+</div> 
+<body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/your-typekit-id.css">
+</head>
+<body>
+<div style="background-color: #000000; color: white; text-align: center; padding: 10px; font-family: 'Proxima Nova', sans-serif; font-size: 24px;">
+    Replication Lab  <br>
+    GEC0319 | Time Series <br>
+</div>
+</body>
+</html>
+<h2 id="gauss-markov-assumptions"><strong>Gauss Markov Assumptions</strong></h2>
+<ul>
+<li>Experiment N° <strong>1</strong></li>
+<li>Link: <a href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem" target="_blank" rel="noopener">here</a></li>
+</ul>
+<h1 id="verifying-the-assumptions-of-linear-regression-in-python-and-r">Verifying the Assumptions of Linear Regression in Python and R</h1>
+<p>Linear regression is one of the most basic machine learning algorithms and is often used as a benchmark for more advanced models. I assume the reader knows the basics of how linear regression works and what a regression problem is in general. That is why in this short article I would like to focus on the assumptions of the algorithm - what they are and how we can verify them using Python and R. I do not try to apply the solutions here, but indicate what they could be.</p>
+<p>In this article I mainly use Python (in Jupyter Notebook), but I also show how to use <code>rpy2</code> - an &lsquo;interface between both languages to benefit from the libraries of one language while working in the other&rsquo;. It enables us to run both R and Python in the same Notebook and even transfer objects between the two. Intuitively, we need to have R installed on our computer as well.</p>
+<p>Disclaimer: Some of the cells using <code>rpy2</code> do not work and I have to &lsquo;cheat&rsquo; by running them in R to show the results. This is mostly the case for cells using <code>ggplot2</code>. Nonetheless, I leave the code in these cell. Let me know in the comments if this works for you :)</p>
+<p>Let&rsquo;s start!</p>
+<h2 id="data">Data</h2>
+<p>For this article I use a classic regression dataset - Boston house prices. For simplicity, I only take the numeric variables. That&rsquo;s why I drop the only boolean feature - CHAS. I am not going to go deeper into the meaning of the features, but this can always be inspected by running <code>print(boston.DESCR)</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_boston</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># load data</span>
+</span></span><span class="line"><span class="cl"><span class="n">boston</span> <span class="o">=</span> <span class="n">load_boston</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">boston</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;CHAS&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;MEDV&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># inspect data</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.00632</td>
+      <td>18.0</td>
+      <td>2.31</td>
+      <td>0.538</td>
+      <td>6.575</td>
+      <td>65.2</td>
+      <td>4.0900</td>
+      <td>1.0</td>
+      <td>296.0</td>
+      <td>15.3</td>
+      <td>396.90</td>
+      <td>4.98</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.02731</td>
+      <td>0.0</td>
+      <td>7.07</td>
+      <td>0.469</td>
+      <td>6.421</td>
+      <td>78.9</td>
+      <td>4.9671</td>
+      <td>2.0</td>
+      <td>242.0</td>
+      <td>17.8</td>
+      <td>396.90</td>
+      <td>9.14</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.02729</td>
+      <td>0.0</td>
+      <td>7.07</td>
+      <td>0.469</td>
+      <td>7.185</td>
+      <td>61.1</td>
+      <td>4.9671</td>
+      <td>2.0</td>
+      <td>242.0</td>
+      <td>17.8</td>
+      <td>392.83</td>
+      <td>4.03</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.03237</td>
+      <td>0.0</td>
+      <td>2.18</td>
+      <td>0.458</td>
+      <td>6.998</td>
+      <td>45.8</td>
+      <td>6.0622</td>
+      <td>3.0</td>
+      <td>222.0</td>
+      <td>18.7</td>
+      <td>394.63</td>
+      <td>2.94</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.06905</td>
+      <td>0.0</td>
+      <td>2.18</td>
+      <td>0.458</td>
+      <td>7.147</td>
+      <td>54.2</td>
+      <td>6.0622</td>
+      <td>3.0</td>
+      <td>222.0</td>
+      <td>18.7</td>
+      <td>396.90</td>
+      <td>5.33</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2 id="running-linear-regression">Running Linear Regression</h2>
+<p>Most readers would probably estimate a linear regression model like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">lin_reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">lin_reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Coefficients: </span><span class="si">{</span><span class="n">lin_reg</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Intercept: </span><span class="si">{</span><span class="n">lin_reg</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;R^2 score: </span><span class="si">{</span><span class="n">lin_reg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Coefficients: [-1.13139078e-01  4.70524578e-02  4.03114536e-02 -1.73669994e+01
+  3.85049169e+00  2.78375651e-03 -1.48537390e+00  3.28311011e-01
+ -1.37558288e-02 -9.90958031e-01  9.74145094e-03 -5.34157620e-01]
+Intercept: 36.89195979693238
+R^2 score: 0.7355165089722999
+</code></pre>
+<p>Which is of course not a wrong approach. However, coming to Python from R, I had a bit higher expectations about the amount of information I receive by default. To run R inside our Notebook we first need to run the magic command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">%</span><span class="n">load_ext</span> <span class="n">rpy2</span><span class="o">.</span><span class="n">ipython</span>
+</span></span></code></pre></div><p>Afterwards, using another magic command indicate that the cell contains R code. At this step, I also use the input command <code>-i</code> to indicate that I am passing an object from Python to R. To retrieve the output from R to Python we can use <code>-o</code>. Running the two lines results in much more information, including statistical significance and some metrics like R^2.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span> <span class="o">-</span><span class="n">i</span> <span class="n">X</span> <span class="o">-</span><span class="n">i</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">lin_reg</span> <span class="o">&lt;-</span> <span class="nf">lm</span><span class="p">(</span><span class="n">y</span> <span class="o">~</span> <span class="n">.,</span> <span class="n">data</span> <span class="o">=</span> <span class="nf">cbind</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Call:
+lm(formula = y ~ ., data = cbind(X, y))
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.3968  -2.8103  -0.6455   1.9141  26.3755 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  36.891960   5.146516   7.168 2.79e-12 ***
+CRIM         -0.113139   0.033113  -3.417 0.000686 ***
+ZN            0.047052   0.013847   3.398 0.000734 ***
+INDUS         0.040311   0.061707   0.653 0.513889    
+NOX         -17.366999   3.851224  -4.509 8.13e-06 ***
+RM            3.850492   0.421402   9.137  &lt; 2e-16 ***
+AGE           0.002784   0.013309   0.209 0.834407    
+DIS          -1.485374   0.201187  -7.383 6.64e-13 ***
+RAD           0.328311   0.066542   4.934 1.10e-06 ***
+TAX          -0.013756   0.003766  -3.653 0.000287 ***
+PTRATIO      -0.990958   0.131399  -7.542 2.25e-13 ***
+B             0.009741   0.002706   3.600 0.000351 ***
+LSTAT        -0.534158   0.051072 -10.459  &lt; 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.787 on 493 degrees of freedom
+Multiple R-squared:  0.7355,	Adjusted R-squared:  0.7291 
+F-statistic: 114.3 on 12 and 493 DF,  p-value: &lt; 2.2e-16
+</code></pre>
+<p>Of course Python does not stay behind and we can obtain similar level of details using another popular library - <code>statsmodels</code>. One thing to bear in mind is that when using linear regression in <code>statsmodels</code> we need to add a column of ones to serve as intercept. For that I use <code>add_constant</code>. The results are much more informative than the default ones from <code>sklearn</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">X_constant</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">lin_reg</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">X_constant</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">lin_reg</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>/Users/eryklewinson/anaconda3/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2389: FutureWarning: Method .ptp is deprecated and will be removed in a future version. Use numpy.ptp instead.
+  return ptp(axis=axis, out=out, **kwargs)
+</code></pre>
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>          <td>MEDV</td>       <th>  R-squared:         </th> <td>   0.736</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th> <td>   0.729</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   114.3</td> 
+</tr>
+<tr>
+  <th>Date:</th>             <td>Tue, 18 Jun 2019</td> <th>  Prob (F-statistic):</th> <td>7.30e-134</td>
+</tr>
+<tr>
+  <th>Time:</th>                 <td>13:43:11</td>     <th>  Log-Likelihood:    </th> <td> -1503.8</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>   506</td>      <th>  AIC:               </th> <td>   3034.</td> 
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>   493</td>      <th>  BIC:               </th> <td>   3088.</td> 
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>    12</td>      <th>                     </th>     <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>    
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+     <td></td>        <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>const</th>   <td>   36.8920</td> <td>    5.147</td> <td>    7.168</td> <td> 0.000</td> <td>   26.780</td> <td>   47.004</td>
+</tr>
+<tr>
+  <th>CRIM</th>    <td>   -0.1131</td> <td>    0.033</td> <td>   -3.417</td> <td> 0.001</td> <td>   -0.178</td> <td>   -0.048</td>
+</tr>
+<tr>
+  <th>ZN</th>      <td>    0.0471</td> <td>    0.014</td> <td>    3.398</td> <td> 0.001</td> <td>    0.020</td> <td>    0.074</td>
+</tr>
+<tr>
+  <th>INDUS</th>   <td>    0.0403</td> <td>    0.062</td> <td>    0.653</td> <td> 0.514</td> <td>   -0.081</td> <td>    0.162</td>
+</tr>
+<tr>
+  <th>NOX</th>     <td>  -17.3670</td> <td>    3.851</td> <td>   -4.509</td> <td> 0.000</td> <td>  -24.934</td> <td>   -9.800</td>
+</tr>
+<tr>
+  <th>RM</th>      <td>    3.8505</td> <td>    0.421</td> <td>    9.137</td> <td> 0.000</td> <td>    3.023</td> <td>    4.678</td>
+</tr>
+<tr>
+  <th>AGE</th>     <td>    0.0028</td> <td>    0.013</td> <td>    0.209</td> <td> 0.834</td> <td>   -0.023</td> <td>    0.029</td>
+</tr>
+<tr>
+  <th>DIS</th>     <td>   -1.4854</td> <td>    0.201</td> <td>   -7.383</td> <td> 0.000</td> <td>   -1.881</td> <td>   -1.090</td>
+</tr>
+<tr>
+  <th>RAD</th>     <td>    0.3283</td> <td>    0.067</td> <td>    4.934</td> <td> 0.000</td> <td>    0.198</td> <td>    0.459</td>
+</tr>
+<tr>
+  <th>TAX</th>     <td>   -0.0138</td> <td>    0.004</td> <td>   -3.653</td> <td> 0.000</td> <td>   -0.021</td> <td>   -0.006</td>
+</tr>
+<tr>
+  <th>PTRATIO</th> <td>   -0.9910</td> <td>    0.131</td> <td>   -7.542</td> <td> 0.000</td> <td>   -1.249</td> <td>   -0.733</td>
+</tr>
+<tr>
+  <th>B</th>       <td>    0.0097</td> <td>    0.003</td> <td>    3.600</td> <td> 0.000</td> <td>    0.004</td> <td>    0.015</td>
+</tr>
+<tr>
+  <th>LSTAT</th>   <td>   -0.5342</td> <td>    0.051</td> <td>  -10.459</td> <td> 0.000</td> <td>   -0.635</td> <td>   -0.434</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td>190.856</td> <th>  Durbin-Watson:     </th> <td>   1.016</td> 
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.000</td>  <th>  Jarque-Bera (JB):  </th> <td> 898.352</td> 
+</tr>
+<tr>
+  <th>Skew:</th>          <td> 1.619</td>  <th>  Prob(JB):          </th> <td>8.42e-196</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 8.668</td>  <th>  Cond. No.          </th> <td>1.51e+04</td> 
+</tr>
+</table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.<br/>[2] The condition number is large, 1.51e+04. This might indicate that there are<br/>strong multicollinearity or other numerical problems.
+<p>So now we see how to run linear regression in R and Python. Let&rsquo;s continue to the assumptions. I break these down into two parts:</p>
+<ul>
+<li>assumptions from the Gauss-Markov Theorem</li>
+<li>rest of assumptions</li>
+</ul>
+<h2 id="gauss-markov-theorem">Gauss-Markov Theorem</h2>
+<p>During your statistics or econometrics courses you might have heard the acronym BLUE in the context of linear regression. What was the meaning of it? According to the <a href="https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem" target="_blank" rel="noopener">Gauss–Markov theorem</a>, in a linear regression model the ordinary least squares (OLS) estimator gives the best linear unbiased estimator (BLUE) of the coefficients, provided that:</p>
+<ul>
+<li>the expectation of errors (residuals) is 0</li>
+<li>the errors are uncorrelated</li>
+<li>the errors have equal variance - homoscedasticity of errors</li>
+</ul>
+<p>Also, &lsquo;best&rsquo; in BLUE means resulting in lowest variance of the estimate, in comparison to other unbiased, linear estimators.</p>
+<p>For the the estimator to be BLUE, the residuals do not need to follow normal (Gaussian) distribution, nor do they need to be <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank" rel="noopener">independent and identically distributed</a>.</p>
+<h3 id="linearity-of-the-model">Linearity of the model</h3>
+<p>The dependent variable (y) is assumed to be a linear function of the independent variables (X, features) specified in the model. The specification must be linear in its parameters. Fitting a linear model to data with non-linear patterns results in serious prediction errors, especially out-of-sample (data not used for training the model).</p>
+<p>To detect nonlinearity one can inspect plots of observed vs. predicted values or residuals vs. predicted values. The desired outcome is that points are symmetrically distributed around a diagonal line in the former plot or around horizontal line in the latter one. In both cases with a roughly constant variance.</p>
+<p>Observing a &ldquo;bowed&rdquo; pattern indicates that the model makes systematic errors whenever it is making unusually large or small predictions. When the model contains many features, nonlinearity can also be revealed by systematic patterns in plots of the residuals vs. individual features.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span> <span class="o">=</span><span class="s1">&#39;retina&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.stats.api</span> <span class="k">as</span> <span class="nn">sms</span>
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;darkgrid&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">15.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">linearity_test</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Function for visually inspecting the assumption of linearity in a linear regression model.
+</span></span></span><span class="line"><span class="cl"><span class="s1">    It plots observed vs. predicted values and residuals vs. predicted values.
+</span></span></span><span class="line"><span class="cl"><span class="s1">    
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s1">    * model - fitted OLS model from statsmodels
+</span></span></span><span class="line"><span class="cl"><span class="s1">    * y - observed values
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fitted_vals</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resids</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">resid</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">fitted_vals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">line_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Observed vs. Predicted Values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Predicted&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Observed&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">fitted_vals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">resids</span><span class="p">,</span> <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Residuals vs. Predicted Values&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Predicted&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Residuals&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">linearity_test</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>    
+</span></span><span class="line"><span class="cl">    
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="output_22_0.png" alt="png" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span> <span class="o">-</span><span class="n">i</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">p1</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">.fitted</span><span class="p">,</span> <span class="n">.resid</span><span class="p">))</span> <span class="o">+</span> <span class="nf">geom_point</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">p1</span> <span class="o">+</span> <span class="nf">stat_smooth</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">&#34;loess&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">geom_hline</span><span class="p">(</span><span class="n">yintercept</span><span class="o">=</span><span class="m">0</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s">&#34;red&#34;</span><span class="p">,</span> <span class="n">linetype</span><span class="o">=</span><span class="s">&#34;dashed&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">p1</span> <span class="o">+</span> <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;Predicted&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;Residuals&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">p1</span> <span class="o">&lt;-</span> <span class="n">p1</span> <span class="o">+</span> <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&#34;Residuals vs. Predicted Values&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_bw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_plt</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="s">&#34;fitted&#34;</span> <span class="o">=</span> <span class="nf">fitted</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">),</span> <span class="s">&#34;observed&#34;</span> <span class="o">=</span> <span class="n">X</span><span class="o">$</span><span class="n">medv</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">p2</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">df_plt</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">fitted</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">observed</span><span class="p">))</span> <span class="o">+</span> <span class="nf">geom_point</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">p2</span> <span class="o">+</span> <span class="nf">stat_smooth</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">&#34;loess&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">geom_abline</span><span class="p">(</span><span class="n">intercept</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s">&#34;red&#34;</span><span class="p">,</span> <span class="n">linetype</span><span class="o">=</span><span class="s">&#34;dashed&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">p2</span> <span class="o">+</span> <span class="nf">xlab</span><span class="p">(</span><span class="s">&#34;Predicted&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">ylab</span><span class="p">(</span><span class="s">&#34;Observed&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">p2</span> <span class="o">&lt;-</span> <span class="n">p2</span> <span class="o">+</span> <span class="nf">ggtitle</span><span class="p">(</span><span class="s">&#34;Observed vs. Predicted Values&#34;</span><span class="p">)</span> <span class="o">+</span> <span class="nf">theme_bw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">grid.arrange</span><span class="p">(</span><span class="n">p2</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">ncol</span><span class="o">=</span><span class="m">2</span><span class="p">)</span>
+</span></span></code></pre></div><p>Inspection of the plots shows that the linearity assumption is not satisfied.</p>
+<p>Potential solutions:</p>
+<ul>
+<li>non-linear transformations to dependent/independent variables</li>
+<li>adding extra features which are a transformation of the already used ones (for example squared version)</li>
+<li>adding features that were not considered before</li>
+</ul>
+<h3 id="expectation-mean-of-residuals-is-zero">Expectation (mean) of residuals is zero</h3>
+<p>This one is easy to check:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lin_reg</span><span class="o">.</span><span class="n">resid</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>-1.0012544153465325e-13
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl"><span class="nf">mean</span><span class="p">(</span><span class="n">lin_reg</span><span class="o">$</span><span class="n">resid</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>[1] 2.018759e-17
+</code></pre>
+<p>The results are a bit different, as far as I know this is a numeric approximation issue. However, we can assume that the expectation of residuals is indeed 0.</p>
+<h3 id="no-perfect-multicollinearity">No (perfect) multicollinearity</h3>
+<p>In other words, the features should be linearly independent. What does that mean in practice? We should not be able use a linear model to accurately predict one feature using another one. Let&rsquo;s take X1 and X2 as examples of features. It could happen that X1 = 2 + 3 * X2, which violates the assumption.</p>
+<p>One scenario to watch out for is the &lsquo;dummy variable trap&rsquo; - when we use dummy variables to encode a categorical feature and do not omit the baseline level from the model. This results in perfect correlation between the dummy variables and the constant term.</p>
+<p>Multicollinearity can be present in the model, as long as it is not &lsquo;perfect&rsquo;. In the former case, the estimates are less efficient, but still unbiased. The estimates will be less precise and highly sensitive to particular sets of data.</p>
+<p>We can detect multicollinearity using <a href="https://en.wikipedia.org/wiki/Variance_inflation_factor" target="_blank" rel="noopener">variance inflation factor</a> (VIF). Without going into too much details, the interpretation of VIF is as follows: the square root of a given variable&rsquo;s VIF shows how much larger the standard error is, compared with what it would be if that predictor were uncorrelated with the other features in the model. If no features are correlated, then all values for VIF will be 1.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">statsmodels.stats.outliers_influence</span> <span class="kn">import</span> <span class="n">variance_inflation_factor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">vif</span> <span class="o">=</span> <span class="p">[</span><span class="n">variance_inflation_factor</span><span class="p">(</span><span class="n">X_constant</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X_constant</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;vif&#39;</span><span class="p">:</span> <span class="n">vif</span><span class="p">[</span><span class="mi">1</span><span class="p">:]},</span> <span class="n">index</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CRIM</th>
+      <th>ZN</th>
+      <th>INDUS</th>
+      <th>NOX</th>
+      <th>RM</th>
+      <th>AGE</th>
+      <th>DIS</th>
+      <th>RAD</th>
+      <th>TAX</th>
+      <th>PTRATIO</th>
+      <th>B</th>
+      <th>LSTAT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>vif</th>
+      <td>1.787705</td>
+      <td>2.298257</td>
+      <td>3.949246</td>
+      <td>4.388775</td>
+      <td>1.931865</td>
+      <td>3.092832</td>
+      <td>3.954961</td>
+      <td>7.397844</td>
+      <td>8.876233</td>
+      <td>1.783302</td>
+      <td>1.344971</td>
+      <td>2.931101</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">vif</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span></code></pre></div><p>To deal with multicollinearity we should iteratively remove features with high values of VIF. A rule of thumb for removal could be VIF larger than 10 (5 is also common). Another possible solution is to use PCA to reduce features to a smaller set of uncorrelated components.</p>
+<p>Tip: we can also look at correlation matrix of features to identify dependencies between them.</p>
+<h3 id="homoscedasticity-equal-variance-of-residuals">Homoscedasticity (equal variance) of residuals</h3>
+<p>When residuals do not have constant variance (they exhibit heteroscedasticity), it is difficult to determine the true standard deviation of the forecast errors, usually resulting in confidence intervals that are too wide/narrow. For example, if the variance of the residuals is increasing over time, confidence intervals for out-of-sample predictions will be unrealistically narrow. Another effect of heteroscedasticity might also be putting too much weight to a subset of data when estimating coefficients - the subset in which the error variance was largest.</p>
+<p>To investigate if the residuals are homoscedastic, we can look at a plot of residuals (or standardized residuals) vs. predicted (fitted) values. What should alarm us is the case when the residuals grow either as a function of predicted value or time (in case of time series).</p>
+<p>We can also use two statistical tests: Breusch-Pagan and Goldfeld-Quandt. In both of them the null hypothesis assumes homoscedasticity and a p-value below a certain level (like 0.05) indicates we should reject the null in favor of heteroscedasticity.</p>
+<p>In the snippets below I plot residuals (and standardized ones) vs. fitted values and carry out the two mentioned tests. To identify homoscedasticity in the plots, the placement of the points should be random and no pattern (increase/decrease in values of residuals) should be visible - the red line in the R plots should be flat. We can see that this is not the case for our dataset.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span> <span class="o">=</span><span class="s1">&#39;retina&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span> 
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.stats.api</span> <span class="k">as</span> <span class="nn">sms</span>
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;darkgrid&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">sns</span><span class="o">.</span><span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">15.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">homoscedasticity_test</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Function for testing the homoscedasticity of residuals in a linear regression model.
+</span></span></span><span class="line"><span class="cl"><span class="s1">    It plots residuals and standardized residuals vs. fitted values and runs Breusch-Pagan and Goldfeld-Quandt tests.
+</span></span></span><span class="line"><span class="cl"><span class="s1">    
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s1">    * model - fitted OLS model from statsmodels
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fitted_vals</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resids</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">resid</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resids_standardized</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_influence</span><span class="p">()</span><span class="o">.</span><span class="n">resid_studentized_internal</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">fitted_vals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">resids</span><span class="p">,</span> <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">line_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Residuals vs Fitted&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Fitted Values&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Residuals&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">fitted_vals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">resids_standardized</span><span class="p">)),</span> <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;red&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Scale-Location&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Fitted Values&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;sqrt(abs(Residuals))&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">bp_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sms</span><span class="o">.</span><span class="n">het_breuschpagan</span><span class="p">(</span><span class="n">resids</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">exog</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                           <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Lagrange multiplier statistic&#39;</span><span class="p">,</span> <span class="s1">&#39;p-value&#39;</span><span class="p">,</span> <span class="s1">&#39;f-value&#39;</span><span class="p">,</span> <span class="s1">&#39;f p-value&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">gq_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">sms</span><span class="o">.</span><span class="n">het_goldfeldquandt</span><span class="p">(</span><span class="n">resids</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">exog</span><span class="p">)[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;F statistic&#39;</span><span class="p">,</span> <span class="s1">&#39;p-value&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Breusch-Pagan test ----&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">bp_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Goldfeld-Quandt test ----&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">gq_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Residuals plots ----&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">homoscedasticity_test</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code> Breusch-Pagan test ----
+                                      value
+Lagrange multiplier statistic  6.028613e+01
+p-value                        2.001794e-08
+f-value                        5.556828e+00
+f p-value                      5.935449e-09
+
+ Goldfeld-Quandt test ----
+                    value
+F statistic  2.620956e+00
+p-value      1.251137e-13
+
+ Residuals plots ----
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="output_40_1.png" alt="png" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">lmtest</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">par</span><span class="p">(</span><span class="n">mfrow</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>  <span class="c1"># set 2 rows and 2 column plot layout</span>
+</span></span><span class="line"><span class="cl"><span class="nf">plot</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Breusch-Pagan test</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">bptest</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">studentize</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Goldfeld-Quandt</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">gqtest</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">))</span>
+</span></span></code></pre></div><p>The results indicate that the assumption is not satisfied and we should reject the hypothesis of homoscedasticity.</p>
+<p>Potential solutions:</p>
+<ul>
+<li>log transformation of dependent variable</li>
+<li>in case of time series, deflating a series if it concerns monetary value</li>
+<li>using ARCH (auto-regressive conditional heteroscedasticity) models to model the error variance. An example might be stock market, where data can exhibit periods of increased or decreased volatility over time (volatility clustering, see <a href="https://towardsdatascience.com/introduction-to-quantitative-finance-part-i-stylised-facts-of-asset-returns-5190581e40ea" target="_blank" rel="noopener">this article</a> for more information)</li>
+</ul>
+<h3 id="no-autocorrelation-of-residuals">No autocorrelation of residuals</h3>
+<p>This assumption is especially dangerous in time-series models, where serial correlation in the residuals implies that there is room for improvement in the model. Extreme serial correlation is often a sign of a badly mis-specified model. Another reasons for serial correlation in the residuals could be violation of the linearity assumption or due to bias that is explainable by omitted variables (interaction terms or dummy variables for identifiable conditions). An example of the former case might be fitting a (straight) line to data, which exhibits exponential growth over time.</p>
+<p>This assumption also has meaning in case of non-time-series models. If residuals always have the same sign under particular conditions, it means that the model systematically underpredicts/overpredicts what happens when the predictors have a particular configuration.</p>
+<p>To investigate if autocorrelation is present, I use ACF (autocorrelation function) plots and Durbin-Watson test.</p>
+<p>In the former case, we want to see if the value of ACF is significant for any lag (in case of no time-series data, row number is used). While calling the function, we indicate the significance level (see (this article)[https://towardsdatascience.com/introduction-to-power-analysis-in-python-e7b748dfa26] for more details) we are interested in and the critical area is plotted on the graph. Significant correlations lie outside of that area.</p>
+<p>Note: when dealing with data without the time dimension, we can alternatively plot the residuals vs. the row number. In such cases rows should be sorted in a way that (only) depends on the values of the feature(s).</p>
+<p>The second approach is using the Durbin-Watson test. I do not go into details how it is constructed, but provide high level overview. The test statistic provides a test for significant residual autocorrelation at lag 1. The DW statistic is approximately equal to <code>2(1-a)</code>, where <code>a</code> is the lag-1 residual autocorrelation. The DW test statistic is located in the default summary output of <code>statsmodels</code>&rsquo;s regression.</p>
+<p>Some notes on the Durbin-Watson test:</p>
+<ul>
+<li>the test statistic always has value between 0 and 4</li>
+<li>value of 2 means that there is no autocorrelation in the sample</li>
+<li>values <code>&lt;2</code> indicate positive autocorrelation, values <code>&gt;2</code> negative one.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">statsmodels.tsa.api</span> <span class="k">as</span> <span class="nn">smt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">acf</span> <span class="o">=</span> <span class="n">smt</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">plot_acf</span><span class="p">(</span><span class="n">lin_reg</span><span class="o">.</span><span class="n">resid</span><span class="p">,</span> <span class="n">lags</span><span class="o">=</span><span class="mi">40</span> <span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">acf</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>/Users/eryklewinson/anaconda3/lib/python3.6/site-packages/matplotlib/figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  &quot;matplotlib is currently using a non-GUI backend, &quot;
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="output_47_1.png" alt="png" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">lmtest</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">acf</span><span class="p">(</span><span class="n">lin_reg</span><span class="o">$</span><span class="n">residuals</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nf">dwtest</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span></code></pre></div><p>Potential solutions:</p>
+<ul>
+<li>in case of minor positive autocorrelation, there might be some room for fine-tuning the model, for example, adding lags of the dependent/independent variables</li>
+<li>some seasonal components might not be captured by the model, account for them using dummy variables or seasonally adjust the variables</li>
+<li>if <code>DW &lt; 1</code> it might indicate a possible problem in model specification, consider stationarizing time-series variables by differencing, logging, and/or deflating (in case of monetary values)</li>
+<li>in case of significant negative correlation, some of the variables might have been overdifferenced</li>
+<li>use Generalized Least Squares</li>
+<li>include a linear (trend) term in case of a consistent increasing/decreasing pattern in the residuals</li>
+</ul>
+<h2 id="other-assumptions">Other assumptions</h2>
+<p>Below I present some of the other commonly verified assumptions of linear regression.</p>
+<h3 id="the-features-and-residuals-are-uncorrelated">The features and residuals are uncorrelated</h3>
+<p>To investigate this assumption I check the Pearson correlation coefficient between each feature and the residuals. Then report the p-value for testing lack of correlation between the two considered series.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.stats.stats</span> <span class="kn">import</span> <span class="n">pearsonr</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">corr_test</span> <span class="o">=</span> <span class="n">pearsonr</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">column</span><span class="p">],</span> <span class="n">lin_reg</span><span class="o">.</span><span class="n">resid</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Variable: </span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s1"> --- correlation: </span><span class="si">{</span><span class="n">corr_test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, p-value: </span><span class="si">{</span><span class="n">corr_test</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Variable: CRIM --- correlation: 0.0000, p-value: 1.0000
+Variable: ZN --- correlation: -0.0000, p-value: 1.0000
+Variable: INDUS --- correlation: 0.0000, p-value: 1.0000
+Variable: NOX --- correlation: 0.0000, p-value: 1.0000
+Variable: RM --- correlation: -0.0000, p-value: 1.0000
+Variable: AGE --- correlation: 0.0000, p-value: 1.0000
+Variable: DIS --- correlation: -0.0000, p-value: 1.0000
+Variable: RAD --- correlation: 0.0000, p-value: 1.0000
+Variable: TAX --- correlation: 0.0000, p-value: 1.0000
+Variable: PTRATIO --- correlation: 0.0000, p-value: 1.0000
+Variable: B --- correlation: -0.0000, p-value: 1.0000
+Variable: LSTAT --- correlation: 0.0000, p-value: 1.0000
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">for</span> <span class="p">(</span><span class="n">i</span> <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="p">(</span><span class="nf">dim</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="n">[2]</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cor_test</span> <span class="o">&lt;-</span> <span class="nf">cor.test</span><span class="p">(</span><span class="n">X[</span><span class="p">,</span> <span class="n">i]</span><span class="p">,</span> <span class="n">lin_reg</span><span class="o">$</span><span class="n">residuals</span><span class="p">)</span>  <span class="c1"># </span>
+</span></span><span class="line"><span class="cl">    <span class="nf">print</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&#39;Variable:&#39;</span><span class="p">,</span> <span class="nf">colnames</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="n">[i]</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                <span class="s">&#39;--- correlation:&#39;</span><span class="p">,</span> <span class="nf">as.character</span><span class="p">(</span><span class="n">cor_test</span><span class="o">$</span><span class="n">estimate</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                <span class="s">&#39;, p-value:&#39;</span><span class="p">,</span> <span class="nf">as.character</span><span class="p">(</span><span class="n">cor_test</span><span class="o">$</span><span class="n">p.value</span><span class="p">),</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#34; &#34;</span><span class="p">,</span> <span class="n">collapse</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><pre><code>[1] &quot;Variable: CRIM --- correlation: -1.23790541661334e-17 , p-value: 1&quot;
+[1] &quot;Variable: ZN --- correlation: -1.97025792143074e-17 , p-value: 1&quot;
+[1] &quot;Variable: INDUS --- correlation: 1.86969111454043e-16 , p-value: 0.999999999999997&quot;
+[1] &quot;Variable: NOX --- correlation: 7.78555411954571e-18 , p-value: 1&quot;
+[1] &quot;Variable: RM --- correlation: -1.87370697712339e-17 , p-value: 1&quot;
+[1] &quot;Variable: AGE --- correlation: -2.12484228685413e-16 , p-value: 0.999999999999996&quot;
+[1] &quot;Variable: DIS --- correlation: -2.44313238639036e-17 , p-value: 1&quot;
+[1] &quot;Variable: RAD --- correlation: 3.00418785293366e-16 , p-value: 0.999999999999995&quot;
+[1] &quot;Variable: TAX --- correlation: -1.83699416677024e-16 , p-value: 0.999999999999997&quot;
+[1] &quot;Variable: PTRATIO --- correlation: 2.64955201707963e-15 , p-value: 0.999999999999952&quot;
+[1] &quot;Variable: B --- correlation: -3.77372138576403e-16 , p-value: 0.999999999999993&quot;
+[1] &quot;Variable: LSTAT --- correlation: -1.07867254452892e-16 , p-value: 0.999999999999998&quot;
+</code></pre>
+<p>I cannot reject the null hypothesis (lack of correlation) for any pair.</p>
+<h3 id="the-number-of-observations-must-be-greater-than-number-of-features">The number of observations must be greater than number of features</h3>
+<p>This one is pretty straightforward. We can check the shape of out data by using <code>shape</code> method in Python or <code>dim</code> function in R. Also, a rule of thumb says that we should have more than 30 observations in the dataset. This is taken from the Central Limit Theorem, which states that adding IID random variable results in a normalized distribution when the sample size is greater than 30, even when the random variables are not Gaussian themselves.</p>
+<h3 id="there-must-be-some-variability-in-features">There must be some variability in features</h3>
+<p>This assumption states that there must be some variance in the features, as a feature that has a constant value for all or majority of observations might not be a good predictor. We can check this assumption by simply checking the variance of all features.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">X</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>CRIM          73.840360
+ZN           542.861840
+INDUS         46.971430
+NOX            0.013401
+RM             0.492695
+AGE          790.792473
+DIS            4.425252
+RAD           75.666531
+TAX        28348.623600
+PTRATIO        4.677726
+B           8318.280421
+LSTAT         50.893979
+dtype: float64
+</code></pre>
+<p>In <code>caret</code> package in R there is a function called <code>nearZeroVar</code> for identifying features with zero or near-zero variance.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">caret</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">apply</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">var</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">nearZeroVar</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">saveMetrics</span><span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>R[write to console]: Loading required package: lattice
+
+R[write to console]: Loading required package: ggplot2
+</code></pre>
+<h3 id="normality-of-residuals">Normality of residuals</h3>
+<p>When this assumption is violated, it causes problems with calculating confidence intervals and various significance tests for coefficients. When the error distribution significantly departs from Gaussian, confidence intervals may be too wide or too narrow.</p>
+<p>Some of the potential reasons causing non-normal residuals:</p>
+<ul>
+<li>presence of a few large outliers in data</li>
+<li>there might be some other problems (violations) with the model assumptions</li>
+<li>another, better model specification might be better suited for this problem</li>
+</ul>
+<p>Technically, we can omit this assumption if we assume instead that the model equation is correct and our goal is to estimate the coefficients and generate predictions (in the sense of minimizing mean squared error).</p>
+<p>However, normally we are interested in making valid inferences from the model or estimating the probability that a given prediction error will exceed some threshold in a particular direction. To do so, the assumption about normality of residuals must be satisfied.</p>
+<p>To investigate this assumption we can look at:</p>
+<ul>
+<li>QQ plots of the residuals (a detailed description can be found <a href="https://towardsdatascience.com/explaining-probability-plots-9e5c5d304703" target="_blank" rel="noopener">here</a>). For example a bow-shaped pattern of deviations from the diagonal implies that the residuals have excessive skewness (i.e., the distribution is not symmetrical, with too many large residuals in one direction). S-shaped pattern of deviations implies excessive kurtosis of the residuals - there are either too many or two few large errors in both directions.</li>
+<li>use statistical tests such as the Kolmogorov-Smirnov test, the Shapiro-Wilk test, the Jarque-Bera test and the Anderson-Darling test</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">normality_of_residuals_test</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Function for drawing the normal QQ-plot of the residuals and running 4 statistical tests to 
+</span></span></span><span class="line"><span class="cl"><span class="s1">    investigate the normality of residuals.
+</span></span></span><span class="line"><span class="cl"><span class="s1">    
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Arg:
+</span></span></span><span class="line"><span class="cl"><span class="s1">    * model - fitted OLS models from statsmodels
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sm</span><span class="o">.</span><span class="n">ProbPlot</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">resid</span><span class="p">)</span><span class="o">.</span><span class="n">qqplot</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Q-Q plot&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">jb</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">jarque_bera</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">resid</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sw</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">shapiro</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">resid</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ad</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">anderson</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">resid</span><span class="p">,</span> <span class="n">dist</span><span class="o">=</span><span class="s1">&#39;norm&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ks</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">kstest</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">resid</span><span class="p">,</span> <span class="s1">&#39;norm&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Jarque-Bera test ---- statistic: </span><span class="si">{</span><span class="n">jb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, p-value: </span><span class="si">{</span><span class="n">jb</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Shapiro-Wilk test ---- statistic: </span><span class="si">{</span><span class="n">sw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, p-value: </span><span class="si">{</span><span class="n">sw</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Kolmogorov-Smirnov test ---- statistic: </span><span class="si">{</span><span class="n">ks</span><span class="o">.</span><span class="n">statistic</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, p-value: </span><span class="si">{</span><span class="n">ks</span><span class="o">.</span><span class="n">pvalue</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Anderson-Darling test ---- statistic: </span><span class="si">{</span><span class="n">ad</span><span class="o">.</span><span class="n">statistic</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">, 5% critical value: </span><span class="si">{</span><span class="n">ad</span><span class="o">.</span><span class="n">critical_values</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;If the returned AD statistic is larger than the critical value, then for the 5</span><span class="si">% s</span><span class="s1">ignificance level, the null hypothesis that the data come from the Normal distribution should be rejected. &#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">normality_of_residuals_test</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Jarque-Bera test ---- statistic: 898.3521, p-value: 0.0
+Shapiro-Wilk test ---- statistic: 0.8953, p-value: 0.0000
+Kolmogorov-Smirnov test ---- statistic: 0.3283, p-value: 0.0000
+Anderson-Darling test ---- statistic: 10.9109, 5% critical value: 0.7810
+If the returned AD statistic is larger than the critical value, then for the 5% significance level, the null hypothesis that the data come from the Normal distribution should be rejected. 
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="output_67_1.png" alt="png" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="o">%%</span><span class="n">R</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tseries</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">olsrr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">qqnorm</span><span class="p">(</span><span class="n">lin_reg</span><span class="o">$</span><span class="n">residuals</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># or </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df_resid</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">resid</span> <span class="o">=</span> <span class="n">lin_reg</span><span class="o">$</span><span class="n">residuals</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">&lt;-</span> <span class="nf">ggplot</span><span class="p">(</span><span class="n">df_resid</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">sample</span> <span class="o">=</span> <span class="n">resid</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">+</span> <span class="nf">stat_qq</span><span class="p">()</span> <span class="o">+</span> <span class="nf">stat_qq_line</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">jarque.bera.test</span><span class="p">(</span><span class="n">lin_reg</span><span class="o">$</span><span class="n">residuals</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ks.test</span><span class="p">(</span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">lin_reg</span><span class="o">$</span><span class="n">residuals</span><span class="p">),</span> <span class="s">&#34;pnorm&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">ols_test_normality</span><span class="p">(</span><span class="n">lin_reg</span><span class="p">)</span>
+</span></span></code></pre></div><p>From the results above we can infer that the residuals do not follow Gaussian distribution - from the shape of the QQ plot, as well as rejecting the null hypothesis in all statistical tests. The reason why Kolmogorov-Smirnov from <code>ols_test_normality</code> shows different results is that it does not run the <code>two-sided</code> version of the test.</p>
+<p>Potential solutions:</p>
+<ul>
+<li>nonlinear transformation of target variable or features</li>
+<li>remove/treat potential outliers</li>
+<li>it can happen that there are two or more subsets of the data having different statistical properties, in which case separate models might be considered</li>
+</ul>
+<h2 id="bonus-outliers">Bonus: Outliers</h2>
+<p>This is not really an assumption, however the existence of outliers in our data can lead to violations of some of the above-mentioned assumptions. That is why we should investigate the data and verify if some extreme observations are valid and important for our research or merely some errors which we can remove.</p>
+<p>I will not dive deep into outlier detection methods as there are already many articles about them. A few potential approaches:</p>
+<ul>
+<li>Z-score</li>
+<li>box plot</li>
+<li>Leverage - measure of how far away the feature values of a point are from the values of the different observations. High-leverage point is a point at extreme values of the variables, where lack of nearby observations makes the fitted regression model pass close to that particular point.</li>
+<li>Cook’s distance - measure of how deleting an observation impacts the regression model. It makes sense to investigate points with high Cook’s distances.</li>
+<li>Isolation Forest - for more details see <a href="https://towardsdatascience.com/outlier-detection-with-isolation-forest-3d190448d45e" target="_blank" rel="noopener">this article</a></li>
+</ul>
+<h2 id="references">References</h2>
+<p><a href="http://people.duke.edu/~rnau/testing.htm" target="_blank" rel="noopener">http://people.duke.edu/~rnau/testing.htm</a></p>
+<p>Credits to <a href="https://www.linkedin.com/in/eryklewinson/?originalSubdomain=nl=" target="_blank" rel="noopener">Eryk Lewinson</a></p>
+
+      </div>
+
+      <div class="mt-16"></div>
+      
+      
+  
+    
+    
+    
+      
+      
+    
+<div class="pt-1 no-prose w-full">
+  <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+  <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
+    <div class="">
+      
+        <a class="group flex no-underline" href="/docs/time-series/1/lab/4_pearson_correlation/">
+          <span
+            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            ></span>
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+        </a>
+      
+    </div>
+    <div class="">
+      
+    </div>
+  </div>
+</div>
+
+
+
+      
+
+
+
+    </main>
+  </article>
+</div>
+
+    </div>
+    <div class="page-footer">
+      
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

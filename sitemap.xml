@@ -2,118 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4321/docs/getting-started/</loc>
+    <loc>https://juanivb.github.io/docs/getting-started/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/1/coding/implementations/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/3/lab/rep_1979-dickey_fuller_distribution/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/2/coding/implementations/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/2/lab/1_arma_macrodemos/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/3/coding/implementations/</loc>
+    <loc>https://juanivb.github.io/docs/guide/la_moneda_etica/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/4/coding/implementations/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/5/coding/implementations/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/2/lab/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/guide/la_moneda_etica/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/3/lab/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/1/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/program/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/1_intro_to_python/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/3/lab/rep_1982-nelson__plosser/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/1/coding/experiments/</loc>
+    <loc>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/2/coding/experiments/</loc>
+    <loc>https://juanivb.github.io/docs/guide/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/3/coding/experiments/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/program/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/4/coding/experiments/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/5/coding/experiments/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/2_data_manipulation/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/2/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/3_central_limit_theorem/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/3/lab/rep_1989_perron/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/guide/</loc>
+    <loc>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/assignment/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/4_pearson_correlation/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/3/lab/rep_1992_zivot__andrews/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/1/coding/replications/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/2/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/2/coding/replications/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/5_linear_regression_assumptions/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/3/coding/replications/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/3/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/4/coding/replications/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/1/lab/6_1973_granger__newbold/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/5/coding/replications/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/4/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/3/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/5/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/4/</loc>
+    <loc>https://juanivb.github.io/docs/time-series/assignment/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/5/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/</loc>
+    <loc>https://juanivb.github.io/docs/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/</loc>
+    <loc>https://juanivb.github.io/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/categories/</loc>
+    <loc>https://juanivb.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/docs/time-series/1/coding/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/time-series/2/coding/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/time-series/3/coding/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/time-series/4/coding/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/docs/time-series/5/coding/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/tags/</loc>
+    <loc>https://juanivb.github.io/tags/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy | Juani Vázquez Broquá</title>
-    <link>http://localhost:4321/docs/guide/</link>
-      <atom:link href="http://localhost:4321/docs/guide/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://juanivb.github.io/docs/guide/</link>
+      <atom:link href="https://juanivb.github.io/docs/guide/index.xml" rel="self" type="application/rss+xml" />
     <description>Philosophy</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>http://localhost:4321/media/logo.svg</url>
+      <url>https://juanivb.github.io/media/logo.svg</url>
       <title>Philosophy</title>
-      <link>http://localhost:4321/docs/guide/</link>
+      <link>https://juanivb.github.io/docs/guide/</link>
     </image>
     
     <item>
       <title>La Moneda Ética</title>
-      <link>http://localhost:4321/docs/guide/la_moneda_etica/</link>
+      <link>https://juanivb.github.io/docs/guide/la_moneda_etica/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/guide/la_moneda_etica/</guid>
+      <guid>https://juanivb.github.io/docs/guide/la_moneda_etica/</guid>
       <description>&lt;div style=&#34;text-align: center;&#34;&gt;
 ¿Es posible una aproximación económica a la libertad? &lt;br&gt;
 &lt;/div&gt;
@@ -73,9 +73,9 @@ lo que es igual a la inconmensurabilidad de la elección (+∞/-∞). Es decir q
     
     <item>
       <title>Para Distinguir los Pies</title>
-      <link>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
+      <link>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
+      <guid>https://juanivb.github.io/docs/guide/para_distinguir_un_pie_de_un_pie/</guid>
       <description>&lt;h2 id=&#34;instrucciones-para-subir-una-escalera&#34;&gt;Instrucciones para subir una escalera&lt;/h2&gt;
 &lt;p&gt;(Julio Cortázar, Historias de Cronopios y de Famas, 1962)&lt;/p&gt;
 &lt;p&gt;Nadie habrá dejado de observar que con frecuencia el suelo se pliega de manera tal que una parte sube en ángulo recto con el plano del suelo, y luego la parte siguiente se coloca paralela a este plano, para dar paso a una nueva perpendicular, conducta que se repite en espiral o en línea quebrada hasta alturas sumamente variables. Agachándose y poniendo la mano izquierda en una de las partes verticales, y la derecha en la horizontal correspondiente, se está en posesión momentánea de un peldaño o escalón. Cada uno de estos peldaños, formados como se ve por dos elementos, se situó un tanto más arriba y adelante que el anterior, principio que da sentido a la escalera, ya que cualquiera otra combinación producirá formas quizá más bellas o pintorescas, pero incapaces de trasladar de una planta baja a un primer piso.&lt;/p&gt;
@@ -178,9 +178,9 @@ in which one can be absolutely precise.”&lt;br&gt;
     
     <item>
       <title>Meditaciones Inapropincuas</title>
-      <link>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</link>
+      <link>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/guide/meditaciones_inapropincuas/</guid>
+      <guid>https://juanivb.github.io/docs/guide/meditaciones_inapropincuas/</guid>
       <description>&lt;div style=&#34;text-align: center;&#34;&gt;
 Cuando estés ahí, date por privilegiado &lt;br&gt;
 Catulus Ludensis
@@ -272,8 +272,8 @@ El Infierno no son los otros, el infierno es la vergüenza de haber reconocido a
 &lt;h4 id=&#34;a-lo-panenka&#34;&gt;A lo Panenka&lt;/h4&gt;
 &lt;p&gt;Aristóteles describe al ser humano como animal político [zoo politikon], donde la discriminación con el resto de los animales radica en ser un animal gregario, un ser de la polis. Y ya que estamos atrevidos, podríamos corregir a Aristóteles y decir, el hombre no es un animal político sino un animal que da testimonio  -zoo martureo [zoo μαρτυρέω]- porque ésta es la marca eminente que nos distingue del resto de los animales. Los animales somos, sólo por existir, para la gloria de Dios. El hombre, en cambio, no sólo es para la gloria de Dios de suyo en su existencia, sino que se hace Imago Dei en su testimonio. Por lo que sensu eminenti, la distinción humana dentro de lo general animal es lo específico de su condición testimoniante. Pero Aristóteles no dijo esto porque sintió vergüenza.
 Y ya que sacamos la birome roja, podríamos decir que el viejo y peludo Dasein -Ser Ahí- no es Sein zum Tode -Ser para la Muerte- sino Zur Ehre Gottes -para la Gloria de Dios-.&lt;/p&gt;
-&lt;p&gt;Lo que acabo de decir sería un atrevimiento del que me gustaría hacerme cargo si no fuera necesario reconocer que lo han señalado Vigilius Haufniensis y muchos otros antes que yo. De lo único que me puedo vanagloriar es de indicarle al ocupado mundo filosófico porteño que su preciado Heidegger -parafraseando a alguien que tenía segundo año comercial- “Heidegger nosabeler”.
-Pero los profesores usan camisa&lt;/p&gt;
+&lt;p&gt;Lo que acabo de decir sería un atrevimiento del que me gustaría hacerme cargo si no fuera necesario reconocer que lo han señalado Vigilius Haufniensis y muchos otros antes que yo. De lo único que me puedo vanagloriar es de indicarle al ocupado mundo filosófico porteño que su preciado Heidegger -parafraseando a alguien que tenía segundo año comercial- “Heidegger nosabeler”.&lt;/p&gt;
+&lt;h4 id=&#34;pero-los-profesores-usan-camisa&#34;&gt;Pero los profesores usan camisa&lt;/h4&gt;
 &lt;p&gt;Los cínicos decían que la vestimenta del mejor de los hombres es la de su máxima desfachatez. Los cínicos buscaban parecerse a los dioses reduciendo sus necesidades. Llevados al extremo, su apariencia era lo más parecido que vamos a encontrar en la antigua grecia a un profeta judío. Con todo, hay algo que marca la clara distinción entre un cínico y un profeta: el temor de Dios. Mientras los profetas nacieron en el Pueblo del Temor de Dios, los cínicos fueron absorbidos por su autocomplaciente vis cómica y perdieron la seriedad al olvidarse de que Necesitar de Dios es la Suprema Perfección del ser humano. Por eso la praxis cínica se fue tornando más y más grotesca cuanto más se alejó del testimonio que Sócrates supo dar con auxilio de su daimon, que hacía las veces de temor divino.&lt;/p&gt;
 &lt;h4 id=&#34;flor-de-elipsis-de-reduplicación&#34;&gt;Flor de elipsis de reduplicación&lt;/h4&gt;
 &lt;p&gt;No hay que dejar de recordar que cuando William James propone su cordial filosofía pragmática, nos acerca la verdad como verdadera si es buena o buena si es verdadera. Los italianos decían algo parecido de las mujeres: no es linda si es linda, es linda si te gusta. Pero esta cariñosa y querible filosofía comerciante se queda en el VERUM y el BONUM pero se olvida del matrimoniante UNUM. Ese UNUM es precisamente el unum del testimonio. Y lo siento si no soy lo suficientemente pragmático como para compartir una exposición filosófica que apele al sentido común, pero me basta con repetir una impopular exégesis bíblica para marcar el énfasis de lo que quiero decir. Porque el cristianismo no es un pragmatismo, porque no tiene la prisa de un comerciante, y porque las exposiciones pragmáticas sólo satisfacen a los malagradecidos.&lt;/p&gt;

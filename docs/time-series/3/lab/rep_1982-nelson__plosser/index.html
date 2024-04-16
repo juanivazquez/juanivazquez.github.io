@@ -1,0 +1,3167 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: April 16, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="light">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Trends and Random Walks in Macroeconomic Time Series: Some Evidence and Implications Author(s): Charles R Nelson, Charles I Plosser First Published: 1982 Link: here import numpy as np import pandas as pd import matplotlib." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://juanivb.github.io/docs/time-series/3/lab/rep_1982-nelson__plosser/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/blue.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu510dfbb4d49cf064fa515b85dc2b3efb_130463_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://juanivb.github.io/docs/time-series/3/lab/rep_1982-nelson__plosser/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="Juani Vázquez Broquá" />
+  <meta property="og:url" content="https://juanivb.github.io/docs/time-series/3/lab/rep_1982-nelson__plosser/" />
+  <meta property="og:title" content="Juani Vázquez Broquá" />
+  <meta property="og:description" content="Trends and Random Walks in Macroeconomic Time Series: Some Evidence and Implications Author(s): Charles R Nelson, Charles I Plosser First Published: 1982 Link: here import numpy as np import pandas as pd import matplotlib." /><meta property="og:image" content="https://juanivb.github.io/media/logo.svg" />
+    <meta property="twitter:image" content="https://juanivb.github.io/media/logo.svg" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+
+  <title>Juani Vázquez Broquá</title>
+
+  
+  
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format("woff2");
+    }
+  </style>
+
+  
+
+  
+
+  
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search", showSubResults: true });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Juani Vázquez Broquá">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 98.9 115" x="0px" y="0px"><defs><style>.cls-1{fill:#000000;}</style></defs><path class="cls-1" d="M40.1,64.1c6.9-.8,8.7-5.7,13.2-11,1.9-2.2,3.2-4.9,6-8.3a6.5,6.5,0,0,1,5.8-2.6c3.3,0,4.4-.3,6.2,1.6,5.1,5.7,8.2,12.1,6.7,19.9a20.2,20.2,0,0,1-2.8,7c-1.3,2.1-2.9,4.2-3.4,6.7a2.3,2.3,0,0,1-2.6,2c-5-1.1-6.7-1.4-13.2-.2-1.1.2-1.2-2.6.7-3.7s3.1-1.2,3.1-1.4-3.3-1.5-4.7-5.9a11.1,11.1,0,0,1,.5-8A7.7,7.7,0,0,1,59.9,56a7.1,7.1,0,0,1,6.2.3c1.8.9,3.4,2,5.5,3.3-4.4-5.5-10.9-6.5-14.9-2.4S52.4,69.3,58,73.7c-1.7.8-2.7,1.5-3.2,2.4s-1.2,2.3,0,3.7l-2.5,1c-2.9,1-8.5,2.1-7.9,6.1-2.6,3.1-6.3,4.5-9.6,6.9-1.2.9-2.4,1.6-3.8,2.5-.9-1.8,0-3,1.1-4.3A54.4,54.4,0,0,0,36,86.5a1.6,1.6,0,0,0,.1-1.6c-3.1-4.5-2.3-9-.1-13.4M74.3,59.4l.5-.2c-.3-.6-.5-1.3-.9-1.5a21.1,21.1,0,0,0-3.3-1.8l-3-1.2v.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M25.7,16.4a22.4,22.4,0,0,0-11,6.5,2.9,2.9,0,0,1-2.1.3l-3.9-.8a15.7,15.7,0,0,0,.5,3.7,18.2,18.2,0,0,1,.7,9A13.9,13.9,0,0,0,20.2,50.4l2.3.8C13.2,51.7,4,45.1,1.3,36.3S.3,19.5,6.4,12.8,21,2.8,30.6,5,46.2,15.7,46.7,24.6a7.5,7.5,0,0,1-.3,1.7c-3.2-4.7-7.4-7.6-12.1-10.1-2.2-1.3-3.9-3.6-5.9-5.4a20.3,20.3,0,0,0-2.6-1.1,15.5,15.5,0,0,0-.4,2.9C25.4,13.8,25.6,15.1,25.7,16.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.1,34a5.2,5.2,0,0,1,1-1.1c2.1-1.9,4.5-3.3,7.5-3.1s7.1,1,8.4,3.9.5,6.9-1.7,9.6a8,8,0,0,1-2.9,2.3,9.8,9.8,0,0,1-6.1.7h-.7a7.6,7.6,0,0,1-3.5-1.5c-2.8-2.2-5.7-5.4-2.9-9.6Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.9,59.9c-1.2,1.3-3.1,2.9-5,2.1s-1.5-3.9-1-5.5C41.2,52.5,48.9,56.4,45.9,59.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M42.8,46.2A52.3,52.3,0,0,0,38.9,57c-1.1,4,2.4,6.1-.7,6.3s-6.5-3.4-10.7-6.8a20.5,20.5,0,0,0,6.7-2.8c1.4-1.1,2.6-2.4,3.9-3.6l-.3-.3a49.1,49.1,0,0,1-5.5,3.8,19.9,19.9,0,0,1-4.4,1.7h-.3l-1,.4s-2.5-1.5-1.2-1.7a26.9,26.9,0,0,0,5.3-2c9.4-4.6,14.1-10,17.5-20.2,1.2-.4,1.3.9,1,1.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M20.8,24.1a5.6,5.6,0,0,1,7.3-3.2c3.2,1.1,5.4,4.6,4.6,7.4a6.6,6.6,0,0,1-7.5,4.3,4,4,0,0,0,1.4-5.3C25.5,24.9,23.6,23.6,20.8,24.1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M93.5,50.7c.6-.3,7.1-6.3.7,1-2.2,2.6-3.5,4.1-6.6,5.2s-5.2-1.7-7.4-3.8a.7.7,0,0,1,0-.9l2.7-2.9a1.6,1.6,0,0,1,1.5-.1l3.2,1.3C90.2,51.7,91.1,51.8,93.5,50.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M24.2,52.2c11.8-5,20.3-12.9,23.4-25.9l.6.2a8.7,8.7,0,0,1-.1,2.3A32.5,32.5,0,0,1,33,49.3a53.8,53.8,0,0,1-6.7,3.6c-.6.2-1.5.5-2.1.1S23.9,52.3,24.2,52.2Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M54.5,47.9c.6-2.1-5.4-4.2-8.6-5.4,1.3-4.1,2.2-4.5,6.2-2.7a12.3,12.3,0,0,1,3.1,1.9C57.8,43.6,56.5,45.5,54.5,47.9Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M78.7,53.9a.5.5,0,0,1,.5,0l3.5,3a5.9,5.9,0,0,0,2.6,1c.4.1.7.2.6.5a22.4,22.4,0,0,1-5.6,6.8c-.3.3-.6.3-.8,0a1.4,1.4,0,0,1-.2-.6c.4-3.5,1.5-6.8-.8-10a.4.4,0,0,1,.2-.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M13.5,31.8c-.5,2.9-.3,5.5,3.1,6.5C15.3,40,14,39.8,13.1,38A6.6,6.6,0,0,1,13.5,31.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M57.1,43c.6-2-5.4-4.2-8.6-5.4,1.3-4,2.2-4.5,6.2-2.7a20.7,20.7,0,0,1,3.2,1.9C60.4,38.7,59.1,40.6,57.1,43Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M49.5,27.9c-1.2.5.7,4.7,1.2,4.7a7.8,7.8,0,0,1,3.5.5,11.8,11.8,0,0,1,3.9,2.3,7.9,7.9,0,0,1,3.2,5.9c0,.5,2.1-.8,7.3-.1,0,0-2.9-3.9-5.7-7a27,27,0,0,0-6.8-5.6" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M26.6,68.5a18.2,18.2,0,0,0-3.1-.4c-.4,0-.8.3-.7.7a6.4,6.4,0,0,0,.3,2c.6,2.4,2.5,2.9,4.5,1.4.1,0,.1,0,.1-.1a4.7,4.7,0,0,0,1-1.1.7.7,0,0,0-.1-1Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.6,66.7a10.4,10.4,0,0,1,2.5,2l.5-.8c.9-2,2.1-3.9,2.7-5.3l-6.3-5c-1.1-.9-2-.6-2.3.8s-1.2,5.1-1.6,7.7A25.9,25.9,0,0,1,27.6,66.7Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M27.2,67.4a21.1,21.1,0,0,0-4.1-.6c-.1,0-.1.1-.2.2v.3h0c0,.1,0,.2.1.2a18.9,18.9,0,0,1,4.1.6,8.1,8.1,0,0,1,2.3,1.8c.1,0,.2,0,.2-.1l.2-.3v-.2A9.4,9.4,0,0,0,27.2,67.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M53.2,46.5a11.9,11.9,0,0,0-2.4-1.2s1.3.5-1.3,4.9l-2.9,4.2a8.2,8.2,0,0,1,1.6,2.5c1.4-2.1,5.6-8.5,5.8-8.6A2.1,2.1,0,0,0,53.2,46.5Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M50.2,45c-.3-.3-4.5-1.9-4.5-1.9s-1.2,1.9-2.3,4.1a25.2,25.2,0,0,0-1.9,5.7,6.4,6.4,0,0,1,3.9.7l.6.4a46.7,46.7,0,0,0,2.9-4.2C49.8,48.1,51.4,46.6,50.2,45Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M47.4,56.8h0c0-.2-.1-.3-.2-.5h0a.8.8,0,0,1-.2-.4h0l-.3-.4h0a.1.1,0,0,1-.1-.1h-.2c0-.1-.1-.1-.1-.2h-.1a.1.1,0,0,0-.1-.1h0c0-.1-.1-.1-.1-.2h-.4a.1.1,0,0,0-.1-.1h-.7a.1.1,0,0,0-.1-.1h-.2c0-.1,0-.1-.1-.1H41.2v.4c-.1.1,0,.2.2.2a4.8,4.8,0,0,1,3.4.7,4.2,4.2,0,0,1,2.3,3,.2.2,0,0,0,.3,0l.4-.5A2.5,2.5,0,0,0,47.4,56.8Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M45.6,27.2a14.4,14.4,0,0,0-4.8-5.8l-5.6,4.9a7.9,7.9,0,0,0-2,2.5c-1.3,2.8-4.7,5-7.6,4.6a7.6,7.6,0,0,1-6-6.2c-.3-2.1-.6-4.2-.9-6.6-5.5,3.3-8.9,10.7-8,17.1.6,4.4,2.3,8.2,6.2,10.3s5.5,1.6,8.3,2.4A34.7,34.7,0,0,0,45.5,29,2.8,2.8,0,0,0,45.6,27.2ZM16.4,40.1a3.6,3.6,0,0,1-2.8.4c-3.7-2.8-2-8.5-.4-9.9a2.2,2.2,0,0,1,3.2,0C19,32.7,19.1,38,16.4,40.1Zm11.2-1.7h-.7l-.7.2-.7.2h0a.1.1,0,0,0-.1.1h-.1l-.3.2-.3.2h-.1a.1.1,0,0,1-.1.1l-.3.3h-.1c-.1.1-.2.2-.2.3s-.1.1-.1.2h-.1c-.1.3-.1.5-.2.8a.4.4,0,0,1-.1.3h0V42c0,.2-.1.5-.1.8a.4.4,0,0,1-.4.4c-.2,0-.5-.2-.5-.4a12,12,0,0,1,.3-2,3.5,3.5,0,0,1,.8-1.6,5.2,5.2,0,0,1,1.1-1,6.6,6.6,0,0,1,3-.7.5.5,0,0,1,.5.4A.5.5,0,0,1,27.6,38.4Z" transform="translate(-0.1 -4.3)"/><path class="cls-1" d="M99,40.7a18.8,18.8,0,0,0-1.9-5.8.4.4,0,0,0-.7.2c.1,4.4-.7,7.3-2.7,9.3s-4.7,3.4-9.2,3.2c-.3,0-.6.5-.3.6,5.8,2.3,7.4,3.7,11,.3,1-.9,3-2,3.5-3.4l.3-1.4Z" transform="translate(-0.1 -4.3)"/><text x="0" y="107" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Raylighx</text><text x="0" y="112" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ml-auto mr-6">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/docs/"
+        >Writing</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      <div class="mx-auto flex max-w-screen-xl">
+  
+<div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/80 hidden"></div>
+
+<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] lg:sticky">
+  
+  <div class="px-4 pt-4 lg:hidden">
+    
+    
+  </div>
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+    <ul class="flex flex-col gap-1 lg:hidden">
+      
+      
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/"
+    
+  >
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/"
+    
+  >1 Introduction
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/1_intro_to_python/"
+    
+  >1.1 Intro to Python
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/2_data_manipulation/"
+    
+  >1.2 Data handling
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/3_central_limit_theorem/"
+    
+  >1.3 Central Limit Theorem
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/4_pearson_correlation/"
+    
+  >1.4 Pearson Correlation
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/5_linear_regression_assumptions/"
+    
+  >1.5 Gauss Markov Assumptions
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/6_1973_granger__newbold/"
+    
+  >1.6 Spurious Regressions in Econometrics
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/"
+    
+  >2. Box &amp; Jenkins
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/lab/1_arma_macrodemos/"
+    
+  >ARMA Macrodemos
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/"
+    
+  >3. Stationarity Tests
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/rep_1979-dickey_fuller_distribution/"
+    
+  >1979 - Dickey &amp; Fuller
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/docs/time-series/3/lab/rep_1982-nelson__plosser/"
+    
+  >1982 - Nelson &amp; Plosser
+    </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#trends-and-random-walks-in-macroeconomic-time-series-some-evidence-and-implications"
+                class="hb-docs-link"
+              >&lt;strong&gt;Trends and Random Walks in Macroeconomic Time Series: Some Evidence and Implications&lt;/strong&gt;</a>
+            </li>
+          <li>
+              <a
+                href="#estimar-la-regresi%c3%b3n-dickey-fuller-a-pie"
+                class="hb-docs-link"
+              >Estimar la regresión Dickey-Fuller, &amp;ldquo;a pie&amp;rdquo;</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/rep_1989_perron/"
+    
+  >1989 - Perron
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/rep_1992_zivot__andrews/"
+    
+  >1992 - Zivot &amp; Andrews
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/"
+    
+  >4. VAR
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/"
+    
+  >5. Causality
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/assignment/"
+    
+  >6. Assignment
+    </a>
+              
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/"
+    
+  >This is Me ↗</a></li>
+    
+    </ul>
+
+    <ul class="flex flex-col gap-1 max-lg:hidden">
+        
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/getting-started/"
+    
+  >Welcome
+    </a></li>
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/"
+    
+  >Time Series
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/program/"
+    
+  >Program
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/"
+    
+  >1 Introduction
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/1_intro_to_python/"
+    
+  >1.1 Intro to Python
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/2_data_manipulation/"
+    
+  >1.2 Data handling
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/3_central_limit_theorem/"
+    
+  >1.3 Central Limit Theorem
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/4_pearson_correlation/"
+    
+  >1.4 Pearson Correlation
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/5_linear_regression_assumptions/"
+    
+  >1.5 Gauss Markov Assumptions
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/1/lab/6_1973_granger__newbold/"
+    
+  >1.6 Spurious Regressions in Econometrics
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/"
+    
+  >2. Box &amp; Jenkins
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/2/lab/1_arma_macrodemos/"
+    
+  >ARMA Macrodemos
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/"
+    
+  >3. Stationarity Tests
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/"
+    
+  >Lab
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a>
+              <div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/rep_1979-dickey_fuller_distribution/"
+    
+  >1979 - Dickey &amp; Fuller
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/docs/time-series/3/lab/rep_1982-nelson__plosser/"
+    
+  >1982 - Nelson &amp; Plosser
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/rep_1989_perron/"
+    
+  >1989 - Perron
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/3/lab/rep_1992_zivot__andrews/"
+    
+  >1992 - Zivot &amp; Andrews
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/4/"
+    
+  >4. VAR
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/5/"
+    
+  >5. Causality
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/time-series/assignment/"
+    
+  >6. Assignment
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/"
+    
+  >Philosophy
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/la_moneda_etica/"
+    
+  >La Moneda Ética
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/para_distinguir_un_pie_de_un_pie/"
+    
+  >Para Distinguir los Pies
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/guide/meditaciones_inapropincuas/"
+    
+  >Meditaciones Inapropincuas
+    </a>
+              
+            </li></ul>
+      </div></li>
+        
+      <li><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/"
+    
+  >This is Me ↗</a></li>
+    
+      </ul>
+    </div>
+
+</aside>
+  
+
+
+<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#trends-and-random-walks-in-macroeconomic-time-series-some-evidence-and-implications">Trends and Random Walks in Macroeconomic Time Series: Some Evidence and Implications</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#serie-en-nivel">Serie en nivel</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#serie-en-primera-diferencia">Serie en primera diferencia</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#desviaciones-respecto-a-una-tendencia-lineal">Desviaciones respecto a una tendencia lineal</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#mostrar-las-tablas-2-a-4-en-una-sola">Mostrar las tablas 2 a 4 en una sola</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#estimar-la-regresi%c3%b3n-dickey-fuller-a-pie">Estimar la regresión Dickey-Fuller, “a pie”</a>
+      </li></ul><div class="mt-8 border-t dark:border-neutral-700 pt-8 sticky bottom-0 flex flex-col items-start gap-2 pb-8">
+
+        
+        
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+
+  <article class="flex w-full min-w-0 min-h-[calc(100vh-var(--navbar-height))] justify-center break-words pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="prose prose-slate lg:prose-xl dark:prose-invert w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+      <div class="mb-1">
+        <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400">
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/"></a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/time-series/">Time Series</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/time-series/3/">3. Stationarity Tests</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
+      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="https://juanivb.github.io/docs/time-series/3/lab/">Lab</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">1982 - Nelson &amp; Plosser</div>
+</div>
+
+      </div>
+
+      <div class="content text-base">
+        <h1></h1>
+        <h2 id="trends-and-random-walks-in-macroeconomic-time-series-some-evidence-and-implications"><strong>Trends and Random Walks in Macroeconomic Time Series: Some Evidence and Implications</strong></h2>
+<ul>
+<li>Author(s): <strong>Charles R Nelson,  Charles I Plosser</strong></li>
+<li>First Published: <strong>1982</strong></li>
+<li>Link: <a href="https://drive.google.com/file/d/107fS9qPNKZd0OhEciAUfAI1VWbvr2PLl/view?usp=sharing" target="_blank" rel="noopener">here</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">statsmodels.tsa.stattools</span> <span class="kn">import</span> <span class="n">acf</span><span class="p">,</span> <span class="n">kpss</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">statsmodels.formula.api</span> <span class="kn">import</span> <span class="n">ols</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">datos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_stata</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\Users\juani\Documents\3_My_Jupiter_Notebooks\4_Series_de_Tiempo\0_2024\stata_data\NelsonPlosserData.dta&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">datos</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">datos</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">datos</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">year</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">titulos</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;r</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">)]</span> <span class="c1"># para rotular unas tablas abajo</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">variables</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;lrgnp&#39;</span><span class="p">:</span><span class="s1">&#39;Real GNP&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lgnp&#39;</span><span class="p">:</span><span class="s1">&#39;Nominal GNP&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lpcrgnp&#39;</span><span class="p">:</span><span class="s1">&#39;Real per capita GNP&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lip&#39;</span><span class="p">:</span><span class="s1">&#39;Industrial production&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lemp&#39;</span><span class="p">:</span><span class="s1">&#39;Employment&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lun&#39;</span><span class="p">:</span><span class="s1">&#39;Unemployment rate&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lprgnp&#39;</span><span class="p">:</span><span class="s1">&#39;GNP deflator&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lcpi&#39;</span><span class="p">:</span><span class="s1">&#39;Consumer prices&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lwg&#39;</span><span class="p">:</span><span class="s1">&#39;Wages&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lrwg&#39;</span><span class="p">:</span><span class="s1">&#39;Real wages&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lm&#39;</span><span class="p">:</span><span class="s1">&#39;Money stock&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lvel&#39;</span><span class="p">:</span><span class="s1">&#39;Velocity&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;bnd&#39;</span><span class="p">:</span><span class="s1">&#39;Bond yield&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="s1">&#39;lsp500&#39;</span><span class="p">:</span><span class="s1">&#39;Common stock prices&#39;</span><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">datos</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[</span><span class="n">variables</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">variables</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">datos</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">15</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]);</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="output_6_0.png" alt="png" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">acf6lags</span><span class="p">(</span><span class="n">nombre_variable</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Calcula los primeros 6 coeficientes de autocorrelación
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        nombre_variable: str, el nombre de una columna de la tabla &#34;datos&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        d: número de veces que hay que diferenciar la serie (0 o 1 en la práctica)
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        np.array, los 6 coeficientes de autocorrelación, redondeados a dos decimales
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">serie</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[</span><span class="n">nombre_variable</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">if</span> <span class="n">d</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="n">datos</span><span class="p">[</span><span class="n">nombre_variable</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">acf</span><span class="p">(</span><span class="n">serie</span><span class="o">.</span><span class="n">dropna</span><span class="p">(),</span> <span class="n">nlags</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">fft</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">tabla_acf</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Crea una tabla con las primeras 6 autocorrelaciones de todas las series en &#34;datos&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        d:  int, número de veces que hay que diferenciar la serie (0 o 1 en la práctica)
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        una tabla de pandas, series en las filas, número de rezagos en las columnas
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">acf6lags</span><span class="p">(</span><span class="n">serie</span><span class="p">,</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">serie</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="n">variables</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">titulos</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="serie-en-nivel">Serie en nivel</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tabla2</span> <span class="o">=</span> <span class="n">tabla_acf</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla2</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Real GNP</th>
+      <td>0.95</td>
+      <td>0.90</td>
+      <td>0.84</td>
+      <td>0.79</td>
+      <td>0.74</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <th>Nominal GNP</th>
+      <td>0.95</td>
+      <td>0.89</td>
+      <td>0.83</td>
+      <td>0.77</td>
+      <td>0.72</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>Real per capita GNP</th>
+      <td>0.95</td>
+      <td>0.88</td>
+      <td>0.81</td>
+      <td>0.75</td>
+      <td>0.70</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <th>Industrial production</th>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>0.90</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <th>Employment</th>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.81</td>
+      <td>0.76</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>Unemployment rate</th>
+      <td>0.75</td>
+      <td>0.47</td>
+      <td>0.32</td>
+      <td>0.17</td>
+      <td>0.04</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>GNP deflator</th>
+      <td>0.96</td>
+      <td>0.93</td>
+      <td>0.89</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <th>Consumer prices</th>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>Wages</th>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.82</td>
+      <td>0.77</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <th>Real wages</th>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <th>Money stock</th>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.89</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>Velocity</th>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>Bond yield</th>
+      <td>0.84</td>
+      <td>0.72</td>
+      <td>0.60</td>
+      <td>0.52</td>
+      <td>0.46</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <th>Common stock prices</th>
+      <td>0.96</td>
+      <td>0.90</td>
+      <td>0.85</td>
+      <td>0.79</td>
+      <td>0.75</td>
+      <td>0.71</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">rango_datos</span><span class="p">(</span><span class="n">ser</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Determina el rango de los datos disponibles de una serie
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        ser: una serie de pandas
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        str, primera observación -- última observación
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">ser</span><span class="o">.</span><span class="n">first_valid_index</span><span class="p">()</span><span class="si">}</span><span class="s1"> -- </span><span class="si">{</span><span class="n">ser</span><span class="o">.</span><span class="n">last_valid_index</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">rango_datos</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Real GNP                 1909 -- 1970
+Nominal GNP              1909 -- 1970
+Real per capita GNP      1909 -- 1970
+Industrial production    1860 -- 1970
+Employment               1890 -- 1970
+Unemployment rate        1890 -- 1970
+GNP deflator             1889 -- 1970
+Consumer prices          1860 -- 1970
+Wages                    1900 -- 1970
+Real wages               1900 -- 1970
+Money stock              1889 -- 1970
+Velocity                 1869 -- 1970
+Bond yield               1900 -- 1970
+Common stock prices      1871 -- 1970
+dtype: object
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tabla2</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Period&#39;</span><span class="p">,</span> <span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">rango_datos</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla2</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">ser</span><span class="p">:</span> <span class="n">ser</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla2</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Period</th>
+      <th>T</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Real GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.90</td>
+      <td>0.84</td>
+      <td>0.79</td>
+      <td>0.74</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <th>Nominal GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.89</td>
+      <td>0.83</td>
+      <td>0.77</td>
+      <td>0.72</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <th>Real per capita GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.88</td>
+      <td>0.81</td>
+      <td>0.75</td>
+      <td>0.70</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <th>Industrial production</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>0.90</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <th>Employment</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.81</td>
+      <td>0.76</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <th>Unemployment rate</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.75</td>
+      <td>0.47</td>
+      <td>0.32</td>
+      <td>0.17</td>
+      <td>0.04</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>GNP deflator</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.96</td>
+      <td>0.93</td>
+      <td>0.89</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <th>Consumer prices</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>Wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.82</td>
+      <td>0.77</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <th>Real wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <th>Money stock</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.89</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>Velocity</th>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <th>Bond yield</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.84</td>
+      <td>0.72</td>
+      <td>0.60</td>
+      <td>0.52</td>
+      <td>0.46</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <th>Common stock prices</th>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>0.96</td>
+      <td>0.90</td>
+      <td>0.85</td>
+      <td>0.79</td>
+      <td>0.75</td>
+      <td>0.71</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="serie-en-primera-diferencia">Serie en primera diferencia</h3>
+<p>Nelson Plosser 1982 tabla 3</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tabla3</span> <span class="o">=</span> <span class="n">tabla_acf</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla3</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Period&#39;</span><span class="p">,</span> <span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">rango_datos</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla3</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">ser</span><span class="p">:</span> <span class="n">ser</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla3</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Period</th>
+      <th>T</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Real GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.34</td>
+      <td>0.04</td>
+      <td>-0.18</td>
+      <td>-0.23</td>
+      <td>-0.19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Nominal GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.44</td>
+      <td>0.08</td>
+      <td>-0.12</td>
+      <td>-0.24</td>
+      <td>-0.07</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <th>Real per capita GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.33</td>
+      <td>0.04</td>
+      <td>-0.17</td>
+      <td>-0.21</td>
+      <td>-0.18</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>Industrial production</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.03</td>
+      <td>-0.11</td>
+      <td>-0.00</td>
+      <td>-0.11</td>
+      <td>-0.28</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>Employment</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.32</td>
+      <td>-0.05</td>
+      <td>-0.08</td>
+      <td>-0.17</td>
+      <td>-0.20</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>Unemployment rate</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.09</td>
+      <td>-0.29</td>
+      <td>0.03</td>
+      <td>-0.03</td>
+      <td>-0.19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <th>GNP deflator</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.43</td>
+      <td>0.20</td>
+      <td>0.07</td>
+      <td>-0.06</td>
+      <td>0.03</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>Consumer prices</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.58</td>
+      <td>0.16</td>
+      <td>0.02</td>
+      <td>-0.00</td>
+      <td>0.05</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <th>Wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.46</td>
+      <td>0.10</td>
+      <td>-0.03</td>
+      <td>-0.09</td>
+      <td>-0.09</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>Real wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.19</td>
+      <td>-0.03</td>
+      <td>-0.07</td>
+      <td>-0.11</td>
+      <td>-0.18</td>
+      <td>-0.15</td>
+    </tr>
+    <tr>
+      <th>Money stock</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.62</td>
+      <td>0.30</td>
+      <td>0.13</td>
+      <td>-0.01</td>
+      <td>-0.07</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <th>Velocity</th>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>0.11</td>
+      <td>-0.04</td>
+      <td>-0.16</td>
+      <td>-0.15</td>
+      <td>-0.11</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <th>Bond yield</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.18</td>
+      <td>0.31</td>
+      <td>0.15</td>
+      <td>0.04</td>
+      <td>0.06</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>Common stock prices</th>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>0.22</td>
+      <td>-0.13</td>
+      <td>-0.08</td>
+      <td>-0.18</td>
+      <td>-0.23</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="desviaciones-respecto-a-una-tendencia-lineal">Desviaciones respecto a una tendencia lineal</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="../imgs/NelsonPlosser-table4.png" alt="Nelson Plosser 1982 tabla 4" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ul>
+<li>Fuente: Nelson y Plosser 1982 Trends and Random Walks in Macroeconomic Time Series: Some evidence and implications. Journal of Monetary Economics 10, pp.139-162</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">acf_deviation_from_trend</span><span class="p">(</span><span class="n">nombre_variable</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Calcular las primeras 6 autocorrelaciones de la desviación de una serie respecto a
+</span></span></span><span class="line"><span class="cl"><span class="s2">    su tendencia lineal.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Se estima por mínimos cuadrados ordinarios una regresión de la forma
+</span></span></span><span class="line"><span class="cl"><span class="s2">        y = intercepto + time
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    y se calcula la autocorrelación de los residuos.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        nombre_variable: str, nombre de una variable de la tabla &#34;datos&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        np.array, los 6 coeficientes de autocorrelación, redondeados a dos decimales
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[[</span><span class="n">nombre_variable</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">resid</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="s1">&#39;y ~ t&#39;</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span><span class="o">.</span><span class="n">resid</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">acf</span><span class="p">(</span><span class="n">resid</span><span class="p">,</span> <span class="n">nlags</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">fft</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tabla4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">acf_deviation_from_trend</span><span class="p">(</span><span class="n">ser</span><span class="p">)</span> <span class="k">for</span> <span class="n">ser</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="n">variables</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">titulos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla4</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Period&#39;</span><span class="p">,</span> <span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">rango_datos</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla4</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="n">datos</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">ser</span><span class="p">:</span> <span class="n">ser</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla4</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Period</th>
+      <th>T</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Real GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.87</td>
+      <td>0.66</td>
+      <td>0.44</td>
+      <td>0.26</td>
+      <td>0.13</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>Nominal GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.93</td>
+      <td>0.79</td>
+      <td>0.65</td>
+      <td>0.52</td>
+      <td>0.43</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>Real per capita GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.87</td>
+      <td>0.65</td>
+      <td>0.43</td>
+      <td>0.24</td>
+      <td>0.11</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>Industrial production</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.84</td>
+      <td>0.67</td>
+      <td>0.53</td>
+      <td>0.40</td>
+      <td>0.29</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>Employment</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.89</td>
+      <td>0.71</td>
+      <td>0.55</td>
+      <td>0.39</td>
+      <td>0.25</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>Unemployment rate</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.75</td>
+      <td>0.46</td>
+      <td>0.30</td>
+      <td>0.15</td>
+      <td>0.03</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>GNP deflator</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.92</td>
+      <td>0.81</td>
+      <td>0.67</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>Consumer prices</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.97</td>
+      <td>0.91</td>
+      <td>0.84</td>
+      <td>0.78</td>
+      <td>0.71</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <th>Wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.93</td>
+      <td>0.81</td>
+      <td>0.67</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <th>Real wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.87</td>
+      <td>0.69</td>
+      <td>0.52</td>
+      <td>0.38</td>
+      <td>0.26</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <th>Money stock</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.95</td>
+      <td>0.83</td>
+      <td>0.69</td>
+      <td>0.53</td>
+      <td>0.37</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>Velocity</th>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>0.91</td>
+      <td>0.81</td>
+      <td>0.72</td>
+      <td>0.65</td>
+      <td>0.59</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>Bond yield</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.85</td>
+      <td>0.73</td>
+      <td>0.62</td>
+      <td>0.55</td>
+      <td>0.49</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>Common stock prices</th>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>0.90</td>
+      <td>0.76</td>
+      <td>0.64</td>
+      <td>0.53</td>
+      <td>0.46</td>
+      <td>0.43</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h3 id="mostrar-las-tablas-2-a-4-en-una-sola">Mostrar las tablas 2 a 4 en una sola</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">tabla2</span><span class="p">,</span> <span class="n">tabla3</span><span class="p">,</span> <span class="n">tabla4</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Period</th>
+      <th>T</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+      <th>Period</th>
+      <th>T</th>
+      <th>...</th>
+      <th>r5</th>
+      <th>r6</th>
+      <th>Period</th>
+      <th>T</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Real GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.90</td>
+      <td>0.84</td>
+      <td>0.79</td>
+      <td>0.74</td>
+      <td>0.69</td>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>...</td>
+      <td>-0.19</td>
+      <td>0.01</td>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.87</td>
+      <td>0.66</td>
+      <td>0.44</td>
+      <td>0.26</td>
+      <td>0.13</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>Nominal GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.89</td>
+      <td>0.83</td>
+      <td>0.77</td>
+      <td>0.72</td>
+      <td>0.67</td>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>...</td>
+      <td>-0.07</td>
+      <td>0.15</td>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.93</td>
+      <td>0.79</td>
+      <td>0.65</td>
+      <td>0.52</td>
+      <td>0.43</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>Real per capita GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.88</td>
+      <td>0.81</td>
+      <td>0.75</td>
+      <td>0.70</td>
+      <td>0.65</td>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>...</td>
+      <td>-0.18</td>
+      <td>0.02</td>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.87</td>
+      <td>0.65</td>
+      <td>0.43</td>
+      <td>0.24</td>
+      <td>0.11</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>Industrial production</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>0.90</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.81</td>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>...</td>
+      <td>-0.28</td>
+      <td>0.05</td>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.84</td>
+      <td>0.67</td>
+      <td>0.53</td>
+      <td>0.40</td>
+      <td>0.29</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>Employment</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.81</td>
+      <td>0.76</td>
+      <td>0.71</td>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>...</td>
+      <td>-0.20</td>
+      <td>0.01</td>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.89</td>
+      <td>0.71</td>
+      <td>0.55</td>
+      <td>0.39</td>
+      <td>0.25</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>Unemployment rate</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.75</td>
+      <td>0.47</td>
+      <td>0.32</td>
+      <td>0.17</td>
+      <td>0.04</td>
+      <td>-0.01</td>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>...</td>
+      <td>-0.19</td>
+      <td>0.01</td>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.75</td>
+      <td>0.46</td>
+      <td>0.30</td>
+      <td>0.15</td>
+      <td>0.03</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>GNP deflator</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.96</td>
+      <td>0.93</td>
+      <td>0.89</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.76</td>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>...</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.92</td>
+      <td>0.81</td>
+      <td>0.67</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>Consumer prices</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.77</td>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>...</td>
+      <td>0.05</td>
+      <td>0.03</td>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.97</td>
+      <td>0.91</td>
+      <td>0.84</td>
+      <td>0.78</td>
+      <td>0.71</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <th>Wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.82</td>
+      <td>0.77</td>
+      <td>0.73</td>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>...</td>
+      <td>-0.09</td>
+      <td>0.08</td>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.93</td>
+      <td>0.81</td>
+      <td>0.67</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <th>Real wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.75</td>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>...</td>
+      <td>-0.18</td>
+      <td>-0.15</td>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.87</td>
+      <td>0.69</td>
+      <td>0.52</td>
+      <td>0.38</td>
+      <td>0.26</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <th>Money stock</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.89</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.77</td>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>...</td>
+      <td>-0.07</td>
+      <td>-0.04</td>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.95</td>
+      <td>0.83</td>
+      <td>0.69</td>
+      <td>0.53</td>
+      <td>0.37</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>Velocity</th>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.79</td>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>...</td>
+      <td>-0.11</td>
+      <td>0.11</td>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>0.91</td>
+      <td>0.81</td>
+      <td>0.72</td>
+      <td>0.65</td>
+      <td>0.59</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>Bond yield</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.84</td>
+      <td>0.72</td>
+      <td>0.60</td>
+      <td>0.52</td>
+      <td>0.46</td>
+      <td>0.40</td>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>...</td>
+      <td>0.06</td>
+      <td>0.05</td>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.85</td>
+      <td>0.73</td>
+      <td>0.62</td>
+      <td>0.55</td>
+      <td>0.49</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>Common stock prices</th>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>0.96</td>
+      <td>0.90</td>
+      <td>0.85</td>
+      <td>0.79</td>
+      <td>0.75</td>
+      <td>0.71</td>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>...</td>
+      <td>-0.23</td>
+      <td>0.02</td>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>0.90</td>
+      <td>0.76</td>
+      <td>0.64</td>
+      <td>0.53</td>
+      <td>0.46</td>
+      <td>0.43</td>
+    </tr>
+  </tbody>
+</table>
+<p>14 rows × 24 columns</p>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">tabla2</span><span class="p">,</span> <span class="n">tabla3</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="o">-</span><span class="mi">6</span><span class="p">:],</span> <span class="n">tabla4</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="o">-</span><span class="mi">6</span><span class="p">:]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Niveles&#39;</span><span class="p">,</span><span class="s1">&#39;Diferencias&#39;</span><span class="p">,</span><span class="s1">&#39;Desviación de tendencia&#39;</span><span class="p">])</span>
+</span></span></code></pre></div><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead tr th {
+    text-align: left;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="8" halign="left">Niveles</th>
+      <th colspan="6" halign="left">Diferencias</th>
+      <th colspan="6" halign="left">Desviación de tendencia</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Period</th>
+      <th>T</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+      <th>r1</th>
+      <th>r2</th>
+      <th>r3</th>
+      <th>r4</th>
+      <th>r5</th>
+      <th>r6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Real GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.90</td>
+      <td>0.84</td>
+      <td>0.79</td>
+      <td>0.74</td>
+      <td>0.69</td>
+      <td>0.34</td>
+      <td>0.04</td>
+      <td>-0.18</td>
+      <td>-0.23</td>
+      <td>-0.19</td>
+      <td>0.01</td>
+      <td>0.87</td>
+      <td>0.66</td>
+      <td>0.44</td>
+      <td>0.26</td>
+      <td>0.13</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <th>Nominal GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.89</td>
+      <td>0.83</td>
+      <td>0.77</td>
+      <td>0.72</td>
+      <td>0.67</td>
+      <td>0.44</td>
+      <td>0.08</td>
+      <td>-0.12</td>
+      <td>-0.24</td>
+      <td>-0.07</td>
+      <td>0.15</td>
+      <td>0.93</td>
+      <td>0.79</td>
+      <td>0.65</td>
+      <td>0.52</td>
+      <td>0.43</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>Real per capita GNP</th>
+      <td>1909 -- 1970</td>
+      <td>62</td>
+      <td>0.95</td>
+      <td>0.88</td>
+      <td>0.81</td>
+      <td>0.75</td>
+      <td>0.70</td>
+      <td>0.65</td>
+      <td>0.33</td>
+      <td>0.04</td>
+      <td>-0.17</td>
+      <td>-0.21</td>
+      <td>-0.18</td>
+      <td>0.02</td>
+      <td>0.87</td>
+      <td>0.65</td>
+      <td>0.43</td>
+      <td>0.24</td>
+      <td>0.11</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>Industrial production</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>0.90</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.81</td>
+      <td>0.03</td>
+      <td>-0.11</td>
+      <td>-0.00</td>
+      <td>-0.11</td>
+      <td>-0.28</td>
+      <td>0.05</td>
+      <td>0.84</td>
+      <td>0.67</td>
+      <td>0.53</td>
+      <td>0.40</td>
+      <td>0.29</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <th>Employment</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.81</td>
+      <td>0.76</td>
+      <td>0.71</td>
+      <td>0.32</td>
+      <td>-0.05</td>
+      <td>-0.08</td>
+      <td>-0.17</td>
+      <td>-0.20</td>
+      <td>0.01</td>
+      <td>0.89</td>
+      <td>0.71</td>
+      <td>0.55</td>
+      <td>0.39</td>
+      <td>0.25</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>Unemployment rate</th>
+      <td>1890 -- 1970</td>
+      <td>81</td>
+      <td>0.75</td>
+      <td>0.47</td>
+      <td>0.32</td>
+      <td>0.17</td>
+      <td>0.04</td>
+      <td>-0.01</td>
+      <td>0.09</td>
+      <td>-0.29</td>
+      <td>0.03</td>
+      <td>-0.03</td>
+      <td>-0.19</td>
+      <td>0.01</td>
+      <td>0.75</td>
+      <td>0.46</td>
+      <td>0.30</td>
+      <td>0.15</td>
+      <td>0.03</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <th>GNP deflator</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.96</td>
+      <td>0.93</td>
+      <td>0.89</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.76</td>
+      <td>0.43</td>
+      <td>0.20</td>
+      <td>0.07</td>
+      <td>-0.06</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>0.92</td>
+      <td>0.81</td>
+      <td>0.67</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <th>Consumer prices</th>
+      <td>1860 -- 1970</td>
+      <td>111</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.87</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.77</td>
+      <td>0.58</td>
+      <td>0.16</td>
+      <td>0.02</td>
+      <td>-0.00</td>
+      <td>0.05</td>
+      <td>0.03</td>
+      <td>0.97</td>
+      <td>0.91</td>
+      <td>0.84</td>
+      <td>0.78</td>
+      <td>0.71</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <th>Wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.96</td>
+      <td>0.91</td>
+      <td>0.86</td>
+      <td>0.82</td>
+      <td>0.77</td>
+      <td>0.73</td>
+      <td>0.46</td>
+      <td>0.10</td>
+      <td>-0.03</td>
+      <td>-0.09</td>
+      <td>-0.09</td>
+      <td>0.08</td>
+      <td>0.93</td>
+      <td>0.81</td>
+      <td>0.67</td>
+      <td>0.54</td>
+      <td>0.42</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <th>Real wages</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.84</td>
+      <td>0.80</td>
+      <td>0.75</td>
+      <td>0.19</td>
+      <td>-0.03</td>
+      <td>-0.07</td>
+      <td>-0.11</td>
+      <td>-0.18</td>
+      <td>-0.15</td>
+      <td>0.87</td>
+      <td>0.69</td>
+      <td>0.52</td>
+      <td>0.38</td>
+      <td>0.26</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <th>Money stock</th>
+      <td>1889 -- 1970</td>
+      <td>82</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.89</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.77</td>
+      <td>0.62</td>
+      <td>0.30</td>
+      <td>0.13</td>
+      <td>-0.01</td>
+      <td>-0.07</td>
+      <td>-0.04</td>
+      <td>0.95</td>
+      <td>0.83</td>
+      <td>0.69</td>
+      <td>0.53</td>
+      <td>0.37</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>Velocity</th>
+      <td>1869 -- 1970</td>
+      <td>102</td>
+      <td>0.96</td>
+      <td>0.92</td>
+      <td>0.88</td>
+      <td>0.85</td>
+      <td>0.81</td>
+      <td>0.79</td>
+      <td>0.11</td>
+      <td>-0.04</td>
+      <td>-0.16</td>
+      <td>-0.15</td>
+      <td>-0.11</td>
+      <td>0.11</td>
+      <td>0.91</td>
+      <td>0.81</td>
+      <td>0.72</td>
+      <td>0.65</td>
+      <td>0.59</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>Bond yield</th>
+      <td>1900 -- 1970</td>
+      <td>71</td>
+      <td>0.84</td>
+      <td>0.72</td>
+      <td>0.60</td>
+      <td>0.52</td>
+      <td>0.46</td>
+      <td>0.40</td>
+      <td>0.18</td>
+      <td>0.31</td>
+      <td>0.15</td>
+      <td>0.04</td>
+      <td>0.06</td>
+      <td>0.05</td>
+      <td>0.85</td>
+      <td>0.73</td>
+      <td>0.62</td>
+      <td>0.55</td>
+      <td>0.49</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <th>Common stock prices</th>
+      <td>1871 -- 1970</td>
+      <td>100</td>
+      <td>0.96</td>
+      <td>0.90</td>
+      <td>0.85</td>
+      <td>0.79</td>
+      <td>0.75</td>
+      <td>0.71</td>
+      <td>0.22</td>
+      <td>-0.13</td>
+      <td>-0.08</td>
+      <td>-0.18</td>
+      <td>-0.23</td>
+      <td>0.02</td>
+      <td>0.90</td>
+      <td>0.76</td>
+      <td>0.64</td>
+      <td>0.53</td>
+      <td>0.46</td>
+      <td>0.43</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2 id="estimar-la-regresión-dickey-fuller-a-pie">Estimar la regresión Dickey-Fuller, &ldquo;a pie&rdquo;</h2>
+<p>Nelson Plosser 1982 tabla 5</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">ADFregression</span><span class="p">(</span><span class="n">nombre_variable</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Estima la regresión necesaria para la prueba aumentada de Dickey-Fuller
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        nombre_variable: str, nombre de una variable de la tabla &#34;datos&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        k: Número de rezagos del proceso AR subyacente (1 + rezagos en regresión)
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Un objeto de resultados estimados de statsmodels
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[[</span><span class="n">nombre_variable</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Y&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;Y&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;LY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;Y&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>    
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;D</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s1">Y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">regresores</span> <span class="o">=</span> <span class="s1">&#39; + &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">regresores</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">frml</span> <span class="o">=</span> <span class="s1">&#39;DY ~ &#39;</span> <span class="o">+</span> <span class="n">regresores</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ols</span><span class="p">(</span><span class="n">frml</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ADFregression</span><span class="p">(</span><span class="s1">&#39;Real GNP&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>LY + t + D1Y + D2Y + D3Y
+</code></pre>
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>           <td>DY</td>        <th>  R-squared:         </th> <td>   0.265</td>
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th> <td>   0.194</td>
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   3.753</td>
+</tr>
+<tr>
+  <th>Date:</th>             <td>Mon, 04 Mar 2024</td> <th>  Prob (F-statistic):</th>  <td>0.00563</td>
+</tr>
+<tr>
+  <th>Time:</th>                 <td>00:04:26</td>     <th>  Log-Likelihood:    </th> <td>  84.601</td>
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>    58</td>      <th>  AIC:               </th> <td>  -157.2</td>
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>    52</td>      <th>  BIC:               </th> <td>  -144.8</td>
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>     5</td>      <th>                     </th>     <td> </td>   
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>   
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>Intercept</th> <td>    0.8645</td> <td>    0.317</td> <td>    2.723</td> <td> 0.009</td> <td>    0.227</td> <td>    1.501</td>
+</tr>
+<tr>
+  <th>LY</th>        <td>   -0.1880</td> <td>    0.070</td> <td>   -2.687</td> <td> 0.010</td> <td>   -0.328</td> <td>   -0.048</td>
+</tr>
+<tr>
+  <th>t</th>         <td>    0.0062</td> <td>    0.002</td> <td>    2.803</td> <td> 0.007</td> <td>    0.002</td> <td>    0.011</td>
+</tr>
+<tr>
+  <th>D1Y</th>       <td>    0.3991</td> <td>    0.129</td> <td>    3.091</td> <td> 0.003</td> <td>    0.140</td> <td>    0.658</td>
+</tr>
+<tr>
+  <th>D2Y</th>       <td>    0.0741</td> <td>    0.140</td> <td>    0.531</td> <td> 0.598</td> <td>   -0.206</td> <td>    0.354</td>
+</tr>
+<tr>
+  <th>D3Y</th>       <td>   -0.0693</td> <td>    0.136</td> <td>   -0.509</td> <td> 0.613</td> <td>   -0.343</td> <td>    0.204</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td> 3.110</td> <th>  Durbin-Watson:     </th> <td>   2.010</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.211</td> <th>  Jarque-Bera (JB):  </th> <td>   2.243</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td>-0.313</td> <th>  Prob(JB):          </th> <td>   0.326</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 3.732</td> <th>  Cond. No.          </th> <td>1.57e+03</td>
+</tr>
+</table><br/><br/>Notes:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.<br/>[2] The condition number is large, 1.57e+03. This might indicate that there are<br/>strong multicollinearity or other numerical problems.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">NelsonPlosser</span><span class="p">(</span><span class="n">ser</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Calcula varios estadísticos de la regresión de la prueba aumentada de Dickey-Fuller,
+</span></span></span><span class="line"><span class="cl"><span class="s2">    para reproducir los resultados reportados en la tabla 5 de Nelson y Plosser (1982)
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        ser: str, nombre abreviado de una variable de la tabla &#34;datos&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        k: Número de rezagos del proceso AR subyacente (1 + rezagos en regresión)
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        dict, estadísticos calculados        
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">nombre_variable</span> <span class="o">=</span> <span class="n">variables</span><span class="p">[</span><span class="n">ser</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fuller5pct</span> <span class="o">=</span> <span class="o">-</span><span class="mf">3.45</span>
+</span></span><span class="line"><span class="cl">    <span class="n">model</span> <span class="o">=</span> <span class="n">ADFregression</span><span class="p">(</span><span class="n">nombre_variable</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">estadisticos</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;mu&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;Intercept&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;t(mu)&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">tvalues</span><span class="p">[</span><span class="s1">&#39;Intercept&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="mi">3</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;t(gamma)&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">tvalues</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;rho&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="s1">&#39;LY&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;t(rho)&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">tvalues</span><span class="p">[</span><span class="s1">&#39;LY&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;s(u)&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">mse_resid</span><span class="p">),</span><span class="mi">3</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;r1&#39;</span><span class="p">:</span> <span class="n">acf</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">resid</span><span class="p">,</span> <span class="n">nlags</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">fft</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;resultado&#39;</span><span class="p">:</span> <span class="s1">&#39;* estacionaria&#39;</span> <span class="k">if</span> <span class="n">model</span><span class="o">.</span><span class="n">tvalues</span><span class="p">[</span><span class="s1">&#39;LY&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">fuller5pct</span> <span class="k">else</span> <span class="s1">&#39;raiz unitaria&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">estadisticos</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">NelsonPlosser</span><span class="p">(</span><span class="s1">&#39;lrgnp&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>LY + t + D1Y + D2Y
+
+
+
+
+
+{'mu': 0.872,
+ 't(mu)': 2.98,
+ 'gamma': 0.006,
+ 't(gamma)': 2.99,
+ 'rho': 0.811,
+ 't(rho)': -2.94,
+ 's(u)': 0.059,
+ 'r1': -0.01,
+ 'resultado': 'raiz unitaria'}
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">rezagos</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;lrgnp&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;lgnp&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;lpcrgnp&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;lip&#39;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;lemp&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;lun&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;lprgnp&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;lcpi&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;lwg&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;lrwg&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;lm&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;lvel&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;bnd&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;lsp500&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tabla5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">NelsonPlosser</span><span class="p">(</span><span class="n">ser</span><span class="p">,</span> <span class="n">lags</span><span class="p">)</span> <span class="k">for</span> <span class="n">ser</span><span class="p">,</span> <span class="n">lags</span> <span class="ow">in</span> <span class="n">rezagos</span><span class="o">.</span><span class="n">items</span><span class="p">()],</span> <span class="n">index</span><span class="o">=</span><span class="n">rezagos</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">tabla5</span>
+</span></span></code></pre></div><pre><code>LY + t + D1Y
+LY + t + D1Y
+LY + t + D1Y
+LY + t + D1Y + D2Y + D3Y + D4Y + D5Y
+LY + t + D1Y + D2Y
+LY + t + D1Y + D2Y + D3Y
+LY + t + D1Y
+LY + t + D1Y + D2Y + D3Y
+LY + t + D1Y + D2Y
+LY + t + D1Y
+LY + t + D1Y
+LY + t + D1Y + D2Y + D3Y
+LY + t + D1Y + D2Y
+LY + t + D1Y + D2Y
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mu</th>
+      <th>t(mu)</th>
+      <th>gamma</th>
+      <th>t(gamma)</th>
+      <th>rho</th>
+      <th>t(rho)</th>
+      <th>s(u)</th>
+      <th>r1</th>
+      <th>resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>lrgnp</th>
+      <td>0.813</td>
+      <td>3.04</td>
+      <td>0.006</td>
+      <td>3.03</td>
+      <td>0.825</td>
+      <td>-2.99</td>
+      <td>0.058</td>
+      <td>-0.03</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lgnp</th>
+      <td>1.056</td>
+      <td>2.37</td>
+      <td>0.006</td>
+      <td>2.34</td>
+      <td>0.899</td>
+      <td>-2.32</td>
+      <td>0.087</td>
+      <td>0.03</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lpcrgnp</th>
+      <td>1.274</td>
+      <td>3.05</td>
+      <td>0.004</td>
+      <td>3.01</td>
+      <td>0.818</td>
+      <td>-3.05</td>
+      <td>0.059</td>
+      <td>-0.03</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lip</th>
+      <td>0.070</td>
+      <td>2.95</td>
+      <td>0.007</td>
+      <td>2.44</td>
+      <td>0.835</td>
+      <td>-2.53</td>
+      <td>0.097</td>
+      <td>0.03</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lemp</th>
+      <td>1.414</td>
+      <td>2.68</td>
+      <td>0.002</td>
+      <td>2.54</td>
+      <td>0.861</td>
+      <td>-2.66</td>
+      <td>0.035</td>
+      <td>0.03</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lun</th>
+      <td>0.515</td>
+      <td>2.76</td>
+      <td>-0.000</td>
+      <td>-0.23</td>
+      <td>0.706</td>
+      <td>-3.55</td>
+      <td>0.407</td>
+      <td>0.02</td>
+      <td>* estacionaria</td>
+    </tr>
+    <tr>
+      <th>lprgnp</th>
+      <td>0.258</td>
+      <td>2.55</td>
+      <td>0.002</td>
+      <td>2.65</td>
+      <td>0.915</td>
+      <td>-2.52</td>
+      <td>0.046</td>
+      <td>-0.04</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lcpi</th>
+      <td>0.088</td>
+      <td>1.74</td>
+      <td>0.001</td>
+      <td>2.84</td>
+      <td>0.968</td>
+      <td>-1.97</td>
+      <td>0.042</td>
+      <td>-0.14</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lwg</th>
+      <td>0.558</td>
+      <td>2.30</td>
+      <td>0.004</td>
+      <td>2.30</td>
+      <td>0.910</td>
+      <td>-2.24</td>
+      <td>0.060</td>
+      <td>0.00</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lrwg</th>
+      <td>0.484</td>
+      <td>3.10</td>
+      <td>0.004</td>
+      <td>3.14</td>
+      <td>0.831</td>
+      <td>-3.05</td>
+      <td>0.035</td>
+      <td>-0.02</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lm</th>
+      <td>0.128</td>
+      <td>3.53</td>
+      <td>0.005</td>
+      <td>3.03</td>
+      <td>0.916</td>
+      <td>-3.08</td>
+      <td>0.047</td>
+      <td>0.03</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lvel</th>
+      <td>0.042</td>
+      <td>0.72</td>
+      <td>-0.000</td>
+      <td>-0.40</td>
+      <td>0.946</td>
+      <td>-1.40</td>
+      <td>0.066</td>
+      <td>-0.02</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>bnd</th>
+      <td>-0.193</td>
+      <td>-0.97</td>
+      <td>0.003</td>
+      <td>1.75</td>
+      <td>1.032</td>
+      <td>0.69</td>
+      <td>0.284</td>
+      <td>-0.05</td>
+      <td>raiz unitaria</td>
+    </tr>
+    <tr>
+      <th>lsp500</th>
+      <td>0.089</td>
+      <td>1.63</td>
+      <td>0.003</td>
+      <td>2.39</td>
+      <td>0.908</td>
+      <td>-2.12</td>
+      <td>0.154</td>
+      <td>0.01</td>
+      <td>raiz unitaria</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>NOTA:</strong> Una versión anterior de este archivo tenía la réplica del trabajo de KPSS. Ese código ahora está en el cuaderno KPSS.ipynb.</p>
+
+      </div>
+
+      <div class="mt-16"></div>
+      
+      
+  
+    
+    
+    
+      
+      
+    
+<div class="pt-1 no-prose w-full">
+  <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+  <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
+    <div class="">
+      
+        <a class="group flex no-underline" href="/docs/time-series/3/lab/rep_1979-dickey_fuller_distribution/">
+          <span
+            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            ></span>
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+        </a>
+      
+    </div>
+    <div class="">
+      
+        <a class="group flex text-right no-underline" href="/docs/time-series/3/lab/rep_1989_perron/">
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            ></span
+            >
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+          <span
+            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline">&rarr;</span></span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+      
+
+
+
+    </main>
+  </article>
+</div>
+
+    </div>
+    <div class="page-footer">
+      
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

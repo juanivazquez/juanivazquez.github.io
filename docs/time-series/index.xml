@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Time Series | Juani Vázquez Broquá</title>
-    <link>http://localhost:4321/docs/time-series/</link>
-      <atom:link href="http://localhost:4321/docs/time-series/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://juanivb.github.io/docs/time-series/</link>
+      <atom:link href="https://juanivb.github.io/docs/time-series/index.xml" rel="self" type="application/rss+xml" />
     <description>Time Series</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>http://localhost:4321/media/logo.svg</url>
+      <url>https://juanivb.github.io/media/logo.svg</url>
       <title>Time Series</title>
-      <link>http://localhost:4321/docs/time-series/</link>
+      <link>https://juanivb.github.io/docs/time-series/</link>
     </image>
     
     <item>
       <title>Program</title>
-      <link>http://localhost:4321/docs/time-series/program/</link>
+      <link>https://juanivb.github.io/docs/time-series/program/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/program/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/program/</guid>
       <description>&lt;h2 id=&#34;time-series&#34;&gt;Time Series&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Bachelor&amp;rsquo;s Degree in Economics - Pontificia Universidad Católica Argentina&lt;/em&gt;&lt;/p&gt;
 &lt;h4 id=&#34;course-style&#34;&gt;Course Style&lt;/h4&gt;
@@ -106,9 +106,9 @@ Once the course is passed, students must take a final exam. The final exam grade
     
     <item>
       <title></title>
-      <link>http://localhost:4321/docs/time-series/assignment/</link>
+      <link>https://juanivb.github.io/docs/time-series/assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/docs/time-series/assignment/</guid>
+      <guid>https://juanivb.github.io/docs/time-series/assignment/</guid>
       <description>&lt;p&gt;Ok, you&amp;rsquo;ve made it this far. Congratulations! In order to own this subject you need to be able to explain it to someone else in a relaxed, easy-going and articulate way. The following exercises are intended to guide you through this part of the process, and focus on understanding the nuts and bolts of something you think you should know by know and believe you do, but somehow you don&amp;rsquo;t fully understand yet. I&amp;rsquo; don&amp;rsquo;t know either what that is, by the way. This part of the process is devoted to helping you find out your own &lt;em&gt;Unknown Unknowns&lt;/em&gt;. So lets get started.&lt;/p&gt;
 &lt;h2 id=&#34;assignment&#34;&gt;Assignment&lt;/h2&gt;
 &lt;div class=&#34;hb-steps&#34;&gt;
